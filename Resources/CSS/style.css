@@ -8,7 +8,6 @@ body {padding-top: 3.5rem; background-color: white;}
 .table-head{background-color: #e9ecef;}
 .nav-text{color: white;}
 hr{border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
-button:focus {outline:0;}
 
 /*darkmode*/
 @media (prefers-color-scheme: dark) {
@@ -33,3 +32,6 @@ button:focus {outline:0;}
 	.navbar .dropdown-menu.fade-up{ top: 180%;  }
 	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
 }	
+
+/*mobile navbar*/
+button:focus {outline:0;}
