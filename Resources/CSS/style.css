@@ -34,5 +34,4 @@ hr{border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 }	
 
 /*mobile navbar*/
-button:focus {outline:0;} 
-.no-nav-outline:focus{outline: 0;}
+.nav:focus{outline: 0;}
