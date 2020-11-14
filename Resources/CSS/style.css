@@ -7,6 +7,7 @@ body {padding-top: 3.5rem; background-color: white;}
 .table-head{background-color: #e9ecef;}
 hr{border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 .image-margin{margin-bottom: 10px;}
+.card-img-gap{margin-top: 10px;}
 
 /*darkmode*/
 @media (prefers-color-scheme: dark) {
