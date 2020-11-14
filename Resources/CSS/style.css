@@ -35,3 +35,4 @@ hr{border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 
 /*mobile navbar*/
 button:focus {outline:0;} 
+.nav{outline: 0;}
