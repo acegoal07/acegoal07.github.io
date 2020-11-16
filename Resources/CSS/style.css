@@ -23,7 +23,7 @@ hr{border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
     .table-head{background-color: #2f2f2f; color: white;}
     hr{border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 }
-
+ 
 /*hover dropdown menu and animation*/
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu{  display: block; opacity: 0;  visibility: hidden; transition: .3s; margin-top: 0;  }
