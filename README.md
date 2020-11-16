@@ -6,3 +6,8 @@ If there is anything I can change or fix please contact me as it would really he
 # Contact me 
 
 Issue report page:<a href="https://github.com/acegoal07/github.io/issues/new?template=feature_suggetion.md" target="_blank"> Report Issues<a>
+
+# Resources
+
+Bootstrap - https://getbootstrap.com/
+Elevator.js - https://github.com/tholman/elevator.js
