@@ -1,15 +1,19 @@
 window.onload = function() {
     var elevator = new Elevator({
-      element: document.querySelector('.elevator-button'),
+      element: document.querySelector('.back-to-top'),
       duration: 1000, // milliseconds
     });
     var elevator = new Elevator({
-      element: document.querySelector('.elevator-admin'),
+      element: document.querySelector('.back-to-top-2'),
+      duration: 1000, // milliseconds
+    });
+    var elevator = new Elevator({
+      element: document.querySelector('.admin-btn'),
       targetElement: document.querySelector('#admin'),
       verticalPadding: 100  // in pixels
     });
     var elevator = new Elevator({
-      element: document.querySelector('.elevator-general'),
+      element: document.querySelector('.general-btn'),
       targetElement: document.querySelector('#general'),
       verticalPadding: 100  // in pixels
     }); 
