@@ -10,6 +10,6 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "";
+    document.getElementById("clock").innerHTML = "https://acegoal07.github.io/Projects/surprise/secret";
   }
 }, 1000);
