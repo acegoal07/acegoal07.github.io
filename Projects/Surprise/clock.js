@@ -10,6 +10,9 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "https://acegoal07.github.io/Projects/Surprise/secret";
+    var link = document.getElementById("clock");
+    link.classList.add("card-link");
+    link.innerHTML = ":)";
+    link.href = "https://acegoal07.github.io/Projects/Surprise/secret";
   }
 }, 1000);
