@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
-
 html, body {
   height: 100%;
-  width:100%;
   margin: 0;
-  padding: 0;
   background-color: #ddf0e9;
 }
 
@@ -17,8 +13,7 @@ body {
 h1, h2 {
   text-align: center;
   margin: 0; 
-  font-family: 'Sen', sans-serif;
-  font-size: 7vw;
+  font-size: 10vw;
 }
 
 p{
