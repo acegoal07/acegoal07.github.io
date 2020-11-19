@@ -36,8 +36,8 @@ img {
   width: 100%;
 }
 
-/* mobile phone */
-@media all and (max-width: 768px) {
+
+@media only screen and (max-device-width: 480px) {
   h1, h2 {
     text-align: center;
     margin: 0; 
