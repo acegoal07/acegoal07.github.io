@@ -1,6 +1,3 @@
-import ('elevator.js')
-import ('elevator.min.js')
-
 window.onload = function() {
     var elevator = new Elevator({
       element: document.querySelector('.back-to-top'),
