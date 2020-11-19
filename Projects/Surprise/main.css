@@ -18,7 +18,7 @@ h1, h2 {
   text-align: center;
   margin: 0; 
   font-family: 'Sen', sans-serif;
-  font-size: 7vw;
+  font-size: 12vw;
 }
 
 p{
@@ -32,6 +32,7 @@ img {
   margin-right: auto;
   width: 200px;
   height: auto;
+  margin-top: 10px;
   }
 
 #confetti{
