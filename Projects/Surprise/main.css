@@ -35,24 +35,3 @@ img {
   height: 100%;
   width: 100%;
 }
-
-
-@media only screen and (max-device-width: 480px) {
-  h1, h2 {
-    text-align: center;
-    margin: 0; 
-    font-size: 15vw;
-  }
-  
-  p{
-    font-size: 6vw;
-  }
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: auto;
-  }
-}
