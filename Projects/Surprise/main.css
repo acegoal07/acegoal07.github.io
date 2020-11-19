@@ -22,13 +22,11 @@ p{
 
 img {
   display: block;
-  width: 60%;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
   height: auto;
-  margin-top: 10px;
-  }
+}
 
 #confetti{
   position: absolute;
@@ -36,4 +34,25 @@ img {
   top: 0;
   height: 100%;
   width: 100%;
+}
+
+/* mobile phone */
+@media all and (max-width: 768px) {
+  h1, h2 {
+    text-align: center;
+    margin: 0; 
+    font-size: 15vw;
+  }
+  
+  p{
+    font-size: 6vw;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+  }
 }
