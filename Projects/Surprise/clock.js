@@ -13,7 +13,6 @@ var clock_text = document.getElementById("clock-text");
   if (distance < 0) {
     clearInterval(x);
     clock_text.innerHTML = "well the day has come";
-    clock.classList.add("card-link");
     clock.innerHTML = ":)";
     clock.href = "https://acegoal07.github.io/Projects/Surprise/secret";
   }
