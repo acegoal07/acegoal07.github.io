@@ -13,11 +13,12 @@ body {
 h1, h2 {
   text-align: center;
   margin: 0; 
-  font-size: 10vw;
+  font-size: 9vw;
 }
 
 p{
   text-align: center;
+  line-height: 0.0000000001;
 }
 
 img {
