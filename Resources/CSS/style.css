@@ -31,7 +31,7 @@ hr{border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 	.navbar .dropdown-menu.fade-down{ top: 80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
 	.navbar .dropdown-menu.fade-up{ top: 180%;  }
 	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
-}	
+}
 
 /*mobile navbar*/
 button:focus {outline:0;}
