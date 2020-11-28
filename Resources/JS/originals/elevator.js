@@ -1,14 +1,3 @@
-/*!
- * Elevator.js
- *
- * MIT licensed
- * Copyright (C) 2015 Tim Holman, http://tholman.com
- */
-
-/*********************************************
- * Elevator.js
- *********************************************/
-
 var Elevator = function(options) {
     "use strict";
 
@@ -97,19 +86,6 @@ var Elevator = function(options) {
         }
     }
 
-    //            ELEVATE!
-    //              /
-    //         ____
-    //       .'    '=====<0
-    //       |======|
-    //       |======|
-    //       [IIIIII[\--()
-    //       |_______|
-    //       C O O O D
-    //      C O  O  O D
-    //     C  O  O  O  D
-    //     C__O__O__O__D
-    //    [_____________]
     this.elevate = function() {
         if (elevating) {
             return;
