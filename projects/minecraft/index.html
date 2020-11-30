@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rando</title>
+    <title>Minecraft mods</title>
     <link rel="shortcut icon" href="../../Resources/Pictures/favicon.ico">
     <meta charset="utf-8">
     <meta name="theme-color" content="#343a40"/>
@@ -34,7 +34,13 @@
       <a class="nav-link" href="../">Projects</a>
     </li>  
     <li class="nav-item active">
-      <a class="nav-link back-to-top-2" role="button">Rando<span class="sr-only">(current)</span></a>
+      <a class="nav-link back-to-top-2" role="button">Minecraft Mods<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item dropdown d-none">
+      <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">commands</a>
+      <div class="dropdown-menu fade-down" aria-labelledby="navbar-dropdown">
+        <a class="dropdown-item general-btn" role="button">Pickup notifier</a>
+      </div>
     </li>
   </ul>
 </div>
@@ -43,18 +49,27 @@
 <main role="main">
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Rando</h1>
-    <p>A minecraft randomization drop mod</p>
+    <h1 class="display-3">Minecraft mods</h1>
+    <p>A collection of minecraft mods</p>
   </div>
 </div>
 
 <div class="container">
   <div class="row justify-content-center">
     <div class="text-box">
-      <p>Ever wanted a mod that just randomizes the drops in minecraft no? well now you have one and its called Rando i am hoping to make it support as many other mods as possible so it can make your minecraft experience either painful or enjoyable.</p>  
+      <h2 class="text-center" id="pickupnoti">Pickup notifier</h2>
+      <p>This mod notifies you every time you pick up an item. This mod is a working progress meaning changes and support for more minecraft versions is being worked on so please bare with me.</p>
     </div>
   </div>
   <br>
+
+  <h2 class="text-center">To do</h2>
+  <ul>
+    <li>Add support for more minecraft versions</li>
+    <li>Make the item name be displayed instead of string</li>
+    <li>Add block amount</li>
+    <li>Add item blacklist</li>
+  </ul><br>
 
   <table class="table table-sm">
     <thead class="table-head">
@@ -67,14 +82,13 @@
     <tbody class="table-body">
       <tr>
         <td>1.12.2</td>
-        <td>1.0.0</td>
-        <td><a class="btn btn-primary fa fa-file-download btn-dark text-center" role="button" href="jar files/rando-1.12.2-1.0.0.jar" download></a></td>
+        <td>1.0.2</td>
+        <td><a class="btn btn-primary fa fa-file-download btn-dark text-center" role="button" href="jar files/1.12.2/pickupnoti-1.12.2-1.0.2.jar" download></a></td>
       </tr>
     </tbody>
   </table>
 
-  <br><hr>
-
+  <hr>
 </div>
 
 </main>
