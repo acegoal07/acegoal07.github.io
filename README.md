@@ -9,5 +9,5 @@ Issue report page:<a href="https://github.com/acegoal07/github.io/issues/new?tem
 
 # Resources
 
-Bootstrap - https://getbootstrap.com/
+Bootstrap - https://getbootstrap.com/ <br>
 Elevator.js - https://github.com/tholman/elevator.js
