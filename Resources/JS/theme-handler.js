@@ -23,7 +23,6 @@ if (currentTheme == ('')) {
     }
 })
 } if (currentTheme == "dark") {
-    if (theme.getAttribute('href') = "")
     theme.setAttribute('href', './Resources/CSS/theme/dark.css');
 } else {
     theme.setAttribute('href', './Resources/CSS/theme/light.css');
