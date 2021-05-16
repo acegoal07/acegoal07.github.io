@@ -1,6 +1,6 @@
 var theme = document.getElementById('theme');
 
-const currentTheme = localStorage.getItem("setTheme");
+const currentTheme = localStorage.getItem("setTheme").setItem("null");
 if (currentTheme == "dark") {
     theme.setAttribute('href', 'Resources/CSS/theme/dark.css');
 }
@@ -18,7 +18,7 @@ function toggleTheme() {
     }
 }
 
-if (currentTheme == ('')) {
+if (currentTheme == ('null')) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     let setTheme = "light"
     if (event.matches) {
@@ -28,7 +28,7 @@ if (currentTheme == ('')) {
         theme.setAttribute('href', 'Resources/CSS/theme/light.css');
         setTheme = "light"
     }
-    })
+})
 } if (currentTheme == "dark") {
     theme.setAttribute('href', 'Resources/CSS/theme/dark.css');
 } else {
