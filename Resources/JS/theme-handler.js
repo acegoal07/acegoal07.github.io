@@ -7,7 +7,7 @@ function toggleTheme() {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
     } else {
-        theme.setAttribute('href', 'Resources/CSS/theme/light.css');
+        theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
     }
 }
