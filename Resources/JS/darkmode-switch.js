@@ -8,27 +8,25 @@ if (currentTheme == "dark") {
 }
 
 function toggleTheme() {
-    let currentTheme = "light"
     // Change the value of href attribute 
     // to change the css sheet.
     if (theme.getAttribute('href') == 'Resources/CSS/theme/light.css') {
         theme.setAttribute('href', 'Resources/CSS/theme/dark.css');
-        currentTheme = "dark";
+        localStorage.setItem("setTheme", "dark");
     } else {
         theme.setAttribute('href', 'Resources/CSS/theme/light.css');
-        currentTheme = "light"
+        localStorage.setItem("setTheme", "light");
     }
 }
 
-if (currentTheme == ('')) {
+if (currentTheme == (null)) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    let currentTheme = "light"
     if (event.matches) {
         theme.setAttribute('href', 'Resources/CSS/theme/dark.css');
-        currentTheme = "dark";
+        localStorage.setItem("setTheme", "dark");
     } else {
         theme.setAttribute('href', 'Resources/CSS/theme/light.css');
-        currentTheme = "light"
+        localStorage.setItem("setTheme", "light");
     }
 })
 } if (currentTheme == "dark") {
