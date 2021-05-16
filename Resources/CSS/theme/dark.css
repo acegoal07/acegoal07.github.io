@@ -1,0 +1,11 @@
+html, body, main, footer, .footer-color {background-color: black; color: white;}
+.card-img-background{background-color:  #1f1f1f;}
+.card-header {background-color: #2f2f2f;}
+.card-body {background-color: #1f1f1f;}
+.jumbotron {background-color: #2f2f2f;}
+.list-group-item {background-color: #1f1f1f; border-color:  #2f2f2f;}
+html.can-touch .link-item:hover {background-color: #1f1f1f;}
+html.can-touch .link-item:active {background-color: #1f1f1f;}
+.table-body {background-color: #1f1f1f; color: white;}
+.table-head {background-color: #2f2f2f; color: white;}
+hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
