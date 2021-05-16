@@ -19,7 +19,7 @@ function toggleTheme() {
     }
 }
 
-if (currentTheme == (null)) {
+if (currentTheme == ("")) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         theme.setAttribute('href', 'Resources/CSS/theme/dark.css');
