@@ -16,20 +16,19 @@ if (currentTheme == ('')) {
     if (event.matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
+        a.classList.remove("preload");
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
+        a.classList.remove("preload");
     }
 })
 } if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
+    a.classList.remove("preload");
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
+    a.classList.remove("preload");
 }
 
-document.onreadystatechange = () => {
-    if (document.readyState === 'complete') {
-        a.classList.remove("preload");
-    }
-};
   
