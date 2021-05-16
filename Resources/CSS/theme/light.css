@@ -3,3 +3,7 @@ body {padding-top: 3.5rem; background-color: white;}
 .table-body {background-color: white;}
 .table-head {background-color: #e9ecef;}
 hr {border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
+
+* {
+    transition: background-color 0.6s ease, color 0.5s ease;
+  }
