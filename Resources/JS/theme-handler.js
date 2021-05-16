@@ -17,17 +17,17 @@ if (currentTheme == ('')) {
     if (event.matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
-        style.transition = 'none';
+        html.style.transition = 'none';
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
-        style.transition = 'none';
+        html.style.transition = 'none';
     }
 })
 } if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-    style.transition = 'none';
+    html.style.transition = 'none';
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
-    style.transition = 'none';
+    html.style.transition = 'none';
 }
