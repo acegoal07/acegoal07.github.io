@@ -18,7 +18,7 @@ function toggleTheme() {
     }
 }
 
-if (currentTheme == null) {
+if (currentTheme == ('')) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     let setTheme = "light"
     if (event.matches) {
