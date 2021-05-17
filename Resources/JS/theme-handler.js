@@ -22,8 +22,6 @@ if (currentTheme === null) {
 }
 if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-} if (currentTheme == "blue") {
-    theme.setAttribute('href', '/Resources/CSS/theme/blue.css');
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
 }
