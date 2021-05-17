@@ -20,8 +20,9 @@ if (currentTheme === null) {
         localStorage.setItem("setTheme", "light");
     }
 }
-if (currentTheme == "dark") {
+if (currentTheme == 'dark') {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
 }
+// Use else if for multiple themes
