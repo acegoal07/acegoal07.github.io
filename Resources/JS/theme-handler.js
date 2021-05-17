@@ -9,7 +9,6 @@ function toggleTheme() {
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
-        console.log(`The theme has been set to `,currentTheme)
     }
 }
 
