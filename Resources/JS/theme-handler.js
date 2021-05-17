@@ -12,7 +12,7 @@ function toggleTheme() {
     }
 }
 
-if (localStorage.getItem('setTheme') === null) {
+if (localStorage["setTheme"]) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
@@ -22,7 +22,9 @@ if (localStorage.getItem('setTheme') === null) {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");t
         base.classList.remove("preload");
-}})}
+    }}
+)}
+
 if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
     base.classList.remove("preload"); 
