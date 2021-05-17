@@ -13,6 +13,7 @@ function toggleTheme() {
 }
 
 if (localStorage["setTheme"]) {
+    console.log("Hello World!")
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
