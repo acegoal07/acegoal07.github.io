@@ -12,7 +12,7 @@ function toggleTheme() {
     }
 }
 
-if (currentTheme == ('')) {
+if (currentTheme == (undefined)) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
