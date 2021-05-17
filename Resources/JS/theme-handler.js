@@ -14,8 +14,7 @@ function toggleTheme() {
 
 if (localStorage.getItem("setTheme") === null) {
     console.log("Hello World!")
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (event.matches) {
+    if (window.matchMedia('prefers-color-scheme: dark').matches) {
         console.log("detected system prefers dark mode")
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
@@ -25,8 +24,8 @@ if (localStorage.getItem("setTheme") === null) {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");t
         base.classList.remove("preload");
-    }}
-)}
+    }
+}
 
 if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
