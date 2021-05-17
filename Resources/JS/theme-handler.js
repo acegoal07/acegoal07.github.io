@@ -22,7 +22,7 @@ if (localStorage.getItem("setTheme") === null) {
     } else {
         console.log("detected system prefers light mode")
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
-        localStorage.setItem("setTheme", "light");t
+        localStorage.setItem("setTheme", "light");
         base.classList.remove("preload");
     }
 }
