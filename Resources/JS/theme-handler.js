@@ -23,7 +23,7 @@ if (currentTheme==undefined) {
         localStorage.setItem("setTheme", "light");t
         base.classList.remove("preload");
     }
-} )} 
+})} 
 if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
     base.classList.remove("preload"); 
