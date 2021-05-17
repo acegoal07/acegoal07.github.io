@@ -12,7 +12,7 @@ function toggleTheme() {
     }
 }
 
-if (currentTheme == (undefined)) {
+if (currentTheme==undefined) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
@@ -23,7 +23,7 @@ if (currentTheme == (undefined)) {
         localStorage.setItem("setTheme", "light");t
         base.classList.remove("preload");
     }
-})} 
+} )} 
 if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
     base.classList.remove("preload"); 
