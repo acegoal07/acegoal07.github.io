@@ -1,0 +1,11 @@
+body {padding-top: 3.5rem; background-color: #3838ff; color: white;}
+.card-img-background{background-color:  #1f1f1f;}
+.card-header {background-color: #19b2ff;}
+.card-body {background-color: #1f1f1f;}
+.jumbotron {background-color: #19b2ff;}
+.list-group-item {background-color: #1e1e1e; border-color:  #19b2ff;}
+html.can-touch .link-item:hover {background-color: #1f1f1f;}
+html.can-touch .link-item:active {background-color: #1f1f1f;}
+.table-body {background-color: #1f1f1f; color: white;}
+.table-head {background-color: #19b2ff; color: white;}
+hr {border: none; height: 1.5px; color: #19b2ff; background-color: #19b2ff;}
