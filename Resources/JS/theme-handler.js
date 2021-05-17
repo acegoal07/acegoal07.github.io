@@ -27,6 +27,6 @@ if (currentTheme == "dark") {
 }
 
 if (document.readyState === 'complete') {
-    base.classList.add("transition");
-  }
+    console.clear();
+}
   
