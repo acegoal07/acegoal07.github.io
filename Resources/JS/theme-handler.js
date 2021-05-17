@@ -16,10 +16,12 @@ if (localStorage.getItem("setTheme") === null) {
     console.log("Hello World!")
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
+        console.log("detected system prefers dark mode")
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
         base.classList.remove("preload");
     } else {
+        console.log("detected system prefers light mode")
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");t
         base.classList.remove("preload");
