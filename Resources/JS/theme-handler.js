@@ -6,9 +6,11 @@ function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
+        Rails.cache.write('THEME','dark')
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
+        Rails.cache.write('THEME', 'light')
     }
 }
 
