@@ -1,6 +1,6 @@
 var theme = document.getElementById('theme');
 const currentTheme = localStorage.getItem("setTheme");
-var base = document.getElementById('base')
+var base = document.getElementsByTagName('html')
   
 function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
