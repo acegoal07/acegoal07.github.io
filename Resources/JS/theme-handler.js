@@ -1,6 +1,6 @@
 var theme = document.getElementById('theme');
 const currentTheme = localStorage.getItem("setTheme");
-var base = document.getElementById('base')
+var base = document.getElementsByTagName('html');
   
 function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
@@ -25,3 +25,8 @@ if (currentTheme == "dark") {
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
 }
+
+if (document.readyState === 'complete') {
+    base.classList.add("transition");
+  }
+  
