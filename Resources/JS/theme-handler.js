@@ -25,8 +25,3 @@ if (currentTheme == "dark") {
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
 }
-
-if (document.readyState === 'complete') {
-    console.clear();
-}
-  
