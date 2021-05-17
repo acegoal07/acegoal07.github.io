@@ -11,6 +11,7 @@ function toggleTheme() {
         localStorage.setItem("setTheme", "light");
     }
 }
+
 if (currentTheme == ('')) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
@@ -22,10 +23,10 @@ if (currentTheme == ('')) {
         localStorage.setItem("setTheme", "light");
         base.classList.remove("preload");
     }
-})
-} if (currentTheme == "dark") {
+})} 
+if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-    base.classList.remove("preload");
+    base.classList.remove("preload"); 
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
     base.classList.remove("preload");
