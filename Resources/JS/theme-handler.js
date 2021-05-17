@@ -12,7 +12,7 @@ function toggleTheme() {
     }
 }
 
-if (localStorage["setTheme"]) {
+if (theme === undefined) {
     console.log("Hello World!")
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
