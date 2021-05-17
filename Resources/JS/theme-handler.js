@@ -1,19 +1,15 @@
 var theme = document.getElementById('theme');
 const currentTheme = localStorage.getItem("setTheme");
 var base = document.getElementById('base')
-var setTheme = Rails.cache.fetch('THEME')
   
 function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
-        Rails.cache.write('THEME','dark');
-        console.log(theme);
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
-        Rails.cache.write('THEME', 'light');
-        console.log(setTheme);
+        console.log(`The theme has been set to `,currentTheme)
     }
 }
 
