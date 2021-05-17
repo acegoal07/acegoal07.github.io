@@ -31,5 +31,3 @@ if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
     base.classList.remove("preload");
 }
-
-  
