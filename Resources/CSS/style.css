@@ -17,19 +17,6 @@
 button:focus {outline:0;}
 .nav-link{outline: 0;}
 
-@media all and (min-width: 992px) {
-    * {
-        transition: background-color 0.6s ease, color 0.5s ease;
-    }
+.transition {
+	transition: background-color 0.6s ease, color 0.5s ease;
 }
-
-* {
-    transition: background-color 0.6s ease, color 0.1s ease;
-}
-
-.preload * {
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-o-transition: none !important;
-	transition: none !important;
-  }

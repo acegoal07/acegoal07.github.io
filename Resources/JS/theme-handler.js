@@ -4,28 +4,28 @@ var base = document.getElementById('base')
   
 function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
+        base.classList.add('transition');
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
+        base.classList.remove('transition');
     } else {
+        base.classList.add('transition');
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
+        base.classList.remove('transition');
     }
 }
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
-        base.classList.remove("preload");
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
-        base.classList.remove("preload");
     }
 }
 if (currentTheme == "dark") {
     theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-    base.classList.remove("preload");
 } else {
     theme.setAttribute('href', '/Resources/CSS/theme/light.css');
-    base.classList.remove("preload");
 }
