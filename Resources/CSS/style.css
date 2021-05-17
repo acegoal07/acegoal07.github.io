@@ -17,4 +17,4 @@
 button:focus {outline:0;}
 .nav-link{outline: 0;}
 
-.transition {transition: background-color 0.6s ease, color 0.5s ease;}
+* {transition: background-color 0.6s ease, color 0.5s ease;}

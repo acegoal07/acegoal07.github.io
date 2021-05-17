@@ -4,15 +4,11 @@ var base = document.getElementById('base')
   
 function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
-        base.classList.add('transition');
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
-        base.classList.remove('transition');
     } else {
-        base.classList.add('transition');
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
-        base.classList.remove('transition');
     }
 }
 if (currentTheme === null) {
