@@ -32,4 +32,3 @@ function toggleTheme() {
         localStorage.setItem("setTheme", "light");
     }
 }
-// Use else if for multiple themes
