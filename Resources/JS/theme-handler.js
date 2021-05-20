@@ -1,9 +1,11 @@
 const currentTheme = localStorage.getItem("setTheme");
+const lightTheme = '/Resources/CSS/theme/light.css';
+const darkTheme = '/Resources/CSS/theme/dark.css';
 var link = document.getElementById('theme');
     if (currentTheme == 'dark') {
-        link.href = '/Resources/CSS/theme/dark.css';
+        link.href = darkTheme;
     } else {
-        link.href = '/Resources/CSS/theme/light.css';
+        link.href = lightTheme;
     }
     document.head.appendChild(link);
 document.onreadystatechange = () => {
@@ -14,19 +16,19 @@ document.onreadystatechange = () => {
 var theme = document.getElementById('theme');
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
-        theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
+        theme.setAttribute('href', darkTheme);
         localStorage.setItem("setTheme", "dark");
     } else {
-        theme.setAttribute('href', '/Resources/CSS/theme/light.css');
+        theme.setAttribute('href', lightTheme);
         localStorage.setItem("setTheme", "light");
     }
 }
 function toggleTheme() {
-    if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
-        theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
+    if (theme.getAttribute('href') == lightTheme) {
+        theme.setAttribute('href', darkTheme);
         localStorage.setItem("setTheme", "dark");
     } else {
-        theme.setAttribute('href', '/Resources/CSS/theme/light.css');
+        theme.setAttribute('href', lightTheme);
         localStorage.setItem("setTheme", "light");
     }
 }
