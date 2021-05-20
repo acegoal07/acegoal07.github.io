@@ -5,10 +5,10 @@ var link = document.createElement('link');
     link.type = 'text/css'
     if (currentTheme == 'dark') {
         link.href = '/Resources/CSS/theme/dark.css';
-        document.getElementById('base').classList.remove('disable-transitions');
+        //document.getElementById('base').classList.remove('disable-transitions');
     } else {
         link.href = '/Resources/CSS/theme/light.css';
-        document.getElementById('base').classList.remove('disable-transitions');
+        //document.getElementById('base').classList.remove('disable-transitions');
     }
     document.head.appendChild(link);
 var theme = document.getElementById('theme');    
@@ -25,11 +25,11 @@ function toggleTheme() {
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");
-        document.getElementById('base').classList.remove('disable-transitions');
+        //document.getElementById('base').classList.remove('disable-transitions');
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
-        document.getElementById('base').classList.remove('disable-transitions');
+        //document.getElementById('base').classList.remove('disable-transitions');
     }
 }
 // Use else if for multiple themes
