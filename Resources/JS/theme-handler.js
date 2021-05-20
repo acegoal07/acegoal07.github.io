@@ -8,7 +8,10 @@ var link = document.createElement('link');
     } else {
         link.href = '/Resources/CSS/theme/light.css';
     }
-    document.head.appendChild(link); 
+    document.head.appendChild(link);
+if (document.readyState === 'complete') {
+    document.getElementById('base').classList.remove('disable-transitions');
+}
 var theme = document.getElementById('theme');    
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
@@ -20,7 +23,6 @@ if (currentTheme === null) {
     }
 }
 function toggleTheme() {
-    document.getElementById('base').classList.remove('disable-transitions');
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {        
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");        
@@ -28,5 +30,4 @@ function toggleTheme() {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
     }
-    document.getElementById('base').classList.add('disable-transitions');
 }
