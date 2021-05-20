@@ -10,7 +10,6 @@ var link = document.createElement('link');
     }
     document.head.appendChild(link); 
 var theme = document.getElementById('theme');    
-document.getElementById('base').classList.remove('disable-transitions');
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
@@ -21,6 +20,7 @@ if (currentTheme === null) {
     }
 }
 function toggleTheme() {
+    document.getElementById('base').classList.remove('disable-transitions');
     if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {        
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
         localStorage.setItem("setTheme", "dark");        
@@ -28,4 +28,5 @@ function toggleTheme() {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
     }
+    document.getElementById('base').classList.add('disable-transitions');
 }
