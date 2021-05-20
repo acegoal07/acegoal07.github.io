@@ -7,6 +7,7 @@
 	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
 }
 
+body {padding-top: 3.5rem;}
 .image-margin {margin-bottom: 10px;}
 .card-img-gap {margin-top: 10px;}
 .text-box {padding-left: 20px; padding-right: 20px;}
@@ -17,5 +18,6 @@
 button:focus {outline:0;}
 .nav-link{outline: 0;}
 
+/*transitions*/
 * {transition: 1.5s ease;}
-body {padding-top: 3.5rem;}
+.disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}

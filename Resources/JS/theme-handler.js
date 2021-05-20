@@ -1,16 +1,17 @@
-var theme = document.getElementById('theme');
 const currentTheme = localStorage.getItem("setTheme");
-var base = document.getElementsByTagName('html');
-  
-function toggleTheme() {
-    if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
-        theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-        localStorage.setItem("setTheme", "dark");
+var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.id = 'theme';
+    link.type = 'text/css'
+    if (currentTheme == 'dark') {
+        link.href = '/Resources/CSS/theme/dark.css';
+        document.getElementById('base').classList.remove('disable-transitions');
     } else {
-        theme.setAttribute('href', '/Resources/CSS/theme/light.css');
-        localStorage.setItem("setTheme", "light");
+        link.href = '/Resources/CSS/theme/light.css';
+        document.getElementById('base').classList.remove('disable-transitions');
     }
-}
+    document.head.appendChild(link);
+var theme = document.getElementById('theme');    
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
@@ -20,9 +21,15 @@ if (currentTheme === null) {
         localStorage.setItem("setTheme", "light");
     }
 }
-if (currentTheme == 'dark') {
-    theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-} else {
-    theme.setAttribute('href', '/Resources/CSS/theme/light.css');
+function toggleTheme() {
+    if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
+        theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
+        localStorage.setItem("setTheme", "dark");
+        document.getElementById('base').classList.remove('disable-transitions');
+    } else {
+        theme.setAttribute('href', '/Resources/CSS/theme/light.css');
+        localStorage.setItem("setTheme", "light");
+        document.getElementById('base').classList.remove('disable-transitions');
+    }
 }
 // Use else if for multiple themes
