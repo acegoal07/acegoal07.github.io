@@ -5,12 +5,12 @@ var link = document.createElement('link');
     link.type = 'text/css'
     if (currentTheme == 'dark') {
         link.href = '/Resources/CSS/theme/dark.css';
-        //document.getElementById('base').classList.remove('disable-transitions');
     } else {
         link.href = '/Resources/CSS/theme/light.css';
-        //document.getElementById('base').classList.remove('disable-transitions');
     }
-    document.head.appendChild(link);
+    document.head.appendChild(link); {
+        document.getElementById('base').classList.remove('disable-transitions');
+    }
 var theme = document.getElementById('theme');    
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
