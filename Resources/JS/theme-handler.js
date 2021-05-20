@@ -1,8 +1,5 @@
 const currentTheme = localStorage.getItem("setTheme");
-var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.id = 'theme';
-    link.type = 'text/css';
+var link = document.getElementById('theme');
     if (currentTheme == 'dark') {
         link.href = '/Resources/CSS/theme/dark.css';
     } else {
