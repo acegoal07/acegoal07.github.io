@@ -2,7 +2,7 @@ const currentTheme = localStorage.getItem("setTheme");
 var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.id = 'theme';
-    link.type = 'text/css'
+    link.type = 'text/css';
     if (currentTheme == 'dark') {
         link.href = '/Resources/CSS/theme/dark.css';
     } else {
@@ -14,7 +14,7 @@ document.onreadystatechange = () => {
         document.getElementById('base').classList.remove('disable-transitions');
     }
 }
-var theme = document.getElementById('theme');    
+var theme = document.getElementById('theme');
 if (currentTheme === null) {
     if (window.matchMedia('prefers-color-scheme: dark').matches) {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
@@ -25,9 +25,9 @@ if (currentTheme === null) {
     }
 }
 function toggleTheme() {
-    if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {        
+    if (theme.getAttribute('href') == '/Resources/CSS/theme/light.css') {
         theme.setAttribute('href', '/Resources/CSS/theme/dark.css');
-        localStorage.setItem("setTheme", "dark");        
+        localStorage.setItem("setTheme", "dark");
     } else {
         theme.setAttribute('href', '/Resources/CSS/theme/light.css');
         localStorage.setItem("setTheme", "light");
