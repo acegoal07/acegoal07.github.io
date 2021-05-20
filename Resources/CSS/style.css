@@ -7,7 +7,6 @@
 	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
 }
 
-body {padding-top: 3.5rem;}
 .image-margin {margin-bottom: 10px;}
 .card-img-gap {margin-top: 10px;}
 .text-box {padding-left: 20px; padding-right: 20px;}
