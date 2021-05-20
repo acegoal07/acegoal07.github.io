@@ -11,7 +11,6 @@ var link = document.createElement('link');
     document.head.appendChild(link);
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
-        console.log('web-page has loaded')
         document.getElementById('base').classList.remove('disable-transitions');
     }
 }
