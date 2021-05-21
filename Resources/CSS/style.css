@@ -18,5 +18,5 @@ button:focus {outline:0;}
 .nav-link{outline: 0;}
 
 /*transitions*/
-* {transition: 1.5s ease;}
+* {transition: all 1.5s ease;}
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
