@@ -9,3 +9,4 @@ html.can-touch .link-item:active {background-color: #1f1f1f;}
 .table-body {background-color: #1f1f1f; color: white;}
 .table-head {background-color: #2f2f2f; color: white;}
 hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
+.switch-color {color: white}
