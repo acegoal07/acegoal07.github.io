@@ -20,4 +20,5 @@ button:focus {outline:0;}
 /*transition*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.5s ease 0s;}}
 @-moz-document url-prefix() {* {transition: 1.5s ease;}}
+@media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.5s ease 0s;}}
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
