@@ -24,4 +24,4 @@ button:focus {outline:0;}
 /*firefox*/
 @-moz-document url-prefix() {* {transition: 1.5s ease;}}
 /*safari*/
-@media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.5s ease 0s;}}
+@media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.1s ease 0s;}}
