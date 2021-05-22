@@ -9,3 +9,8 @@ html.can-touch .link-item:active {background-color: #1f1f1f;}
 .table-body {background-color: #1f1f1f; color: white;}
 .table-head {background-color: #2f2f2f; color: white;}
 hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
+
+/*scroll bar*/
+body::-webkit-scrollbar {width: 1em;}
+body::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+body::-webkit-scrollbar-thumb {background-color: #2f2f2f;outline: 1px solid #1f1f1f;}

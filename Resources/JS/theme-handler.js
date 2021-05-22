@@ -8,21 +8,21 @@ var link = document.getElementById('theme');
         link.href = lightTheme;
     }
     document.head.appendChild(link);
-document.onreadystatechange = () => {
-    if (document.readyState === 'complete') {
-        document.getElementById('base').classList.remove('disable-transitions');
+    document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+            document.getElementById('base').classList.remove('disable-transitions');
+        }
     }
-}
 var theme = document.getElementById('theme');
-if (currentTheme === null) {
-    if (window.matchMedia('prefers-color-scheme: dark').matches) {
-        theme.setAttribute('href', darkTheme);
-        localStorage.setItem("setTheme", "dark");
-    } else {
-        theme.setAttribute('href', lightTheme);
-        localStorage.setItem("setTheme", "light");
+    if (currentTheme === null) {
+        if (window.matchMedia('prefers-color-scheme: dark').matches) {
+            theme.setAttribute('href', darkTheme);
+            localStorage.setItem("setTheme", "dark");
+        } else {
+            theme.setAttribute('href', lightTheme);
+            localStorage.setItem("setTheme", "light");
+        }
     }
-}
 function toggleTheme() {
     if (theme.getAttribute('href') == lightTheme) {
         theme.setAttribute('href', darkTheme);
