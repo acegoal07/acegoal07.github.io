@@ -11,12 +11,23 @@ html.can-touch .link-item:active {background-color: #1f1f1f;}
 hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 
 /*scroll bar*/
-body::-webkit-scrollbar-track {
-    background: orange;        /* color of the tracking area */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
   }
   
-  body::-webkit-scrollbar-thumb {
-    background-color: blue;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid orange;  /* creates padding around scroll thumb */
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: orange;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
   }
