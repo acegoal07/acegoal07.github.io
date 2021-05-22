@@ -18,5 +18,11 @@ button:focus {outline:0;}
 .nav-link{outline: 0;}
 
 /*transitions*/
-.theme-transition {transition: all 1.5s ease;}
+
+@supports (transition: initial) {
+	* {transition: 1.5s ease;}
+}
+@media (-webkit-transition) {
+	* {-webkit-transition: 1.5s ease;}
+}
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
