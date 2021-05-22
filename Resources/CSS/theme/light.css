@@ -1,7 +1,7 @@
 body {padding-top: 3.5rem; background-color: white;}
 .card-img-background {background-color: #e9ecef;}
 .card-body {background-color: #e9ecef;}
-.border-left,.border-right {border: 1px solid #2f2f2f !important;}
+.border-left,.border-right {border: 1px solid #2f2f2f;}
 .table-body {background-color: white;}
 .table-head {background-color: #e9ecef;}
 hr {border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
