@@ -1,11 +1,5 @@
 /* Hover dropdown menu and animation */
-@media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu{display: block; opacity: 0;  visibility: hidden; transition: .3s; margin-top: 0;  }
-	.navbar .nav-item:hover .nav-link{color: #fff;  }
-	.navbar .dropdown-menu.fade-down{top: 80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-	.navbar .dropdown-menu.fade-up{top: 180%;  }
-	.navbar .nav-item:hover .dropdown-menu{transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
-}
+@media all and (min-width: 992px) {.navbar .nav-item .dropdown-menu{display: block; opacity: 0;  visibility: hidden; transition: .3s; margin-top: 0;} .navbar .nav-item:hover .nav-link{color: #fff;} .navbar .dropdown-menu.fade-down{top: 80%; transform: rotateX(-75deg); transform-origin: 0% 0%;} .navbar .dropdown-menu.fade-up{top: 180%;} .navbar .nav-item:hover .dropdown-menu{transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg);}}
 .image-margin {margin-bottom: 10px;}
 .card-img-gap {margin-top: 10px;}
 .text-box {padding-left: 20px; padding-right: 20px;}
@@ -17,8 +11,8 @@ button:focus {outline:0;}
 /* Transition */
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
 /* Chrome */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s, background 1.5s ease 0s;}}
 /* Firefox */
 @-moz-document url-prefix() {* {transition: 1.5s ease;}}
 /* Safari */
-@media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
+@media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s, background 1.5s ease 0s;}}
