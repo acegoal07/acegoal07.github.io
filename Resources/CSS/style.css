@@ -11,7 +11,7 @@ button:focus {outline:0;}
 /* Transition */
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
 /* Chrome */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s, -webkit-scrollbar 1.5s ease 0s;}}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s, -webkit-scrollbar 1.5s ease 0s, -webkit-scrollbar-track 1.5s ease 0s, -webkit-scrollbar-thumb 1.5s ease 0s;}}
 /* Firefox */
 @-moz-document url-prefix() {* {transition: 1.5s ease;}}
 /* Safari */
