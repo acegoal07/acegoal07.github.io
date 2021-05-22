@@ -1,4 +1,4 @@
-/*hover dropdown menu and animation*/
+/* Hover dropdown menu and animation */
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu{display: block; opacity: 0;  visibility: hidden; transition: .3s; margin-top: 0;  }
 	.navbar .nav-item:hover .nav-link{color: #fff;  }
@@ -6,22 +6,19 @@
 	.navbar .dropdown-menu.fade-up{top: 180%;  }
 	.navbar .nav-item:hover .dropdown-menu{transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg); }
 }
-
 .image-margin {margin-bottom: 10px;}
 .card-img-gap {margin-top: 10px;}
 .text-box {padding-left: 20px; padding-right: 20px;}
 .bd-placeholder-img {font-size: 1.125rem; text-anchor: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 @media (min-width: 768px) {.bd-placeholder-img-lg {font-size: 3.5rem;}}
-
-/*mobile navbar*/
+/* Mobile navbar */
 button:focus {outline:0;}
 .nav-link{outline: 0;}
-
-/*transition*/
+/* Transition */
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
-/*Chrome*/
+/* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
-/*firefox*/
+/* Firefox */
 @-moz-document url-prefix() {* {transition: 1.5s ease;}}
-/*safari*/
+/* Safari */
 @media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
