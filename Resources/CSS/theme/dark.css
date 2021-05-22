@@ -13,11 +13,11 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 /*scroll bar*/
 /* Works on Firefox */
 * {
-    scrollbar-width: 12px;
+    scrollbar-width: medium;
     scrollbar-color: #2f2f2f black;
 }
 *:hover {
-    scrollbar-width: 12px;
+    scrollbar-width: medium;
     scrollbar-color: #3b3b3b black;
 }
 /* Works on Chrome, Edge, and Safari */
