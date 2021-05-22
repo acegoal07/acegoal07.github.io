@@ -17,18 +17,16 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
     scrollbar-color: #2f2f2f black;
 }
 *:hover {
-    scrollbar-width: thin;
     scrollbar-color: #3b3b3b black;
+    scrollbar-width: thin;
 }
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 12px;
 }
-  
 *::-webkit-scrollbar-track {
     background: black;
 }
-  
 *::-webkit-scrollbar-thumb {
     background-color: #2f2f2f;
     border-left: solid black 3px;
@@ -36,7 +34,6 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
     border-bottom: solid black 1px;
     border-top: solid black 1px;
 }
-
 *::-webkit-scrollbar-thumb:hover {
     background-color: #3b3b3b;
     border-left: solid black 3px;
