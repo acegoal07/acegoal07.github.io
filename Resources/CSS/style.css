@@ -17,6 +17,7 @@
 button:focus {outline:0;}
 .nav-link{outline: 0;}
 
-/*transitions*/
-* {transition: background-color 1.5s ease 0s, color 1.5s ease 0s;}
+/*transition*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.5s ease 0s;}}
+@-moz-document url-prefix() {* {transition: 1.5s ease;}}
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
