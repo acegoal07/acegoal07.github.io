@@ -13,12 +13,12 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 /*scroll bar*/
 /* Works on Firefox */
 * {
-    scrollbar-width: medium;
+    scrollbar-width: large;
     scrollbar-color: #1f1f1f black;
   }
 
   *:hover {
-    scrollbar-width: thin;
+    scrollbar-width: large;
     scrollbar-color: #3b3b3b black;
   }
   
@@ -34,7 +34,6 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
   *::-webkit-scrollbar-thumb {
     background-color: #3b3b3b;
     border-radius: 20px;
-    border: 3px solid black;
   }
 
   *::-webkit-scrollbar-thumb:hover {
