@@ -13,15 +13,13 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 /*scroll bar*/
 /* Works on Firefox */
 * {
-    scrollbar-width: thin;
+    scrollbar-width: 12px;
     scrollbar-color: #2f2f2f black;
 }
-
 *:hover {
+    scrollbar-width: 12px;
     scrollbar-color: #3b3b3b black;
-    scrollbar-width: thin;
 }
-  
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 12px;
@@ -44,5 +42,5 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
     border-left: solid black 3px;
     border-right: solid black 3px;
     border-bottom: solid black 1px;
-    border-top: solid black 2px;
+    border-top: solid black 1px;
 }
