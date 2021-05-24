@@ -16,3 +16,8 @@ button:focus {outline:0;}
 @-moz-document url-prefix() {* {transition: 1.5s ease;}}
 /* Safari */
 @media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
+/* Scroll bar */
+* {scrollbar-width: thin;}
+*:hover {scrollbar-width: thin;}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {width: 12px;}
