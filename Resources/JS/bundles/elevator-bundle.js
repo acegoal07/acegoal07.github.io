@@ -22,6 +22,11 @@ window.onload = function() {
       verticalPadding: 100  // in pixels
     });
     var elevator = new Elevator({
+      element: document.querySelector('.setup-btn'),
+      targetElement: document.querySelector('#setup'),
+      verticalPadding: 100  // in pixels
+    });
+    var elevator = new Elevator({
       element: document.querySelector('.pickupnoti-btn'),
       targetElement: document.querySelector('#pickupnoti'),
       verticalPadding: 100  // in pixels
