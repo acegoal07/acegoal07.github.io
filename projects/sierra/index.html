@@ -45,6 +45,7 @@
       <div class="dropdown-menu fade-down" aria-labelledby="navbar-dropdown">
         <a class="dropdown-item general-btn" role="button">General commands</a>
         <a class="dropdown-item admin-btn" role="button">Admin commands</a>
+        <a class="dropdown-item setup-btn" role="button">Bot setup commands</a>
       </div>
     </li>
   </ul>
@@ -80,12 +81,13 @@
   <br>
 
   <h3 id="general" class="text-center">General commands</h3>
+  <p class="text-center">These commands can be used by any users in the same server of Sierra as long as they are enabled by the server owner</p>
   <table class="table table-sm">
     <thead class="table-head">
       <tr>
         <th scope="col">Name</th>
-        <th scope="col">Description</th>
         <th scope="col">Usage</th>
+        <th scope="col">Description</th>
       </tr>
     </thead>
     <tbody class="table-body">
@@ -129,12 +131,13 @@
   <br>
 
   <h3 id="admin" class="text-center">Admin commands</h3>
+  <p class="text-center">These commands can only be used by the admins of the server with the right server permissions</p>
   <table class="table table-sm">
     <thead class="table-head">
       <tr>
         <th scope="col">Name</th>
-        <th scope="col">Description</th>
         <th scope="col">Usage</th>
+        <th scope="col">Description</th>
       </tr>
     </thead>
     <tbody class="table-body">
@@ -149,19 +152,73 @@
         <td>Deletes the amount of messages that is defined</td>
       </tr>
       <tr>
-        <td>Rename</td>
-        <td>;rename [NAME]</td>
-        <td>Changes the nickname of the discord bot on the server</td>
-      </tr>
-      <tr>
-        <td>Reload</td>
-        <td>;reload [COMMAND]</td>
-        <td>Will reload the command that is specified</td>
-      </tr>
-      <tr>
         <td>Kick</td>
         <td>;Kick [MENTION] [REASON]</td>
         <td>Will kick the mentioned user</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <h3 id="setup" class="text-center">Bot setup commands</h3>
+  <p class="text-center">These commands can only be used by admins with the administrator permission in the server</p>
+  <table class="table table-sm">
+    <thead class="table-head">
+      <tr>
+        <th scope="col">Name</th>        
+        <th scope="col">Usage</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody class="table-body">
+      <tr>
+        <td>Toggle settings</td>
+        <td>;togglesettings</td>
+        <td>Shows which commands and events are enabled or disabled</td>
+      </tr>
+      <tr>
+        <td>Channel settings</td>
+        <td>;channelsettings</td>
+        <td>Shows what channels are being used for events and commands</td>
+      </tr>
+      <tr>
+        <td>Set color</td>
+        <td>;setcolor [COLOR]</td>
+        <td>Changes the color of Sierra's embed messages</td>
+      </tr>
+      <tr>
+        <td>Rename</td>
+        <td>;rename [NAME]</td>
+        <td>This command changes the nickname of Sierra in your server</td>
+      </tr>
+      <tr>
+        <td>Enable welcome messages</td>
+        <td>;enablewelcome</td>
+        <td>This command when used in the channel you want welcome messages sent to will enable to event and setup the channel as the welcome channel</td>
+      </tr>
+      <tr>
+        <td>Enable leaving messages</td>
+        <td>;enablebye</td>
+        <td>This command when used in the channel you want leaving messages sent to will enable to event and setup the channel as the leaving channel</td>
+      </tr>
+      <tr>
+        <td>Enable announce command</td>
+        <td>;enableannounce</td>
+        <td>This command when used in the channel you want announce messages sent to will enable to event and setup the channel as the announce channel</td>
+      </tr>
+      <tr>
+        <td>Disable welcome messages</td>
+        <td>;disablewelcome</td>
+        <td>This command when used will disable welcome messages for the server</td>
+      </tr>
+      <tr>
+        <td>Disable leaving messages</td>
+        <td>;disablebye</td>
+        <td>This command when used will disable leaving messages for the server</td>
+      </tr>
+      <tr>
+        <td>Disable announce command</td>
+        <td>;disableannounce</td>
+        <td>This command when used will disable the announcement command for the server</td>
       </tr>
     </tbody>
   </table><br>
