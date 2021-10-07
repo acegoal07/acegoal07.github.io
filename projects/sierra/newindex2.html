@@ -166,7 +166,7 @@
   var $table = $('#table')
 
   $(function() {
-    var data = 'json/admin.json'
+    const data = require('json/admin.json')
     $table.bootstrapTable({data: data})
   })
 </script>
