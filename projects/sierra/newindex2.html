@@ -170,8 +170,21 @@
 </table>
 <script>
   var $table = $('#admin')
+
   $(function() {
-    $table.bootstrapTable()
+    var data = [
+      {
+        'id': 0,
+        'name': 'Item 0',
+        'price': '$0'
+      },
+      {
+        'id': 1,
+        'name': 'Item 1',
+        'price': '$1'
+      }
+    ]
+    $table.bootstrapTable({data: data})
   })
 </script>
 <br><br>
