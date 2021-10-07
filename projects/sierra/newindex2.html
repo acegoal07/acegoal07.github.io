@@ -153,7 +153,6 @@
 
   <table
   id="table"
-  data-url="https://acegoal07.dev/projects/sierra/json/admin.json"
   >
   <thead>
     <tr>
@@ -163,6 +162,14 @@
     </tr>
   </thead>
 </table>
+<script>
+  var $table = $('#table')
+
+  $(function() {
+    var data = 'json/admin.json'
+    $table.bootstrapTable({data: data})
+  })
+</script>
 <br><br>
 
 <p class="text-center">Sierra is always being updated and improved so more commands will be added as updates for Sierra are released</p>
