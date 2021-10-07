@@ -5,7 +5,7 @@
 .text-box {padding-left: 20px; padding-right: 20px;}
 .bd-placeholder-img {font-size: 1.125rem; text-anchor: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 @media (min-width: 768px) {.bd-placeholder-img-lg {font-size: 3.5rem;}}
-.table-hover>tbody>tr:hover {background-color: transparent;}
+.table-hover {background-color: transparent;}
 /* Mobile navbar */
 button:focus {outline:0;}
 .nav-link{outline: 0;}
