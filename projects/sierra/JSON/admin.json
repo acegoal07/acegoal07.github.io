@@ -1,23 +1,23 @@
 [
     {
-        "command": "help",
-        "usage": ";help",
-        "description": "help"
+        "Command": "help",
+        "Usage": ";help",
+        "Description": "help"
     },
     {
-        "command": "help1",
-        "usage": ";help1",
-        "description": "help1"
+        "Command": "help1",
+        "Usage": ";help1",
+        "Description": "help1"
     },
     {
-        "command": "help2",
-        "usage": ";help2",
-        "description": "help2"
+        "Command": "help2",
+        "Usage": ";help2",
+        "Description": "help2"
     },
     {
-        "command": "help3",
-        "usage": ";help3",
-        "description": "help3"
+        "Command": "help3",
+        "Usage": ";help3",
+        "Description": "help3"
     }
     
 ]
