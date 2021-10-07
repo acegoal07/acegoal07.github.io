@@ -9,6 +9,7 @@ html.can-touch .link-item:active {background-color: #1f1f1f;}
 .table-head {background-color: #2f2f2f; color: white;}
 .table-body {background-color: #1f1f1f; color: white;}
 hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
+.table-hover>tbody>tr:hover {background-color: #2f2f2f; color: white;}
 /*scroll bar*/
 /* Works on Firefox */
 * {scrollbar-width: thin; scrollbar-color: #2f2f2f black;}
