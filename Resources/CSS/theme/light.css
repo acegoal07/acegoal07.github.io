@@ -8,8 +8,8 @@ body {padding-top: 3.5rem; background-color: white;}
 .border-right {border-right: 1px solid #2f2f2f !important;}
 .rounded-top {border: #2f2f2f;}
 .rounded-bottom {border: #2f2f2f;}
-.table-head{background-color: #e9ecef;} thead {background-color: #e9ecef;}
-.table-body{background-color: white;} tbody {background-color: white;}
+.table-head {background-color: #e9ecef;} thead {background-color: #e9ecef !important;}
+.table-body {background-color: white;} tbody {background-color: white;}
 .table-text {color: black;}
 hr {border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 /* scroll bar */
