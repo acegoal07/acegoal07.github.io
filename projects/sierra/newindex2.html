@@ -154,7 +154,7 @@
   <table
   id="table"
   data-toggle="table" 
-  data-ajax="ajaxRequest"
+  data-url="json/admin.json"
   data-search="true"
   data-search-highlight="true"
   data-pagination="false"
@@ -167,15 +167,6 @@
     </tr>
   </thead>
 </table>
-<script>
-  // your custom ajax request here
-  function ajaxRequest(params) {
-    var url = 'https://acegoal07.dev/projects/sierra/admin.json'
-    $.get(url + '?' + $.param(params.data)).then(function (res) {
-      params.success(res)
-    })
-  }
-</script>
 <br><br>
 
 <p class="text-center">Sierra is always being updated and improved so more commands will be added as updates for Sierra are released</p>
