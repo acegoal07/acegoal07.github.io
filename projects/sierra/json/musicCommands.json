@@ -1,0 +1,32 @@
+[
+    {
+        "command": "Play",
+        "usage": ";play [URL or SONG NAME]",
+        "description": "Plays the song you specified either with a link or the name of the song"
+    },
+    {
+        "command": "Queue",
+        "usage": ";queue",
+        "description": "Displays the server song queue"
+    },
+    {
+        "command": "Skip",
+        "usage": ";skip",
+        "description": "Skips to the next song in the server song queue"
+    },
+    {
+        "command": "Pause",
+        "usage": ";pause",
+        "description": "Pauses the current song playing in the voice channel"
+    },
+    {
+        "command": "Unpause",
+        "usage": ";unpause",
+        "description": "Unpauses the current song playing in the voice channel"
+    },
+    {
+        "command": "Disconnect",
+        "usage": ";disconnect",
+        "description": "Clears the server queue and disconnects the bot from the voice channel"
+    }
+]
