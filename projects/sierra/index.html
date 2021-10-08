@@ -42,7 +42,7 @@
     <li class="nav-item active">
       <a class="nav-link back-to-top-2" role="button">Sierra<span class="sr-only">(current)</span></a>
     </li>
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown d-none">
       <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">commands</a>
       <div class="dropdown-menu fade-down" aria-labelledby="navbar-dropdown">
         <a class="dropdown-item general-btn" role="button">General commands</a><script src="/Resources/JS/bundles/elevator-bundle.js"></script>
@@ -83,101 +83,104 @@
   </div>
   <br>
 
-  <div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <button class="nav-link active" id="v-pills-general-tab" data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab" aria-controls="v-pills-general" aria-selected="true">General</button>
-      <button class="nav-link" id="v-pills-admin-tab" data-bs-toggle="pill" data-bs-target="#v-pills-admin" type="button" role="tab" aria-controls="v-pills-admin" aria-selected="false">Admin</button>
-      <button class="nav-link" id="v-pills-music-tab" data-bs-toggle="pill" data-bs-target="#v-pills-music" type="button" role="tab" aria-controls="v-pills-music" aria-selected="false">Music</button>
-      <button class="nav-link" id="v-pills-setup-tab" data-bs-toggle="pill" data-bs-target="#v-pills-setup" type="button" role="tab" aria-controls="v-pills-setup" aria-selected="false">Setup</button>
+  <nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+      <a class="nav-link active" id="nav-general-tab" data-toggle="tab" href="#general-commands" role="tab" aria-controls="nav-general" aria-selected="true">General</a>
+      <a class="nav-link" id="nav-admin-tab" data-toggle="tab" href="#admin-commands" role="tab" aria-controls="nav-admin" aria-selected="false">Admin</a>
+      <a class="nav-link" id="nav-music-tab" data-toggle="tab" href="#music-commands" role="tab" aria-controls="nav-music" aria-selected="false">Music</a>
+      <a class="nav-link" id="nav-setup-tab" data-toggle="tab" href="#setup-commands" role="tab" aria-controls="nav-setup" aria-selected="false">setup</a>
     </div>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-general-tab">
-        <table
-        id="general"
-        data-toggle="table" 
-        data-url="json/generalCommands.json"
-        data-search="true"
-        data-search-highlight="true"
-        data-pagination="false"
-        > 
-        <h3 class="text-center">General commands</h3>
-        <p class="text-center">These commands can be used by any users in the same server of Sierra as long as they are enabled by the server owner</p>
-        <thead>
-          <tr>
-            <th data-field="command">Command</th>
-            <th data-field="usage">Usage</th>
-            <th data-field="description">Description</th>
-          </tr>
-        </thead>
-        </table>
-        <br><br>
-      </div>
-      <div class="tab-pane fade" id="v-pills-admin" role="tabpanel" aria-labelledby="v-pills-admin-tab">
-        <table
-        id="admin"
-        data-toggle="table" 
-        data-url="json/adminCommands.json"
-        data-search="true"
-        data-search-highlight="true"
-        data-pagination="false"
-        > 
-        <h3 class="text-center">Admin commands</h3>
-        <p class="text-center">These commands can only be used by the admins of the server who have the right server permissions and if the commands are enabled</p>
-        <thead>
-          <tr>
-            <th data-field="command">Command</th>
-            <th data-field="usage">Usage</th>
-            <th data-field="description">Description</th>
-          </tr>
-        </thead>
-        </table>
-        <br><br>
-      </div>
-      <div class="tab-pane fade" id="v-pills-music" role="tabpanel" aria-labelledby="v-pills-music-tab">
-        <table
-        id="music"
-        data-toggle="table" 
-        data-url="json/musicCommands.json"
-        data-search="true"
-        data-search-highlight="true"
-        data-pagination="false"
-        >
-        <h3 class="text-center">Music commands</h3>
-        <p class="text-center">These are all of the music commands available with Sierra</p>
-        <thead>
-          <tr>
-            <th data-field="command">Command</th>
-            <th data-field="usage">Usage</th>
-            <th data-field="description">Description</th>
-          </tr>
-        </thead>
-        </table>
-        <br><br>
-      </div>
-      <div class="tab-pane fade" id="v-pills-setup" role="tabpanel" aria-labelledby="v-pills-setup-tab">
-        <table
-        id="setup"
-        data-toggle="table" 
-        data-url="json/setupCommands.json"
-        data-search="true"
-        data-search-highlight="true"
-        data-pagination="true"
-        >
-        <h3 class="text-center">Bot setup commands</h3>
-        <p class="text-center">These commands are only available to people who have the permission manage guild</p>
-        <thead>
-          <tr>
-            <th data-field="command">Command</th>
-            <th data-field="usage">Usage</th>
-            <th data-field="description">Description</th>
-          </tr>
-        </thead>
-        </table>
-        <br><br>
-      </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="general-commands" role="tabpanel" aria-labelledby="nav-home-tab">
+      <br>
+      <table
+      id="general"
+      data-toggle="table" 
+      data-url="json/generalCommands.json"
+      data-search="true"
+      data-search-highlight="true"
+      data-pagination="false"
+      > 
+      <h3 class="text-center">General commands</h3>
+      <p class="text-center">These commands can be used by any users in the same server of Sierra as long as they are enabled by the server owner</p>
+      <thead>
+        <tr>
+          <th data-field="command">Command</th>
+          <th data-field="usage">Usage</th>
+          <th data-field="description">Description</th>
+        </tr>
+      </thead>
+      </table>
+      <br><br>
+    </div>
+    <div class="tab-pane fade" id="admin-commands" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <br>
+      <table
+      id="admin"
+      data-toggle="table" 
+      data-url="json/adminCommands.json"
+      data-search="true"
+      data-search-highlight="true"
+      data-pagination="false"
+      > 
+      <h3 class="text-center">Admin commands</h3>
+      <p class="text-center">These commands can only be used by the admins of the server who have the right server permissions and if the commands are enabled</p>
+      <thead>
+        <tr>
+          <th data-field="command">Command</th>
+          <th data-field="usage">Usage</th>
+          <th data-field="description">Description</th>
+        </tr>
+      </thead>
+      </table>
+      <br><br>
+    </div>
+    <div class="tab-pane fade" id="music-commands" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <br>
+      <table
+      id="music"
+      data-toggle="table" 
+      data-url="json/musicCommands.json"
+      data-search="true"
+      data-search-highlight="true"
+      data-pagination="false"
+      >
+      <h3 class="text-center">Music commands</h3>
+      <p class="text-center">These are all of the music commands available with Sierra</p>
+      <thead>
+        <tr>
+          <th data-field="command">Command</th>
+          <th data-field="usage">Usage</th>
+          <th data-field="description">Description</th>
+        </tr>
+      </thead>
+      </table>
+      <br><br>
+    </div>
+    <div class="tab-pane fade" id="setup-commands" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <br>
+      <table
+      id="setup"
+      data-toggle="table" 
+      data-url="json/setupCommands.json"
+      data-search="true"
+      data-search-highlight="true"
+      data-pagination="true"
+      >
+      <h3 class="text-center">Bot setup commands</h3>
+      <p class="text-center">These commands are only available to people who have the permission manage guild</p>
+      <thead>
+        <tr>
+          <th data-field="command">Command</th>
+          <th data-field="usage">Usage</th>
+          <th data-field="description">Description</th>
+        </tr>
+      </thead>
+      </table>
+      <br><br>
     </div>
   </div>
-
   <p class="text-center">Sierra is always being updated and improved so more commands will be added as updates for Sierra are released</p>
 
 <br><hr>
