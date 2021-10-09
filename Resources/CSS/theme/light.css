@@ -11,7 +11,6 @@ body {padding-top: 3.5rem; background-color: white;}
 .table-head, thead {background-color: #e9ecef;}
 .table-body, tbody {background-color: white;}
 .table-text {color: black;}
-.nav-link, .nav-link:hover {color: black};
 hr {border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
 /* scroll bar */
