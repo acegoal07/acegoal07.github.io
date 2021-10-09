@@ -12,26 +12,6 @@ window.onload = function() {
 
     //go to settings
     var elevator = new Elevator({
-      element: document.querySelector('.admin-btn'),
-      targetElement: document.querySelector('#admin'),
-      verticalPadding: 100  // in pixels
-    });
-    var elevator = new Elevator({
-      element: document.querySelector('.general-btn'),
-      targetElement: document.querySelector('#general'),
-      verticalPadding: 100  // in pixels
-    });
-    var elevator = new Elevator({
-      element: document.querySelector('.music-btn'),
-      targetElement: document.querySelector('#music'),
-      verticalPadding: 100  // in pixels
-    });
-    var elevator = new Elevator({
-      element: document.querySelector('.setup-btn'),
-      targetElement: document.querySelector('#setup'),
-      verticalPadding: 100  // in pixels
-    });
-    var elevator = new Elevator({
       element: document.querySelector('.pickupnoti-btn'),
       targetElement: document.querySelector('#pickupnoti'),
       verticalPadding: 100  // in pixels
