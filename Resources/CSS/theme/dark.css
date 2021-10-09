@@ -10,7 +10,9 @@ html.can-touch .link-item:active {background-color: #1f1f1f;}
 .table-body, tbody {background-color: #1f1f1f; color: white;}
 hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 .table-hover>tbody>tr:hover {background-color: #2f2f2f; color: white;}
-.active {background-color: transparent !important;}
+.nav-tabs {border-color: #2f2f2f !important;}
+.active {background-color: transparent !important; border-color: #2f2f2f !important; color: white !important;}
+.nav-link, .nav-link:hover {color: white;}
 /*scroll bar*/
 /* Works on Firefox */
 * {scrollbar-width: thin; scrollbar-color: #2f2f2f black;}
