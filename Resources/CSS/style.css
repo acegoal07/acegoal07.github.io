@@ -10,7 +10,6 @@ button:focus {outline:0;}
 .nav-link{outline: 0;}
 /* Transition */
 .disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
-.nav-pane {background-color: transparent; transition: 0s;}
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
 /* Firefox */
