@@ -13,7 +13,7 @@ hr {border: none; height: 1.5px; color: #2f2f2f; background-color: #2f2f2f;}
 .nav-pane.active{border-color: #2f2f2f !important; background-color: black !important; color: white !important; border-bottom-color: transparent !important; border-width: 1.5px !important; transition: 0s !important;}
 .nav-pane.nav-link, .nav-pane.nav-link:hover {color: white; border-width: 1.5px !important;}
 .nav-tabs {border-width: 1.5px !important; border-color: #2f2f2f !important;}
-.nav-pane:hover {border-color: #2f2f2f !important}
+.nav-pane:hover {border-color: #2f2f2f !important; background-color: transparent !important;}
 /*scroll bar*/
 /* Works on Firefox */
 * {scrollbar-width: thin; scrollbar-color: #2f2f2f black;}
