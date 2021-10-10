@@ -13,7 +13,7 @@ body {padding-top: 3.5rem; background-color: white;}
 .table-text {color: black;}
 hr {border: none; height: 1.5px; color: #e9ecef; background-color: #e9ecef;}
 .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
-.nav-pane.active{border-color: #e9ecef !important; background-color: white !important; color: black !important; border-bottom-color: transparent !important; border-width: 1.5px !important;}
+.nav-pane.active{border-color: #e9ecef !important; background-color: white !important; color: black !important; border-bottom-color: transparent !important; border-width: 1.5px !important; transition: 0s !important;}
 .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black; border-width: 1.5px !important;}
 .nav-tabs {border-width: 1.5px !important; border-color: #e9ecef !important;}
 /* scroll bar */
