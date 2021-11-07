@@ -1,7 +1,7 @@
 [
     {
         "command": "Play",
-        "usage": ";play [SONG NAME or URL]",
+        "usage": ";play [NAME or URL]",
         "description": "Plays the song you specified either with a link or the name of the song"
     },
     {
@@ -33,5 +33,20 @@
         "command": "Loop",
         "usage": ";loop",
         "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
+    },
+    {
+        "command": "Search youtube playlists",
+        "usage": ";searchscpl [NAME]",
+        "description": "Searches youtube for a playlist with the corresponding name"
+    },
+    {
+        "command": "Search soundCloud",
+        "usage": ";searchsc [NAME]",
+        "description": "Searches soundCloud for a track with the corresponding name"
+    },
+    {
+        "command": "Search soundCloud playlists",
+        "usage": ";searchscpl [NAME]",
+        "description": "Searches soundCloud for a playlist with the corresponding name"
     }
 ]
