@@ -35,6 +35,16 @@
         "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
     },
     {
+        "command": "Remove",
+        "usage": ";remove [QUEUE POSITION]",
+        "description": "Removes the song which is in the specified queue position"
+    },
+    {
+        "command": "Skip to",
+        "usage": ";skipto [QUEUE POSITION]",
+        "description": "Skips you to the specified position in the queue"
+    },
+    {
         "command": "Search youtube playlists",
         "usage": ";searchscpl [NAME]",
         "description": "Searches youtube for a playlist with the corresponding name"
