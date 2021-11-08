@@ -15,6 +15,11 @@
         "description": "Skips to the next song in the server song queue"
     },
     {
+        "command": "Skip to",
+        "usage": ";skipto [QUEUE POSITION]",
+        "description": "Skips you to the specified position in the queue"
+    },
+    {
         "command": "Pause",
         "usage": ";pause",
         "description": "Pauses the current song playing in the voice channel"
@@ -30,19 +35,14 @@
         "description": "Clears the server queue and disconnects the bot from the voice channel"
     },
     {
-        "command": "Loop",
-        "usage": ";loop",
-        "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
-    },
-    {
         "command": "Remove",
         "usage": ";remove [QUEUE POSITION]",
         "description": "Removes the song which is in the specified queue position"
     },
     {
-        "command": "Skip to",
-        "usage": ";skipto [QUEUE POSITION]",
-        "description": "Skips you to the specified position in the queue"
+        "command": "Loop",
+        "usage": ";loop",
+        "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
     },
     {
         "command": "Search youtube playlists",
