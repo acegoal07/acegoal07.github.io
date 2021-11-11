@@ -26,7 +26,7 @@
     },
     {
         "command": "User info",
-        "usage": ";userinfo or ;userinfo [MENTION]",
+        "usage": ";userinfo or ;userinfo <mention>",
         "description": "Will display all needed information about a user"
     },
     {

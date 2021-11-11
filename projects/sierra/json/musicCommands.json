@@ -1,7 +1,7 @@
 [
     {
         "command": "Play",
-        "usage": ";play [NAME or URL]",
+        "usage": ";play <name or URL>",
         "description": "Plays the song you specified either with a link or the name of the song"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
         "command": "Skip to",
-        "usage": ";skipto [QUEUE POSITION]",
+        "usage": ";skipto <queue position>",
         "description": "Skips you to the specified position in the queue"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
         "command": "Remove",
-        "usage": ";remove [QUEUE POSITION]",
+        "usage": ";remove <queue position>",
         "description": "Removes the song which is in the specified queue position"
     },
     {
@@ -46,17 +46,17 @@
     },
     {
         "command": "Search youtube playlists",
-        "usage": ";searchscpl [NAME]",
+        "usage": ";searchscpl <name>",
         "description": "Searches youtube for a playlist with the corresponding name"
     },
     {
         "command": "Search soundCloud",
-        "usage": ";searchsc [NAME]",
+        "usage": ";searchsc <name>",
         "description": "Searches soundCloud for a track with the corresponding name"
     },
     {
         "command": "Search soundCloud playlists",
-        "usage": ";searchscpl [NAME]",
+        "usage": ";searchscpl <name>",
         "description": "Searches soundCloud for a playlist with the corresponding name"
     }
 ]
