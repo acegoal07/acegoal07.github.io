@@ -45,18 +45,28 @@
         "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
     },
     {
-        "command": "Search youtube playlists",
-        "usage": ";searchscpl <name>",
-        "description": "Searches youtube for a playlist with the corresponding name"
+        "command": "Now playing",
+        "usage": ";nowplaying",
+        "description": "Displays information about the song that is currently playing"
     },
     {
-        "command": "Search soundCloud",
+        "command": "Search YouTube",
+        "usage": ";searchyt <name>",
+        "description": "Searches YouTube for a track with the corresponding name"
+    },
+    {
+        "command": "Search YouTube playlists",
+        "usage": ";searchytpl <name>",
+        "description": "Searches YouTube for a playlist with the corresponding name"
+    },
+    {
+        "command": "Search SoundCloud",
         "usage": ";searchsc <name>",
-        "description": "Searches soundCloud for a track with the corresponding name"
+        "description": "Searches SoundCloud for a track with the corresponding name"
     },
     {
-        "command": "Search soundCloud playlists",
+        "command": "Search SoundCloud playlists",
         "usage": ";searchscpl <name>",
-        "description": "Searches soundCloud for a playlist with the corresponding name"
+        "description": "Searches SoundCloud for a playlist with the corresponding name"
     }
 ]
