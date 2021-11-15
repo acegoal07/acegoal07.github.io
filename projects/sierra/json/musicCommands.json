@@ -5,9 +5,9 @@
         "description": "Plays the song you specified either with a link or the name of the song"
     },
     {
-        "command": "Queue",
-        "usage": ";queue",
-        "description": "Displays the server song queue"
+        "command": "Disconnect",
+        "usage": ";disconnect",
+        "description": "Clears the server queue and disconnects the bot from the voice channel"
     },
     {
         "command": "Skip",
@@ -20,6 +20,11 @@
         "description": "Skips you to the specified position in the queue"
     },
     {
+        "command": "Queue",
+        "usage": ";queue",
+        "description": "Displays the server song queue"
+    },
+    {
         "command": "Pause",
         "usage": ";pause",
         "description": "Pauses the current song playing in the voice channel"
@@ -30,14 +35,14 @@
         "description": "Unpauses the current song playing in the voice channel"
     },
     {
-        "command": "Disconnect",
-        "usage": ";disconnect",
-        "description": "Clears the server queue and disconnects the bot from the voice channel"
-    },
-    {
         "command": "Remove",
         "usage": ";remove <queue position>",
         "description": "Removes the song which is in the specified queue position"
+    },
+    {
+        "command": "Now playing",
+        "usage": ";nowplaying",
+        "description": "Displays information about the song that is currently playing"
     },
     {
         "command": "Loop",
@@ -45,9 +50,9 @@
         "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
     },
     {
-        "command": "Now playing",
-        "usage": ";nowplaying",
-        "description": "Displays information about the song that is currently playing"
+        "command": "Loop queue",
+        "usage": ";loopqueue",
+        "description": "Loops the server queue"
     },
     {
         "command": "Search YouTube",
