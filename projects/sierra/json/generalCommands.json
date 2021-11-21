@@ -1,46 +1,37 @@
 [
     {
-        "command": "Help",
         "usage": ";help",
         "description": "This command will display all of the commands the bot has corresponding to the section you choose"
     },
     {
-        "command": "Server info",
         "usage": ";serverinfo",
         "description": "This server will show all the info about the server you will need to know"
     },
     {
-        "command": "Server invite",
         "usage": ";serverinvite",
         "description": "This command will send an invite to the current text channel which can be shared outside of the server"
     },
     {
-        "command": "Bot info",
         "usage": ";botinfo",
         "description": "This command will show you all the info you will need to know about Sierra"
     },
     {
-        "command": "Roles",
         "usage": ";roles",
         "description": "This command will display all roles on the server and which ones you have"
     },
     {
-        "command": "User info",
         "usage": ";userinfo or ;userinfo <mention>",
         "description": "Will display all needed information about a user"
     },
     {
-        "command": "Sierra invite",
         "usage": ";addsierra",
         "description": "This command sends you the link required to invite Sierra to your own server"
     },
     {
-        "command": "Ping",
         "usage": ";addsierra",
         "description": "Used to see the latency for sierra and the ping for the Discord API"
     },
     {
-        "command": "Channel info",
         "usage": ";channelinfo",
         "description": "Shows the user info about the channel they are using"
     }
