@@ -1,54 +1,54 @@
 [
     {
-        "usage": ";settings",
+        "command": ";settings",
         "description": "Allows you to see all the settings for Sierra specific to your server"
     },
     {
-        "usage": ";setcolor",
+        "command": ";setcolor",
         "description": "Changes the color of Sierra's embed messages in your server"
     },
     {
-        "usage": ";rename [NAME]",
+        "command": ";rename [NAME]",
         "description": "This command changes the nickname of Sierra in your server"
     },
     {
-        "usage": ";setwelcome",
+        "command": ";setwelcome",
         "description": "Used to setup welcome message for your server"
     },
     {
-        "usage": ";setbye",
+        "command": ";setbye",
         "description": "Command is used to setup and use leaving messages on your server"
     },
     {
-        "usage": ";setdeletelog",
+        "command": ";setdeletelog",
         "description": "Used to setup deleted message logging in your server"
     },
     {
-        "usage": ";setbanlog",
+        "command": ";setbanlog",
         "description": "Used to setup ban logging for your server"
     },
     {
-        "usage": ";setannounce",
+        "command": ";setannounce",
         "description": "Used to setup the announcement command in your server"
     },
     {
-        "usage": ";setclear",
+        "command": ";setclear",
         "description": "Used to setup the clear command for your server"
     },
     {
-        "usage": ";setadmintools",
+        "command": ";setadmintools",
         "description": "Used to enable kick, ban and unban commands in the server"
     },
     {
-        "usage": ";setautorole",
+        "command": ";setautorole",
         "description": "Used to setup autorole for your server"
     },
     {
-        "usage": ";nsfw",
+        "command": ";nsfw",
         "description": "When used will switch the current channel between an NSFW channel and a normal channel"
     },
     {
-        "usage": ";setupnext",
+        "command": ";setupnext",
         "description": "Used to adjust settings for the up next music notification"
     }
 ]

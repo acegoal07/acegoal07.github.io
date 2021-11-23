@@ -1,23 +1,23 @@
 [
     {
-        "usage": ";announce <message>",
+        "command": ";announce <message>",
         "description": "This command takes the message and posts it in the announcement channel"
     },
     {
-        "usage": ";clear <1 - 100>",
+        "command": ";clear <1-100>",
         "description": "Deletes the amount of messages that is defined"
     },
     {
-        "usage": ";Kick <mention>",
+        "command": ";Kick <mention>",
         "description": "Kick's the mentioned user from the server"
     },
     {
 
-        "usage": ";ban <mention> <reason>",
+        "command": ";ban <mention> <reason>",
         "description": "Bans the mentioned user from the server"
     },
     {
-        "usage": ";unban <user ID>",
+        "command": ";unban <user ID>",
         "description": "Unban's the specified user"
     }
 ]

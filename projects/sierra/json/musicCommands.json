@@ -1,62 +1,62 @@
 [
     {
-        "usage": ";play <name or URL>",
+        "command": ";play <name or URL>",
         "description": "Plays the song you specified either with a link or the name of the song"
     },
     {
-        "usage": ";disconnect",
+        "command": ";disconnect",
         "description": "Clears the server queue and disconnects the bot from the voice channel"
     },
     {
-        "usage": ";skip",
+        "command": ";skip",
         "description": "Skips to the next song in the server song queue"
     },
     {
-        "usage": ";skipto <queue position>",
+        "command": ";skipto <queue position>",
         "description": "Skips you to the specified position in the queue"
     },
     {
-        "usage": ";queue",
+        "command": ";queue",
         "description": "Displays the server song queue"
     },
     {
-        "usage": ";pause",
+        "command": ";pause",
         "description": "Pauses the current song playing in the voice channel"
     },
     {
-        "usage": ";unpause",
+        "command": ";unpause",
         "description": "Unpauses the current song playing in the voice channel"
     },
     {
-        "usage": ";remove <queue position>",
+        "command": ";remove <queue position>",
         "description": "Removes the song which is in the specified queue position"
     },
     {
-        "usage": ";nowplaying",
+        "command": ";nowplaying",
         "description": "Displays information about the song that is currently playing"
     },
     {
-        "usage": ";loop",
+        "command": ";loop",
         "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
     },
     {
-        "usage": ";loopqueue",
+        "command": ";loopqueue",
         "description": "Loops the server queue"
     },
     {
-        "usage": ";searchyt <name>",
+        "command": ";searchyt <name>",
         "description": "Searches YouTube for a track with the corresponding name"
     },
     {
-        "usage": ";searchytpl <name>",
+        "command": ";searchytpl <name>",
         "description": "Searches YouTube for a playlist with the corresponding name"
     },
     {
-        "usage": ";searchsc <name>",
+        "command": ";searchsc <name>",
         "description": "Searches SoundCloud for a track with the corresponding name"
     },
     {
-        "usage": ";searchscpl <name>",
+        "command": ";searchscpl <name>",
         "description": "Searches SoundCloud for a playlist with the corresponding name"
     }
 ]
