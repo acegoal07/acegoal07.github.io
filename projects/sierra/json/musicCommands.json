@@ -58,5 +58,13 @@
     {
         "command": ";searchscpl <name>",
         "description": "Searches SoundCloud for a playlist with the corresponding name"
+    },
+    {
+        "command": ";shuffle",
+        "description": "Shuffles the music queue randomizing what song comes up next"
+    },
+    {
+        "command": ";clearqueue",
+        "description": "Clears the queue of all songs"
     }
 ]
