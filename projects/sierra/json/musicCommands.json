@@ -66,5 +66,9 @@
     {
         "command": ";clearqueue",
         "description": "Clears the queue of all songs"
+    },
+    {
+        "command": ";volume <1-100>",
+        "description": "Allows you to adjust the volume of the music"
     }
 ]
