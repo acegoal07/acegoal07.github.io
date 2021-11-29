@@ -50,5 +50,9 @@
     {
         "command": ";setupnext",
         "description": "Used to adjust settings for the up next music notification"
+    },
+    {
+        "command": ";setdjrole",
+        "description": "Used to set a role that is required to use the music commands"
     }
 ]
