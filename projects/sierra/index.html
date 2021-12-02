@@ -11,9 +11,9 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
-    <link id="theme" rel="stylesheet" href="">
-    <script rel="preload" src="/Resources/JS/base.js"></script>    
-    <link href="/Resources/CSS/style.css" rel="stylesheet" type="text/css">
+    <link id="theme" rel="stylesheet" href="../../Resources/CSS/theme/dark.css">
+    <script rel="preload" src="../../Resources/JS/base.js"></script>    
+    <link href="../../Resources/CSS/style.css" rel="stylesheet" type="text/css">
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -74,16 +74,22 @@
   </div>
   <br>
 
-  <nav>
-    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-      <a class="nav-link nav-pane active" id="nav-general-tab" data-toggle="tab" href="#general-commands" role="tab" aria-controls="nav-general" aria-selected="true">General</a>
-      <a class="nav-link nav-pane" id="nav-admin-tab" data-toggle="tab" href="#admin-commands" role="tab" aria-controls="nav-admin" aria-selected="false">Admin</a>
-      <a class="nav-link nav-pane" id="nav-music-tab" data-toggle="tab" href="#music-commands" role="tab" aria-controls="nav-music" aria-selected="false">Music</a>
-      <a class="nav-link nav-pane" id="nav-setup-tab" data-toggle="tab" href="#setup-commands" role="tab" aria-controls="nav-setup" aria-selected="false">Setup</a>
-    </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="general-commands" role="tabpanel" aria-labelledby="nav-home-tab">
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-table" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin-table" type="button" role="tab" aria-controls="admin" aria-selected="false">Admin</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-table" type="button" role="tab" aria-controls="music" aria-selected="false">Music</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="setup-tab" data-bs-toggle="tab" data-bs-target="#setup-table" type="button" role="tab" aria-controls="setup" aria-selected="false">Setup</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="general-table" role="tabpanel" aria-labelledby="general-tab">
       <br>
       <table
       id="general"
@@ -104,7 +110,7 @@
       </table>
       <br><br>
     </div>
-    <div class="tab-pane fade" id="admin-commands" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div class="tab-pane fade" id="admin-table" role="tabpanel" aria-labelledby="admin-tab">
       <br>
       <table
       id="admin"
@@ -125,7 +131,7 @@
       </table>
       <br><br>
     </div>
-    <div class="tab-pane fade" id="music-commands" role="tabpanel" aria-labelledby="nav-music-tab">
+    <div class="tab-pane fade" id="music-table" role="tabpanel" aria-labelledby="music-tab">
       <br>
       <table
       id="music"
@@ -147,7 +153,7 @@
       </table>
       <br><br>
     </div>
-    <div class="tab-pane fade" id="setup-commands" role="tabpanel" aria-labelledby="nav-setup-tab">
+    <div class="tab-pane fade" id="setup-table" role="tabpanel" aria-labelledby="setup-tab">
       <br>
       <table
       id="setup"
@@ -169,9 +175,7 @@
       <br><br>
     </div>
   </div>
-
-  <p class="text-center">Sierra is always being updated and improved so more commands will be added as updates for Sierra are released</p>
-  <br><hr>
+<hr>
 
 </div>
 </main>
