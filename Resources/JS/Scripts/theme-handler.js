@@ -6,7 +6,6 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme == 'dark') {
             link.href = darkTheme;
-            document.getElementById('themeSwitch').classList.add('<i class="bi bi-moon-fill"></i>');
         } else {
             link.href = lightTheme;
         }
@@ -14,6 +13,11 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         document.onreadystatechange = () => {
             if (document.readyState === 'complete') {
                 document.getElementById('base').classList.remove('disable-transitions');
+                if (currentTheme === "dark") {
+                    document.getElementById('themeSwitch').classList.add("bi bi-brightness-high-fill");
+                } else if (currentTheme === "light") {
+                    document.getElementById('themeSwitch').classList.add("bi bi-moon-fill");
+                }
             }
         }
     var theme = document.getElementById('theme');
