@@ -290,7 +290,6 @@ var Elevator=function(n){"use strict";function e(n,e,t,o){return n/=o/2,1>n?t/2*
     }const currentTheme = localStorage.getItem("setTheme");
 const lightTheme = '/Resources/CSS/theme/light.css';
 const darkTheme = '/Resources/CSS/theme/dark.css';
-const icon = document.getElementById('themeSwitch');
     var link = document.getElementById('theme');
         if (currentTheme == 'dark') {
             link.href = darkTheme;
