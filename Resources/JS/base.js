@@ -303,22 +303,24 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             if (document.readyState === 'complete') {
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
+                    currentTheme.setItem("dark");
                     document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
                 } else if (currentTheme === "light") {
+                    currentTheme.setItem("light");
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                 } else {
                     if (window.matchMedia('prefers-color-scheme: dark').matches) {
                         link.setAttribute('href', darkTheme);
-                        localStorage.setItem("setTheme", "dark");
+                        currentTheme.setItem("dark");
                         document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
                         document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                         document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
                         document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
                     } else if (window.matchMedia('prefers-color-scheme: light').matches) {
                         link.setAttribute('href', lightTheme);
-                        localStorage.setItem("setTheme", "light");
+                        currentTheme.setItem("light");
                         document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");
                         document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                         document.getElementById('colThemeSwitch').classList.remove("bi-brightness-high-fill");
@@ -333,7 +335,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
     function toggleTheme() {
         if (theme.getAttribute('href') == lightTheme) {
             theme.setAttribute('href', darkTheme);
-            localStorage.setItem("setTheme", "dark");
+            currentTheme.setItem("dark");
             document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
             document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
             document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
@@ -341,7 +343,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
 
         } else {
             theme.setAttribute('href', lightTheme);
-            localStorage.setItem("setTheme", "light");
+            currentTheme.setItem("light");
             document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");
             document.getElementById('themeSwitch').classList.add("bi-moon-fill");
             document.getElementById('colThemeSwitch').classList.remove("bi-brightness-high-fill");
