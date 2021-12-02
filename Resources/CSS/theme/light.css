@@ -12,7 +12,7 @@ body {padding-top: 3.5rem; background-color: white;}
 .table-head, thead {background-color: #e9ecef;}
 .table-body, tbody {background-color: white;}
 .table-text {color: black;}
-hr {height: 0px !important; border-top: 3px !important; color: #2f2f2f; background-color: #2f2f2f;}
+hr {height: 0px !important; border-top: 3px solid !important; color: #2f2f2f; background-color: #2f2f2f;}
 .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
 .nav-pane.active{border-color: #e9ecef !important; background-color: white !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease !important;}
 .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
