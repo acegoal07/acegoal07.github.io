@@ -287,16 +287,17 @@ var Elevator=function(n){"use strict";function e(n,e,t,o){return n/=o/2,1>n?t/2*
             button.classList.add('show');
             button.innerHTML = "Show More";
         }
-    }const currentTheme = localStorage.getItem("setTheme");
+    }
+
+const currentTheme = localStorage.getItem("setTheme");
 const lightTheme = '/Resources/CSS/theme/light.css';
 const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme == 'dark') {
             link.href = darkTheme;
-            document.getElementById('themeSwitch').classList.add('bi bi-brightness-high-fill');
+            document.getElementById('themeSwitch').classList.add('<i class="bi bi-moon-fill"></i>');
         } else {
             link.href = lightTheme;
-            document.getElementById('themeSwitch').classList.add('bi bi-moon-fill');
         }
         document.head.appendChild(link);
         document.onreadystatechange = () => {
@@ -309,21 +310,17 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             if (window.matchMedia('prefers-color-scheme: dark').matches) {
                 theme.setAttribute('href', darkTheme);
                 localStorage.setItem("setTheme", "dark");
-                document.getElementById('themeSwitch').classList.add('bi bi-brightness-high-fill');
             } else {
                 theme.setAttribute('href', lightTheme);
                 localStorage.setItem("setTheme", "light");
-                document.getElementById('themeSwitch').classList.add('bi bi-moon-fill');
             }
         }
     function toggleTheme() {
         if (theme.getAttribute('href') == lightTheme) {
             theme.setAttribute('href', darkTheme);
             localStorage.setItem("setTheme", "dark");
-            document.getElementById('themeSwitch').classList.add('bi bi-brightness-high-fill');
         } else {
             theme.setAttribute('href', lightTheme);
             localStorage.setItem("setTheme", "light");
-            document.getElementById('themeSwitch').classList.add('bi bi-moon-fill');
         }
     }
