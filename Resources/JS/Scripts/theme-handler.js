@@ -21,7 +21,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                     currentTheme.setItem("light");
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
-                } else {
+                } else if (currentTheme === null) {
                     if (window.matchMedia('prefers-color-scheme: dark').matches) {
                         link.setAttribute('href', darkTheme);
                         currentTheme.setItem("dark");
