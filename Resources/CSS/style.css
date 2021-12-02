@@ -24,4 +24,4 @@ button:focus {outline:0;}
 *::-webkit-scrollbar {width: 12px;}
 .no-top-border{border-top: transparent !important;}
 .no-bottom-border{border-bottom: transparent !important;}
-hr {height: 0px !important; border-top: 3px solid !important;}
+hr {height: 0px !important; border-top: 2px solid !important;}
