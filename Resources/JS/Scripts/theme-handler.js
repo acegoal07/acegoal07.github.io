@@ -6,7 +6,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme === 'dark') {
             link.href = darkTheme;
-        } else if (currentTheme === 'dark') {
+        } else {
             link.href = lightTheme;
         }
         document.head.appendChild(link);
