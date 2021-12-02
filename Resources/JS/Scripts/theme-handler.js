@@ -4,9 +4,9 @@ const currentTheme = localStorage.getItem("setTheme");
 const lightTheme = '/Resources/CSS/theme/light.css';
 const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
-        if (currentTheme == 'dark') {
+        if (currentTheme === 'dark') {
             link.href = darkTheme;
-        } else {
+        } else if (currentTheme === 'dark') {
             link.href = lightTheme;
         }
         document.head.appendChild(link);
