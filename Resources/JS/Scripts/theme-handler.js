@@ -19,6 +19,9 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                 } else if (currentTheme === "light") {
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+                } else {
+                    document.getElementById('themeSwitch').classList.add("bi-moon-fill");
+                    document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                 }
             }
         }
