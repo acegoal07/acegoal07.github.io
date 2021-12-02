@@ -1,8 +1,8 @@
 
 
 const currentTheme = localStorage.getItem("setTheme");
-const lightTheme = 'Resources/CSS/theme/light.css';
-const darkTheme = 'Resources/CSS/theme/dark.css';
+const lightTheme = '/Resources/CSS/theme/light.css';
+const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme == 'dark') {
             link.href = darkTheme;
@@ -14,7 +14,7 @@ const darkTheme = 'Resources/CSS/theme/dark.css';
             if (document.readyState === 'complete') {
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
-                    document.getElementById('themeSwitch').classList.add("bi-moon-fill");
+                    document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
                 } else if (currentTheme === "light") {
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");

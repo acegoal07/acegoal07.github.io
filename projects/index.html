@@ -9,44 +9,47 @@
     <meta name="description" content="The official website of acegoal07">
     <meta name="author" content="acegoal07">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link id="theme" rel="stylesheet" href="">
     <script rel="preload" src="/Resources/JS/base.js"></script>
     <link href="/Resources/CSS/style.css" rel="stylesheet" type="text/css">
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-  <li class="nav-item">
-    <a onclick="toggleTheme()" class="nav-link btn d-block bi"></a> 
-  </li>
-<ul class="navbar-nav">
-</ul>
-<div class="collapse navbar-collapse" id="navbar">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="/">Homepage</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link back-to-top-2" role="button">Projects<span class="sr-only">(current)</span></a>
-    </li>
-  </ul>
-  <ul class="navbar-nav">
-  </ul>
-</div>
-</nav>
 
-<main role="main">
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3">Projects</h1>
-    <p>All of my projects in one place</p>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <div class="float-end">
+        <a id="themeSwitch" onclick="toggleTheme()" class="nav-link d-lg-none d-md-none bi"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active back-to-top-2" role="button">Projects</a>
+          </li>
+        </ul>
+      </div>
+      <a id="colThemeSwitch" onclick="toggleTheme()" class="nav-link d-none d-lg-block d-md-block bi"></a>
+    </div>
+  </nav>
+</header>
+
+<div class="container pt-5">
+  <div class="px-5 mb-4 Banner rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-4 fw-bold">Projects</h1>
+      <p class="col-md-8 fs-4">All of my projects in one place</p>
+    </div>
   </div>
 </div>
 
@@ -56,9 +59,9 @@
           <div class="row justify-content-center">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm banner-size">
-               <img src="/Resources/Pictures/npmBanner.webp" alt="npm banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
+               <img src="../Resources/Pictures/npmBanner.webp" alt="npm banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                 <div class="card-body rounded-bottom border-bottom border-left border-right">
-                  <p class="card-title font-weight-bold">npm packages</p>
+                  <p class="card-title fw-bold">npm packages</p>
                   <p class="card-text">Check out all my npm packages</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -70,9 +73,9 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm banner-size">
-               <img src="/Resources/Pictures/Sierrabanner.webP" alt="Sierra banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
+               <img src="../Resources/Pictures/Sierrabanner.webP" alt="Sierra banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                 <div class="card-body rounded-bottom border-bottom border-left border-right">
-                  <p class="card-title font-weight-bold">Sierra</p>
+                  <p class="card-title fw-bold">Sierra</p>
                   <p class="card-text">A multi purpose discord bot</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -85,9 +88,9 @@
             </div>
             <div class="col-md-4 d-none">
               <div class="card mb-4 shadow-sm banner-size">
-               <img src="/Resources/Pictures/MinecarftModBanners.webP" alt="Pickup Notifier" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
+               <img src="../Resources/Pictures/MinecarftModBanners.webP" alt="Pickup Notifier" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                 <div class="card-body rounded-bottom border-bottom border-left border-right">
-                  <p class="card-title font-weight-bold">Minecraft mods</p>
+                  <p class="card-title fw-bold">Minecraft mods</p>
                   <p class="card-text">A collection of minecraft mods</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -108,7 +111,7 @@
 
 </main>
 <footer class="container">
-  <a class="back-to-top float-right" role="button">Back to Top</a>
+  <a class="back-to-top float-end" role="button">Back to Top</a>
   <p>Designed by acegoal07</p>
 </footer>
 </body>
