@@ -22,3 +22,5 @@ button:focus {outline:0;}
 *:hover {scrollbar-width: thin;}
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {width: 12px;}
+.no-top-border{border-top: transparent !important;}
+.no-bottom-border{border-bottom: transparent !important;}
