@@ -14,7 +14,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             if (document.readyState === 'complete') {
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
-                    document.getElementById('themeSwitch').classList.add("bi bi-brightness-high-fill");
+                    document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                 } else if (currentTheme === "light") {
                     document.getElementById('themeSwitch').classList.add("bi bi-moon-fill");
                 }
