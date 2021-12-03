@@ -25,11 +25,9 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             if (document.readyState === 'complete') {
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
-                    localStorage.setItem("setTheme", "dark");
                     document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
                 } else if (currentTheme === "light") {
-                    localStorage.setItem("setTheme", "light");
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                 }
