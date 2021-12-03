@@ -41,7 +41,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                 localStorage.setItem("setTheme", "dark");
                 document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                 document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
-            } else {theme.setAttribute('href', lightTheme);
+            } else {
                 theme.setAttribute('href', lightTheme);
                 localStorage.setItem("setTheme", "light");
                 document.getElementById('themeSwitch').classList.add("bi-moon-fill");
