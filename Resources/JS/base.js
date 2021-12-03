@@ -324,6 +324,9 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                 }
             }
         }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            console.log(e);
+        });
     function toggleTheme() {
         if (theme.getAttribute('href') == lightTheme) {
             theme.setAttribute('href', darkTheme);
