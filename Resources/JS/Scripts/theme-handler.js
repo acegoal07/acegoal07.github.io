@@ -19,8 +19,6 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             link.href = darkTheme;
         } else if (currentTheme === 'light') {
             link.href = lightTheme;
-        } else {
-            link.href = lightTheme;
         }
         document.head.appendChild(link);
         document.onreadystatechange = () => {
@@ -34,20 +32,6 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                     localStorage.setItem("setTheme", "light");
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
-                } else if (currentTheme === null) {
-                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                        localStorage.setItem("setTheme", "dark");
-                        document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
-                        document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
-                    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                        localStorage.setItem("setTheme", "light");
-                        document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-                        document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
-                    } else {
-                        localStorage.setItem("setTheme", "light");
-                        document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-                        document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
-                    }
                 }
             }
         }
