@@ -5,10 +5,12 @@ const lightTheme = '/Resources/CSS/theme/light.css';
 const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme === null) {
-            if (window.matchMedia('prefers-color-scheme').media === 'dark') {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 link.href = darkTheme;
+                localStorage.setItem("setTheme", "dark");
             } else {
                 link.href = lightTheme;
+                localStorage.setItem("setTheme", "light");
             }
         } else if (currentTheme === 'light') {
             link.href = lightTheme;
