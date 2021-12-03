@@ -4,16 +4,16 @@ const currentTheme = localStorage.getItem("setTheme");
 const lightTheme = '/Resources/CSS/theme/light.css';
 const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
-        if (currentTheme === 'dark') {
-            link.href = darkTheme;
-        } else if(currentTheme === 'light') {
-            link.href = lightTheme;
-        } else {
+        if (currentTheme === null) {
             if (window.matchMedia('prefers-color-scheme: dark').matches) {
                 link.href = darkTheme;
             } else {
                 link.href = lightTheme;
             }
+        } else if (currentTheme === 'light') {
+            link.href = lightTheme;
+        } else {
+            link.href = darkTheme;
         }
         document.head.appendChild(link);
         document.onreadystatechange = () => {
