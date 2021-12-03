@@ -36,7 +36,15 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             }
         }
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            console.log(e);
+            if (e.matches) {
+                localStorage.setItem("setTheme", "dark");
+                document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
+                document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+            } else {
+                localStorage.setItem("setTheme", "light");
+                document.getElementById('themeSwitch').classList.add("bi-moon-fill");
+                document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+            }
         });
     function toggleTheme() {
         if (theme.getAttribute('href') == lightTheme) {
