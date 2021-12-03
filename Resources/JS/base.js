@@ -326,10 +326,12 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         }
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (e.matches) {
+                theme.setAttribute('href', darkTheme);
                 localStorage.setItem("setTheme", "dark");
                 document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                 document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
-            } else {
+            } else {theme.setAttribute('href', lightTheme);
+                theme.setAttribute('href', lightTheme);
                 localStorage.setItem("setTheme", "light");
                 document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                 document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
