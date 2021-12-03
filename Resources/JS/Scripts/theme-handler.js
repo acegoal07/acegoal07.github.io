@@ -7,8 +7,13 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         if (currentTheme === null) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 link.href = darkTheme;
+                localStorage.setItem("setTheme", "dark");
             } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
                 link.href = lightTheme;
+                localStorage.setItem("setTheme", "light");
+            } else {
+                link.href = lightTheme;
+                localStorage.setItem("setTheme", "light");
             }
         } else if (currentTheme === 'dark') {
             link.href = darkTheme;
