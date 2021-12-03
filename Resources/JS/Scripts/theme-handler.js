@@ -5,7 +5,7 @@ const lightTheme = '/Resources/CSS/theme/light.css';
 const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme === null) {
-            if (window.matchMedia('prefers-color-scheme: dark').matches) {
+            if (window.matchMedia('prefers-color-scheme').media === 'dark') {
                 link.href = darkTheme;
             } else {
                 link.href = lightTheme;
