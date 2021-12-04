@@ -306,7 +306,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             }
         } else if (currentTheme === 'dark') {
             link.href = darkTheme;
-        } else if (currentTheme === 'light') {
+        } else {
             link.href = lightTheme;
         }
         document.head.appendChild(link);
@@ -316,7 +316,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                 if (currentTheme === "dark") {
                     document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
-                } else if (currentTheme === "light") {
+                } else {
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                 }
