@@ -23,4 +23,3 @@ window.onload = function() {
       verticalPadding: 100  // in pixels
     });     
   };
-
