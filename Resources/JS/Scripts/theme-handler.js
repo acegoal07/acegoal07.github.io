@@ -36,8 +36,8 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                     themeSwitch.add("bi-moon-fill");
                     colThemeSwitch.add("bi-moon-fill");
                     if (document.readyState === "complete" && !themeSwitch.contains === "bi-moon-fill" || !colThemeSwitch.contains === "bi-moon-fill") {
-                        themeSwitch.add("bi-moon-fill");
-                        colThemeSwitch.add("bi-moon-fill");
+                        document.getElementById('themeSwitch').setAttribute(`class`, "nav-link d-lg-none d-md-none bi bi-moon-fill");
+                        document.getElementById('colThemeSwitch').setAttribute(`class`, "nav-link d-lg-none d-md-none bi bi-moon-fill")
                     }
                 }
                 document.getElementById('base').classList.remove('disable-transitions');
