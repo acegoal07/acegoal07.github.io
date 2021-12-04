@@ -29,7 +29,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                     themeSwitch.add("bi-brightness-high-fill");
                     colThemeSwitch.add("bi-brightness-high-fill");
                 } else if (currentTheme === "light") {
-                    themeSwitch.classList.add("bi-moon-fill");
+                    themeSwitch.add("bi-moon-fill");
                     colThemeSwitch.add("bi-moon-fill");
                 }
                 document.getElementById('base').classList.remove('disable-transitions');
