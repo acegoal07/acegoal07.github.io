@@ -23,8 +23,8 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         document.head.appendChild(link);
         document.onreadystatechange = async () => {
             if (document.readyState === 'interactive') {
-                const themeSwitch = document.getElementById('themeSwitch').classList;
-                const colThemeSwitch = document.getElementById('colThemeSwitch').classList;
+                var themeSwitch = document.getElementById('themeSwitch').classList;
+                var colThemeSwitch = document.getElementById('colThemeSwitch').classList;
                 if (currentTheme === "dark") {
                     themeSwitch.add("bi-brightness-high-fill");
                     colThemeSwitch.add("bi-brightness-high-fill");
