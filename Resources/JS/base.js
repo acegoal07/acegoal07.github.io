@@ -311,7 +311,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         }
         document.head.appendChild(link);
         document.onreadystatechange = () => {
-            if (document.readyState === 'complete') {
+            if (document.readyState === 'interactive') {
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
                     document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
