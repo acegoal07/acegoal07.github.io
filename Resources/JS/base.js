@@ -317,17 +317,9 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
                 if (currentTheme === "dark") {
                     themeSwitch.add("bi-brightness-high-fill");
                     colThemeSwitch.add("bi-brightness-high-fill");
-                    if (document.readyState === "complete" && !themeSwitch.contains === "bi-brightness-high-fill" || !colThemeSwitch.contains === "bi-brightness-high-fill") {
-                        themeSwitch.add("bi-brightness-high-fill");
-                        colThemeSwitch.add("bi-brightness-high-fill");
-                    }
                 } else if (currentTheme === "light") {
                     themeSwitch.add("bi-moon-fill");
                     colThemeSwitch.add("bi-moon-fill");
-                    if (document.readyState === "complete" && !themeSwitch.contains === "bi-moon-fill" || !colThemeSwitch.contains === "bi-moon-fill") {
-                        document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-                        document.getElementById('colThemeSwitch').classList.add("bi-moon-fill")
-                    }
                 }
                 document.getElementById('base').classList.remove('disable-transitions');
             }
