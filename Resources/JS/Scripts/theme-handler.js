@@ -21,16 +21,18 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             link.href = lightTheme;
         }
         document.head.appendChild(link);
-        document.onreadystatechange = () => {
+        document.onreadystatechange = async () => {
             if (document.readyState === 'interactive') {
-                document.getElementById('base').classList.remove('disable-transitions');
+                const themeSwitch = document.getElementById('themeSwitch').classList;
+                const colThemeSwitch = document.getElementById('colThemeSwitch').classList;
                 if (currentTheme === "dark") {
-                    document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
-                    document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+                    themeSwitch.add("bi-brightness-high-fill");
+                    colThemeSwitch.add("bi-brightness-high-fill");
                 } else if (currentTheme === "light") {
-                    document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-                    document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+                    themeSwitch.classList.add("bi-moon-fill");
+                    colThemeSwitch.add("bi-moon-fill");
                 }
+                document.getElementById('base').classList.remove('disable-transitions');
             }
         }
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
