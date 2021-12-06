@@ -54,5 +54,9 @@
     {
         "command": ";setdjrole",
         "description": "Used to set a role that is required to use the music commands"
+    },
+    {
+        "command": ";setadminrole",
+        "description": "Used to set a role that is required to use the admin commands"
     }
 ]

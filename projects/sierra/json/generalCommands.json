@@ -34,5 +34,9 @@
     {
         "command": ";channelinfo",
         "description": "Shows the user info about the channel they are using"
+    },
+    {
+        "command": ";ping",
+        "description": "Shows latency information about Sierra"
     }
 ]
