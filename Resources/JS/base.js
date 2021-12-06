@@ -329,12 +329,16 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             if (e.matches) {
                 theme.setAttribute('href', darkTheme);
                 localStorage.setItem("setTheme", "dark");
+                document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
                 document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
+                document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
                 document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
             } else {
                 theme.setAttribute('href', lightTheme);
                 localStorage.setItem("setTheme", "light");
+                document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");
                 document.getElementById('themeSwitch').classList.add("bi-moon-fill");
+                document.getElementById('colThemeSwitch').classList.remove("bi-brightness-high-fill");
                 document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
             }
         });
