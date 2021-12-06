@@ -314,11 +314,15 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         }
         document.head.appendChild(link);
         document.onreadystatechange = () => {
-            if (document.readyState === 'complete') {
+            if (document.readyState === 'interactive') {
+                const currentTheme = localStorage.getItem("setTheme");
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
                     document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+                } else if (currentTheme === "light") {
+                    document.getElementById('themeSwitch').classList.add("bi-moon-fill");
+                    document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                 } else {
                     document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                     document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
