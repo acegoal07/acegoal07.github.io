@@ -298,14 +298,14 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
     var link = document.getElementById('theme');
         if (currentTheme === null) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                link.href = darkTheme;
                 localStorage.setItem("setTheme", "dark");
+                link.href = darkTheme;
             } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                link.href = lightTheme;
                 localStorage.setItem("setTheme", "light");
+                link.href = lightTheme;
             } else {
-                link.href = lightTheme;
                 localStorage.setItem("setTheme", "light");
+                link.href = lightTheme;
             }
         } else if (currentTheme === 'dark') {
             link.href = darkTheme;
