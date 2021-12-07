@@ -56,7 +56,8 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
             }
         });
     function toggleTheme() {
-        if (theme.getAttribute('href') == lightTheme) {
+        const currentTheme = localStorage.getItem("setTheme");
+        if (currentTheme === "light") {
             theme.setAttribute('href', darkTheme);
             localStorage.setItem("setTheme", "dark");
             document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
