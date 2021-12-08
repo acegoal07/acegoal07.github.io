@@ -12,13 +12,14 @@
 ---
 
 <h1 id="about">About</h1>
-Sierra is a multi purpose discord bot and is a small time projects which is still a working progress
+Sierra is a multi purpose discord bot and is a small time projects which is still a working progress meaning more commands are being add and things are subject to change
 <br><br>
 Sierra does support slash commands but most of them are not finished yet so only a small amount are available
 <br><br>
 
-```txt
+```md
 Current Version: 2.3.1
+Discord.js Version: 13.3.1
 Prefix: ;
 ```
 <h1 id="commands">Commands</h1>
@@ -35,7 +36,6 @@ Prefix: ;
 ;addsierra|This command sends you the link required to invite Sierra to your own server
 ;ping|Used to see the latency for sierra and the ping for the Discord API
 ;channelinfo|Shows the user info about the channel they are using
-
 <h3>Admin:</h3>
 
 |Command|Description|
@@ -45,6 +45,47 @@ Prefix: ;
 ;Kick ```<mention>```|Kick's the mentioned user from the server
 ;ban ```<mention>``` ```<reason>```|Bans the mentioned user from the server
 ;unban ```<user ID>```|Unban's the specified user
+<h3>Music:</h3>
+
+|Command|Description|
+|-------|-----------|
+;play ```<name or URL>```|Plays the song you specified either with a link or the name of the song
+;disconnect|Clears the server queue and disconnects the bot from the voice channel
+;skip|Skips to the next song in the server song queue
+;skipto ```<queue position>```|Skips you to the specified position in the queue
+;queue|Displays the server song queue
+;pause|Pauses the current song playing in the voice channel
+;unpause|Unpauses the current song playing in the voice channel
+;remove ```<queue position>```|Removes the song which is in the specified queue position
+;nowplaying|Displays information about the song that is currently playing
+;loop|Loops the current song playing until Sierra is disconnected or the loop is disabled
+;loopqueue|Loops the server queue
+;searchyt ```<name>```|Searches YouTube for a track with the corresponding name
+;searchytpl ```<name>```|Searches YouTube for a playlist with the corresponding name
+;searchsc ```<name>```|Searches SoundCloud for a track with the corresponding name
+;searchscpl ```<name>```|Searches SoundCloud for a playlist with the corresponding name
+;shuffle|Shuffles the music queue randomizing what song comes up next
+;clearqueue|Clears the queue of all songs
+;volume ```<1-100>```|Allows you to adjust the volume of the music
+<h3>Setup:</h3>
+
+|Command|Description|
+|-------|-----------|
+;settings|Allows you to see all the settings for Sierra specific to your server
+;setcolor|Changes the color of Sierra's embed messages in your server
+;rename ```<name>```|This command changes the nickname of Sierra in your server
+;setwelcome|Used to setup welcome message for your server
+;setbye|Command is used to setup and use leaving messages on your server
+;setdeletelog|Used to setup deleted message logging in your server
+;setbanlog|Used to setup ban logging for your server
+;setannounce|Used to setup the announcement command in your server
+;setclear|Used to setup the clear command for your server
+;setadmintools|Used to enable kick, ban and unban commands in the server
+;setautorole|Used to setup autorole for your server
+;nsfw|When used will switch the current channel between an NSFW channel and a normal channel
+;setupnext|Used to adjust settings for the up next music notification
+;setdjrole|Used to set a role that is required to use the music commands
+;setadminrole|Used to set a role that is required to use the admin commands
 
 <h1 id="dependencies">Dependencies</h1>
 sierra@2.3.1<br>
