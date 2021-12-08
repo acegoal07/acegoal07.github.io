@@ -1,11 +1,7 @@
-<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
-<script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
-
-
 <div align="center"> 
     <img src='/Resources/Pictures/Sierrapfp.webP' alt="acegoal07" width=200px height=200px/>
 </div>
-<h3 align="center">Sierra Break down</h3>
+<h3 align="center">Sierra</h3>
 <p align="center">
     <a href="#about">About</a> &#xa0; | &#xa0; 
     <a href="#commands">Commands</a> &#xa0; | &#xa0; 
@@ -16,13 +12,39 @@
 ---
 
 <h1 id="about">About</h1>
-Sierra is a multi purpose discord bot and is a small time projects which is still a working progress<br><br>
+Sierra is a multi purpose discord bot and is a small time projects which is still a working progress
+<br><br>
+Sierra does support slash commands but most of them are not finished yet so only a small amount are available
+<br><br>
 
 ```txt
 Current Version: 2.3.1
 Prefix: ;
 ```
 <h1 id="commands">Commands</h1>
+<h3>General:</h3>
+
+|Command|Description|
+|-------|-----------|
+;help|This command will display all of the commands the bot has corresponding to the section you choose
+;serverinfo|This server will show all the info about the server you will need to know|   
+;serverinvite|This command will send an invite to the current text channel which can be shared outside of the server
+;botinfo|This command will show you all the info you will need to know about Sierra
+;roles|This command will display all roles on the server and which ones you have
+;userinfo or ;userinfo ```<mention>```|Will display all needed information about a user
+;addsierra|This command sends you the link required to invite Sierra to your own server
+;ping|Used to see the latency for sierra and the ping for the Discord API
+;channelinfo|Shows the user info about the channel they are using
+
+<h3>Admin:</h3>
+
+|Command|Description|
+|-------|-----------|
+;announce ```<message>```|This command takes the message and posts it in the announcement channel
+;clear ```<1-100>```|Deletes the amount of messages that is defined
+;Kick ```<mention>```|Kick's the mentioned user from the server
+;ban ```<mention>``` ```<reason>```|Bans the mentioned user from the server
+;unban ```<user ID>```|Unban's the specified user
 
 <h1 id="dependencies">Dependencies</h1>
 sierra@2.3.1<br>
