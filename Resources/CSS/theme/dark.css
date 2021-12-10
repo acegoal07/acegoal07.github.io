@@ -17,7 +17,6 @@ hr {color: #c2c5c7 !important; background-color: #c2c5c7 !important;}
 /*scroll bar*/
 /* Works on Firefox */
 * {scrollbar-width: thin; scrollbar-color: #1f1f1f black;}
-*:hover {scrollbar-color: #3b3b3b black; scrollbar-width: thin;}
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {width: 12px;}
 *::-webkit-scrollbar-track {background: black;}
