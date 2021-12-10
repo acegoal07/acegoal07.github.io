@@ -16,10 +16,10 @@ hr {color: #c2c5c7 !important; background-color: #c2c5c7 !important;}
 .nav-pane:hover {border-color: #2f2f2f !important; background-color: black !important;}
 /*scroll bar*/
 /* Works on Firefox */
-* {scrollbar-width: thin; scrollbar-color: #2f2f2f black;}
+* {scrollbar-width: thin; scrollbar-color: #1f1f1f black;}
 *:hover {scrollbar-color: #3b3b3b black; scrollbar-width: thin;}
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {width: 12px;}
 *::-webkit-scrollbar-track {background: black;}
-*::-webkit-scrollbar-thumb {background-color: #2f2f2f; border-left: solid black 3px; border-right: solid black 3px; border-bottom: solid black 1px; border-top: solid black 1px;}
+*::-webkit-scrollbar-thumb {background-color: #1f1f1f; border-left: solid black 3px; border-right: solid black 3px; border-bottom: solid black 1px; border-top: solid black 1px;}
 *::-webkit-scrollbar-thumb:hover {background-color: #3b3b3b; border-left: solid black 3px; border-right: solid black 3px; border-bottom: solid black 1px; border-top: solid black 1px;}
