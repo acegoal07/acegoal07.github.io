@@ -314,7 +314,7 @@ const darkTheme = '/Resources/CSS/theme/dark.css';
         }
         document.head.appendChild(link);
         document.onreadystatechange = () => {
-            if (document.readyState === 'interactive') {
+            if (document.readyState === 'loading') {
                 const currentTheme = localStorage.getItem("setTheme");
                 document.getElementById('base').classList.remove('disable-transitions');
                 if (currentTheme === "dark") {
