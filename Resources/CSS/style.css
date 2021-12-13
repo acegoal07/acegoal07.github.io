@@ -25,3 +25,7 @@ button:focus {outline:0;}
 .no-top-border{border-top: transparent !important;}
 .no-bottom-border{border-bottom: transparent !important;}
 hr {height: 0px !important; border-top: 2px solid !important;}
+
+/* snow effect */
+#snowflakeContainer {position: absolute; left: 0px; top: 0px; display: none;}
+.snowflake {position: fixed; background-color: rgb(118, 198, 224); user-select: none; z-index: 1000; pointer-events: none; border-radius: 50%; width: 10px; height: 10px;}
