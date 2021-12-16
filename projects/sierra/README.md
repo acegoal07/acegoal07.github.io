@@ -14,7 +14,9 @@
 <h1 id="about">About</h1>
 Sierra is a multi purpose discord bot and is a small time projects which is still a working progress meaning more commands are being add and things are subject to change
 <br><br>
-Sierra does support slash commands but most of them are not finished yet so only a small amount are available
+Sierra does support slash commands but most of them are not finished yet so only a small amount are available to the public
+<br><br>
+You can find the Discord.js documentation <a href="https://discord.js.org/#/docs/main/stable/general/welcome">here</a> which has details on how to use Discord.js to create your own bot you can also find Discord.js guide here which shows in more depth how to work with Discord.js <a href="https://discordjs.guide/#before-you-begin">here</a>
 <br><br>
 
 ```md
