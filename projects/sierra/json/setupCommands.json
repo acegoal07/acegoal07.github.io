@@ -48,7 +48,7 @@
         "description": "When used will switch the current channel between an NSFW channel and a normal channel"
     },
     {
-        "command": ";setupnext",
+        "command": ";setmusicinfo",
         "description": "Used to adjust settings for the up next music notification"
     },
     {

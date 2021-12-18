@@ -53,7 +53,7 @@
   <div class="px-5 mb-4 Banner rounded-3">
     <div class="container-fluid py-5">
       <h1 class="display-4 fw-bold">Changelog</h1>
-      <p class="col-md-8 fs-4">Sierra’s changelog</p>
+      <p class="col-md-8 fs-4">Sierra's changelog</p>
     </div>
   </div>
 </div>
@@ -63,6 +63,25 @@
 </div>
 <div class="container">
   <hr><h1>Current version</h1><br>
+
+  <div class="card">
+    <div class="card-header rounded-top border-top border-left border-right">
+      Version 2.3.2
+     </div>
+     <div class="card-body rounded-bottom border-bottom border-left border-right">
+     <h5 class="card-title">Changes</h5>
+     <p class="card-text">
+       <ul>
+          <li><p>Complete redesign of command and event handlers improving loading speed</p></li>
+          <li><p>combined slashCommandHandler and commandHandler to improve loading speed</p></li>
+          <li><p>Changed setupnext command to setmusicinfo as its used to edit more than just the up next notifications </p></li>
+          <li><p>Bug fixes</p></li>
+       </ul>
+     </p>
+   </div>
+  </div><br>
+
+  <hr><h1>Old versions</h1><br>
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
@@ -92,9 +111,12 @@
      </p>
    </div>
   </div><br>
-
-  <hr><h1>Old versions</h1><br>
   
+  <div class="justify-content-center">
+    <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
+  </div>
+  <div id="ShowMoreList" class="d-none"><br>
+
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
       Version 2.3.0
@@ -113,11 +135,6 @@
      </p>
    </div>
   </div><br>
-
-  <div class="justify-content-center">
-    <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
-  </div>
-  <div id="ShowMoreList" class="d-none"><br>
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
