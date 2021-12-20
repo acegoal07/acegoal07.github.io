@@ -20,7 +20,7 @@ You can find the Discord.js documentation <a href="https://discord.js.org/#/docs
 <br><br>
 
 ```md
-Current Version: 2.3.1
+Current Version: 2.3.2
 Discord.js Version: 13.3.1
 Prefix: ;
 ```
