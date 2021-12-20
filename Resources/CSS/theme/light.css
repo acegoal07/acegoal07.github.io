@@ -33,5 +33,6 @@ hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
 .pagination>.page-item>.page-link:hover {background-color: #c2c5c7!important;}
 .pagination-detail>.page-list>.dropup>.dropdown-toggle {background-color: #e9ecef !important; box-shadow: none !important; color: black; border: none !important;}
 .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item.active {background-color: #c2c5c7 !important; color: black;}
+.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item {color: black;}
 .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #e9ecef !important; color: black; border: none;}
 .search>.search-input {background-color: #e9ecef !important; color: black; border: none !important;}
