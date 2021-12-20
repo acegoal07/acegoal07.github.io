@@ -85,12 +85,12 @@ Prefix: ;
 ;setadmintools|Used to enable kick, ban and unban commands in the server
 ;setautorole|Used to setup autorole for your server
 ;nsfw|When used will switch the current channel between an NSFW channel and a normal channel
-;setupnext|Used to adjust settings for the up next music notification
+;setmusicinfo|Used to adjust settings for the up next music notification
 ;setdjrole|Used to set a role that is required to use the music commands
 ;setadminrole|Used to set a role that is required to use the admin commands
 
 <h1 id="dependencies">Dependencies</h1>
-sierra@2.3.1<br>
+sierra@2.3.2<br>
 ├── @acegoal07/discordjs-pagination@1.0.8<br>
 ├── @acegoal07/timestamp-progress@1.0.7<br>
 ├── @discordjs/opus@0.5.3<br>
@@ -115,6 +115,6 @@ sierra@2.3.1<br>
 ├── scdl-core@1.0.19<br>
 ├── soundcloud-downloader@1.0.0<br>
 ├── spotify-url-info@2.2.3<br>
-├── ytdl-core@4.9.1<br>
+├── ytdl-core@4.9.2<br>
 ├── ytpl@2.2.3<br>
-└── ytsr@3.5.3<br>
+└── ytsr@3.5.3
