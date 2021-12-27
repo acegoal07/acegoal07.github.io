@@ -66,6 +66,31 @@
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
+      Version 2.3.3
+     </div>
+     <div class="card-body rounded-bottom border-bottom border-left border-right">
+     <h5 class="card-title">Changes</h5>
+     <p class="card-text">
+       <ul>
+          <li><p>Adds new timeout command and slash command</p></li>
+          <li><p>Adds reason to ban slash command</p></li>
+          <li><p>Enables unban slash command</p></li>
+          <li><p>Updates help command to show new commands</p></li>
+          <li><p>Updated all paged embeds to support new version of <a target="_blank" class="link-item" role="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination">@acegoal07/discordjs-pagination</a>/</p></li>
+          <li><p>Adds error handling for missing config</p></li>
+          <li><p>Makes it so missing config file error is resolved automaticity when detected</p></li>
+          <li><p>Fixes a reference issue with all admin commands</p></li>
+          <li><p>Updates more of the loading sequence to improve speed and reliability</p></li>
+          <li><p>Bug fixes</p></li>
+       </ul>
+     </p>
+   </div>
+  </div><br>
+
+  <hr><h1>Old versions</h1><br>
+
+  <div class="card">
+    <div class="card-header rounded-top border-top border-left border-right">
       Version 2.3.2
      </div>
      <div class="card-body rounded-bottom border-bottom border-left border-right">
@@ -82,7 +107,10 @@
    </div>
   </div><br>
 
-  <hr><h1>Old versions</h1><br>
+  <div class="justify-content-center">
+    <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
+  </div>
+  <div id="ShowMoreList" class="d-none"><br>
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
@@ -112,11 +140,6 @@
      </p>
    </div>
   </div><br>
-  
-  <div class="justify-content-center">
-    <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
-  </div>
-  <div id="ShowMoreList" class="d-none"><br>
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
@@ -770,10 +793,8 @@
           </p>
         </div>
       </div>
-
     <br>
-    </div>
-
+  </div>
     <hr>
 </div>
 

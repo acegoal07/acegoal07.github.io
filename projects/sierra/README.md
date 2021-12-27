@@ -20,8 +20,8 @@ You can find the Discord.js documentation <a href="https://discord.js.org/#/docs
 <br><br>
 
 ```md
-Current Version: 2.3.2
-Discord.js Version: 13.3.1
+Current Version: 2.3.3
+Discord.js Version: 13.4.0
 Prefix: ;
 ```
 <h1 id="commands">Commands</h1>
@@ -47,6 +47,7 @@ Prefix: ;
 ;Kick ```<mention>```|Kick's the mentioned user from the server
 ;ban ```<mention>``` ```<reason>```|Bans the mentioned user from the server
 ;unban ```<user ID>```|Unban's the specified user
+;timeout ```<mention>``` ```<minutes>``` ```<reason>```|Stops the user from talking in the server for a set period of time
 <h3>Music:</h3>
 
 |Command|Description|

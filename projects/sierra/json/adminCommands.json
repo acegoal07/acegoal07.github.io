@@ -19,5 +19,9 @@
     {
         "command": ";unban <user ID>",
         "description": "Unban's the specified user"
+    },
+    {
+        "command": ";timeout <mention> <minutes> <reason>",
+        "description": "Stops the user from talking in the server for a set period of time"
     }
 ]
