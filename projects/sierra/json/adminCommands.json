@@ -23,5 +23,9 @@
     {
         "command": ";timeout <mention> <minutes> <reason>",
         "description": "Stops the user from talking in the server for a set period of time"
+    },
+    {
+        "command": ";stoptimeout <mention>",
+        "description": "Removes the timeout from a user"
     }
 ]
