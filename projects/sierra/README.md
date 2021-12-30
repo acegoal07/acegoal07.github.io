@@ -20,8 +20,8 @@ You can find the Discord.js documentation <a href="https://discord.js.org/#/docs
 <br><br>
 
 ```md
-Current Version: 2.3.3
-Discord.js Version: 13.4.0
+Current Version: 2.3.4
+Discord.js Version: 13.5.0
 Prefix: ;
 ```
 <h1 id="commands">Commands</h1>
@@ -48,6 +48,7 @@ Prefix: ;
 ;ban ```<mention>``` ```<reason>```|Bans the mentioned user from the server
 ;unban ```<user ID>```|Unban's the specified user
 ;timeout ```<mention>``` ```<minutes>``` ```<reason>```|Stops the user from talking in the server for a set period of time
+;stoptimeout ```<mention>```|Removes the timeout from a user
 <h3>Music:</h3>
 
 |Command|Description|
@@ -91,17 +92,17 @@ Prefix: ;
 ;setadminrole|Used to set a role that is required to use the admin commands
 
 <h1 id="dependencies">Dependencies</h1>
-sierra@2.3.2<br>
-├── @acegoal07/discordjs-pagination@1.0.8<br>
-├── @acegoal07/timestamp-progress@1.0.7<br>
+sierra@2.3.4<br>
+├── @acegoal07/discordjs-pagination@1.1.3<br>
+├── @acegoal07/timestamp-progress@1.0.7-a<br>
 ├── @discordjs/opus@0.5.3<br>
-├── @discordjs/rest@0.1.0-canary.0<br>
+├── @discordjs/rest@0.2.0-canary.0<br>
 ├── @discordjs/voice@0.7.5<br>
-├── @sapphire/snowflake@2.1.4<br>
+├── @sapphire/snowflake@3.0.0<br>
 ├── ciql-json@1.9.6<br>
 ├── cpu-stat@2.0.1<br>
-├── discord-api-types@0.24.0<br>
-├── discord.js@13.3.1<br>
+├── discord-api-types@0.26.0<br>
+├── discord.js@13.5.0<br>
 ├── enmap@5.8.7<br>
 ├── ffmpeg-static@4.4.0<br>
 ├── ffmpeg@0.0.4<br>
