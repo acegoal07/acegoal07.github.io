@@ -20,7 +20,7 @@ You can find the Discord.js documentation <a href="https://discord.js.org/#/docs
 <br><br>
 
 ```md
-Current Version: 2.3.4
+Current Version: 2.3.5
 Discord.js Version: 13.5.0
 Prefix: ;
 ```
@@ -92,7 +92,7 @@ Prefix: ;
 ;setadminrole|Used to set a role that is required to use the admin commands
 
 <h1 id="dependencies">Dependencies</h1>
-sierra@2.3.4<br>
+sierra@2.3.5<br>
 ├── @acegoal07/discordjs-pagination@1.1.3<br>
 ├── @acegoal07/timestamp-progress@1.0.7-a<br>
 ├── @discordjs/opus@0.5.3<br>

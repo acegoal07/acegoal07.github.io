@@ -19,9 +19,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   </head>
 <body>
-<div id="snowflakeContainer">
-  <span class="snowflake"></span>
-</div>
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -66,6 +63,25 @@
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
+      Version 2.3.5
+     </div>
+     <div class="card-body rounded-bottom border-bottom border-left border-right">
+     <h5 class="card-title">Changes</h5>
+     <p class="card-text">
+       <ul>
+          <li><p>Adds more error handling in case of missing config files</p></li>
+          <li><p>Makes it so it checks for missing config files on boot</p></li>
+          <li><p>Adds the ability for the bot to replace missing config files</p></li>
+          <li><p>Bug fixes</p></li>
+       </ul>
+     </p>
+   </div>
+  </div><br>
+
+  <hr><h1>Old versions</h1><br>
+
+  <div class="card">
+    <div class="card-header rounded-top border-top border-left border-right">
       Version 2.3.4
      </div>
      <div class="card-body rounded-bottom border-bottom border-left border-right">
@@ -85,7 +101,10 @@
    </div>
   </div><br>
 
-  <hr><h1>Old versions</h1><br>
+  <div class="justify-content-center">
+    <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
+  </div>
+  <div id="ShowMoreList" class="d-none"><br>
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
@@ -109,11 +128,6 @@
      </p>
    </div>
   </div><br>
-
-  <div class="justify-content-center">
-    <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
-  </div>
-  <div id="ShowMoreList" class="d-none"><br>
 
   <div class="card">
     <div class="card-header rounded-top border-top border-left border-right">
@@ -413,7 +427,7 @@
           <li><p>Added more customization to welcome and leave messages</p></li>
           <li><p>Fixed welcome and leave messages</p></li>
           <li><p>Fixed serverinfo bot section not getting the amount of bots in the server</p></li>
-          <li><p>changed embed coloring system</p></li>
+          <li><p>changed embed colouring system</p></li>
           <li><p>Updated to use nodeJS version 16.6.2</p></li>
           <li><p>Updated to use discord.js version 13.1.0</p></li>
           <li><p>Disabled paged embeds temporally due to the dependence not supporting Discord.js V13</p></li>
@@ -504,7 +518,7 @@
      <p class="card-text">
        <ul>
           <li><p>Started adding multi server support</p></li>
-          <li><p>Added enable and disable commands for welcome and leave messuages</p></li>
+          <li><p>Added enable and disable commands for welcome and leave messages</p></li>
           <li><p>Added more commands to help command</p></li>
           <li><p>Fixed error with guildMemberUpdate firing when Sierra joins a new server and when a new user joins a server</p></li>
           <li><p>Added set color command which allows you to change the color of Sierra's embed messages</p></li>
@@ -759,7 +773,7 @@
           <h5 class="card-title">Changes</h5>
           <p class="card-text">
             <ul>
-                <li><p>Added new embed coloring system</p></li>
+                <li><p>Added new embed colouring system</p></li>
                 <li><p>Added admin commands to help command</p></li>
                 <li><p>Removed old filetest command and adminhelp command</p></li>
                 <li><p>Removed old error log system</p></li>
