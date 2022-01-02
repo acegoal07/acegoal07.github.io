@@ -58,779 +58,740 @@
    </div>
    <div class="container">
       <hr><h1>Current version</h1><br>
-   <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-         Version 2.3.5 - upcoming
-      </div>
-      <div class="card-body rounded-bottom border-bottom border-left border-right">
-         <h5 class="card-title">Changes</h5>
-         <p class="card-text">
-            <ul>
-               <li><p>Adds more error handling in case of missing config files</p></li>
-               <li><p>Makes it so it checks for missing config files on boot</p></li>
-               <li><p>Adds the ability for the bot to replace missing config files while being used so that the issue gets fixed automaticity without interference from me</p></li>
-               <li><p>Bug fixes</p></li>
-            </ul>
-         </p>
-      </div>
-   </div><br>
-  <hr><h1>Old versions</h1><br>
-   <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-         Version 2.3.4
-      </div>
-      <div class="card-body rounded-bottom border-bottom border-left border-right">
-         <h5 class="card-title">Changes</h5>
-         <p class="card-text">
-            <ul>
-               <li><p>Makes it so if you use the timeout command on a user that's already timeout gives you the option to replace their current timeout</p></li>
-               <li><p>Adds new stoptimeout command</p></li>
-               <li><p>Updates help command and all Sierra's information</p></li>
-               <li><p>Enabled unban command and removed message saying its disabled</p></li>
-               <li><p>Fixed the issue with the unban slashCommand stopping it from running</p></li>
-               <li><p>Made changes to all admin commands changing references and making certain information more visible</p></li>
-               <li><p>Fixed an issue with guildBanAdd event causing it not to emit</p></li>
-               <li><p>Bug fixes</p></li>
-            </ul>
-         </p>
-      </div>
-   </div><br>
-
-   <div class="justify-content-center">
-      <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
-   </div>
-   <div id="ShowMoreList" class="d-none"><br>
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.3.3
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds new timeout command and slash command</p></li>
-          <li><p>Adds reason to ban slash command</p></li>
-          <li><p>Enables unban slash command</p></li>
-          <li><p>Updates help command to show new commands</p></li>
-          <li><p>Updated all paged embeds to support new version of <a target="_blank" class="link-item" role="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination">@acegoal07/discordjs-pagination</a>/</p></li>
-          <li><p>Adds error handling for missing config</p></li>
-          <li><p>Makes it so missing config file error is resolved automaticity when detected</p></li>
-          <li><p>Fixes a reference issue with all admin commands</p></li>
-          <li><p>Updates more of the loading sequence to improve speed and reliability</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.3.2
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Complete redesign of command and event handlers improving loading speed</p></li>
-          <li><p>combined slashCommandHandler and commandHandler to improve loading speed</p></li>
-          <li><p>Changed setupnext command to setmusicinfo as its used to edit more than just the up next notifications</p></li>
-          <li><p>Updates bot.js to use commandHandler V2 and removed the slashCommandHandler</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.3.1
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds volume command</p></li>
-          <li><p>Adds setdjrole command</p></li>
-          <li><p>Redesign of all setup commands to make them more effective and quicker</p></li>
-          <li><p>No longer uses names of role and channel and instead store's the ID to reduce config file size and to stop issues with renamed items</p></li>
-          <li><p>Updated help command</p></li>
-          <li><p>Added admin role to the role sections of the settings command</p></li>
-          <li><p>Renamed colors section of settings to styles and added up next settings</p></li>
-          <li><p>Updated configFiler to have new config file layout</p></li>
-          <li><p>Added the role used by auto role to the role section of settings</p></li>
-          <li><p>Changed some titles in the settings command</p></li>
-          <li><p>Gave skip and skipto commands their own up next message</p></li>
-          <li><p>Fixed an issued with the pagination causing crashes</p></li>
-          <li><p>Added error handling around missing admin or DJ roles</p></li>
-          <li><p>Made it so when using setmusic or setadmintools disable command set roles will be disabled and cleared</p></li>
-          <li><p>Clear command now displays how many items where deleted instead of how many items you requested to delete</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.3.0
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds shuffle command</p></li>
-          <li><p>Fixes issue where the queue wouldn't clear if the bot was disconnected from the voice channel by a user</p></li>
-          <li><p>Reduced the amount of items displayed in queue due to errors occurring because the queue is to large</p></li>
-          <li><p>Adds clearqueue command</p></li>
-          <li><p>Updated help command to display new commands</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.9
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds setupnext command allowing changes to the up next music notification</p></li>
-          <li><p>Adds styles to the up next notification</p></li>
-          <li><p>Added progress bar to now playing</p></li>
-          <li><p>Fixed a reference issue</p></li>
-          <li><p>More changes to the text output to make changes clearer to see</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.8
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Added new config file design</p></li>
-          <li><p>Updated all old configs to the new design</p></li>
-          <li><p>Updated all commands to work with new config design</p></li>
-          <li><p>Updated some settings commands to make it easier to read the changes you have made</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.7
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds a search command for YouTube songs</p></li>
-          <li><p>Adds a now playing command</p></li>
-          <li><p>Updated help command to show new commands</p></li>
-          <li><p>Added an extra search if unable to find the song via text with play command</p></li>
-          <li><p>Updated errors across all commands to make things easier to use and understand</p></li>
-          <li><p>Changes streamType to improve performance</p></li>
-          <li><p>Added ping information to botinfo</p></li>
-          <li><p>Cleaned up the music code to make it run smoother</p></li>
-          <li><p>Updated slashCommandHandler to improve speed</p></li>
-          <li><p>Added loopqueue command</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.6
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds support for SoundCloud playlists</p></li>
-          <li><p>Adds command to search for YouTube playlists</p></li>
-          <li><p>Adds commands to search for SoundCloud tracks and playlists</p></li>
-          <li><p>Adds commands remove and skipto</p></li>
-          <li><p>New design for embeds making it easier to read and understand</p></li>
-          <li><p>Trying a fix for the music commands skipping songs while going to the next one in the queue</p></li>
-          <li><p>Adds support for Spotify playlist and song URL's in the play command</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.5
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds support for SoundCloud and YouTube playlists</p></li>
-          <li><p>Stops the queue from showing more than 20 items to stop crashes</p></li>
-          <li><p>Fixes lag while adding songs to the queue while already playing a song</p></li>
-          <li><p>New design for queue command separating the now playing and the queued songs</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.4
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds a new debug command</p></li>
-          <li><p>Adds new looping command for your music</p></li>
-          <li><p>Made it so music commands are not deleted by the bot</p></li>
-          <li><p>Fixed an error with some embed formats</p></li>
-          <li><p>Updated the links on the botinfo command and turned them into buttons</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.3
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Adds a new way to handle missing message error across all commands</p></li>
-          <li><p>Changed the way the music queue is received by the music commands</p></li>
-          <li><p>Comes with an update to the <a target="_blank" class="link-item" role="button" href="https://acegoal07.dev/projects/sierra/">commands website</a></p></li>
-          <li><p>Added setbyemessage command to the setbye command</p></li>
-          <li><p>Added setwelcomemessage command to the setwelcome command</p></li>
-          <li><p>Performance changes for boot and music commands</p></li>
-          <li><p>Improved config system when joining and leaving a server</p></li>
-          <li><p>Improved handlers for reloading commands</p></li>
-          <li><p>Improved event, command and slash command handlers making them faster and more efficient</p></li>
-          <li><p>Removed command used to fix configs as it is redundant</p></li>
-          <li><p>Improved overall performance of Sierra</p></li>
-          <li><p>Added new commands ping, nsfw and channelinfo</p></li>
-          <li><p>Also comes with little tweaks for some text on commands</p></li>
-          <li><p>Fixes an issue with messageDelete event causing it to trigger even when it shouldn't</p></li>
-          <li><p>Make's Sierra quieter while playing music</p></li>
-          <li><p>Fixes an issue with welcome and leave message crashing when a user has not set a profile picture for there account</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-  
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.2
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Re-added music commands that support Discord.js V13</p></li>
-          <li><p>Fixed an issues that affected all commands deleting messages</p></li>
-          <li><p>Fixed hosting issue caused by new music commands</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.1
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Added my own dependence for embed pages called <a target="_blank" class="link-item" role="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination">@acegoal07/discordjs-pagination</a></p></li>
-          <li><p>Re-enabled paged embeds across all commands slash and command based</p></li>
-          <li><p>Updated all dependencies</p></li>
-          <li><p>Removed unused dependencies</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.2.0
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Started adding Slash commands for public use more have be added just disabled due to them not being finished</p></li>
-          <li><p>Finished updating all commands and events to the new layout</p></li>
-          <li><p>Removed report command</p></li>
-          <li><p>Fixed status refresher taking ages to run</p></li>
-          <li><p>Improved error handling to keep up with new error messages</p></li>
-          <li><p>Fixed a bug where some commands would be missing a reference sometimes</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-  
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.6
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Added slashCommandHandler</p></li>
-          <li><p>Added new layouts for commands which include the information needed for slashCommandHandler to run</p></li>
-          <li><p>Changed setActivity to setPresence due to it being deprecated</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.5
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Added more customization to welcome and leave messages</p></li>
-          <li><p>Fixed welcome and leave messages</p></li>
-          <li><p>Fixed serverinfo bot section not getting the amount of bots in the server</p></li>
-          <li><p>changed embed colouring system</p></li>
-          <li><p>Updated to use nodeJS version 16.6.2</p></li>
-          <li><p>Updated to use discord.js version 13.1.0</p></li>
-          <li><p>Disabled paged embeds temporally due to the dependence not supporting Discord.js V13</p></li>
-          <li><p>Added new disabled or enabled check to improve performance when using command or events</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.4
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Added new debug command to help with development</p></li>
-          <li><p>Improved some commands to make sure people know how to use them and that they make sense</p></li>
-          <li><p>Updated help command</p></li>
-          <li><p>Tided up code to make it easier to read and see what's going on</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.3
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Added new look to settings and help command</p></li>
-          <li><p>Improved ban, unban and kick command</p></li>
-          <li><p>Updated report command to fix an issue where error submission was not being sent</p></li>
-          <li><p>Fixed issue where sending DMs would cause a crash</p></li>
-          <li><p>Fixed error being given off by settings command</p></li>
-          <li><p>Added new checks to all settings commands to improve functionality</p></li>
-          <li><p>Added more commands to settings commands to allow you to change change specific settings</p></li>
-          <li><p>Added help menu to settings command to help show people how to use them</p></li>
-          <li><p>Added a role check that checks the that the roles users are stating exist on the server</p></li>
-          <li><p>Updated some of the behind the scenes commands</p></li>
-          <li><p>Fixed console issue</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.2
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Changes help command into sections so not all commands are displayed at once</p></li>
-          <li><p>Added commands to change leaving and welcome messages</p></li>
-          <li><p>Combined all enable and disable commands into one single command to do both</p></li>
-          <li><p>Added error catching to events so that if an error occurs the bot does not crash same is applied to commands</p></li>
-          <li><p>combined enable and disable commands for announce and clear command preserving role settings</p></li>
-          <li><p>Added command to enable and disable kick command</p></li>
-          <li><p>Updated website command list to match the commands Sierra is running</p></li>
-          <li><p>Added pages to some sections in the help command</p></li>
-          <li><p>Added ban and unban commands</p></li>
-          <li><p>Added command to enable and disable ban, unban and kick commands</p></li>
-          <li><p>Improved error catching to fix crashing that was occurring</p></li>
-          <li><p>Fixed issue with guildBanAdd and guildBanRemove causing crashing when referencing server settings</p></li>
-          <li><p>Added command to set auto role's role and to also enable or disable it</p></li>
-          <li><p>Combined all settings commands into one command</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.1
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-          <li><p>Started adding multi server support</p></li>
-          <li><p>Added enable and disable commands for welcome and leave messages</p></li>
-          <li><p>Added more commands to help command</p></li>
-          <li><p>Fixed error with guildMemberUpdate firing when Sierra joins a new server and when a new user joins a server</p></li>
-          <li><p>Added set color command which allows you to change the color of Sierra's embed messages</p></li>
-          <li><p>Added channel settings command to see what channels events will be sent to</p></li>
-          <li><p>Added toggle settings command to display what is enabled and disabled</p></li>
-          <li><p>Added guildCreate and guildDelete to take care of my servers settings</p></li>
-          <li><p>Added enable and disable command for announce and clear command</p></li>
-          <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.1.0
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Fixes issue causing activity to disappear after a period of time</p></li>
-           <li><p>Adds command and event enabler and disabler</p></li>
-           <li><p>Changed layout of welcome and bye messages</p></li>
-           <li><p>Added toggle settings command</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.9
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Added new error handling to commands</p></li>
-           <li><p>Made certain commands and events inaccessible to the public</p></li>
-           <li><p>Fixed an error that affected all commands</p></li>
-           <li><p>Improved performance</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.8
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Fixed issue causing crashes at boot</p></li>
-           <li><p>Updated links</p></li>
-           <li><p>Added new logo to Sierra</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.7
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Adds a report command which is used to report errors and issues with the bot</p></li>
-           <li><p>Updated help command</p></li>
-           <li><p>Fixed issue where bot crashed after running certain commands</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.6
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Fixed clear command giving errors</p></li>
-           <li><p>Changed from checking for roles to checking for permissions</p></li>
-           <li><p>remapped config file</p></li>
-           <li><p>Separated logs into specific channels</p></li>
-           <li><p>Added uptime to stats command</p></li>
-           <li><p>Removed uptime command</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.5
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Finished adding Role delete, member update and role update date events</p></li>
-           <li><p>Added layout examples for commands and events</p></li>
-           <li><p>Adds a bit more coded to the unfinished emoji update event</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-  
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.4
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Finished adding role added, role removed role</p></li>
-           <li><p>Fixed events not sending logs to the right channel</p></li>
-           <li><p>Took out all update logs while i finish them</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>  
-  
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.3
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Added Utils and Configs folders</p></li>
-           <li><p>Added new emoji, updated emoji and deleted emoji events</p></li>
-           <li><p>Started working on role add, role delete and role updated events</p></li>
-           <li><p>Added package installer bat</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.2
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Removed ban command due to issues</p></li>
-           <li><p>Added ban, unban and channel delete events</p></li>
-           <li><p>Added new time system for events</p></li>
-           <li><p>Added start.bat to file system</p></li>
-           <li><p>Cleaned up config file</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-  <div class="card">
-    <div class="card-header rounded-top border-top border-left border-right">
-      Version 2.0.1
-     </div>
-     <div class="card-body rounded-bottom border-bottom border-left border-right">
-     <h5 class="card-title">Changes</h5>
-     <p class="card-text">
-       <ul>
-           <li><p>Moved bot sign in token to a secret file</p></li>
-           <li><p>Finished adding log system for bans and kicks through the bot</p></li>
-           <li><p>Fixed the bot check used for userinfo</p></li>
-           <li><p>Added new event system for join message, leave message and delete log to remove them from bot.js</p></li>
-           <li><p>Bug fixes</p></li>
-       </ul>
-     </p>
-   </div>
-  </div><br>
-
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-        Version 2.0.0
-       </div>
-       <div class="card-body rounded-bottom border-bottom border-left border-right">
-       <h5 class="card-title">Changes</h5>
-       <p class="card-text">
-         <ul>
-             <li><p>Added new permission system to commands</p></li>
-             <li><p>Updated discord.js to V12</p></li>
-             <li><p>Supports new discord api</p></li>
-             <li><p>Added kick and ban commands back</p></li>
-             <li><p>Updated all commands to support new discord.js v12 and discord api</p></li>
-             <li><p>Completely redesigned core code</p></li>
-             <li><p>Added a little secret</p></li>
-             <li><p>Removed prefix, welcome channel message, bye channel message, settings commands</p></li>
-             <li><p>Removed unused and old dependencies</p></li>
-             <li><p>Changed embed color to random</p></li>
-             <li><p>Bug fixes</p></li>
-         </ul>
-       </p>
-     </div>
-    </div><br>
-  
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-          Version 1.0.5
-        </div>
-        <div class="card-body rounded-bottom border-bottom border-left border-right">
-          <h5 class="card-title">Changes</h5>
-          <p class="card-text">
-            <ul>
-                <li><p>Fixes issues where prefix is not shown</p></li>
-                <li><p>Bug fixes</p></li>
-            </ul>
-          </p>
-        </div>
+      <div class="card">
+         <div class="card-header rounded-top border-top border-left border-right">
+            Version 2.3.5 - upcoming
+         </div>
+         <div class="card-body rounded-bottom border-bottom border-left border-right">
+            <h5 class="card-title">Changes</h5>
+            <p class="card-text">
+               <ul>
+                  <li><p>Adds more error handling in case of missing config files</p></li>
+                  <li><p>Makes it so it checks for missing config files on boot</p></li>
+                  <li><p>Adds the ability for the bot to replace missing config files while being used so that the issue gets fixed automaticity without interference from me</p></li>
+                  <li><p>Bug fixes</p></li>
+               </ul>
+            </p>
+         </div>
       </div><br>
-
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-          Version 1.0.4
-        </div>
-        <div class="card-body rounded-bottom border-bottom border-left border-right">
-          <h5 class="card-title">Changes</h5>
-          <p class="card-text">
-            <ul>
-                <li><p>Removed ban and kick commands due to issues</p></li>
-                <li><p>Bug fixes</p></li>
-            </ul>
-          </p>
-        </div>
+      <hr><h1>Old versions</h1><br>
+      <div class="card">
+         <div class="card-header rounded-top border-top border-left border-right">
+            Version 2.3.4
+         </div>
+         <div class="card-body rounded-bottom border-bottom border-left border-right">
+            <h5 class="card-title">Changes</h5>
+            <p class="card-text">
+               <ul>
+                  <li><p>Makes it so if you use the timeout command on a user that's already timeout gives you the option to replace their current timeout</p></li>
+                  <li><p>Adds new stoptimeout command</p></li>
+                  <li><p>Updates help command and all Sierra's information</p></li>
+                  <li><p>Enabled unban command and removed message saying its disabled</p></li>
+                  <li><p>Fixed the issue with the unban slashCommand stopping it from running</p></li>
+                  <li><p>Made changes to all admin commands changing references and making certain information more visible</p></li>
+                  <li><p>Fixed an issue with guildBanAdd event causing it not to emit</p></li>
+                  <li><p>Bug fixes</p></li>
+               </ul>
+            </p>
+         </div>
       </div><br>
-
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-          Version 1.0.3
-        </div>
-        <div class="card-body rounded-bottom border-bottom border-left border-right">
-          <h5 class="card-title">Changes</h5>
-          <p class="card-text">
-            <ul>
-                <li><p>Added new embed colouring system</p></li>
-                <li><p>Added admin commands to help command</p></li>
-                <li><p>Removed old filetest command and adminhelp command</p></li>
-                <li><p>Removed old error log system</p></li>
-                <li><p>Bug fixes</p></li>
-            </ul>
-          </p>
-        </div>
-      </div><br>
-
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-          Version 1.0.2
-        </div>
-        <div class="card-body rounded-bottom border-bottom border-left border-right">
-          <h5 class="card-title">Changes</h5>
-          <p class="card-text">
-            <ul>
-                <li><p>Added database connection</p></li>
-                <li><p>Started on transition to database</p></li>
-                <li><p>Bug fixes</p></li>
-            </ul>
-          </p>
-        </div>
-      </div><br>
-
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-          Version 1.0.1
-        </div>
-        <div class="card-body rounded-bottom border-bottom border-left border-right">
-          <h5 class="card-title">Changes</h5>
-          <p class="card-text">
-            <ul>
-                <li><p>Added deleted message log</p></li>
-                <li><p>Added the ability to change welcome and bye messages</p></li>
-                <li><p>Bug fixes</p></li>
-            </ul>
-          </p>
-        </div>
-      </div><br>
-
-    <div class="card">
-      <div class="card-header rounded-top border-top border-left border-right">
-          Version 1.0.0
-        </div>
-        <div class="card-body rounded-bottom border-bottom border-left border-right">
-          <h5 class="card-title">Changes</h5>
-          <p class="card-text">
-            <ul>
-                <li><p>Initial release</p></li>
-            </ul>
-          </p>
-        </div>
+      <div class="justify-content-center">
+         <a id="ShowMoreBtn" class="btn btn-secondary btn-dark show" role="button" onclick="ShowMoreInfo()">Show more</a>
       </div>
-    <br>
-  </div>
-    <hr>
-</div>
-
-</main>
-<footer class="container">
-  <a class="back-to-top float-end" role="button">Back to Top</a>
-  <p>Designed by acegoal07</p>
-</footer>
+      <div id="ShowMoreList" class="d-none"><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.3.3
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds new timeout command and slash command</p></li>
+                     <li><p>Adds reason to ban slash command</p></li>
+                     <li><p>Enables unban slash command</p></li>
+                     <li><p>Updates help command to show new commands</p></li>
+                     <li><p>Updated all paged embeds to support new version of <a target="_blank" class="link-item" role="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination">@acegoal07/discordjs-pagination</a>/</p></li>
+                     <li><p>Adds error handling for missing config</p></li>
+                     <li><p>Makes it so missing config file error is resolved automaticity when detected</p></li>
+                     <li><p>Fixes a reference issue with all admin commands</p></li>
+                     <li><p>Updates more of the loading sequence to improve speed and reliability</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.3.2
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Complete redesign of command and event handlers improving loading speed</p></li>
+                     <li><p>combined slashCommandHandler and commandHandler to improve loading speed</p></li>
+                     <li><p>Changed setupnext command to setmusicinfo as its used to edit more than just the up next notifications</p></li>
+                     <li><p>Updates bot.js to use commandHandler V2 and removed the slashCommandHandler</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.3.1
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds volume command</p></li>
+                     <li><p>Adds setdjrole command</p></li>
+                     <li><p>Redesign of all setup commands to make them more effective and quicker</p></li>
+                     <li><p>No longer uses names of role and channel and instead store's the ID to reduce config file size and to stop issues with renamed items</p></li>
+                     <li><p>Updated help command</p></li>
+                     <li><p>Added admin role to the role sections of the settings command</p></li>
+                     <li><p>Renamed colors section of settings to styles and added up next settings</p></li>
+                     <li><p>Updated configFiler to have new config file layout</p></li>
+                     <li><p>Added the role used by auto role to the role section of settings</p></li>
+                     <li><p>Changed some titles in the settings command</p></li>
+                     <li><p>Gave skip and skipto commands their own up next message</p></li>
+                     <li><p>Fixed an issued with the pagination causing crashes</p></li>
+                     <li><p>Added error handling around missing admin or DJ roles</p></li>
+                     <li><p>Made it so when using setmusic or setadmintools disable command set roles will be disabled and cleared</p></li>
+                     <li><p>Clear command now displays how many items where deleted instead of how many items you requested to delete</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.3.0
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds shuffle command</p></li>
+                     <li><p>Fixes issue where the queue wouldn't clear if the bot was disconnected from the voice channel by a user</p></li>
+                     <li><p>Reduced the amount of items displayed in queue due to errors occurring because the queue is to large</p></li>
+                     <li><p>Adds clearqueue command</p></li>
+                     <li><p>Updated help command to display new commands</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.9
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds setupnext command allowing changes to the up next music notification</p></li>
+                     <li><p>Adds styles to the up next notification</p></li>
+                     <li><p>Added progress bar to now playing</p></li>
+                     <li><p>Fixed a reference issue</p></li>
+                     <li><p>More changes to the text output to make changes clearer to see</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.8
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added new config file design</p></li>
+                     <li><p>Updated all old configs to the new design</p></li>
+                     <li><p>Updated all commands to work with new config design</p></li>
+                     <li><p>Updated some settings commands to make it easier to read the changes you have made</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.7
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds a search command for YouTube songs</p></li>
+                     <li><p>Adds a now playing command</p></li>
+                     <li><p>Updated help command to show new commands</p></li>
+                     <li><p>Added an extra search if unable to find the song via text with play command</p></li>
+                     <li><p>Updated errors across all commands to make things easier to use and understand</p></li>
+                     <li><p>Changes streamType to improve performance</p></li>
+                     <li><p>Added ping information to botinfo</p></li>
+                     <li><p>Cleaned up the music code to make it run smoother</p></li>
+                     <li><p>Updated slashCommandHandler to improve speed</p></li>
+                     <li><p>Added loopqueue command</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.6
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds support for SoundCloud playlists</p></li>
+                     <li><p>Adds command to search for YouTube playlists</p></li>
+                     <li><p>Adds commands to search for SoundCloud tracks and playlists</p></li>
+                     <li><p>Adds commands remove and skipto</p></li>
+                     <li><p>New design for embeds making it easier to read and understand</p></li>
+                     <li><p>Trying a fix for the music commands skipping songs while going to the next one in the queue</p></li>
+                     <li><p>Adds support for Spotify playlist and song URL's in the play command</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.5
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds support for SoundCloud and YouTube playlists</p></li>
+                     <li><p>Stops the queue from showing more than 20 items to stop crashes</p></li>
+                     <li><p>Fixes lag while adding songs to the queue while already playing a song</p></li>
+                     <li><p>New design for queue command separating the now playing and the queued songs</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.4
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds a new debug command</p></li>
+                     <li><p>Adds new looping command for your music</p></li>
+                     <li><p>Made it so music commands are not deleted by the bot</p></li>
+                     <li><p>Fixed an error with some embed formats</p></li>
+                     <li><p>Updated the links on the botinfo command and turned them into buttons</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.3
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds a new way to handle missing message error across all commands</p></li>
+                     <li><p>Changed the way the music queue is received by the music commands</p></li>
+                     <li><p>Comes with an update to the <a target="_blank" class="link-item" role="button" href="https://acegoal07.dev/projects/sierra/">commands website</a></p></li>
+                     <li><p>Added setbyemessage command to the setbye command</p></li>
+                     <li><p>Added setwelcomemessage command to the setwelcome command</p></li>
+                     <li><p>Performance changes for boot and music commands</p></li>
+                     <li><p>Improved config system when joining and leaving a server</p></li>
+                     <li><p>Improved handlers for reloading commands</p></li>
+                     <li><p>Improved event, command and slash command handlers making them faster and more efficient</p></li>
+                     <li><p>Removed command used to fix configs as it is redundant</p></li>
+                     <li><p>Improved overall performance of Sierra</p></li>
+                     <li><p>Added new commands ping, nsfw and channelinfo</p></li>
+                     <li><p>Also comes with little tweaks for some text on commands</p></li>
+                     <li><p>Fixes an issue with messageDelete event causing it to trigger even when it shouldn't</p></li>
+                     <li><p>Make's Sierra quieter while playing music</p></li>
+                     <li><p>Fixes an issue with welcome and leave message crashing when a user has not set a profile picture for there account</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.2
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Re-added music commands that support Discord.js V13</p></li>
+                     <li><p>Fixed an issues that affected all commands deleting messages</p></li>
+                     <li><p>Fixed hosting issue caused by new music commands</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.1
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added my own dependence for embed pages called <a target="_blank" class="link-item" role="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination">@acegoal07/discordjs-pagination</a></p></li>
+                     <li><p>Re-enabled paged embeds across all commands slash and command based</p></li>
+                     <li><p>Updated all dependencies</p></li>
+                     <li><p>Removed unused dependencies</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.2.0
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Started adding Slash commands for public use more have be added just disabled due to them not being finished</p></li>
+                     <li><p>Finished updating all commands and events to the new layout</p></li>
+                     <li><p>Removed report command</p></li>
+                     <li><p>Fixed status refresher taking ages to run</p></li>
+                     <li><p>Improved error handling to keep up with new error messages</p></li>
+                     <li><p>Fixed a bug where some commands would be missing a reference sometimes</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.6
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added slashCommandHandler</p></li>
+                     <li><p>Added new layouts for commands which include the information needed for slashCommandHandler to run</p></li>
+                     <li><p>Changed setActivity to setPresence due to it being deprecated</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.5
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added more customization to welcome and leave messages</p></li>
+                     <li><p>Fixed welcome and leave messages</p></li>
+                     <li><p>Fixed serverinfo bot section not getting the amount of bots in the server</p></li>
+                     <li><p>changed embed colouring system</p></li>
+                     <li><p>Updated to use nodeJS version 16.6.2</p></li>
+                     <li><p>Updated to use discord.js version 13.1.0</p></li>
+                     <li><p>Disabled paged embeds temporally due to the dependence not supporting Discord.js V13</p></li>
+                     <li><p>Added new disabled or enabled check to improve performance when using command or events</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.4
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added new debug command to help with development</p></li>
+                     <li><p>Improved some commands to make sure people know how to use them and that they make sense</p></li>
+                     <li><p>Updated help command</p></li>
+                     <li><p>Tided up code to make it easier to read and see what's going on</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.3
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added new look to settings and help command</p></li>
+                     <li><p>Improved ban, unban and kick command</p></li>
+                     <li><p>Updated report command to fix an issue where error submission was not being sent</p></li>
+                     <li><p>Fixed issue where sending DMs would cause a crash</p></li>
+                     <li><p>Fixed error being given off by settings command</p></li>
+                     <li><p>Added new checks to all settings commands to improve functionality</p></li>
+                     <li><p>Added more commands to settings commands to allow you to change change specific settings</p></li>
+                     <li><p>Added help menu to settings command to help show people how to use them</p></li>
+                     <li><p>Added a role check that checks the that the roles users are stating exist on the server</p></li>
+                     <li><p>Updated some of the behind the scenes commands</p></li>
+                     <li><p>Fixed console issue</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.2
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Changes help command into sections so not all commands are displayed at once</p></li>
+                     <li><p>Added commands to change leaving and welcome messages</p></li>
+                     <li><p>Combined all enable and disable commands into one single command to do both</p></li>
+                     <li><p>Added error catching to events so that if an error occurs the bot does not crash same is applied to commands</p></li>
+                     <li><p>combined enable and disable commands for announce and clear command preserving role settings</p></li>
+                     <li><p>Added command to enable and disable kick command</p></li>
+                     <li><p>Updated website command list to match the commands Sierra is running</p></li>
+                     <li><p>Added pages to some sections in the help command</p></li>
+                     <li><p>Added ban and unban commands</p></li>
+                     <li><p>Added command to enable and disable ban, unban and kick commands</p></li>
+                     <li><p>Improved error catching to fix crashing that was occurring</p></li>
+                     <li><p>Fixed issue with guildBanAdd and guildBanRemove causing crashing when referencing server settings</p></li>
+                     <li><p>Added command to set auto role's role and to also enable or disable it</p></li>
+                     <li><p>Combined all settings commands into one command</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.1
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Started adding multi server support</p></li>
+                     <li><p>Added enable and disable commands for welcome and leave messages</p></li>
+                     <li><p>Added more commands to help command</p></li>
+                     <li><p>Fixed error with guildMemberUpdate firing when Sierra joins a new server and when a new user joins a server</p></li>
+                     <li><p>Added set color command which allows you to change the color of Sierra's embed messages</p></li>
+                     <li><p>Added channel settings command to see what channels events will be sent to</p></li>
+                     <li><p>Added toggle settings command to display what is enabled and disabled</p></li>
+                     <li><p>Added guildCreate and guildDelete to take care of my servers settings</p></li>
+                     <li><p>Added enable and disable command for announce and clear command</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.1.0
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Fixes issue causing activity to disappear after a period of time</p></li>
+                     <li><p>Adds command and event enabler and disabler</p></li>
+                     <li><p>Changed layout of welcome and bye messages</p></li>
+                     <li><p>Added toggle settings command</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.9
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added new error handling to commands</p></li>
+                     <li><p>Made certain commands and events inaccessible to the public</p></li>
+                     <li><p>Fixed an error that affected all commands</p></li>
+                     <li><p>Improved performance</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.8
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Fixed issue causing crashes at boot</p></li>
+                     <li><p>Updated links</p></li>
+                     <li><p>Added new logo to Sierra</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.7
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Adds a report command which is used to report errors and issues with the bot</p></li>
+                     <li><p>Updated help command</p></li>
+                     <li><p>Fixed issue where bot crashed after running certain commands</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.6
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Fixed clear command giving errors</p></li>
+                     <li><p>Changed from checking for roles to checking for permissions</p></li>
+                     <li><p>remapped config file</p></li>
+                     <li><p>Separated logs into specific channels</p></li>
+                     <li><p>Added uptime to stats command</p></li>
+                     <li><p>Removed uptime command</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.5
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Finished adding Role delete, member update and role update date events</p></li>
+                     <li><p>Added layout examples for commands and events</p></li>
+                     <li><p>Adds a bit more coded to the unfinished emoji update event</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.4
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Finished adding role added, role removed role</p></li>
+                     <li><p>Fixed events not sending logs to the right channel</p></li>
+                     <li><p>Took out all update logs while i finish them</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>  
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.3
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added Utils and Configs folders</p></li>
+                     <li><p>Added new emoji, updated emoji and deleted emoji events</p></li>
+                     <li><p>Started working on role add, role delete and role updated events</p></li>
+                     <li><p>Added package installer bat</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.2
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Removed ban command due to issues</p></li>
+                     <li><p>Added ban, unban and channel delete events</p></li>
+                     <li><p>Added new time system for events</p></li>
+                     <li><p>Added start.bat to file system</p></li>
+                     <li><p>Cleaned up config file</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 2.0.1
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Moved bot sign in token to a secret file</p></li>
+                     <li><p>Finished adding log system for bans and kicks through the bot</p></li>
+                     <li><p>Fixed the bot check used for userinfo</p></li>
+                     <li><p>Added new event system for join message, leave message and delete log to remove them from bot.js</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+            Version 2.0.0
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added new permission system to commands</p></li>
+                     <li><p>Updated discord.js to V12</p></li>
+                     <li><p>Supports new discord api</p></li>
+                     <li><p>Added kick and ban commands back</p></li>
+                     <li><p>Updated all commands to support new discord.js v12 and discord api</p></li>
+                     <li><p>Completely redesigned core code</p></li>
+                     <li><p>Added a little secret</p></li>
+                     <li><p>Removed prefix, welcome channel message, bye channel message, settings commands</p></li>
+                     <li><p>Removed unused and old dependencies</p></li>
+                     <li><p>Changed embed color to random</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+         </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 1.0.5
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Fixes issues where prefix is not shown</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 1.0.4
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Removed ban and kick commands due to issues</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 1.0.3
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added new embed colouring system</p></li>
+                     <li><p>Added admin commands to help command</p></li>
+                     <li><p>Removed old filetest command and adminhelp command</p></li>
+                     <li><p>Removed old error log system</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 1.0.2
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added database connection</p></li>
+                     <li><p>Started on transition to database</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 1.0.1
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Added deleted message log</p></li>
+                     <li><p>Added the ability to change welcome and bye messages</p></li>
+                     <li><p>Bug fixes</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div><br>
+         <div class="card">
+            <div class="card-header rounded-top border-top border-left border-right">
+               Version 1.0.0
+            </div>
+            <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <h5 class="card-title">Changes</h5>
+               <p class="card-text">
+                  <ul>
+                     <li><p>Initial release</p></li>
+                  </ul>
+               </p>
+            </div>
+         </div>
+         <br>
+      </div>
+      <hr>
+   </div>
+   <footer class="container">
+      <a class="back-to-top float-end" role="button">Back to Top</a>
+      <p>Designed by acegoal07</p>
+   </footer>
 </body>
 </html>
