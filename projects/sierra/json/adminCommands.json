@@ -1,31 +1,39 @@
 [
-    {
-        "command": ";announce <message>",
-        "description": "This command takes the message and posts it in the announcement channel"
-    },
-    {
-        "command": ";clear <1-100>",
-        "description": "Deletes the amount of messages that is defined"
-    },
-    {
-        "command": ";Kick <mention>",
-        "description": "Kick's the mentioned user from the server"
-    },
-    {
+   {
+      "command": ";announce <message>",
+      "description": "This command takes the message and posts it in the announcement channel"
+   },
+   {
+      "command": ";clear <1-100>",
+      "description": "Deletes the amount of messages that is defined"
+   },
+   {
+      "command": ";clearchannel",
+      "description": "Completely empties the current channel of all messages and items"
+   },
+   {
+      "command": ";kick <mention>",
+      "description": "Kick's the mentioned user from the server"
+   },
+   {
 
-        "command": ";ban <mention> <reason>",
-        "description": "Bans the mentioned user from the server"
-    },
-    {
-        "command": ";unban <user ID>",
-        "description": "Unban's the specified user"
-    },
-    {
-        "command": ";timeout <mention> <minutes> <reason>",
-        "description": "Stops the user from talking in the server for a set period of time"
-    },
-    {
-        "command": ";stoptimeout <mention>",
-        "description": "Removes the timeout from a user"
-    }
+      "command": ";ban <mention> <reason>",
+      "description": "Bans the mentioned user from the server"
+   },
+   {
+      "command": ";tempban <mention> <1-7> <reason>",
+      "description": "Bans the specified user for a specified amount of days"
+   },
+   {
+      "command": ";unban <user ID>",
+      "description": "Unban's the specified user"
+   },
+   {
+      "command": ";timeout <mention> <minutes> <reason>",
+      "description": "Stops the user from talking in the server for a set period of time"
+   },
+   {
+      "command": ";stoptimeout <mention>",
+      "description": "Removes the timeout from a user"
+   }
 ]

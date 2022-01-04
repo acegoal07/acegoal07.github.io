@@ -12,16 +12,17 @@
 ---
 
 <h1 id="about">About</h1>
-Sierra is a multi purpose discord bot and is a small time projects which is still a working progress meaning more commands are being add and things are subject to change
+Sierra is a multi purpose discord bot and is a small time projects which is still a working progress meaning more commands are being add and things are subject to change. Due to it being a small time project please bare with me when it comes to crashes, issues, bugs and Discord.js compatibility issues as i am on the only person working on the bot and need time to do the work.
 <br><br>
-Sierra does support slash commands but most of them are not finished yet so only a small amount are available to the public
+Sierra does support slash commands but most of them are not finished yet so only a small amount are available to the public.
 <br><br>
-You can find the Discord.js documentation <a href="https://discord.js.org/#/docs/main/stable/general/welcome">here</a> which has details on how to use Discord.js to create your own bot you can also find Discord.js guide here which shows in more depth how to work with Discord.js <a href="https://discordjs.guide/#before-you-begin">here</a>
+Ideas for what i should add to Sierra would be much appreciated because i want to make the bot as user friendly and useful as possible you can find ways of contacting me on the homepage of my website.
+<br><br>
+You can find the Discord.js documentation <a href="https://discord.js.org/#/docs/main/stable/general/welcome">here</a> which has details on how to use Discord.js to create your own bot, you can also find Discord.js guide here which shows in more depth how to work with Discord.js <a href="https://discordjs.guide/#before-you-begin">here</a>.
 <br><br>
 
 ```md
-Current Version: 2.3.5
-Discord.js Version: 13.5.0
+Current Bot Version: V2.3.6
 Prefix: ;
 ```
 <h1 id="commands">Commands</h1>
@@ -44,8 +45,10 @@ Prefix: ;
 |-------|-----------|
 ;announce ```<message>```|This command takes the message and posts it in the announcement channel
 ;clear ```<1-100>```|Deletes the amount of messages that is defined
+;clearchannel|Completely empties the current channel of all messages and items
 ;Kick ```<mention>```|Kick's the mentioned user from the server
 ;ban ```<mention>``` ```<reason>```|Bans the mentioned user from the server
+;tempban ```<mention>``` ```<days>``` ```<reason>```|Bans the specified user for a specified amount of days
 ;unban ```<user ID>```|Unban's the specified user
 ;timeout ```<mention>``` ```<minutes>``` ```<reason>```|Stops the user from talking in the server for a set period of time
 ;stoptimeout ```<mention>```|Removes the timeout from a user
@@ -92,7 +95,7 @@ Prefix: ;
 ;setadminrole|Used to set a role that is required to use the admin commands
 
 <h1 id="dependencies">Dependencies</h1>
-sierra@2.3.5<br>
+sierra@2.3.6<br>
 ├── @acegoal07/discordjs-pagination@1.1.3<br>
 ├── @acegoal07/timestamp-progress@1.0.7-a<br>
 ├── @discordjs/opus@0.5.3<br>
@@ -101,10 +104,10 @@ sierra@2.3.5<br>
 ├── @sapphire/snowflake@3.0.0<br>
 ├── ciql-json@1.9.6<br>
 ├── cpu-stat@2.0.1<br>
-├── discord-api-types@0.26.0<br>
+├── discord-api-types@0.26.1<br>
 ├── discord.js@13.5.0<br>
 ├── enmap@5.8.7<br>
-├── ffmpeg-static@4.4.0<br>
+├── ffmpeg-static@4.4.1<br>
 ├── ffmpeg@0.0.4<br>
 ├── fluent-ffmpeg@2.1.2<br>
 ├── fs@0.0.1-security<br>
@@ -119,4 +122,4 @@ sierra@2.3.5<br>
 ├── spotify-url-info@2.2.3<br>
 ├── ytdl-core@4.9.2<br>
 ├── ytpl@2.2.3<br>
-└── ytsr@3.5.3
+└── ytsr@3.5.3<br>

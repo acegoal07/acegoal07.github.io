@@ -1,38 +1,38 @@
 [
-    {
-        "command": ";help",
-        "description": "This command will display all of the commands the bot has corresponding to the section you choose"
-    },
-    {
-        "command": ";serverinfo",
-        "description": "This server will show all the info about the server you will need to know"
-    },
-    {
-        "command": ";serverinvite",
-        "description": "This command will send an invite to the current text channel which can be shared outside of the server"
-    },
-    {
-        "command": ";botinfo",
-        "description": "This command will show you all the info you will need to know about Sierra"
-    },
-    {
-        "command": ";roles",
-        "description": "This command will display all roles on the server and which ones you have"
-    },
-    {
-        "command": ";userinfo or ;userinfo <mention>",
-        "description": "Will display all needed information about a user"
-    },
-    {
-        "command": ";addsierra",
-        "description": "This command sends you the link required to invite Sierra to your own server"
-    },
-    {
-        "command": ";ping",
-        "description": "Used to see the latency for sierra and the ping for the Discord API"
-    },
-    {
-        "command": ";channelinfo",
-        "description": "Shows the user info about the channel they are using"
-    }
+   {
+      "command": ";help",
+      "description": "This command will display all of the commands the bot has corresponding to the section you choose"
+   },
+   {
+      "command": ";serverinfo",
+      "description": "This server will show all the info about the server you will need to know"
+   },
+   {
+      "command": ";serverinvite",
+      "description": "This command will send an invite to the current text channel which can be shared outside of the server"
+   },
+   {
+      "command": ";botinfo",
+      "description": "This command will show you all the info you will need to know about Sierra"
+   },
+   {
+      "command": ";roles",
+      "description": "This command will display all roles on the server and which ones you have"
+   },
+   {
+      "command": ";userinfo or ;userinfo <mention>",
+      "description": "Will display all needed information about a user"
+   },
+   {
+      "command": ";addsierra",
+      "description": "This command sends you the link required to invite Sierra to your own server"
+   },
+   {
+      "command": ";ping",
+      "description": "Used to see the latency for sierra and the ping for the Discord API"
+   },
+   {
+      "command": ";channelinfo",
+      "description": "Shows the user info about the channel they are using"
+   }
 ]

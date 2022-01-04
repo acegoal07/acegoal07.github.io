@@ -1,62 +1,62 @@
 [
-    {
-        "command": ";settings",
-        "description": "Allows you to see all the settings for Sierra specific to your server"
-    },
-    {
-        "command": ";setcolor",
-        "description": "Changes the color of Sierra's embed messages in your server"
-    },
-    {
-        "command": ";rename <name>",
-        "description": "This command changes the nickname of Sierra in your server"
-    },
-    {
-        "command": ";setwelcome",
-        "description": "Used to setup welcome message for your server"
-    },
-    {
-        "command": ";setbye",
-        "description": "Command is used to setup and use leaving messages on your server"
-    },
-    {
-        "command": ";setdeletelog",
-        "description": "Used to setup deleted message logging in your server"
-    },
-    {
-        "command": ";setbanlog",
-        "description": "Used to setup ban logging for your server"
-    },
-    {
-        "command": ";setannounce",
-        "description": "Used to setup the announcement command in your server"
-    },
-    {
-        "command": ";setclear",
-        "description": "Used to setup the clear command for your server"
-    },
-    {
-        "command": ";setadmintools",
-        "description": "Used to enable kick, ban and unban commands in the server"
-    },
-    {
-        "command": ";setautorole",
-        "description": "Used to setup autorole for your server"
-    },
-    {
-        "command": ";nsfw",
-        "description": "When used will switch the current channel between an NSFW channel and a normal channel"
-    },
-    {
-        "command": ";setmusicinfo",
-        "description": "Used to adjust settings for the up next music notification"
-    },
-    {
-        "command": ";setdjrole",
-        "description": "Used to set a role that is required to use the music commands"
-    },
-    {
-        "command": ";setadminrole",
-        "description": "Used to set a role that is required to use the admin commands"
-    }
+   {
+      "command": ";settings",
+      "description": "Allows you to see all the settings for Sierra specific to your server"
+   },
+   {
+      "command": ";setcolor",
+      "description": "Changes the color of Sierra's embed messages in your server"
+   },
+   {
+      "command": ";rename <name>",
+      "description": "This command changes the nickname of Sierra in your server"
+   },
+   {
+      "command": ";setwelcome",
+      "description": "Used to setup welcome message for your server"
+   },
+   {
+      "command": ";setbye",
+      "description": "Command is used to setup and use leaving messages on your server"
+   },
+   {
+      "command": ";setdeletelog",
+      "description": "Used to setup deleted message logging in your server"
+   },
+   {
+      "command": ";setbanlog",
+      "description": "Used to setup ban logging for your server"
+   },
+   {
+      "command": ";setannounce",
+      "description": "Used to setup the announcement command in your server"
+   },
+   {
+      "command": ";setclear",
+      "description": "Used to setup the clear command for your server"
+   },
+   {
+      "command": ";setadmintools",
+      "description": "Used to enable kick, ban and unban commands in the server"
+   },
+   {
+      "command": ";setautorole",
+      "description": "Used to setup autorole for your server"
+   },
+   {
+      "command": ";nsfw",
+      "description": "When used will switch the current channel between an NSFW channel and a normal channel"
+   },
+   {
+      "command": ";setmusicinfo",
+      "description": "Used to adjust settings for the up next music notification"
+   },
+   {
+      "command": ";setdjrole",
+      "description": "Used to set a role that is required to use the music commands"
+   },
+   {
+      "command": ";setadminrole",
+      "description": "Used to set a role that is required to use the admin commands"
+   }
 ]
