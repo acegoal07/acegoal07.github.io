@@ -1,74 +1,74 @@
 [
    {
-      "command": ";play <name or URL>",
+      "command": "play (name or URL)",
       "description": "Plays the song you specified either with a link or the name of the song"
    },
    {
-      "command": ";disconnect",
+      "command": "disconnect",
       "description": "Clears the server queue and disconnects the bot from the voice channel"
    },
    {
-      "command": ";skip",
+      "command": "skip",
       "description": "Skips to the next song in the server song queue"
    },
    {
-      "command": ";skipto <queue position>",
+      "command": "skipto (queue position)",
       "description": "Skips you to the specified position in the queue"
    },
    {
-      "command": ";queue",
+      "command": "queue",
       "description": "Displays the server song queue"
    },
    {
-      "command": ";pause",
+      "command": "pause",
       "description": "Pauses the current song playing in the voice channel"
    },
    {
-      "command": ";unpause",
+      "command": "unpause",
       "description": "Unpauses the current song playing in the voice channel"
    },
    {
-      "command": ";remove <queue position>",
+      "command": "remove (queue position)",
       "description": "Removes the song which is in the specified queue position"
    },
    {
-      "command": ";nowplaying",
+      "command": "nowplaying",
       "description": "Displays information about the song that is currently playing"
    },
    {
-      "command": ";loop",
+      "command": "loop",
       "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
    },
    {
-      "command": ";loopqueue",
+      "command": "loopqueue",
       "description": "Loops the server queue"
    },
    {
-      "command": ";searchyt <name>",
+      "command": "searchyt (name)",
       "description": "Searches YouTube for a track with the corresponding name"
    },
    {
-      "command": ";searchytpl <name>",
+      "command": "searchytpl (name)",
       "description": "Searches YouTube for a playlist with the corresponding name"
    },
    {
-      "command": ";searchsc <name>",
+      "command": "searchsc (name)",
       "description": "Searches SoundCloud for a track with the corresponding name"
    },
    {
-      "command": ";searchscpl <name>",
+      "command": "searchscpl (name)",
       "description": "Searches SoundCloud for a playlist with the corresponding name"
    },
    {
-      "command": ";shuffle",
+      "command": "shuffle",
       "description": "Shuffles the music queue randomizing what song comes up next"
    },
    {
-      "command": ";clearqueue",
+      "command": "clearqueue",
       "description": "Clears the queue of all songs"
    },
    {
-      "command": ";volume <1-100>",
+      "command": "volume (1-100)",
       "description": "Allows you to adjust the volume of the music"
    }
 ]

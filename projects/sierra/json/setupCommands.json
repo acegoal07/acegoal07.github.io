@@ -1,62 +1,66 @@
 [
    {
-      "command": ";settings",
+      "command": "settings",
       "description": "Allows you to see all the settings for Sierra specific to your server"
    },
    {
-      "command": ";setcolor",
+      "command": "setprefix (prefix)",
+      "description": "Allows you to set a custom prefix for Sierra"
+   },
+   {
+      "command": "setcolor",
       "description": "Changes the color of Sierra's embed messages in your server"
    },
    {
-      "command": ";rename <name>",
+      "command": "rename (name)",
       "description": "This command changes the nickname of Sierra in your server"
    },
    {
-      "command": ";setwelcome",
+      "command": "setwelcome",
       "description": "Used to setup welcome message for your server"
    },
    {
-      "command": ";setbye",
+      "command": "setbye",
       "description": "Command is used to setup and use leaving messages on your server"
    },
    {
-      "command": ";setdeletelog",
+      "command": "setdeletelog",
       "description": "Used to setup deleted message logging in your server"
    },
    {
-      "command": ";setbanlog",
+      "command": "setbanlog",
       "description": "Used to setup ban logging for your server"
    },
    {
-      "command": ";setannounce",
+      "command": "setannounce",
       "description": "Used to setup the announcement command in your server"
    },
    {
-      "command": ";setclear",
+      "command": "setclear",
       "description": "Used to setup the clear command for your server"
    },
    {
-      "command": ";setadmintools",
+      "command": "setadmintools",
       "description": "Used to enable kick, ban and unban commands in the server"
    },
    {
-      "command": ";setautorole",
+      "command": "setautorole",
       "description": "Used to setup autorole for your server"
    },
    {
-      "command": ";nsfw",
+      "command": "nsfw",
       "description": "When used will switch the current channel between an NSFW channel and a normal channel"
    },
    {
-      "command": ";setmusicinfo",
+      "command": "setmusicinfo",
       "description": "Used to adjust settings for the up next music notification"
    },
    {
-      "command": ";setdjrole",
+      "command": "setdjrole",
       "description": "Used to set a role that is required to use the music commands"
    },
    {
-      "command": ";setadminrole",
+      "command": "setadminrole",
       "description": "Used to set a role that is required to use the admin commands"
    }
 ]
