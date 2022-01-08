@@ -52,8 +52,8 @@
       "description": "When used will switch the current channel between an NSFW channel and a normal channel"
    },
    {
-      "command": "setmusicinfo",
-      "description": "Used to adjust settings for the up next music notification"
+      "command": "setmusicstyle",
+      "description": "Used to edit settings for the music commands"
    },
    {
       "command": "setdjrole",

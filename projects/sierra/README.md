@@ -5,7 +5,8 @@
 <p align="center">
     <a href="#about">About</a> &#xa0 | &#xa0 
     <a href="#commands">Commands</a> &#xa0 | &#xa0 
-    <a href="#dependencies">Dependencies</a> &#xa0 | &#xa0 
+    <a href="#dependencies">Dependencies</a> &#xa0 | &#xa0
+    <a href="https://discord.com/api/oauth2/authorize?client_id=878980386590429204&permissions=8&scope=bot%20applications.commands">Add bot</a> &#xa0 | &#xa0 
     <a href="https://github.com/acegoal07" target="_blank">Author</a>
 </p>
 
@@ -92,7 +93,7 @@ setclear|Used to setup the clear command for your server
 setadmintools|Used to enable kick, ban and unban commands in the server
 setautorole|Used to setup autorole for your server
 nsfw|When used will switch the current channel between an NSFW channel and a normal channel
-setmusicinfo|Used to adjust settings for the up next music notification
+setmusicstyle|Used to edit settings for the music commands
 setdjrole|Used to set a role that is required to use the music commands
 setadminrole|Used to set a role that is required to use the admin commands
 
@@ -107,7 +108,7 @@ sierra@2.3.6<br>
 ├── ciql-json@1.9.6<br>
 ├── cpu-stat@2.0.1<br>
 ├── discord-api-types@0.26.1<br>
-├── discord.js@13.5.0<br>
+├── discord.js@13.5.1<br>
 ├── enmap@5.8.7<br>
 ├── ffmpeg-static@4.4.1<br>
 ├── ffmpeg@0.0.4<br>
@@ -117,6 +118,7 @@ sierra@2.3.6<br>
 ├── moment-duration-format@2.3.2<br>
 ├── moment@2.29.1<br>
 ├── node@16.13.1<br>
+├── opusscript@0.0.8<br>
 ├── prism-media@1.3.2<br>
 ├── public-ip@4.0.4<br>
 ├── scdl-core@1.0.19<br>
