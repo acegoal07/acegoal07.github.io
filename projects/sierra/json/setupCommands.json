@@ -62,5 +62,9 @@
    {
       "command": "setadminrole",
       "description": "Used to set a role that is required to use the admin commands"
+   },
+   {
+      "command": "setcommandchannel",
+      "description": "Used to setup a command channel"
    }
 ]

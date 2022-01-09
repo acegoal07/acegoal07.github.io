@@ -96,6 +96,7 @@ nsfw|When used will switch the current channel between an NSFW channel and a nor
 setmusicstyle|Used to edit settings for the music commands
 setdjrole|Used to set a role that is required to use the music commands
 setadminrole|Used to set a role that is required to use the admin commands
+setcommandchannel|Used to setup a command channel
 
 <h1 id="dependencies">Dependencies</h1>
 sierra@2.3.6<br>
