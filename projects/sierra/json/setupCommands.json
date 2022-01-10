@@ -12,10 +12,6 @@
       "description": "Changes the color of Sierra's embed messages in your server"
    },
    {
-      "command": "rename (name)",
-      "description": "This command changes the nickname of Sierra in your server"
-   },
-   {
       "command": "setwelcome",
       "description": "Used to setup welcome message for your server"
    },
@@ -46,10 +42,6 @@
    {
       "command": "setautorole",
       "description": "Used to setup autorole for your server"
-   },
-   {
-      "command": "nsfw",
-      "description": "When used will switch the current channel between an NSFW channel and a normal channel"
    },
    {
       "command": "setmusicstyle",
