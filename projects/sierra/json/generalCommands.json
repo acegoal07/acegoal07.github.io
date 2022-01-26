@@ -28,10 +28,6 @@
       "description": "This command sends you the link required to invite Sierra to your own server"
    },
    {
-      "command": "ping",
-      "description": "Used to see the latency for sierra and the ping for the Discord API"
-   },
-   {
       "command": "channelinfo",
       "description": "Shows the user info about the channel they are using"
    }

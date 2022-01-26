@@ -41,7 +41,6 @@ botinfo|This command will show you all the info you will need to know about Sier
 roles|This command will display all roles on the server and which ones you have
 userinfo or userinfo ```(mention)```|Will display all needed information about a user
 addsierra|This command sends you the link required to invite Sierra to your own server
-ping|Used to see the latency for sierra and the ping for the Discord API
 channelinfo|Shows the user info about the channel they are using
 <h3>Admin:</h3>
 
@@ -86,6 +85,7 @@ nsfw|When used will switch the current channel between an NSFW channel and a nor
 rename ```(name)```|This command changes the nickname of Sierra in your server
 imdb ```(name of show or film)```|Creates a poll in the channel and collects the votes and after a certain amount of time displays the results
 poll ```(question)```|Creates a poll in the channel and collects the votes and after a certain amount of time displays the results
+ping|Used to see the latency for sierra and the ping for the Discord API
 <h3>Setup:</h3>
 
 |Command|Description|
