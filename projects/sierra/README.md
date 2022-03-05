@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.3.7
+Current Bot Version: V2.3.9
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -107,20 +107,21 @@ setadminrole|Used to set a role that is required to use the admin commands
 setcommandchannel|Used to setup a command channel
 
 <h1 id="dependencies">Dependencies</h1>
+
+```cmd
 sierra@2.3.6<br>
-├── @acegoal07/discordjs-pagination@1.1.7<br>
-├── @acegoal07/djs-pagination-portal@1.0.3<br>
+├── @acegoal07/discordjs-pagination@1.2.6<br>
 ├── @acegoal07/timestamp-progress@1.0.9<br>
 ├── @discordjs/opus@0.5.3<br>
-├── @discordjs/rest@0.2.0-canary.0<br>
-├── @discordjs/voice@0.7.5<br>
-├── @sapphire/snowflake@3.0.1<br>
-├── @supercharge/collections@4.1.0<br>
+├── @discordjs/rest@0.3.0<br>
+├── @discordjs/voice@0.8.0<br>
+├── @sapphire/snowflake@3.1.0<br>
+├── @supercharge/collections@4.2.0<br>
 ├── ciql-json@1.9.6<br>
 ├── cpu-stat@2.0.1<br>
 ├── discord-api-types@0.26.1<br>
 ├── discord.js@13.6.0<br>
-├── enmap@5.8.7<br>
+├── enmap@5.8.8<br>
 ├── ffmpeg-static@4.4.1<br>
 ├── ffmpeg@0.0.4<br>
 ├── fluent-ffmpeg@2.1.2<br>
@@ -133,9 +134,10 @@ sierra@2.3.6<br>
 ├── opusscript@0.0.8<br>
 ├── prism-media@1.3.2<br>
 ├── public-ip@4.0.4<br>
-├── scdl-core@1.0.19<br>
+├── scdl-core@1.0.20<br>
 ├── soundcloud-downloader@1.0.0<br>
-├── spotify-url-info@2.2.3<br>
-├── ytdl-core@4.10.0<br>
-├── ytpl@2.2.3<br>
-└── ytsr@3.6.0<br>
+├── spotify-url-info@2.2.7<br>
+├── ytdl-core@4.11.0<br>
+├── ytpl@2.3.0<br>
+└── ytsr@3.6.0
+```
