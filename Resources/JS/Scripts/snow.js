@@ -18,11 +18,11 @@ var resetPosition = false;
 var enableAnimations = false;
 var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
 
-// Handle animation accessibility preferences 
+// Handle animation accessibility preferences
 function setAccessibilityState() {
   if (reduceMotionQuery.matches) {
     enableAnimations = false;
-  } else { 
+  } else {
     enableAnimations = true;
   }
 }
@@ -137,7 +137,7 @@ function moveSnowflakes() {
     for (var i = 0; i < snowflakes.length; i++) {
       var snowflake = snowflakes[i];
       snowflake.update();
-    }      
+    }
   }
 
   // Reset the position of all the snowflakes to a new value

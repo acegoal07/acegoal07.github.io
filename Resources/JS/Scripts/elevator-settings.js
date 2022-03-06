@@ -21,5 +21,5 @@ window.onload = function() {
       element: document.querySelector('.strangeweapons-btn'),
       targetElement: document.querySelector('#strangeweapons'),
       verticalPadding: 100  // in pixels
-    });     
+    });
   };
