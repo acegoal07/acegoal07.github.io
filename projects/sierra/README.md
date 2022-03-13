@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.3.9
+Current Bot Version: V2.4.0
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -109,35 +109,36 @@ setcommandchannel|Used to setup a command channel
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.3.6<br>
-├── @acegoal07/discordjs-pagination@1.2.6<br>
-├── @acegoal07/timestamp-progress@1.0.9<br>
-├── @discordjs/opus@0.5.3<br>
-├── @discordjs/rest@0.3.0<br>
-├── @discordjs/voice@0.8.0<br>
-├── @sapphire/snowflake@3.1.0<br>
-├── @supercharge/collections@4.2.0<br>
-├── ciql-json@1.9.6<br>
-├── cpu-stat@2.0.1<br>
-├── discord-api-types@0.26.1<br>
-├── discord.js@13.6.0<br>
-├── enmap@5.8.8<br>
-├── ffmpeg-static@4.4.1<br>
-├── ffmpeg@0.0.4<br>
-├── fluent-ffmpeg@2.1.2<br>
-├── fs@0.0.1-security<br>
-├── imdb-api@4.4.1<br>
-├── libsodium-wrappers@0.7.9<br>
-├── moment-duration-format@2.3.2<br>
-├── moment@2.29.1<br>
-├── node@16.13.2<br>
-├── opusscript@0.0.8<br>
-├── prism-media@1.3.2<br>
-├── public-ip@4.0.4<br>
-├── scdl-core@1.0.20<br>
-├── soundcloud-downloader@1.0.0<br>
-├── spotify-url-info@2.2.7<br>
-├── ytdl-core@4.11.0<br>
-├── ytpl@2.3.0<br>
+sierra@2.4.0
+├── @acegoal07/discordjs-pagination@1.2.6
+├── @acegoal07/timestamp-progress@1.0.9
+├── @discordjs/opus@0.5.3
+├── @discordjs/rest@0.3.0
+├── @discordjs/voice@0.8.0
+├── @sapphire/snowflake@3.1.0
+├── @supercharge/collections@4.2.0
+├── ciql-json@1.9.6
+├── cpu-stat@2.0.1
+├── discord-api-types@0.26.1
+├── discord.js@13.6.0
+├── enmap@5.8.8
+├── ffmpeg-static@4.4.1
+├── ffmpeg@0.0.4
+├── fluent-ffmpeg@2.1.2
+├── fs@0.0.1-security
+├── imdb-api@4.4.1
+├── libsodium-wrappers@0.7.9
+├── moment-duration-format@2.3.2
+├── moment@2.29.1
+├── node@16.13.2
+├── opusscript@0.0.8
+├── pokemontcgsdk@2.0.0
+├── prism-media@1.3.2
+├── public-ip@4.0.4
+├── scdl-core@1.0.20
+├── soundcloud-downloader@1.0.0
+├── spotify-url-info@2.2.7
+├── ytdl-core@4.11.0
+├── ytpl@2.3.0
 └── ytsr@3.6.0
 ```
