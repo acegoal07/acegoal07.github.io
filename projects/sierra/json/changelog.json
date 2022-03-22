@@ -1,0 +1,24 @@
+[   {
+      "version": "1.0.2",
+      "changes": [
+         "Initial release",
+         "help yes",
+         "me",
+         "me2"
+      ]
+   },
+   {
+      "version": "1.0.1",
+      "changes": [
+         "Initial release",
+         "help yes",
+         "me"
+      ]
+   },
+   {
+      "version": "1.0.0",
+      "changes": [
+         "Initial release"
+      ]
+   }
+]
