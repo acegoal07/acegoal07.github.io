@@ -1,13 +1,13 @@
 [
    {
-      "version": "1.0.3",
+      "version": "1.0.5",
       "changes": [
          "Fixes issues where prefix is not shown",
          "Bug fixes"
       ]
    },
    {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "changes": [
          "Removed ban and kick commands due to issues",
          "Bug fixes"

@@ -48,7 +48,8 @@ $.getJSON("./json/changelog.json",
 
          else {
             const current = document.getElementById('pastVersion');
-            current.innerHTML = 
+            const pastVersions = current.createElement(info.version)
+            pastVersions.innerHTML = 
             `<div class="card">
             <div class="card-header rounded-top border-top border-left border-right">
                Version ${info.version}
