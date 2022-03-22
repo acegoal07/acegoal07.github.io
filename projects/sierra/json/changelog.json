@@ -1,18 +1,29 @@
-[   {
+[
+   {
+      "version": "1.0.3",
+      "changes": [
+         "Added new embed colouring system",
+         "Added admin commands to help command",
+         "Removed old filetest command and adminhelp command",
+         "Added database connection",
+         "Removed old error log system",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "1.0.2",
       "changes": [
-         "Initial release",
-         "help yes",
-         "me",
-         "me2"
+         "Added database connection",
+         "Started on transition to database",
+         "Bug fixes"
       ]
    },
    {
       "version": "1.0.1",
       "changes": [
-         "Initial release",
-         "help yes",
-         "me"
+         "Added deleted message log",
+         "Added the ability to change welcome and bye messages",
+         "Bug fixes"
       ]
    },
    {
