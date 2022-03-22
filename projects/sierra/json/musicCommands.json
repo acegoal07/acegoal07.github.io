@@ -60,6 +60,14 @@
       "description": "Searches SoundCloud for a playlist with the corresponding name"
    },
    {
+      "command": "searchsp (name)",
+      "description": "Searches Spotify for a track with the corresponding name"
+   },
+   {
+      "command": "searchsppl (name)",
+      "description": "Searches Spotify for a playlist with the corresponding name"
+   },
+   {
       "command": "shuffle",
       "description": "Shuffles the music queue randomizing what song comes up next"
    },
@@ -70,5 +78,9 @@
    {
       "command": "volume (1-100)",
       "description": "Allows you to adjust the volume of the music"
+   },
+   {
+      "command": "wheretolisten",
+      "description": "Searches Spotify, SoundCloud and YouTube and provides you with links"
    }
 ]

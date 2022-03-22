@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.0
+Current Bot Version: V2.4.1
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -74,9 +74,12 @@ searchyt ```(name)```|Searches YouTube for a track with the corresponding name
 searchytpl ```(name)```|Searches YouTube for a playlist with the corresponding name
 searchsc ```(name)```|Searches SoundCloud for a track with the corresponding name
 searchscpl ```(name)```|Searches SoundCloud for a playlist with the corresponding name
+searchsp ```(name)```|Searches Spotify for a track with the corresponding name
+searchsppl ```(name)```|Searches Spotify for a playlist with the corresponding name
 shuffle|Shuffles the music queue randomizing what song comes up next
 clearqueue|Clears the queue of all songs
 volume ```(1-100)```|Allows you to adjust the volume of the music
+wheretolisten|Searches Spotify, SoundCloud and YouTube and provides you with links
 <h3>Utility:</h3>
 
 |Command|Description|
@@ -109,13 +112,13 @@ setcommandchannel|Used to setup a command channel
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.0
+sierra@2.4.1
 ├── @acegoal07/discordjs-pagination@1.2.6
 ├── @acegoal07/timestamp-progress@1.0.9
 ├── @discordjs/opus@0.5.3
 ├── @discordjs/rest@0.3.0
 ├── @discordjs/voice@0.8.0
-├── @sapphire/snowflake@3.1.0
+├── @sapphire/snowflake@3.2.0
 ├── @supercharge/collections@4.2.0
 ├── ciql-json@1.9.6
 ├── cpu-stat@2.0.1
@@ -130,14 +133,15 @@ sierra@2.4.0
 ├── libsodium-wrappers@0.7.9
 ├── moment-duration-format@2.3.2
 ├── moment@2.29.1
-├── node@16.13.2
+├── node@16.14.0
 ├── opusscript@0.0.8
-├── pokemontcgsdk@2.0.0
 ├── prism-media@1.3.2
 ├── public-ip@4.0.4
 ├── scdl-core@1.0.20
 ├── soundcloud-downloader@1.0.0
-├── spotify-url-info@2.2.7
+├── spotify-info.js@1.0.4
+├── spotify-url-info@2.2.9
+├── systeminformation@5.11.8
 ├── ytdl-core@4.11.0
 ├── ytpl@2.3.0
 └── ytsr@3.6.0
