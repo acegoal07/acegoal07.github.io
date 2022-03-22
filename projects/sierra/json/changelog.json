@@ -2,6 +2,20 @@
    {
       "version": "1.0.3",
       "changes": [
+         "Fixes issues where prefix is not shown",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "1.0.3",
+      "changes": [
+         "Removed ban and kick commands due to issues",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "1.0.3",
+      "changes": [
          "Added new embed colouring system",
          "Added admin commands to help command",
          "Removed old filetest command and adminhelp command",
