@@ -1,15 +1,46 @@
 [
    {
+      "version": "2.0.3",
+      "changes": [
+         "Added Utils and Configs folders",
+         "Added new emoji, updated emoji and deleted emoji events",
+         "Started working on role add, role delete and role updated events",
+         "Added package installer bat",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.2",
+      "changes": [
+         "Removed ban command due to issues",
+         "Added ban, unban and channel delete events",
+         "Added new time system for events",
+         "Added start.bat to file system",
+         "Cleaned up config file",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.1",
+      "changes": [
+         "Moved bot sign in token to a secret file",
+         "Finished adding log system for bans and kicks through the bot",
+         "Fixed the bot check used for userinfo",
+         "Added new event system for join message, leave message and delete log to remove them from bot.js",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.0.0",
       "changes": [
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
+         "Added new permission system to commands",
+         "Updated discord.js to V12",
+         "Supports new discord api",
+         "Added kick and ban commands back",
+         "Updated all commands to support new discord.js v12 and discord api",
+         "Completely redesigned core code",
+         "Added a little secret",
+         "Removed prefix, welcome channel message, bye channel message, settings commands",
          "Removed unused and old dependencies",
          "Changed embed color to random",
          "Bug fixes"
