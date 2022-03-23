@@ -2,7 +2,7 @@ var count = 0;
 var currentVersion;
 var previousVersion;
 var pastVersion = [];
-$.getJSON("./json/changelog.json",
+$.getJSON("/projects/sierra/json/changelog.json",
    function (data) {
       for (info of data) {
          count += 1;

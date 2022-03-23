@@ -282,7 +282,7 @@ if (typeof module !== "undefined" && module.exports) {
             list.classList.remove('d-none');
             button.classList.remove('show');
             button.classList.add('hide');
-            button.innerHTML = "Show less";
+            button.innerHTML = "Show Less";
         } else {
             list.classList.add('d-none');
             button.classList.remove('hide');
