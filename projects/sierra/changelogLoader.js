@@ -69,5 +69,5 @@ $.getJSON("./json/changelog.json",
       const previousSet = document.getElementById('previousVersion');
       previousSet.innerHTML = previousVersion;
       const pastSet = document.getElementById('pastVersion');
-      pastSet.innerHTML = pastVersion;
+      pastSet.innerHTML = pastVersion.join('');
    })

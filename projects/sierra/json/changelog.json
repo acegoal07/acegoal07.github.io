@@ -1,5 +1,21 @@
 [
    {
+      "version": "2.0.0",
+      "changes": [
+         "",
+         "",
+         "",
+         "",
+         "",
+         "",
+         "",
+         "",
+         "Removed unused and old dependencies",
+         "Changed embed color to random",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "1.0.5",
       "changes": [
          "Fixes issues where prefix is not shown",
