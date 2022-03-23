@@ -1,4 +1,450 @@
 [
+
+   {
+      "version": "2.4.1",
+      "changes": [
+         "Adds Search commands for spotify including tracks and playlists",
+         "Added new commands to help command",
+         "Improved the Spotify system to make it more accurate when playing songs",
+         "Adds Spotify Api allowing for future features",
+         "Blocked urls being put throw search commands",
+         "Adds a slash command to show the set prefix if it is forgotten",
+         "Creates a toolkit.js to have functions that are being used by multiple commands",
+         "Adds command specific channel to slash commands",
+         "Fixes setcommandchannel not running properly",
+         "Removed old prefix checking system",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.4.0",
+      "changes": [
+         "Adds missing settings to settings command",
+         "Adds new config system",
+         "Updates all commands and events to use new config system",
+         "Updates all config files to new system",
+         "Updates configFiler to handle new system",
+         "Increased music quality",
+         "Contains major quality of life improvements to the code helping it to run smoother",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.9",
+      "changes": [
+         "Switches to the wrapper for @acegoal07/discordjs-pagination",
+         "Makes it so the error handler automatically get the name of the command or event",
+         "Switches bot.js to sierra.js",
+         "Adds new invalid selection response if you try and use a selection which doesn't exist within a command",
+         "Updated to new dependencies",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.8",
+      "changes": [
+         "Adjusted configFiler",
+         "Updated all dependencies",
+         "Updated all paged embeds to support changes done to pagination dependency",
+         "Moved ping command to utility",
+         "Made it so interactionCreate ignores private messages",
+         "Updated help command",
+         "Adds requested by feature to music commands",
+         "Made it so botinfo shows the prefix for the current server",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.7",
+      "changes": [
+         "Updates queue command to have pages so you can see the whole queue",
+         "Adds poll and imdb commands",
+         "Adds new utility help section",
+         "Fixed a couple issues caused by the migration to custom prefixes",
+         "Added more handling for crashes, restarts and connection loss so Sierra gets back online as quickly as possible",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.6",
+      "changes": [
+         "Tweaks channelinfo command",
+         "Adds tempban and clear channel command",
+         "Updates help command",
+         "Updates how paged embeds coloured in the help command",
+         "Adds support fro custom prefix's",
+         "Adds setprefix command to change servers prefix",
+         "Changes the activity text set for the bot to remove the ;help bit as it wont be universal due to custom prefixes",
+         "Fixes a compatibility issue with the music commands",
+         "Makes it so the set music command style effects now playing and added to queue notifications as well",
+         "Changes setmusicinfo command to setmusicstyle",
+         "Updates configs and configFiler to support new changes that effect the config files",
+         "Adds command channel feature",
+         "Adds setcommandchannel command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.5",
+      "changes": [
+         "Adds more error handling in case of missing config files",
+         "Makes it so it checks for missing config files on boot",
+         "Adds the ability for the bot to replace missing config files while being used so that the issue gets fixed automaticity without interference from me",
+         "Fixed the skip and skipto commands showing the song playing instead of the song being skipped to",
+         "Fixes null presence issue with userinfo",
+         "Removed ID in userinfo command and replaced it with the users discriminator",
+         "Starts adding the base support for custom prefix's",
+         "Updated userinfo to show the users activity like it is shown under their username",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.4",
+      "changes": [
+         "Makes it so if you use the timeout command on a user that's already timeout gives you the option to replace their current timeout",
+         "Adds new stoptimeout command",
+         "Updates help command and all Sierra's information",
+         "Enabled unban command and removed message saying its disabled",
+         "Fixed the issue with the unban slashCommand stopping it from running",
+         "Made changes to all admin commands changing references and making certain information more visible",
+         "Fixed an issue with guildBanAdd event causing it not to emit",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.3",
+      "changes": [
+         "Adds new timeout command and slash command",
+         "Adds reason to ban slash command",
+         "Enables unban slash command",
+         "Updates help command to show new commands",
+         "Updated all paged embeds to support new version of @acegoal07/discordjs-pagination",
+         "Adds error handling for missing config",
+         "Makes it so missing config file error is resolved automaticity when detected",
+         "Fixes a reference issue with all admin commands",
+         "Updates more of the loading sequence to improve speed and reliability",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.2",
+      "changes": [
+         "Complete redesign of command and event handlers improving loading speed",
+         "combined slashCommandHandler and commandHandler to improve loading speed",
+         "Changed setupnext command to setmusicinfo as its used to edit more than just the up next notifications",
+         "Updates bot.js to use commandHandler V2 and removed the slashCommandHandler",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.1",
+      "changes": [
+         "Adds volume command",
+         "Adds setdjrole command",
+         "Redesign of all setup commands to make them more effective and quicker",
+         "No longer uses names of role and channel and instead store's the ID to reduce config file size and to stop issues with renamed items",
+         "Updated help command",
+         "Added admin role to the role sections of the settings command",
+         "Renamed colors section of settings to styles and added up next settings",
+         "Updated configFiler to have new config file layout",
+         "Added the role used by auto role to the role section of settings",
+         "Changed some titles in the settings command",
+         "Gave skip and skipto commands their own up next message",
+         "Fixed an issued with the pagination causing crashes",
+         "Added error handling around missing admin or DJ roles",
+         "Made it so when using setmusic or setadmintools disable command set roles will be disabled and cleared",
+         "Clear command now displays how many items where deleted instead of how many items you requested to delete",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.3.0",
+      "changes": [
+         "Adds shuffle command",
+         "Fixes issue where the queue wouldn't clear if the bot was disconnected from the voice channel by a user",
+         "Reduced the amount of items displayed in queue due to errors occurring because the queue is to large",
+         "Adds clearqueue command",
+         "Updated help command to display new commands",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.9",
+      "changes": [
+         "Adds setupnext command allowing changes to the up next music notification",
+         "Adds styles to the up next notification",
+         "Added progress bar to now playing",
+         "Fixed a reference issue",
+         "More changes to the text output to make changes clearer to see",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.8",
+      "changes": [
+         "Added new config file design",
+         "Updated all old configs to the new design",
+         "Updated all commands to work with new config design",
+         "Updated some settings commands to make it easier to read the changes you have made",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.7",
+      "changes": [
+         "Adds a search command for YouTube songs",
+         "Adds a now playing command",
+         "Updated help command to show new commands",
+         "Added an extra search if unable to find the song via text with play command",
+         "Updated errors across all commands to make things easier to use and understand",
+         "Changes streamType to improve performance",
+         "Added ping information to botinfo",
+         "Cleaned up the music code to make it run smoother",
+         "Updated slashCommandHandler to improve speed",
+         "Added loopqueue command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.6",
+      "changes": [
+         "Adds support for SoundCloud playlists",
+         "Adds command to search for YouTube playlists",
+         "Adds commands to search for SoundCloud tracks and playlists",
+         "Adds commands remove and skipto",
+         "New design for embeds making it easier to read and understand",
+         "Trying a fix for the music commands skipping songs while going to the next one in the queue",
+         "Adds support for Spotify playlist and song URL's in the play command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.5",
+      "changes": [
+         "Adds support for SoundCloud and YouTube playlists",
+         "Stops the queue from showing more than 20 items to stop crashes",
+         "Fixes lag while adding songs to the queue while already playing a song",
+         "New design for queue command separating the now playing and the queued songs",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.4",
+      "changes": [
+         "Adds a new debug command",
+         "Adds new looping command for your music",
+         "Made it so music commands are not deleted by the bot",
+         "Fixed an error with some embed formats",
+         "Updated the links on the botinfo command and turned them into buttons",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.3",
+      "changes": [
+         "Adds a new way to handle missing message error across all commands",
+         "Changed the way the music queue is received by the music commands",
+         "Comes with an update to the commands website",
+         "Added setbyemessage command to the setbye command",
+         "Added setwelcomemessage command to the setwelcome command",
+         "Performance changes for boot and music commands",
+         "Improved config system when joining and leaving a server",
+         "Improved handlers for reloading commands",
+         "Improved event, command and slash command handlers making them faster and more efficient",
+         "Removed command used to fix configs as it is redundant",
+         "Improved overall performance of Sierra",
+         "Added new commands ping, nsfw and channelinfo",
+         "Also comes with little tweaks for some text on commands",
+         "Fixes an issue with messageDelete event causing it to trigger even when it shouldn't",
+         "Make's Sierra quieter while playing music",
+         "Fixes an issue with welcome and leave message crashing when a user has not set a profile picture for there account",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.2",
+      "changes": [
+         "Re-added music commands that support Discord.js V13",
+         "Fixed an issues that affected all commands deleting messages",
+         "Fixed hosting issue caused by new music commands",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.1",
+      "changes": [
+         "Added my own dependence for embed pages called @acegoal07/discordjs-pagination",
+         "Re-enabled paged embeds across all commands slash and command based",
+         "Updated all dependencies",
+         "Removed unused dependencies",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.2.0",
+      "changes": [
+         "Started adding Slash commands for public use more have be added just disabled due to them not being finished",
+         "Finished updating all commands and events to the new layout",
+         "Removed report command",
+         "Fixed status refresher taking ages to run",
+         "Improved error handling to keep up with new error messages",
+         "Fixed a bug where some commands would be missing a reference sometimes",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.6",
+      "changes": [
+         "Added slashCommandHandler",
+         "Added new layouts for commands which include the information needed for slashCommandHandler to run",
+         "Changed setActivity to setPresence due to it being deprecated",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.5",
+      "changes": [
+         "Added more customization to welcome and leave messages",
+         "Fixed welcome and leave messages",
+         "Fixed serverinfo bot section not getting the amount of bots in the server",
+         "changed embed colouring system",
+         "Updated to use nodeJS version 16.6.2",
+         "Updated to use discord.js version 13.1.0",
+         "Disabled paged embeds temporally due to the dependence not supporting Discord.js V13",
+         "Added new disabled or enabled check to improve performance when using command or events",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.4",
+      "changes": [
+         "Added new debug command to help with development",
+         "Improved some commands to make sure people know how to use them and that they make sense",
+         "Updated help command",
+         "Tided up code to make it easier to read and see what's going on",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.3",
+      "changes": [
+         "Added new look to settings and help command",
+         "Improved ban, unban and kick command",
+         "Updated report command to fix an issue where error submission was not being sent",
+         "Fixed issue where sending DMs would cause a crash",
+         "Fixed error being given off by settings command",
+         "Added new checks to all settings commands to improve functionality",
+         "Added more commands to settings commands to allow you to change change specific settings",
+         "Added help menu to settings command to help show people how to use them",
+         "Added a role check that checks the that the roles users are stating exist on the server",
+         "Updated some of the behind the scenes commands",
+         "Fixed console issue",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.2",
+      "changes": [
+         "Changes help command into sections so not all commands are displayed at once",
+         "Added commands to change leaving and welcome messages",
+         "Combined all enable and disable commands into one single command to do both",
+         "Added error catching to events so that if an error occurs the bot does not crash same is applied to commands",
+         "combined enable and disable commands for announce and clear command preserving role settings",
+         "Added command to enable and disable kick command ",
+         "Updated website command list to match the commands Sierra is running",
+         "Added pages to some sections in the help command",
+         "Added ban and unban commands",
+         "Added command to enable and disable ban, unban and kick commands",
+         "Improved error catching to fix crashing that was occurring",
+         "Fixed issue with guildBanAdd and guildBanRemove causing crashing when referencing server settings",
+         "Added command to set auto role's role and to also enable or disable it",
+         "Combined all settings commands into one command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.1",
+      "changes": [
+         "Started adding multi server support",
+         "Added enable and disable commands for welcome and leave messages",
+         "Added more commands to help command",
+         "Fixed error with guildMemberUpdate firing when Sierra joins a new server and when a new user joins a server",
+         "Added set color command which allows you to change the color of Sierra's embed messages",
+         "Added channel settings command to see what channels events will be sent to",
+         "Added toggle settings command to display what is enabled and disabled",
+         "Added guildCreate and guildDelete to take care of my servers settings",
+         "Added enable and disable command for announce and clear command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.1.0",
+      "changes": [
+         "Fixes issue causing activity to disappear after a period of time",
+         "Adds command and event enabler and disabler",
+         "Changed layout of welcome and bye messages",
+         "Added toggle settings command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.9",
+      "changes": [
+         "Added new error handling to commands",
+         "Made certain commands and events inaccessible to the public",
+         "Fixed an error that affected all commands",
+         "Improved performance",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.8",
+      "changes": [
+         "Fixed issue causing crashes at boot",
+         "Updated links",
+         "Added new logo to Sierra",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.7",
+      "changes": [
+         "Adds a report command which is used to report errors and issues with the bot",
+         "Updated help command",
+         "Fixed issue where bot crashed after running certain commands",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.6",
+      "changes": [
+         "Fixed clear command giving errors",
+         "Changed from checking for roles to checking for permissions",
+         "Remapped config file",
+         "Separated logs into specific channels",
+         "Added uptime to stats command",
+         "Removed uptime command",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.5",
+      "changes": [
+         "Finished adding Role delete, member update and role update date events",
+         "Added layout examples for commands and events",
+         "Adds a bit more coded to the unfinished emoji update event",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.0.4",
+      "changes": [
+         "Finished adding role added, role removed role",
+         "Fixed events not sending logs to the right channel",
+         "Took out all update logs while i finish them",
+         "Bug fixes"
+      ]
+   },
    {
       "version": "2.0.3",
       "changes": [
