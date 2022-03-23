@@ -1,7 +1,5 @@
 var count = 0;
-var currentVersion;
-var previousVersion;
-var pastVersion = [];
+var pastVersionChangeLog = [];
 $.getJSON("/projects/sierra/json/changelog.json",
    function (data) {
       for (info of data) {
@@ -31,9 +29,9 @@ $.getJSON("/projects/sierra/json/changelog.json",
          // Set previous
          else if (count == 2) {document.getElementById('previousVersion').innerHTML = card;}
          // Create all old
-         else {pastVersion.push(card)}
+         else {pastVersionChangeLog.push(card)}
       }
       // Set old
       const pastSet = document.getElementById('pastVersion');
-      pastSet.innerHTML = pastVersion.join('');
+      pastSet.innerHTML = pastVersionChangeLog.join('');
    })
