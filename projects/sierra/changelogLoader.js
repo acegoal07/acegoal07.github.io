@@ -1,7 +1,9 @@
 var count = 0;
+var currentVersion;
+var previousVersion;
+var pastVersion = [];
 $.getJSON("./json/changelog.json", 
    function (data) {
-      console.log(data[0].version)
       for (info of data) {
          count += 1;
 
@@ -11,58 +13,61 @@ $.getJSON("./json/changelog.json",
          }
 
          if (count == 1) {
-            const current = document.getElementById('currentVersion');
-            current.innerHTML = 
+            currentVersion = 
             `<div class="card">
-            <div class="card-header rounded-top border-top border-left border-right">
-               Version ${info.version}
-            </div>
-            <div class="card-body rounded-bottom border-bottom border-left border-right">
-               <h5 class="card-title">Changes</h5>
-               <p class="card-text">
-                  <ul>
-                     ${changesArray.join('')}
-                  </ul>
-               </p>
-            </div>
-         </div><br>`
+               <div class="card-header rounded-top border-top border-left border-right">
+                  Version ${info.version}
+               </div>
+               <div class="card-body rounded-bottom border-bottom border-left border-right">
+                  <h5 class="card-title">Changes</h5>
+                  <p class="card-text">
+                     <ul>
+                        ${changesArray.join('')}
+                     </ul>
+                  </p>
+               </div>
+            </div><br>`
          }
          
          else if (count == 2) {
-            const current = document.getElementById('previousVersion');
-            current.innerHTML = 
+            previousVersion = 
             `<div class="card">
-            <div class="card-header rounded-top border-top border-left border-right">
-               Version ${info.version}
-            </div>
-            <div class="card-body rounded-bottom border-bottom border-left border-right">
-               <h5 class="card-title">Changes</h5>
-               <p class="card-text">
-                  <ul>
-                     ${changesArray.join('')}
-                  </ul>
-               </p>
-            </div>
-         </div><br>`
+               <div class="card-header rounded-top border-top border-left border-right">
+                  Version ${info.version}
+               </div>
+               <div class="card-body rounded-bottom border-bottom border-left border-right">
+                  <h5 class="card-title">Changes</h5>
+                  <p class="card-text">
+                     <ul>
+                        ${changesArray.join('')}
+                     </ul>
+                  </p>
+               </div>
+            </div><br>`
          }
 
          else {
-            const current = document.getElementById('pastVersion');
-            const pastVersions = current.createElement(info.version)
-            pastVersions.innerHTML = 
-            `<div class="card">
-            <div class="card-header rounded-top border-top border-left border-right">
-               Version ${info.version}
-            </div>
-            <div class="card-body rounded-bottom border-bottom border-left border-right">
-               <h5 class="card-title">Changes</h5>
-               <p class="card-text">
-                  <ul>
-                     ${changesArray.join('')}
-                  </ul>
-               </p>
-            </div>
-         </div><br>`
+            pastVersion.push(
+               `<div class="card">
+                  <div class="card-header rounded-top border-top border-left border-right">
+                     Version ${info.version}
+                  </div>
+                  <div class="card-body rounded-bottom border-bottom border-left border-right">
+                     <h5 class="card-title">Changes</h5>
+                     <p class="card-text">
+                        <ul>
+                           ${changesArray.join('')}
+                        </ul>
+                     </p>
+                  </div>
+               </div><br>`
+            )
          }
       }
+      const currentSet = document.getElementById('currentVersion');
+      currentSet.innerHTML = currentVersion;
+      const previousSet = document.getElementById('previousVersion');
+      previousSet.innerHTML = previousVersion;
+      const pastSet = document.getElementById('pastVersion');
+      pastSet.innerHTML = pastVersion;
    })
