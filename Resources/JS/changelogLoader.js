@@ -26,19 +26,13 @@ $.getJSON("/projects/sierra/json/changelog.json",
                   </p>
                </div>
             </div><br>`
-         // Create current
-         if (count == 1) {currentVersion = card;}
-         // Create previous
-         else if (count == 2) {previousVersion = card;}
+         // Set current
+         if (count == 1) {document.getElementById('currentVersion').innerHTML= card;}
+         // Set previous
+         else if (count == 2) {document.getElementById('previousVersion').innerHTML = card;}
          // Create all old
          else {pastVersion.push(card)}
       }
-      // Set current
-      const currentSet = document.getElementById('currentVersion');
-      currentSet.innerHTML = currentVersion;
-      // Set previous
-      const previousSet = document.getElementById('previousVersion');
-      previousSet.innerHTML = previousVersion;
       // Set old
       const pastSet = document.getElementById('pastVersion');
       pastSet.innerHTML = pastVersion.join('');
