@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.1
+Current Bot Version: V2.4.2
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -80,6 +80,7 @@ shuffle|Shuffles the music queue randomizing what song comes up next
 clearqueue|Clears the queue of all songs
 volume ```(1-100)```|Allows you to adjust the volume of the music
 wheretolisten|Searches Spotify, SoundCloud and YouTube and provides you with links
+lyrics|Gets the lyrics to the song that's currently playing
 <h3>Utility:</h3>
 
 |Command|Description|
