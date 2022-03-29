@@ -1,6 +1,6 @@
 var count = 0;
 var pastVersionChangeLog = [];
-$.getJSON("/projects/sierra/json/changelog.json",
+$.getJSON("../json/changelog.json",
    function (data) {
       for (info of data) {
          count += 1;
