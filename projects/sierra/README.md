@@ -90,6 +90,8 @@ rename ```(name)```|This command changes the nickname of Sierra in your server
 imdb ```(name of show or film)```|Creates a poll in the channel and collects the votes and after a certain amount of time displays the results
 poll ```(question)```|Creates a poll in the channel and collects the votes and after a certain amount of time displays the results
 ping|Used to see the latency for sierra and the ping for the Discord API
+lock|Locks a channel stopping messages from being sent
+unlock|Unlocks a channel allowing for messaged to be sent
 <h3>Setup:</h3>
 
 |Command|Description|
@@ -113,8 +115,8 @@ setcommandchannel|Used to setup a command channel
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.1
-├── @acegoal07/discordjs-pagination@1.2.6
+sierra@2.4.2
+├── @acegoal07/discordjs-pagination@1.2.6-a
 ├── @acegoal07/timestamp-progress@1.0.9
 ├── @discordjs/opus@0.5.3
 ├── @discordjs/rest@0.3.0
@@ -125,16 +127,17 @@ sierra@2.4.1
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.26.1
 ├── discord.js@13.6.0
-├── enmap@5.8.8
+├── enmap@5.8.13
 ├── ffmpeg-static@4.4.1
 ├── ffmpeg@0.0.4
 ├── fluent-ffmpeg@2.1.2
 ├── fs@0.0.1-security
+├── genius-lyrics@4.3.6
 ├── imdb-api@4.4.1
-├── libsodium-wrappers@0.7.9
+├── libsodium-wrappers@0.7.10
 ├── moment-duration-format@2.3.2
 ├── moment@2.29.1
-├── node@16.14.0
+├── node@16.14.2
 ├── opusscript@0.0.8
 ├── prism-media@1.3.2
 ├── public-ip@4.0.4
@@ -142,7 +145,7 @@ sierra@2.4.1
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@2.2.9
-├── systeminformation@5.11.8
+├── systeminformation@5.11.9
 ├── ytdl-core@4.11.0
 ├── ytpl@2.3.0
 └── ytsr@3.6.0
