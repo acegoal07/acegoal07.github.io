@@ -82,5 +82,9 @@
    {
       "command": "wheretolisten",
       "description": "Searches Spotify, SoundCloud and YouTube and provides you with links"
+   },
+   {
+      "command": "lyrics",
+      "description": "Gets the lyrics to the song that's currently playing"
    }
 ]

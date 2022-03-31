@@ -1,5 +1,19 @@
 [
-
+   {
+      "version": "2.4.2",
+      "changes": [
+         "Adds a lyric command to get the lyrics for the song currently playing",
+         "Updates help command",
+         "Fix's issue where skipto grabs the wrong song information",
+         "Adds new function to toolkit",
+         "Moves around files to tidy up Sierra folder",
+         "Updates all dependencies to latest version",
+         "Fix's ping interaction being unable to grab server config file",
+         "More changes to code making it run smoother",
+         "Improved music play quality and performance",
+         "Bug fixes"
+      ]
+   },
    {
       "version": "2.4.1",
       "changes": [

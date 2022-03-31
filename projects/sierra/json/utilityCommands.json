@@ -18,5 +18,13 @@
    {
       "command": "ping",
       "description": "Used to see the latency for sierra and the ping for the Discord API"
+   },
+   {
+      "command": "lock",
+      "description": "Locks a channel stopping messages from being sent"
+   },
+   {
+      "command": "unlock",
+      "description": "Unlocks a channel allowing for messaged to be sent"
    }
 ]
