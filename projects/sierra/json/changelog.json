@@ -11,6 +11,7 @@
          "Fix's ping interaction being unable to grab server config file",
          "More changes to code making it run smoother",
          "Improved music play quality and performance",
+         "Improves song loading time",
          "Bug fixes"
       ]
    },
