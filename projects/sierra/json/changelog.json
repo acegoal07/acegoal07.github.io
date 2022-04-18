@@ -1,5 +1,15 @@
 [
    {
+      "version": "2.4.3",
+      "changes": [
+         "Cleans up some of the code to stream line some of the commands",
+         "Improves internet loss recovery",
+         "Adds donate command",
+         "Improves how buttons are handed to the paginations",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.2",
       "changes": [
          "Adds a lyric command to get the lyrics for the song currently playing",
