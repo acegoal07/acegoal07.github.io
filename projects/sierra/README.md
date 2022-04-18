@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.2
+Current Bot Version: V2.4.3
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -42,6 +42,7 @@ roles|This command will display all roles on the server and which ones you have
 userinfo or userinfo ```(mention)```|Will display all needed information about a user
 addsierra|This command sends you the link required to invite Sierra to your own server
 channelinfo|Shows the user info about the channel they are using
+donate|Shows donation options available to support Sierra
 <h3>Admin:</h3>
 
 |Command|Description|
@@ -115,19 +116,19 @@ setcommandchannel|Used to setup a command channel
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.2
-├── @acegoal07/discordjs-pagination@1.2.6-a
+sierra@2.4.3
+├── @acegoal07/discordjs-pagination@1.2.8
 ├── @acegoal07/timestamp-progress@1.0.9
 ├── @discordjs/opus@0.5.3
 ├── @discordjs/rest@0.3.0
 ├── @discordjs/voice@0.8.0
-├── @sapphire/snowflake@3.2.0
-├── @supercharge/collections@4.2.0
+├── @sapphire/snowflake@3.2.1
+├── @supercharge/collections@4.3.0
 ├── ciql-json@1.9.6
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.26.1
 ├── discord.js@13.6.0
-├── enmap@5.8.13
+├── enmap@5.9.0
 ├── ffmpeg-static@4.4.1
 ├── ffmpeg@0.0.4
 ├── fluent-ffmpeg@2.1.2
@@ -136,7 +137,7 @@ sierra@2.4.2
 ├── imdb-api@4.4.1
 ├── libsodium-wrappers@0.7.10
 ├── moment-duration-format@2.3.2
-├── moment@2.29.1
+├── moment@2.29.3
 ├── node@16.14.2
 ├── opusscript@0.0.8
 ├── prism-media@1.3.2
@@ -145,8 +146,8 @@ sierra@2.4.2
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@2.2.9
-├── systeminformation@5.11.9
+├── systeminformation@5.11.10
 ├── ytdl-core@4.11.0
 ├── ytpl@2.3.0
-└── ytsr@3.6.0
+└── ytsr@3.7.0
 ```
