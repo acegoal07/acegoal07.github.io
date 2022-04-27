@@ -282,12 +282,12 @@ if (typeof module !== "undefined" && module.exports) {
             list.classList.remove('d-none');
             button.classList.remove('show');
             button.classList.add('hide');
-            button.innerHTML = "Show Less";
+            button.innerHTML = "Hide Versions";
         } else {
             list.classList.add('d-none');
             button.classList.remove('hide');
             button.classList.add('show');
-            button.innerHTML = "Show More";
+            button.innerHTML = "Show Versions";
         }
     }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
