@@ -6,6 +6,7 @@
          "Improves internet loss recovery",
          "Adds donate command",
          "Improves how buttons are handed to the paginations",
+         "Replaces @acegoal07/timestamp-progress with @acegoal07/progressbar-builder which has more features allowing for future features",
          "Bug fixes"
       ]
    },
