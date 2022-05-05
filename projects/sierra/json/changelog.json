@@ -1,5 +1,16 @@
 [
    {
+      "version": "2.4.4",
+      "changes": [
+         "Changes commands so they load config files before running commands",
+         "Fixes a message embed not being sent in channelInfo command",
+         "Cleans up settings command",
+         "Makes it so settings command only loads info it needs",
+         "Removed all old code from settings command",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.3",
       "changes": [
          "Cleans up some of the code to stream line some of the commands",
