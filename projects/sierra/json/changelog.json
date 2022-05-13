@@ -13,6 +13,7 @@
          "Changes how the music system reacts to being disconnected from a voice channel and when the song ends",
          "Updates userinfo command to show the proper date for when you joined the server",
          "Made it so userinfo command shows when the users account was created",
+         "Adds support for discords.js version 13.7.0",
          "Bug fixes"
       ]
    },
