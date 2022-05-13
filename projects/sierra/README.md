@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.3
+Current Bot Version: V2.4.4
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -82,6 +82,7 @@ clearqueue|Clears the queue of all songs
 volume ```(1-100)```|Allows you to adjust the volume of the music
 wheretolisten|Searches Spotify, SoundCloud and YouTube and provides you with links
 lyrics|Gets the lyrics to the song that's currently playing
+restartsong|Goes to the beginning of the song that's currently playing
 <h3>Utility:</h3>
 
 |Command|Description|
@@ -116,24 +117,24 @@ setcommandchannel|Used to setup a command channel
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.3
-├── @acegoal07/discordjs-pagination@1.2.8
-├── @acegoal07/timestamp-progress@1.0.9
+sierra@2.4.5
+├── @acegoal07/discordjs-pagination@1.2.8-a
+├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.5.3
 ├── @discordjs/rest@0.3.0
 ├── @discordjs/voice@0.8.0
-├── @sapphire/snowflake@3.2.1
+├── @sapphire/snowflake@3.2.2
 ├── @supercharge/collections@4.3.0
 ├── ciql-json@1.9.6
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.26.1
-├── discord.js@13.6.0
+├── discord.js@13.7.0
 ├── enmap@5.9.0
 ├── ffmpeg-static@4.4.1
 ├── ffmpeg@0.0.4
 ├── fluent-ffmpeg@2.1.2
 ├── fs@0.0.1-security
-├── genius-lyrics@4.3.6
+├── genius-lyrics@4.3.8
 ├── imdb-api@4.4.1
 ├── libsodium-wrappers@0.7.10
 ├── moment-duration-format@2.3.2
@@ -146,8 +147,8 @@ sierra@2.4.3
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@2.2.9
-├── systeminformation@5.11.10
+├── systeminformation@5.11.15
 ├── ytdl-core@4.11.0
 ├── ytpl@2.3.0
-└── ytsr@3.7.0
+└── ytsr@3.8.0
 ```

@@ -1,5 +1,22 @@
 [
    {
+      "version": "2.4.5",
+      "changes": [
+         "Adds restart song command",
+         "Updates dependencies",
+         "Adds error handling to start script to restart if there's no connection",
+         "Performance improvements done to play command to help make it quicker and run smoother",
+         "Finishes implementing new config file loading system",
+         "Fixed emitter issue with play command stopping them from emitting multiple times",
+         "Updates help command info",
+         "Changes how settings info is loaded to improve speed",
+         "Changes how the music system reacts to being disconnected from a voice channel and when the song ends",
+         "Updates userinfo command to show the proper date for when you joined the server",
+         "Made it so userinfo command shows when the users account was created",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.4",
       "changes": [
          "Changes commands so they load config files before running commands",
