@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.4
+Current Bot Version: V2.4.6
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -117,7 +117,7 @@ setcommandchannel|Used to setup a command channel
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.5
+sierra@2.4.6
 ├── @acegoal07/discordjs-pagination@1.2.8-a
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.5.3
@@ -139,7 +139,6 @@ sierra@2.4.5
 ├── libsodium-wrappers@0.7.10
 ├── moment-duration-format@2.3.2
 ├── moment@2.29.3
-├── node@16.14.2
 ├── opusscript@0.0.8
 ├── prism-media@1.3.2
 ├── public-ip@4.0.4
@@ -150,5 +149,5 @@ sierra@2.4.5
 ├── systeminformation@5.11.15
 ├── ytdl-core@4.11.0
 ├── ytpl@2.3.0
-└── ytsr@3.8.0
+└── ytsr@3.8.
 ```

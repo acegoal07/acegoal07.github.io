@@ -1,5 +1,19 @@
 [
    {
+      "version": "2.4.6",
+      "changes": [
+         "Adds new boot log system",
+         "Fixes command specific channel for interactions",
+         "Fix's message delete log going off when a bot deletes a message",
+         "Makes it so if a event fails to load its skipped and does not cause a crash",
+         "Updates command and event handlers to pass the required info to the boot logger",
+         "Makes it also so the bot logs events in bot log channel",
+         "Fixes issues with node versions and better-sqlite3",
+         "removes unneeded dependencies",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.5",
       "changes": [
          "Adds restart song command",
