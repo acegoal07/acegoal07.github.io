@@ -1,5 +1,23 @@
 [
    {
+      "version": "2.4.7",
+      "changes": [
+         "Adds new system to deleted message logger that now picks up when messages are bulk deleted",
+         "Made it so the clear command detects whether a message is older than 2 weeks and if its able to delete it",
+         "Fixes messageDelete event crashing when emitted",
+         "Fixes skip and skipto commands showing duration of the song as seconds instead of a timestamp",
+         "Fixes userinfo command not getting users profile picture",
+         "Updates to use new wrapper version of @acegoal07/discordjs-pagination",
+         "Cleans up the code of some new commands making them run better",
+         "Adds the setvoicelog command and voice logging event",
+         "Updates configs and configFiller.js to address new config file changes",
+         "Adds new channel logging which logs any changes performed to channels in the server",
+         "Updates the help command to show new commands",
+         "Removes code for unfinished feature that was scrapped",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.6",
       "changes": [
          "Adds new boot log system",

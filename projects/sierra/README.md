@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.6
+Current Bot Version: V2.4.7
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -113,12 +113,13 @@ setmusicstyle|Used to edit settings for the music commands
 setdjrole|Used to set a role that is required to use the music commands
 setadminrole|Used to set a role that is required to use the admin commands
 setcommandchannel|Used to setup a command channel
+setvoicelog|Used to setup voice channel activity logging
 
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.6
-├── @acegoal07/discordjs-pagination@1.2.8-a
+sierra@2.4.7
+├── @acegoal07/discordjs-pagination@1.2.9
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.5.3
 ├── @discordjs/rest@0.3.0
@@ -146,8 +147,8 @@ sierra@2.4.6
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@2.2.9
-├── systeminformation@5.11.15
+├── systeminformation@5.11.16
 ├── ytdl-core@4.11.0
 ├── ytpl@2.3.0
-└── ytsr@3.8.
+└── ytsr@3.8.0
 ```

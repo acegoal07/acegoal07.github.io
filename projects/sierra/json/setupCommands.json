@@ -58,5 +58,13 @@
    {
       "command": "setcommandchannel",
       "description": "Used to setup a command channel"
+   },
+   {
+      "command": "setvoicelog",
+      "description": "Used to setup voice channel activity logging"
+   },
+   {
+      "command": "setchannellog",
+      "description": "Used to setup channel changes logging"
    }
 ]
