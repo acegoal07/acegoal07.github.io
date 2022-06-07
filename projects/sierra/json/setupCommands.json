@@ -66,5 +66,9 @@
    {
       "command": "setchannellog",
       "description": "Used to setup channel changes logging"
+   },
+   {
+      "command": "setuserupdatelog",
+      "description": "Used to setup user update logging"
    }
 ]

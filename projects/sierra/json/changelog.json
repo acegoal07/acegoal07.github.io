@@ -1,5 +1,19 @@
 [
    {
+      "version": "2.4.8",
+      "changes": [
+         "Makes it so byeMessage event now picks up on different reasons for a user being banned and displays why followed by relevant information",
+         "Adds userUpdate logging to the bot",
+         "Fixes issues with profile pictures not being shown by by and welcome events",
+         "Fixes by event not running properly",
+         "Updates all events to a new layout",
+         "Updates config files and configFiler to support new changes",
+         "Switches to showing users username and discriminator",
+         "Now shows reason if provided in ban log event",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.7",
       "changes": [
          "Adds new system to deleted message logger that now picks up when messages are bulk deleted",
