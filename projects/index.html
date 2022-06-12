@@ -55,7 +55,7 @@
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm banner-size">
+                  <div class="card mb-4 shadow-sm banner-size h-100">
                      <picture>
                         <img src="/Resources/Pictures/Sierrabanner.webP" alt="Sierra banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                      </picture>
@@ -72,13 +72,14 @@
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm banner-size">
+                  <div class="card mb-4 shadow-sm banner-size h-100">
                      <picture>
                         <img src="/Resources/Pictures/npmBanner.webp" alt="npm banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                      </picture>
                      <div class="card-body rounded-bottom border-bottom border-left border-right">
                         <p class="card-title fw-bold">discordjs-pagination</p>
                         <p class="card-text">A simple pagination for Discord.js</p>
+                        <p class="card-text"><small class="text-muted" id="discordjs-pagination-version"></small></p>
                         <div class="d-flex justify-content-between align-items-center">
                            <div class="btn-group">
                               <a href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">View NPM</a>
@@ -87,9 +88,12 @@
                         </div>
                      </div>
                   </div>
+                  <script>
+                    $.getJSON("https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json", function (data) {document.getElementById('discordjs-pagination-version').innerHTML(data.version)})
+                  </script>
                </div>
                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm banner-size">
+                  <div class="card mb-4 shadow-sm banner-size h-100">
                      <picture>
                         <img src="/Resources/Pictures/npmBanner.webp" alt="npm banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                      </picture>
@@ -104,7 +108,7 @@
                         </div>
                      </div>
                   </div>
-               </div>      
+               </div>
                <!--End Row-->
             </div>
          </div>
