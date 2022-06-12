@@ -59,16 +59,23 @@
                      <picture>
                         <img src="/Resources/Pictures/Sierrabanner.webP" alt="Sierra banner" width="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
                      </picture>
-                     <div class="card-body rounded-bottom border-bottom border-left border-right">
+                     <div class="card-body border-left border-right">
                         <p class="card-title fw-bold">Sierra</p>
                         <p class="card-text">A multi purpose discord bot</p>
                         <div class="d-flex justify-content-between align-items-center">
                            <div class="btn-group">
                               <a href="sierra/" role="button" class="btn btn-sm btn-outline-secondary">More Info</a>
                               <a href="sierra/changelog" role="button" class="btn btn-sm btn-outline-secondary">Changelog</a>
-                        </div>
+                           </div>
                         </div>
                      </div>
+                     <div class="card-footer border-left border-right border-bottom card-body border-top">
+                        <small class="text-muted" id="sierra-version">
+                           <script>
+                              $.getJSON("./sierra/json/changelog.json", function (data) {document.getElementById('sierra-version').innerHTML = `Latest version: ${data[0].version}`})
+                           </script>
+                        </small>
+                     </div> 
                   </div>
                </div>
                <div class="col-md-4">
@@ -92,7 +99,7 @@
                               $.getJSON("https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json", function (data) {document.getElementById('discordjs-pagination-version').innerHTML = `Latest version: ${data.version}`})
                            </script>
                         </small>
-                      </div>   
+                     </div>   
                   </div>
                </div>
                <div class="col-md-4">
@@ -116,7 +123,7 @@
                               $.getJSON("https://raw.githubusercontent.com/acegoal07/progressbar-builder/main/package.json", function (data) {document.getElementById('progressbar-builder-version').innerHTML = `Latest version: ${data.version}`})
                            </script>
                         </small>
-                      </div>   
+                     </div>   
                   </div>
                </div>
                <!--End Row-->
