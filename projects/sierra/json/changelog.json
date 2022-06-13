@@ -10,6 +10,7 @@
          "Updates config files and configFiler to support new changes",
          "Switches to showing users username and discriminator",
          "Now shows reason if provided in ban log event",
+         "Updates lock and unlock commands to show the right messages on use",
          "Bug fixes"
       ]
    },
