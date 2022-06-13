@@ -2,7 +2,7 @@
    {
       "version": "2.4.8",
       "changes": [
-         "Makes it so byeMessage event now picks up on different reasons for a user being banned and displays why followed by relevant information",
+         "Makes it so byeMessage event now picks up on different reasons for a user leaving the server such as being banned",
          "Adds userUpdate logging to the bot",
          "Fixes issues with profile pictures not being shown by by and welcome events",
          "Fixes by event not running properly",

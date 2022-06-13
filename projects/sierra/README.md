@@ -114,12 +114,13 @@ setdjrole|Used to set a role that is required to use the music commands
 setadminrole|Used to set a role that is required to use the admin commands
 setcommandchannel|Used to setup a command channel
 setvoicelog|Used to setup voice channel activity logging
+setuserupdatelog|Used to setup user update logging
 
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.4.7
-├── @acegoal07/discordjs-pagination@1.2.9
+sierra@2.4.8
+├── @acegoal07/discordjs-pagination@1.3.0
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.5.3
 ├── @discordjs/rest@0.3.0
@@ -129,7 +130,7 @@ sierra@2.4.7
 ├── ciql-json@1.9.6
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.26.1
-├── discord.js@13.7.0
+├── discord.js@13.8.0
 ├── enmap@5.9.0
 ├── ffmpeg-static@4.4.1
 ├── ffmpeg@0.0.4
