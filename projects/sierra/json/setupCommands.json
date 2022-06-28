@@ -70,5 +70,9 @@
    {
       "command": "setuserupdatelog",
       "description": "Used to setup user update logging"
+   },
+   {
+      "command": "seteventlog",
+      "description": "Used to setup user scheduled event logging"
    }
 ]
