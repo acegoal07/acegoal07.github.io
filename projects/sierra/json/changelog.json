@@ -1,5 +1,28 @@
 [
    {
+      "version": "2.4.9",
+      "changes": [
+         "Makes it so voiceLogging can now pick up on if the user was removed or moved from the voice channel by a different user",
+         "Makes it so bulkDelete can now detect who bulk deleted items",
+         "Adds GUILD_SCHEDULED_EVENTS intent to sierra.js to make it so the bot can collect the data need for event related logging",
+         "Adds logging for event creation, deletion, updating",
+         "Adds logging for people setting their interest in an event and removing their interest",
+         "Changes how userInfo and serverInfo commands get the date information to improve accuracy",
+         "Cleans up code for channel logging",
+         "Adds a check to the play command to pick up on unsupported urls",
+         "Fixes the configFiler allowing underlined and null values through",
+         "Adds command to enable event logging",
+         "Updates configFiler and server configs to support event log changes",
+         "Updates help command",
+         "Adds a background feature to upgrade config files on mass to reduce errors and crashes",
+         "Makes it so next up notification for songs is sent into the channel the song was requested in",
+         "Switches to a new json file editor to which has more tools",
+         "Updates all settings commands to use new json file editor",
+         "Starts adding base for changes version 2.5.0",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.8",
       "changes": [
          "Makes it so byeMessage event now picks up on different reasons for a user leaving the server such as being banned",
