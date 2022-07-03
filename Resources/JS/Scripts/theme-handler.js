@@ -10,11 +10,9 @@ const currentTheme = localStorage.getItem("setTheme");
                   document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                   document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
                } else if (currentTheme === "light") {
-                  document.body.classList.add("lightmode");
                   document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                   document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                } else {
-                  document.body.classList.add("lightmode");
                   document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                   document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                }
@@ -24,7 +22,6 @@ const currentTheme = localStorage.getItem("setTheme");
 
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (e.matches) {
-               document.body.classList.remove("lightmode");
                document.body.classList.add("darkmode");
                localStorage.setItem("setTheme", "dark");
                document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
@@ -32,7 +29,6 @@ const currentTheme = localStorage.getItem("setTheme");
                document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
                document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
             } else {
-               document.body.classList.add("lightmode");
                document.body.classList.remove("darkmode");
                localStorage.setItem("setTheme", "light");
                document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");
@@ -45,7 +41,6 @@ const currentTheme = localStorage.getItem("setTheme");
     function toggleTheme() {
         const currentTheme = localStorage.getItem("setTheme");
         if (currentTheme === "light") {
-            document.body.classList.remove("lightmode");
             document.body.classList.add("darkmode");
             localStorage.setItem("setTheme", "dark");
             document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
@@ -53,7 +48,6 @@ const currentTheme = localStorage.getItem("setTheme");
             document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
             document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
         } else {
-            document.body.classList.add("lightmode");
             document.body.classList.remove("darkmode");
             localStorage.setItem("setTheme", "light");
             document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");

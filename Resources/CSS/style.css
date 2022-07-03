@@ -31,46 +31,46 @@ hr {height: 0px !important; border-top: 2px solid !important;}
 .snowflake {position: fixed; background-color: rgb(118, 198, 224); user-select: none; z-index: 1000; pointer-events: none; border-radius: 50%; width: 10px; height: 10px;}
 
 /* light mode */
-body.lightmode {padding-top: 3.5rem; background-color: white;}
-.lightmode .Banner {background-color: #e9ecef !important;}
-.lightmode .card-img-background {background-color: #e9ecef; border-bottom: transparent;}
-.lightmode .card-body {background-color: #e9ecef;}
-.lightmode .card-footer {background-color: #c2c5c7 !important;}
-.lightmode .card-footer-color {background-color: #c2c5c7 !important; color:#2f2f2f !important;}
-.lightmode .border {border: 1px solid #2f2f2f !important;}
-.lightmode .border-top {border-top: 1px solid #2f2f2f !important;}
-.lightmode .border-bottom {border-bottom: 1px solid #2f2f2f !important;}
-.lightmode .border-left {border-left: 1px solid #2f2f2f !important;}
-.lightmode .border-right {border-right: 1px solid #2f2f2f !important;}
-.lightmode .rounded-top {border: #2f2f2f;}
-.lightmode .rounded-bottom {border: #2f2f2f;}
-.lightmode .table-head, thead {background-color: #e9ecef;}
-.lightmode .table-body, tbody {background-color: white;}
-.lightmode .table-text {color: black;}
-.lightmode hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
-.lightmode .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
-.lightmode .nav-pane.active{border-color: #e9ecef !important; background-color: white !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease !important;}
-.lightmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
-.lightmode .nav-tabs {border-color: #e9ecef !important;}
+body{padding-top: 3.5rem; background-color: white;}
+.Banner {background-color: #e9ecef !important;}
+.card-img-background {background-color: #e9ecef; border-bottom: transparent;}
+.card-body {background-color: #e9ecef;}
+.card-footer {background-color: #c2c5c7 !important;}
+.card-footer-color {background-color: #c2c5c7 !important; color:#2f2f2f !important;}
+.border {border: 1px solid #2f2f2f !important;}
+.border-top {border-top: 1px solid #2f2f2f !important;}
+.border-bottom {border-bottom: 1px solid #2f2f2f !important;}
+.border-left {border-left: 1px solid #2f2f2f !important;}
+.border-right {border-right: 1px solid #2f2f2f !important;}
+.rounded-top {border: #2f2f2f;}
+.rounded-bottom {border: #2f2f2f;}
+.table-head, thead {background-color: #e9ecef;}
+.table-body, tbody {background-color: white;}
+.table-text {color: black;}
+hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
+.table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
+.nav-pane.active{border-color: #e9ecef !important; background-color: white !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease !important;}
+.nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
+.nav-tabs {border-color: #e9ecef !important;}
 /* scroll bar */
 /* Firefox */
-.lightmode * {scrollbar-width: thin; scrollbar-color: #e9ecef white;}
+* {scrollbar-width: thin; scrollbar-color: #e9ecef white;}
 /* Chrome, Edge, and Safari */
-.lightmode *::-webkit-scrollbar {width: 12px;}
-.lightmode *::-webkit-scrollbar-track {background: white;}
-.lightmode *::-webkit-scrollbar-thumb {background-color: #e9ecef; border-left: solid white 3px; border-right: solid white 3px; border-bottom: solid white 1px; border-top: solid white 1px;}
-.lightmode *::-webkit-scrollbar-thumb:hover {background-color: #c2c5c7; border-left: solid white 3px; border-right: solid white 3px; border-bottom: solid white 1px; border-top: solid white 1px;}
+*::-webkit-scrollbar {width: 12px;}
+*::-webkit-scrollbar-track {background: white;}
+*::-webkit-scrollbar-thumb {background-color: #e9ecef; border-left: solid white 3px; border-right: solid white 3px; border-bottom: solid white 1px; border-top: solid white 1px;}
+*::-webkit-scrollbar-thumb:hover {background-color: #c2c5c7; border-left: solid white 3px; border-right: solid white 3px; border-bottom: solid white 1px; border-top: solid white 1px;}
 
-.lightmode .pagination>.page-item>.page-link {background-color: #e9ecef !important; border-color: transparent !important; color: black;}
-.lightmode .pagination>.page-item.active>.page-link {background-color: #c2c5c7 !important;}
-.lightmode .pagination>.page-item.active {border: none !important;}
-.lightmode .pagination>.page-item>.page-link:focus {box-shadow: none !important; -webkit-box-shadow: none !important;}
-.lightmode .pagination>.page-item>.page-link:hover {background-color: #c2c5c7!important;}
-.lightmode .pagination-detail>.page-list>.dropup>.dropdown-toggle {background-color: #e9ecef !important; box-shadow: none !important; color: black; border: none !important;}
-.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item.active {background-color: #c2c5c7 !important; color: black;}
-.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #c2c5c7; color: black;}
-.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #e9ecef !important; color: black; border: none;}
-.lightmode .search>.search-input {background-color: #e9ecef !important; color: black; border: none !important;}
+.pagination>.page-item>.page-link {background-color: #e9ecef !important; border-color: transparent !important; color: black;}
+.pagination>.page-item.active>.page-link {background-color: #c2c5c7 !important;}
+.pagination>.page-item.active {border: none !important;}
+.pagination>.page-item>.page-link:focus {box-shadow: none !important; -webkit-box-shadow: none !important;}
+.pagination>.page-item>.page-link:hover {background-color: #c2c5c7!important;}
+.pagination-detail>.page-list>.dropup>.dropdown-toggle {background-color: #e9ecef !important; box-shadow: none !important; color: black; border: none !important;}
+.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item.active {background-color: #c2c5c7 !important; color: black;}
+.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #c2c5c7; color: black;}
+.pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #e9ecef !important; color: black; border: none;}
+.search>.search-input {background-color: #e9ecef !important; color: black; border: none !important;}
 
 /* dark mode */
 body.darkmode {padding-top: 3.5rem; background-color: black; color: white;}
