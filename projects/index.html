@@ -126,6 +126,30 @@
                      </div>   
                   </div>
                </div>
+               <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                     <picture>
+                        <img src="/Resources/Pictures/npmBanner.webp" alt="npm banner" width="100%" height="100%" class="rounded-top border-top border-left border-right text-center card-img-background">
+                     </picture>
+                     <div class="card-body border-left border-right">
+                        <p class="card-title fw-bold">json-editor</p>
+                        <p class="card-text">A simple json file editor</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                           <div class="btn-group">
+                              <a href="https://www.npmjs.com/package/@acegoal07/json-editor" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">View NPM</a>
+                              <a href="https://github.com/acegoal07/json-editor" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">View GitHub</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
+                        <small class="text-muted" id="json-editor-version">
+                           <script>
+                              $.getJSON("https://raw.githubusercontent.com/acegoal07/json-editor/main/package.json", function (data) {document.getElementById('json-editor-version').innerHTML = `Latest version: ${data.version}`})
+                           </script>
+                        </small>
+                     </div>   
+                  </div>
+               </div>
                <!--End Row-->
             </div>
          </div>
