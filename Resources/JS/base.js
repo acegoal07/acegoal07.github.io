@@ -293,59 +293,58 @@ if (typeof module !== "undefined" && module.exports) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ThemeHandler ////// Version: 3.0 //////////////////////////////////////////////////////////////////////////////////////
 const currentTheme = localStorage.getItem("setTheme");
-        document.onreadystatechange = () => {
+         
+         document.onreadystatechange = () => {
             if (document.readyState === 'interactive') {
                const currentTheme = localStorage.getItem("setTheme");
                if (currentTheme === "dark") {
-                  document.body.classList.add("darkmode");
-                  document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
-                  document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+                  document.getElementById('themeSwitch').classList.toggle("bi-brightness-high-fill");
+                  document.getElementById('colThemeSwitch').classList.toggle("bi-brightness-high-fill");
                } else if (currentTheme === "light") {
-                  document.body.classList.remove("darkmode");
-                  document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-                  document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+                  document.body.classList.toggle("darkmode");
+                  document.getElementById('themeSwitch').classList.toggle("bi-moon-fill");
+                  document.getElementById('colThemeSwitch').classList.toggle("bi-moon-fill");
                } else {
-                  document.body.classList.remove("darkmode");
-                  document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-                  document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+                  document.body.classList.toggle("darkmode");
+                  document.getElementById('themeSwitch').classList.toggle("bi-moon-fill");
+                  document.getElementById('colThemeSwitch').classList.toggle("bi-moon-fill");
                }
-               document.getElementById('base').classList.remove('disable-transitions');
+               document.getElementById('base').classList.toggle('disable-transitions');
             }
         }
 
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (e.matches) {
-               document.body.classList.add("darkmode");
                localStorage.setItem("setTheme", "dark");
-               document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
-               document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
-               document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
-               document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+               document.getElementById('themeSwitch').classList.toggle("bi-moon-fill");
+               document.getElementById('themeSwitch').classList.toggle("bi-brightness-high-fill");
+               document.getElementById('colThemeSwitch').classList.toggle("bi-moon-fill");
+               document.getElementById('colThemeSwitch').classList.toggle("bi-brightness-high-fill");
             } else {
-               document.body.classList.remove("darkmode");
+               document.body.classList.toggle("darkmode");
                localStorage.setItem("setTheme", "light");
-               document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");
-               document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-               document.getElementById('colThemeSwitch').classList.remove("bi-brightness-high-fill");
-               document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+               document.getElementById('themeSwitch').classList.toggle("bi-brightness-high-fill");
+               document.getElementById('themeSwitch').classList.toggle("bi-moon-fill");
+               document.getElementById('colThemeSwitch').classList.toggle("bi-brightness-high-fill");
+               document.getElementById('colThemeSwitch').classList.toggle("bi-moon-fill");
             }
         });
 
     function toggleTheme() {
         const currentTheme = localStorage.getItem("setTheme");
         if (currentTheme === "light") {
-            document.body.classList.add("darkmode");
+            document.body.classList.toggle("darkmode");
             localStorage.setItem("setTheme", "dark");
-            document.getElementById('themeSwitch').classList.remove("bi-moon-fill");
-            document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
-            document.getElementById('colThemeSwitch').classList.remove("bi-moon-fill");
-            document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+            document.getElementById('themeSwitch').classList.toggle("bi-moon-fill");
+            document.getElementById('themeSwitch').classList.toggle("bi-brightness-high-fill");
+            document.getElementById('colThemeSwitch').classList.toggle("bi-moon-fill");
+            document.getElementById('colThemeSwitch').classList.toggle("bi-brightness-high-fill");
         } else {
-            document.body.classList.remove("darkmode");
+            document.body.classList.toggle("darkmode");
             localStorage.setItem("setTheme", "light");
-            document.getElementById('themeSwitch').classList.remove("bi-brightness-high-fill");
-            document.getElementById('themeSwitch').classList.add("bi-moon-fill");
-            document.getElementById('colThemeSwitch').classList.remove("bi-brightness-high-fill");
-            document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+            document.getElementById('themeSwitch').classList.toggle("bi-brightness-high-fill");
+            document.getElementById('themeSwitch').classList.toggle("bi-moon-fill");
+            document.getElementById('colThemeSwitch').classList.toggle("bi-brightness-high-fill");
+            document.getElementById('colThemeSwitch').classList.toggle("bi-moon-fill");
         }
     }
