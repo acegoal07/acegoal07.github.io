@@ -10,9 +10,11 @@ const currentTheme = localStorage.getItem("setTheme");
                   document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
                   document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
                } else if (currentTheme === "light") {
+                  document.body.classList.remove("darkmode");
                   document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                   document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                } else {
+                  document.body.classList.remove("darkmode");
                   document.getElementById('themeSwitch').classList.add("bi-moon-fill");
                   document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
                }
