@@ -90,5 +90,9 @@
    {
       "command": "restartsong",
       "description": "Goes to the beginning of the song that's currently playing"
+   },
+   {
+      "command": "previous",
+      "description": "Allows you to go back to songs that you have already played"
    }
 ]

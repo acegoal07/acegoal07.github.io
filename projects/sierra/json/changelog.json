@@ -1,5 +1,18 @@
 [
    {
+      "version": "2.5.0",
+      "changes": [
+         "Changes the server config system to a custom editor",
+         "Upgrades spotify music system to latest version using experimental features",
+         "Moves away from some dependencies versions that were affected by exploits and errors",
+         "Adds previous command",
+         "Updates help command",
+         "Delays playlist features to 2.5.1",
+         "Fixes major hosting error stopping the bot from loading properly sometimes",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.4.9",
       "changes": [
          "Makes it so voiceLogging can now pick up on if the user was removed or moved from the voice channel by a different user",
@@ -18,7 +31,7 @@
          "Makes it so next up notification for songs is sent into the channel the song was requested in",
          "Switches to a new json file editor to which has more tools",
          "Updates all settings commands to use new json file editor",
-         "Starts adding base for changes version 2.5.0",
+         "Starts adding base for changes in version 2.5.0",
          "Bug fixes"
       ]
    },
