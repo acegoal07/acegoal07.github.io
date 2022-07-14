@@ -9,6 +9,7 @@
          "Updates help command",
          "Delays playlist features to 2.5.1",
          "Fixes major hosting error stopping the bot from loading properly sometimes",
+         "Fixes an error where old server settings where being loaded",
          "Bug fixes"
       ]
    },
