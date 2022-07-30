@@ -94,5 +94,29 @@
    {
       "command": "previous",
       "description": "Allows you to go back to songs that you have already played"
+   },
+   {
+      "command": "createplaylist (playlist name)",
+      "description": "Creates a user specific playlist"
+   },
+   {
+      "command": "deleteplaylist (playlist name)",
+      "description": "Deletes a users playlist"
+   },
+   {
+      "command": "playlists",
+      "description": "Allows you to view your playlists"
+   },
+   {
+      "command": "loadplaylist (playlist name)",
+      "description": "Adds the songs from a users playlist to the server queue"
+   },
+   {
+      "command": "playlistaddcurrent (playlist name)",
+      "description": "Adds the current song your listening to, to the playlist specified"
+   },
+   {
+      "command": "playlistremove (playlist position)",
+      "description": "Removes the song from the specified position"
    }
 ]

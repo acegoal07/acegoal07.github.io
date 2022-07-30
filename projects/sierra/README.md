@@ -84,6 +84,12 @@ wheretolisten|Searches Spotify, SoundCloud and YouTube and provides you with lin
 lyrics|Gets the lyrics to the song that's currently playing
 restartsong|Goes to the beginning of the song that's currently playing
 previous|Allows you to go back to songs that you have already played
+createplaylist ```(playlist name)```|Creates a user specific playlist
+deleteplaylist ```(playlist name)```|Deletes a users playlist
+playlists|Allows you to view your playlists
+loadplaylist ```(playlist name)```|Adds the songs from a users playlist to the server queue
+playlistaddcurrent ```(playlist name)```|Adds the current song your listening to, to the playlist specified
+playlistremove ```(playlist position)```|Removes the song from the specified position
 <h3>Utility:</h3>
 
 |Command|Description|
@@ -120,18 +126,18 @@ setuserupdatelog|Used to setup user update logging
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-sierra@2.5.0
-├── @acegoal07/discordjs-pagination@1.3.0
+sierra@2.5.1
+├── @acegoal07/discordjs-pagination@1.3.6
 ├── @acegoal07/json-editor@1.0.3
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.8.0
-├── @discordjs/rest@0.5.0
-├── @discordjs/voice@0.10.0
+├── @discordjs/rest@1.0.1
+├── @discordjs/voice@0.11.0
 ├── @sapphire/snowflake@3.2.2
 ├── @supercharge/collections@4.3.0
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.36.2
-├── discord.js@13.9.0
+├── discord-api-types@0.37.0
+├── discord.js@14.1.1
 ├── enmap@5.9.0
 ├── ffmpeg-static@5.0.2
 ├── ffmpeg@0.0.4
