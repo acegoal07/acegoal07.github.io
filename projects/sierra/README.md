@@ -137,7 +137,7 @@ sierra@2.5.1
 ├── @supercharge/collections@4.3.0
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.37.0
-├── discord.js@14.1.1
+├── discord.js@14.1.2
 ├── enmap@5.9.0
 ├── ffmpeg-static@5.0.2
 ├── ffmpeg@0.0.4
