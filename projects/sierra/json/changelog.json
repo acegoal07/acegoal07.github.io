@@ -1,5 +1,17 @@
 [
    {
+      "version": "2.5.2",
+      "changes": [
+         "Updates handlers to make sure they have completely loaded everything before bot is loaded",
+         "Adds beta MessageCreate to test new code",
+         "Updates some playlist commands to use a more affective check",
+         "Updates all paginations to support changes done to pagination package",
+         "Edits donation command",
+         "Improves command and event loading reliability",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.1",
       "changes": [
          "Updates sierra to discord.js version 14.0.3",
