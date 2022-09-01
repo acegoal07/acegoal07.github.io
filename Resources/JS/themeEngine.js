@@ -1,8 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ThemeEngine ////// Version: 3.0 //////////////////////////////////////////////////////////////////////////////////////
-const currentTheme = localStorage.getItem("setTheme");
 // On page load check for settings and system default
-if (currentTheme === null) {
+if (localStorage.getItem("setTheme") === null) {
    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       localStorage.setItem("setTheme", "dark");
       document.getElementById('base').classList.add("darkmode");
@@ -13,7 +12,7 @@ if (currentTheme === null) {
          localStorage.setItem("setTheme", "light");
          document.getElementById('base').classList.add("lightmode");
    }
-} else if (currentTheme === 'dark') {
+} else if (localStorage.getItem("setTheme") === 'dark') {
    document.getElementById('base').classList.add("darkmode");
 } else {
    document.getElementById('base').classList.add("lightmode");
