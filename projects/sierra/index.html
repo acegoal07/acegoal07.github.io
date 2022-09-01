@@ -80,6 +80,19 @@
             </div>
          </div>
          <br>
+         <div id="toolbar">
+            <button id="button" class="btn btn-secondary">refresh</button>
+         </div>
+         <script>
+            var $table = $('#table')
+            var $button = $('#button')
+          
+            $(function() {
+              $button.click(function () {
+                $table.bootstrapTable('refresh')
+              })
+            })
+          </script>
          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                <button class="nav-link nav-pane active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-table" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
