@@ -1,215 +1,215 @@
 <!DOCTYPE html>
-<html id="base" lang="en" class="disable-transitions">
-<head>
-   <title>Sierra</title>
-   <link rel="shortcut icon" href="/Resources/Pictures/favicon.ico">
-   <meta charset="utf-8">
-   <meta name="theme-color" content="#212529"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <meta name="description" content="The official website of acegoal07">
-   <meta name="author" content="acegoal07">
-   <!-- CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
-   <link id="theme" rel="stylesheet" href="">
-   <script rel="preload" src="/Resources/JS/base.js"></script>
-   <link href="/Resources/CSS/style.css" rel="stylesheet" type="text/css">
-   <!-- JS -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-   <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
-</head>
-<body>
-   <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="float-end">
-            <a id="themeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-lg-none d-md-none bi"></a>
+<html id="base" lang="en" class="">
+   <script rel="preload" src="/Resources/JS/themeEngine.js"></script>
+   <head>
+      <title>Sierra</title>
+      <link rel="shortcut icon" href="/Resources/Pictures/favicon.ico">
+      <meta charset="utf-8">
+      <meta name="theme-color" content="#212529"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="The official website of acegoal07">
+      <meta name="author" content="acegoal07">
+      <!-- CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+      <script rel="preload" src="/Resources/JS/base.js"></script>
+      <link href="/Resources/CSS/style.css" rel="stylesheet" type="text/css">
+      <!-- JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+      <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="float-end">
+               <a id="themeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-lg-none d-md-none bi"></a>
+               </div>
+               <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                     <li class="nav-item">
+                        <a class="nav-link" href="/">Homepage</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../">Projects</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/donate">Donate</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link back-to-top-2 active" role="button">Sierra</a>
+                     </li>
+                  </ul>
+               </div>
+               <a id="colThemeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-none d-lg-block d-md-block bi"></a>
             </div>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-               <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                     <a class="nav-link" href="/">Homepage</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="../">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="/donate">Donate</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link back-to-top-2 active" role="button">Sierra</a>
-                  </li>
-               </ul>
+         </nav>
+      </header>
+      <div class="container pt-5">
+         <div class="px-5 mb-4 Banner rounded-3">
+            <div class="container-fluid py-5">
+               <h1 class="display-4 fw-bold">Sierra</h1>
+               <p class="col-md-8 fs-4">A multi purpose discord bot</p>
             </div>
-            <a id="colThemeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-none d-lg-block d-md-block bi"></a>
-         </div>
-      </nav>
-   </header>
-   <div class="container pt-5">
-      <div class="px-5 mb-4 Banner rounded-3">
-         <div class="container-fluid py-5">
-            <h1 class="display-4 fw-bold">Sierra</h1>
-            <p class="col-md-8 fs-4">A multi purpose discord bot</p>
          </div>
       </div>
-   </div>
-   <div class="container">
-      <div class="row justify-content-center">
-         <picture>
-            <img src="/Resources/Pictures/Sierrapfp.webP" class="img-fluidimage-margin mx-auto d-block" alt="acegoal07" width="300" height="300">
-         </picture>
+      <div class="container">
+         <div class="row justify-content-center">
+            <picture>
+               <img src="/Resources/Pictures/Sierrapfp.webP" class="img-fluidimage-margin mx-auto d-block" alt="acegoal07" width="300" height="300">
+            </picture>
+            <br>
+            <div class="d-none alert alert-danger text-center" role="alert">
+               Alert
+            </div>
+            <div class="col-md-8 text-box">
+               <p>Check out the changelog for Sierra to see what has been added or changed</p>
+               <p><a class="btn btn-secondary btn-dark" href="changelog" role="button">Changelog</a></p>
+               <p>If you experience any issues with Sierra please use the report issue button below or use the contact section on the homepage to get in touch with me</p>
+               <p><a class="btn btn-secondary btn-dark" href="https://github.com/acegoal07/acegoal07.github.io/issues/new?template=Sierra_issue_report.md" target="_blank" role="button" rel="noopener">Report issue</a></p>
+               <p>Added Sierra to your discord server</p>
+               <p><a class="btn btn-secondary btn-dark" href="https://discord.com/api/oauth2/authorize?client_id=878980386590429204&permissions=8&scope=bot%20applications.commands" target="_blank" role="button" rel="noopener">Add Sierra</a></p>
+               <p>For more information about Sierra view the project README file</p>
+               <p><a class="btn btn-secondary btn-dark" href="https://github.com/acegoal07/acegoal07.github.io/blob/master/projects/sierra/README.md" target="_blank" role="button" rel="noopener">View README</a></p>
+               <p>The preset Prefix used by sierra is ; but if you can't remember the custom prefix you have set for your server use the /serverprefix to be shown the set prefix</p>
+            </div>
+         </div>
          <br>
-         <div class="d-none alert alert-danger text-center" role="alert">
-            Alert
-          </div>
-         <div class="col-md-8 text-box">
-            <p>Check out the changelog for Sierra to see what has been added or changed</p>
-            <p><a class="btn btn-secondary btn-dark" href="changelog" role="button">Changelog</a></p>
-            <p>If you experience any issues with Sierra please use the report issue button below or use the contact section on the homepage to get in touch with me</p>
-            <p><a class="btn btn-secondary btn-dark" href="https://github.com/acegoal07/acegoal07.github.io/issues/new?template=Sierra_issue_report.md" target="_blank" role="button" rel="noopener">Report issue</a></p>
-            <p>Added Sierra to your discord server</p>
-            <p><a class="btn btn-secondary btn-dark" href="https://discord.com/api/oauth2/authorize?client_id=878980386590429204&permissions=8&scope=bot%20applications.commands" target="_blank" role="button" rel="noopener">Add Sierra</a></p>
-            <p>For more information about Sierra view the project README file</p>
-            <p><a class="btn btn-secondary btn-dark" href="https://github.com/acegoal07/acegoal07.github.io/blob/master/projects/sierra/README.md" target="_blank" role="button" rel="noopener">View README</a></p>
-            <p>The preset Prefix used by sierra is ; but if you can't remember the custom prefix you have set for your server use the /serverprefix to be shown the set prefix</p>
+         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-table" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin-table" type="button" role="tab" aria-controls="admin" aria-selected="false">Admin</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-table" type="button" role="tab" aria-controls="music" aria-selected="false">Music</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="utility-tab" data-bs-toggle="tab" data-bs-target="#utility-table" type="button" role="tab" aria-controls="utility" aria-selected="false">Utility</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="setup-tab" data-bs-toggle="tab" data-bs-target="#setup-table" type="button" role="tab" aria-controls="setup" aria-selected="false">Setup</button>
+            </li>
+         </ul>
+         <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="general-table" role="tabpanel" aria-labelledby="general-tab">
+               <br>
+               <table
+               id="general"
+               data-toggle="table"
+               data-url="json/generalCommands.json"
+               data-search="true"
+               data-search-highlight="true"
+               data-pagination="false"
+               >
+                  <h3 class="text-center">General commands</h3>
+                  <p class="text-center">These commands can be used by any users in the same server of Sierra as long as they are enabled by the server owner</p>
+                  <thead>
+                     <tr>
+                        <th data-field="command">Command</th>
+                        <th data-field="description">Description</th>
+                     </tr>
+                  </thead>
+               </table>
+            <br><br>
+            </div>
+            <div class="tab-pane fade" id="admin-table" role="tabpanel" aria-labelledby="admin-tab">
+               <br>
+               <table
+               id="admin"
+               data-toggle="table"
+               data-url="json/adminCommands.json"
+               data-search="true"
+               data-search-highlight="true"
+               data-pagination="false"
+               >
+                  <h3 class="text-center">Admin commands</h3>
+                  <p class="text-center">These commands can only be used by the admins of the server who have the right server permissions and if the commands are enabled</p>
+                  <thead>
+                     <tr>
+                        <th data-field="command">Command</th>
+                        <th data-field="description">Description</th>
+                     </tr>
+                  </thead>
+               </table>
+            <br><br>
+            </div>
+            <div class="tab-pane fade" id="music-table" role="tabpanel" aria-labelledby="music-tab">
+               <br>
+               <table
+               id="music"
+               data-toggle="table"
+               data-url="json/musicCommands.json"
+               data-search="true"
+               data-search-highlight="true"
+               data-pagination="true"
+               >
+                  <h3 class="text-center">Music commands</h3>
+                  <p class="text-center">These are all of the music commands available with Sierra</p>
+                  <p class="text-center">Supports YouTube, SoundCloud, Spotify and this involves playlists and individual songs</p>
+                  <thead>
+                     <tr>
+                        <th data-field="command">Command</th>
+                        <th data-field="description">Description</th>
+                     </tr>
+                  </thead>
+            </table>
+            <br><br>
+            </div>
+            <div class="tab-pane fade" id="utility-table" role="tabpanel" aria-labelledby="utility-tab">
+               <br>
+               <table
+               id="utility"
+               data-toggle="table"
+               data-url="json/utilityCommands.json"
+               data-search="true"
+               data-search-highlight="true"
+               data-pagination="true"
+               >
+                  <h3 class="text-center">Utility commands</h3>
+                  <p class="text-center">These are commands that can be used to perform tasks or get information around the server</p>
+                  <thead>
+                     <tr>
+                        <th data-field="command">Command</th>
+                        <th data-field="description">Description</th>
+                     </tr>
+                  </thead>
+               </table>
+            <br><br>
+            </div>
+            <div class="tab-pane fade" id="setup-table" role="tabpanel" aria-labelledby="setup-tab">
+               <br>
+               <table
+               id="setup"
+               data-toggle="table"
+               data-url="json/setupCommands.json"
+               data-search="true"
+               data-search-highlight="true"
+               data-pagination="true"
+               >
+                  <h3 class="text-center">Setup commands</h3>
+                  <p class="text-center">These commands are only available to people who have the permission manage guild</p>
+                  <thead>
+                     <tr>
+                        <th data-field="command">Command</th>
+                        <th data-field="description">Description</th>
+                     </tr>
+                  </thead>
+               </table>
+            <br><br>
+            </div>
          </div>
+         <hr>
       </div>
-      <br>
-      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-         <li class="nav-item" role="presentation">
-            <button class="nav-link nav-pane active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-table" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link nav-pane" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin-table" type="button" role="tab" aria-controls="admin" aria-selected="false">Admin</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link nav-pane" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-table" type="button" role="tab" aria-controls="music" aria-selected="false">Music</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link nav-pane" id="utility-tab" data-bs-toggle="tab" data-bs-target="#utility-table" type="button" role="tab" aria-controls="utility" aria-selected="false">Utility</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link nav-pane" id="setup-tab" data-bs-toggle="tab" data-bs-target="#setup-table" type="button" role="tab" aria-controls="setup" aria-selected="false">Setup</button>
-         </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-         <div class="tab-pane fade show active" id="general-table" role="tabpanel" aria-labelledby="general-tab">
-            <br>
-            <table
-            id="general"
-            data-toggle="table"
-            data-url="json/generalCommands.json"
-            data-search="true"
-            data-search-highlight="true"
-            data-pagination="false"
-            >
-               <h3 class="text-center">General commands</h3>
-               <p class="text-center">These commands can be used by any users in the same server of Sierra as long as they are enabled by the server owner</p>
-               <thead>
-                  <tr>
-                     <th data-field="command">Command</th>
-                     <th data-field="description">Description</th>
-                  </tr>
-               </thead>
-            </table>
-         <br><br>
-         </div>
-         <div class="tab-pane fade" id="admin-table" role="tabpanel" aria-labelledby="admin-tab">
-            <br>
-            <table
-            id="admin"
-            data-toggle="table"
-            data-url="json/adminCommands.json"
-            data-search="true"
-            data-search-highlight="true"
-            data-pagination="false"
-            >
-               <h3 class="text-center">Admin commands</h3>
-               <p class="text-center">These commands can only be used by the admins of the server who have the right server permissions and if the commands are enabled</p>
-               <thead>
-                  <tr>
-                     <th data-field="command">Command</th>
-                     <th data-field="description">Description</th>
-                  </tr>
-               </thead>
-            </table>
-         <br><br>
-         </div>
-         <div class="tab-pane fade" id="music-table" role="tabpanel" aria-labelledby="music-tab">
-            <br>
-            <table
-            id="music"
-            data-toggle="table"
-            data-url="json/musicCommands.json"
-            data-search="true"
-            data-search-highlight="true"
-            data-pagination="true"
-            >
-               <h3 class="text-center">Music commands</h3>
-               <p class="text-center">These are all of the music commands available with Sierra</p>
-               <p class="text-center">Supports YouTube, SoundCloud, Spotify and this involves playlists and individual songs</p>
-               <thead>
-                  <tr>
-                     <th data-field="command">Command</th>
-                     <th data-field="description">Description</th>
-                  </tr>
-               </thead>
-         </table>
-         <br><br>
-         </div>
-         <div class="tab-pane fade" id="utility-table" role="tabpanel" aria-labelledby="utility-tab">
-            <br>
-            <table
-            id="utility"
-            data-toggle="table"
-            data-url="json/utilityCommands.json"
-            data-search="true"
-            data-search-highlight="true"
-            data-pagination="true"
-            >
-               <h3 class="text-center">Utility commands</h3>
-               <p class="text-center">These are commands that can be used to perform tasks or get information around the server</p>
-               <thead>
-                  <tr>
-                     <th data-field="command">Command</th>
-                     <th data-field="description">Description</th>
-                  </tr>
-               </thead>
-            </table>
-         <br><br>
-         </div>
-         <div class="tab-pane fade" id="setup-table" role="tabpanel" aria-labelledby="setup-tab">
-            <br>
-            <table
-            id="setup"
-            data-toggle="table"
-            data-url="json/setupCommands.json"
-            data-search="true"
-            data-search-highlight="true"
-            data-pagination="true"
-            >
-               <h3 class="text-center">Setup commands</h3>
-               <p class="text-center">These commands are only available to people who have the permission manage guild</p>
-               <thead>
-                  <tr>
-                     <th data-field="command">Command</th>
-                     <th data-field="description">Description</th>
-                  </tr>
-               </thead>
-            </table>
-         <br><br>
-         </div>
-      </div>
-      <hr>
-   </div>
-   <footer class="container">
-      <a class="back-to-top float-end" role="button">Back to Top</a>
-      <p>Designed by acegoal07</p>
-   </footer>
-</body>
+      <footer class="container">
+         <a class="back-to-top float-end" role="button">Back to Top</a>
+         <p>Designed by acegoal07</p>
+      </footer>
+   </body>
 </html>
