@@ -80,24 +80,6 @@
             </div>
          </div>
          <br>
-         <div id="toolbar">
-            <button id="button" class="btn btn-secondary">destroy</button>
-            <button id="button2" class="btn btn-secondary">build</button>
-          </div>
-         <script>
-            var $table = $('#general')
-            var $button = $('#button')
-            var $button2 = $('#button2')
-          
-            $(function() {
-              $button.click(function () {
-                $table.bootstrapTable('destroy')
-              })
-              $button2.click(function () {
-                $table.bootstrapTable()
-              })
-            })
-          </script>
          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                <button class="nav-link nav-pane active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-table" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
@@ -121,7 +103,6 @@
                <table
                id="general"
                data-toggle="table"
-               data-toolbar="#toolbar"
                data-url="json/generalCommands.json"
                data-search="true"
                data-search-highlight="true"
