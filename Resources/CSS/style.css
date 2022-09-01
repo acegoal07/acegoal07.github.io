@@ -59,6 +59,8 @@ html.lightmode *::-webkit-scrollbar {width: 12px;}
 html.lightmode *::-webkit-scrollbar-track {background: white;}
 html.lightmode *::-webkit-scrollbar-thumb {background-color: #e9ecef; border-left: solid white 3px; border-right: solid white 3px; border-bottom: solid white 1px; border-top: solid white 1px;}
 html.lightmode *::-webkit-scrollbar-thumb:hover {background-color: #c2c5c7; border-left: solid white 3px; border-right: solid white 3px; border-bottom: solid white 1px; border-top: solid white 1px;}
+
+html.lightmode .paginationRow {background-color: #e9ecef !important; border-color: transparent !important; color: black;}
 /* Pagination */
 html.lightmode table .page-item>.page-link {background-color: #e9ecef !important; border-color: transparent !important; color: black;}
 html.lightmode table .page-item.active>.page-link {background-color: #c2c5c7 !important;}
@@ -99,9 +101,9 @@ html.darkmode *::-webkit-scrollbar-track {background: black;}
 html.darkmode *::-webkit-scrollbar-thumb {background-color: #1f1f1f; border-left: solid black 3px; border-right: solid black 3px; border-bottom: solid black 1px; border-top: solid black 1px;}
 html.darkmode *::-webkit-scrollbar-thumb:hover {background-color: #3b3b3b; border-left: solid black 3px; border-right: solid black 3px; border-bottom: solid black 1px; border-top: solid black 1px;}
 
-.paginationRow {background-color: #1f1f1f; border-color: transparent; color: white;}
+html.darkmode .paginationRow {background-color: #1f1f1f !important; border-color: transparent !important; color: white !important;}
 /* Pagination 
-html.darkmode table .page-item>.page-link {background-color: #1f1f1f; border-color: transparent; color: white;}
+html.darkmode table .page-item>.page-link {background-color: #1f1f1f !important; border-color: transparent !important; color: white !important;}
 html.darkmode table .page-item.active>.page-link {background-color: #3b3b3b;}
 html.darkmode table .page-item.active {border: none !important;}
 html.darkmode table .page-item>.page-link:focus {box-shadow: none !important; -webkit-box-shadow: none !important;}
