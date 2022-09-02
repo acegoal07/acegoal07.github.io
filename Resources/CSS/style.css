@@ -1,3 +1,6 @@
+/* Body */
+hr {height: 0px !important; border-top: 2px solid !important;}
+
 /* Hover dropdown menu and animation */
 @media all and (min-width: 992px) {.navbar .nav-item .dropdown-menu{display: block; opacity: 0;  visibility: hidden; transition: .3s; margin-top: 0;} .navbar .nav-item:hover .nav-link{color: #fff !important;} .navbar .dropdown-menu.fade-down{top: 80%; transform: rotateX(-75deg); transform-origin: 0% 0%;} .navbar .dropdown-menu.fade-up{top: 180%;} .navbar .nav-item:hover .dropdown-menu{transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg);}}
 .image-margin {margin-bottom: 10px;}
@@ -5,37 +8,47 @@
 .text-box {padding-left: 20px; padding-right: 20px;}
 .bd-placeholder-img {font-size: 1.125rem; text-anchor: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 @media (min-width: 768px) {.bd-placeholder-img-lg {font-size: 3.5rem;}}
-/* Mobile navbar */
+
+/* Mobile nav bar */
 button:focus {outline:0;}
 .nav-link{outline: 0 !important; color: #9a9c9e ;}
 .nav-link:hover{color: #fff;}
+
 /* Transition */
-.disable-transitions * {-webkit-transition: none !important; -moz-transition: none !important; -o-transition: none !important; transition: none !important;}
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
 /* Firefox */
-@-moz-document url-prefix() {* {transition: 1.5s ease;}}
+@-moz-document url-prefix() {* {transition: 1.5s ease !important;}}
 /* Safari */
 @media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
+
 /* Scroll bar */
-* {scrollbar-width: thin;}
-*:hover {scrollbar-width: thin;}
+* {scrollbar-width: thin; transition: 1.5s ease;}
+*:hover {scrollbar-width: thin; transition: 1.5s ease;}
 /* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {width: 12px;}
+*::-webkit-scrollbar {width: 12px; transition: 1.5s ease;}
+
+/* Border */
 .no-top-border{border-top: transparent !important;}
 .no-bottom-border{border-bottom: transparent !important;}
-hr {height: 0px !important; border-top: 2px solid !important;}
+
 /* snow effect */
 #snowflakeContainer {position: absolute; left: 0px; top: 0px; display: none;}
 .snowflake {position: fixed; background-color: rgb(118, 198, 224); user-select: none; z-index: 1000; pointer-events: none; border-radius: 50%; width: 10px; height: 10px;}
 
 /* Lightmode */
+/* Body */
 html.lightmode body {padding-top: 3.5rem; background-color: white;}
-html.lightmode .Banner {background-color: #e9ecef !important;}
+html.lightmode .banner {background-color: #e9ecef !important;}
+html.lightmode hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
+/* Alert */
+html.lightmode .donation-alert {background-color: red; color: #e9ecef !important; width: 50%; align-content: center; align-self: center !important;}
+/* Card */
 html.lightmode .card-img-background {background-color: #e9ecef; border-bottom: transparent;}
 html.lightmode .card-body {background-color: #e9ecef;}
 html.lightmode .card-footer {background-color: #c2c5c7 !important;}
 html.lightmode .card-footer-color {background-color: #c2c5c7 !important; color:#2f2f2f !important;}
+/* Border */
 html.lightmode .border {border: 1px solid #2f2f2f !important;}
 html.lightmode .border-top {border-top: 1px solid #2f2f2f !important;}
 html.lightmode .border-bottom {border-bottom: 1px solid #2f2f2f !important;}
@@ -43,11 +56,12 @@ html.lightmode .border-left {border-left: 1px solid #2f2f2f !important;}
 html.lightmode .border-right {border-right: 1px solid #2f2f2f !important;}
 html.lightmode .rounded-top {border: #2f2f2f;}
 html.lightmode .rounded-bottom {border: #2f2f2f;}
+/* Table */
 html.lightmode thead {background-color: #e9ecef; color: black;}
 html.lightmode tbody {background-color: white; color: black;}
 html.lightmode .table-text {color: black !important;}
-html.lightmode hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
 html.lightmode .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
+/* Nav */
 html.lightmode .nav-pane.active{border-color: #e9ecef !important; background-color: transparent !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent;  transition: 1.5s ease;}
 html.lightmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
 html.lightmode .nav-tabs {border-color: #e9ecef !important; transition: 1.5s ease;}
@@ -73,21 +87,27 @@ html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-
 html.lightmode .search>.search-input {background-color: #e9ecef !important; color: black; border: none !important; transition: 1.5s ease;}
 
 /* Darkmode */
+/* Body */
 html.darkmode body {padding-top: 3.5rem; background-color: black; color: white;}
+html.darkmode .banner {background-color: #1f1f1f !important;}
+html.darkmode hr {color: #c2c5c7 !important; background-color: #c2c5c7 !important;}
+html.darkmode .list-group-item {background-color: #1f1f1f; border-color:  #2f2f2f;}
+html.darkmode html.can-touch .link-item:hover {background-color: #1f1f1f;}
+html.darkmode html.can-touch .link-item:active {background-color: #1f1f1f;}
+/* Alert */
+html.lightmode .donation-alert {color: #1f1f1f !important; width: 50%; align-content: center;}
+/* Card */
 html.darkmode .card-img-background{background-color:  #1f1f1f; border-bottom: transparent;}
 html.darkmode .card-header {background-color: #2f2f2f;}
 html.darkmode .card-body {background-color: #1f1f1f;}
 html.darkmode .card-footer {background-color: #2f2f2f !important;}
 html.darkmode .card-footer-color {background-color: #2f2f2f !important; color: #c2c5c7 !important;}
-html.darkmode .Banner {background-color: #1f1f1f !important;}
-html.darkmode .list-group-item {background-color: #1f1f1f; border-color:  #2f2f2f;}
-html.darkmode html.can-touch .link-item:hover {background-color: #1f1f1f;}
-html.darkmode html.can-touch .link-item:active {background-color: #1f1f1f;}
+/* Table */
 html.darkmode thead {background-color: #2f2f2f; color: white;}
 html.darkmode tbody {background-color: #1f1f1f; color: white;}
 html.darkmode .table-text {color: white !important;}
-html.darkmode hr {color: #c2c5c7 !important; background-color: #c2c5c7 !important;}
 html.darkmode .table-hover>tbody>tr:hover>*{background-color: #2f2f2f !important; color: white !important;}
+/* Nav */
 html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: transparent !important; color: white !important; border-bottom-color: transparent !important; border-bottom: transparent !important; transition: 1.5s ease;}
 html.darkmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: white;}
 html.darkmode .nav-tabs {border-color: #2f2f2f !important;  transition: 1.5s ease;}
