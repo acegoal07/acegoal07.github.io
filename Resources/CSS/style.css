@@ -43,14 +43,15 @@ html.lightmode .border-left {border-left: 1px solid #2f2f2f !important;}
 html.lightmode .border-right {border-right: 1px solid #2f2f2f !important;}
 html.lightmode .rounded-top {border: #2f2f2f;}
 html.lightmode .rounded-bottom {border: #2f2f2f;}
-html.lightmode .table-head, thead {background-color: #e9ecef;}
-html.lightmode .table-body, tbody {background-color: white;}
-html.lightmode .table-text {color: black;}
+html.lightmode thead {background-color: #e9ecef; color: black;}
+html.lightmode tbody {background-color: white; color: black;}
+html.lightmode .table-text {color: black !important;}
 html.lightmode hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
 html.lightmode .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
-html.lightmode .nav-pane.active{border-color: #e9ecef !important; background-color: white !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease !important;}
+html.lightmode .nav-pane.active{border-color: #e9ecef !important; background-color: transparent !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent;  transition: 1.5s ease;}
 html.lightmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
-html.lightmode .nav-tabs {border-color: #e9ecef !important;}
+html.lightmode .nav-tabs {border-color: #e9ecef !important; transition: 1.5s ease;}
+html.lightmode .nav-pane.nav-link {transition: 1.5s ease;}
 /* scroll bar */
 /* Firefox */
 html.lightmode * {scrollbar-width: thin; scrollbar-color: #e9ecef white;}
@@ -69,7 +70,7 @@ html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-toggle {backgroun
 html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item.active {background-color: #c2c5c7 !important; color: black;}
 html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #c2c5c7; color: black;}
 html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #e9ecef !important; color: black; border: none;}
-html.lightmode .search>.search-input {background-color: #e9ecef !important; color: black; border: none !important;}
+html.lightmode .search>.search-input {background-color: #e9ecef !important; color: black; border: none !important; transition: 1.5s ease;}
 
 /* Darkmode */
 html.darkmode body {padding-top: 3.5rem; background-color: black; color: white;}
@@ -82,14 +83,16 @@ html.darkmode .Banner {background-color: #1f1f1f !important;}
 html.darkmode .list-group-item {background-color: #1f1f1f; border-color:  #2f2f2f;}
 html.darkmode html.can-touch .link-item:hover {background-color: #1f1f1f;}
 html.darkmode html.can-touch .link-item:active {background-color: #1f1f1f;}
-html.darkmode .table-head, thead {background-color: #2f2f2f; color: white !important;}
-html.darkmode .table-body, tbody {background-color: #1f1f1f; color: white !important;}
+html.darkmode thead {background-color: #2f2f2f; color: white;}
+html.darkmode tbody {background-color: #1f1f1f; color: white;}
+html.darkmode .table-text {color: white !important;}
 html.darkmode hr {color: #c2c5c7 !important; background-color: #c2c5c7 !important;}
 html.darkmode .table-hover>tbody>tr:hover>*{background-color: #2f2f2f !important; color: white !important;}
-html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: black !important; color: white !important; border-bottom-color: transparent !important; border-bottom: transparent !important; transition: 1.5s ease !important;}
+html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: transparent !important; color: white !important; border-bottom-color: transparent !important; border-bottom: transparent !important; transition: 1.5s ease;}
 html.darkmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: white;}
-html.darkmode .nav-tabs {border-color: #2f2f2f !important;}
-html.darkmode .nav-pane:hover {border-color: #2f2f2f !important; background-color: black !important;}
+html.darkmode .nav-tabs {border-color: #2f2f2f !important;  transition: 1.5s ease;}
+html.darkmode .nav-pane:hover {border-color: #2f2f2f !important; background-color: transparent !important;}
+html.darkmode .nav-pane.nav-link {transition: 1.5s ease;}
 /* scroll bar */
 /* Firefox */
 html.darkmode * {scrollbar-width: thin; scrollbar-color: #1f1f1f black;}
@@ -109,4 +112,4 @@ html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdow
 html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item {color: white;}
 html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #3b3b3b; color: white;}
 html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #1f1f1f !important; color: white; border: none;}
-html.darkmode .search>.search-input {background-color: #1f1f1f !important; color: white; border: none !important;}
+html.darkmode .search>.search-input {background-color: #1f1f1f !important; color: white; border: none !important; transition: 1.5s ease;}
