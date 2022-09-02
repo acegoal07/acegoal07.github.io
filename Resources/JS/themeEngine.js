@@ -34,8 +34,8 @@ document.onreadystatechange = () => {
    }
 }
 // Watch out for system default changes and adjust to it
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-   if (e.matches) {
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', theme => {
+   if (theme.matches) {
          document.getElementById('base').classList.replace("darkmode", "lightmode");
          localStorage.setItem("setTheme", "dark");
          document.getElementById('themeSwitch').classList.replace("bi-moon-fill", "bi-brightness-high-fill");
