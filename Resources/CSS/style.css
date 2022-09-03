@@ -18,7 +18,7 @@ button:focus {outline:0;}
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
 /* Firefox */
-@-moz-document url-prefix() {* {transition: 1.5s ease !important;}}
+@-moz-document url-prefix() {* {transition: 1.5s ease;}}
 /* Safari */
 @media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
 
