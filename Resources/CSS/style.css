@@ -85,6 +85,7 @@ html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdo
 html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #c2c5c7; color: black;}
 html.lightmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #e9ecef !important; color: black; border: none;}
 html.lightmode .search>.search-input {background-color: #e9ecef !important; color: black; border: none !important; transition: 1.5s ease;}
+html.lightmode .btn-color {color: #c2c5c7;}
 
 /* Darkmode */
 /* Body */
@@ -133,3 +134,4 @@ html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdow
 html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #3b3b3b; color: white;}
 html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #1f1f1f !important; color: white; border: none;}
 html.darkmode .search>.search-input {background-color: #1f1f1f !important; color: white; border: none !important; transition: 1.5s ease;}
+html.darkmode .btn-color {color: #2f2f2f;}
