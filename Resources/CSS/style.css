@@ -134,3 +134,4 @@ html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdow
 html.darkmode .pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #1f1f1f !important; color: white; border: none;}
 html.darkmode .search>.search-input {background-color: #1f1f1f !important; color: white; border: none !important; transition: 1.5s ease;}
 html.darkmode .btn-dark {background-color: #3a424a;}
+html.darkmode .btn-dark:hover {background-color: #4a545e;}
