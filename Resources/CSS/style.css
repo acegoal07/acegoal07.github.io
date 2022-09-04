@@ -94,9 +94,7 @@ html.darkmode hr {color: #c2c5c7 !important; background-color: #c2c5c7 !importan
 html.darkmode .list-group-item {background-color: #1f1f1f; border-color:  #2f2f2f;}
 html.darkmode html.can-touch .link-item:hover {background-color: #1f1f1f;}
 html.darkmode html.can-touch .link-item:active {background-color: #1f1f1f;}
-html.darkmode .btn-dark {background-color: #3a424a;}
-html.darkmode .btn-dark:hover {background-color: #4a545e;}
-html.darkmode .navbar.bg-dark {background-color: #4a545e;}
+html.darkmode .shadow-sm {color: transparent;}
 /* Alert */
 html.lightmode .donation-alert {color: #1f1f1f !important; width: 50%; align-content: center;}
 /* Card */
