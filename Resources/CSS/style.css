@@ -57,10 +57,11 @@ html.lightmode .border-right {border-right: 1px solid #2f2f2f !important;}
 html.lightmode .rounded-top {border: #2f2f2f;}
 html.lightmode .rounded-bottom {border: #2f2f2f;}
 /* Table */
-html.lightmode thead {background-color: #e9ecef; color: black;}
-html.lightmode tbody {background-color: white; color: black;}
+html.lightmode thead {background-color: #c2c5c7; color: black;}
+html.lightmode tbody {background-color: #e9ecef; color: black;}
 html.lightmode .table-text {color: black !important;}
-html.lightmode .table-hover>tbody>tr:hover {background-color: #e9ecef; color: black;}
+html.lightmode .table-hover>tbody>tr:hover {background-color: #c2c5c7 !important; color: black !important;}
+html.lightmode .table.table-bordered {color: black;}
 /* Nav */
 html.lightmode .nav-pane.active{border-color: #e9ecef !important; background-color: transparent !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent};
 html.lightmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
