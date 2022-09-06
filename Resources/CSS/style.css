@@ -63,7 +63,7 @@ html.lightmode .table-text {color: black !important;}
 html.lightmode .table-hover>tbody>tr:hover {background-color: #c2c5c7 !important; color: black !important;}
 html.lightmode .table.table-bordered {border-color: black !important;}
 /* Nav */
-html.lightmode .nav-pane.active {border-color: #e9ecef !important; background-color: #e9ecef !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease};
+html.lightmode .nav-pane.active {border-color: #e9ecef !important; background-color: #e9ecef !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease;};
 html.lightmode .nav-tabs {border-color: #e9ecef !important;}
 html.lightmode .nav-pane.nav-link:hover {color: black; background-color: #e9ecef;}
 html.lightmode .nav-pane.nav-link {transition: 1.5s ease;}
