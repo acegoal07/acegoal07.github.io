@@ -63,9 +63,9 @@ html.lightmode .table-text {color: black !important;}
 html.lightmode .table-hover>tbody>tr:hover {background-color: #c2c5c7 !important; color: black !important;}
 html.lightmode .table.table-bordered {border-color: black !important;}
 /* Nav */
-html.lightmode .nav-pane.active{border-color: #e9ecef !important; background-color: transparent !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent};
+html.lightmode .nav-pane.active {border-color: #e9ecef !important; background-color: #e9ecef !important; color: black !important; border-bottom-color: transparent !important; border-bottom: transparent; transition: 1.5s ease};
 html.lightmode .nav-tabs {border-color: #e9ecef !important;}
-html.lightmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: black;}
+html.lightmode .nav-pane.nav-link:hover {color: black; background-color: #e9ecef;}
 html.lightmode .nav-pane.nav-link {transition: 1.5s ease;}
 /* scroll bar */
 /* Firefox */
@@ -110,10 +110,10 @@ html.darkmode tbody {background-color: #1f1f1f; color: white;}
 html.darkmode .table-text {color: white !important;}
 html.darkmode .table-hover>tbody>tr:hover>*{background-color: #2f2f2f !important; color: white !important;}
 /* Nav */
-html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: transparent !important; color: white !important; border-bottom-color: transparent !important; border-bottom: transparent !important;}
+html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: #1f1f1f; color: white !important; border-bottom-color: transparent !important; border-bottom: transparent !important; transition: 1.5s ease;}
 html.darkmode .nav-tabs {border-color: #2f2f2f !important;}
-html.darkmode .nav-pane.nav-link, .nav-pane.nav-link:hover {color: white;}
-html.darkmode .nav-pane:hover {border-color: #2f2f2f !important; background-color: transparent !important;}
+html.darkmode .nav-pane.nav-link:hover {color: white; background-color: #1f1f1f;}
+html.darkmode .nav-pane:hover {border-color: #2f2f2f !important; background-color: #1f1f1f ;}
 html.darkmode .nav-pane.nav-link {transition: 1.5s ease;}
 /* scroll bar */
 /* Firefox */
