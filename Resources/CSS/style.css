@@ -32,6 +32,10 @@ button:focus {outline:0;}
 .no-top-border{border-top: transparent !important;}
 .no-bottom-border{border-bottom: transparent !important;}
 
+/* Card */
+.card picture {text-align: center; width: 100%; height: 100%;}
+.card picture img {width: 100%; height: 100%;}
+
 /* snow effect */
 #snowflakeContainer {position: absolute; left: 0px; top: 0px; display: none;}
 .snowflake {position: fixed; background-color: rgb(118, 198, 224); user-select: none; z-index: 1000; pointer-events: none; border-radius: 50%; width: 10px; height: 10px;}
@@ -44,7 +48,7 @@ html.lightmode hr {color: #2f2f2f !important; background-color: #2f2f2f !importa
 /* Alert */
 html.lightmode .donation-alert {background-color: red; color: #e9ecef !important; width: 50%; align-content: center; align-self: center !important;}
 /* Card */
-html.lightmode .card-img-background {background-color: #e9ecef; border-bottom: transparent;}
+html.lightmode .card picture {background-color: #e9ecef; border-bottom: transparent;}
 html.lightmode .card-body {background-color: #e9ecef;}
 html.lightmode .card-footer {background-color: #c2c5c7 !important;}
 html.lightmode .card-footer-color {background-color: #c2c5c7 !important; color:#2f2f2f !important;}
@@ -99,16 +103,18 @@ html.darkmode .shadow-sm {color: transparent;}
 /* Alert */
 html.darkmode .donation-alert {color: #1f1f1f !important; width: 50%; align-content: center;}
 /* Card */
-html.darkmode .card-img-background{background-color:  #1f1f1f; border-bottom: transparent;}
 html.darkmode .card-header {background-color: #2f2f2f;}
-html.darkmode .card-body {background-color: #1f1f1f;}
+html.darkmode .card-body {background-color: #1f1f1f; color: white;}
 html.darkmode .card-footer {background-color: #2f2f2f !important;}
+html.darkmode .card picture {background-color: #1f1f1f;}
+html.darkmode .card picture img {color: white;}
 html.darkmode .card-footer-color {background-color: #2f2f2f !important; color: #c2c5c7 !important;}
 /* Table */
 html.darkmode thead {background-color: #2f2f2f; color: white;}
 html.darkmode tbody {background-color: #1f1f1f; color: white;}
 html.darkmode .table-text {color: white !important;}
 html.darkmode .table-hover>tbody>tr:hover>*{background-color: #2f2f2f !important; color: white !important;}
+html.darkmode .fixed-table-loading {background-color: black; color: white;}
 /* Nav */
 html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: #1f1f1f; color: white !important; border-bottom-color: transparent !important; border-bottom: transparent !important; transition: 1.5s ease;}
 html.darkmode .nav-tabs {border-color: #2f2f2f !important;}
