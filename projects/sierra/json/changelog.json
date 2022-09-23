@@ -1,5 +1,14 @@
 [
    {
+      "version": "2.5.3",
+      "changes": [
+         "Overhauls configFiler to introduce more accurate methods of create, deleting and checking for files",
+         "Moves config file layout out configFiler",
+         "Removes all deprecated code for pagination embeds",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.2",
       "changes": [
          "Updates handlers to make sure they have completely loaded everything before bot is loaded",

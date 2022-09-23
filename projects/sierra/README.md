@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.4.9
+Current Bot Version: V2.5.3
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -126,9 +126,9 @@ setuserupdatelog|Used to setup user update logging
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-Sierra@2.5.2
-├── @acegoal07/discordjs-pagination@1.3.8
-├── @acegoal07/json-editor@1.0.5
+Sierra@2.5.3
+├── @acegoal07/discordjs-pagination@1.3.9
+├── @acegoal07/json-editor@1.1.0
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.8.0
 ├── @discordjs/rest@1.1.0
@@ -136,8 +136,8 @@ Sierra@2.5.2
 ├── @sapphire/snowflake@3.2.2
 ├── @supercharge/collections@4.3.0
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.37.5
-├── discord.js@14.3.0
+├── discord-api-types@0.37.10
+├── discord.js@14.4.0
 ├── enmap@5.9.1
 ├── ffmpeg-static@5.1.0
 ├── ffmpeg@0.0.4
@@ -151,11 +151,11 @@ Sierra@2.5.2
 ├── moment@2.29.4
 ├── opusscript@0.0.8
 ├── prism-media@1.3.4
-├── public-ip@4.0.4
+├── public-ip@6.0.1
 ├── scdl-core@1.1.0
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
-├── spotify-url-info@3.1.7
+├── spotify-url-info@3.1.8
 ├── systeminformation@5.12.6
 ├── ytdl-core@4.11.2
 ├── ytpl@2.3.0
