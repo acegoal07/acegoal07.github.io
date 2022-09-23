@@ -8,6 +8,11 @@
          "Updates all paginations to support changes done to pagination package",
          "Edits donation command",
          "Improves command and event loading reliability",
+         "Adds a fix to music system which caused music quality to drop after disconnecting the bot yourself",
+         "Fixes crash with queue command",
+         "Finishes updating the pagination embed's to new version",
+         "Updates json editing system to new version",
+         "Updates all packages to new versions",
          "Bug fixes"
       ]
    },
