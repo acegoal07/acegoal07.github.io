@@ -5,6 +5,9 @@
          "Overhauls configFiler to introduce more accurate methods of create, deleting and checking for files",
          "Moves config file layout out configFiler",
          "Removes all deprecated code for pagination embeds",
+         "Start's implementation of new config detection",
+         "Start's implementation of new missing config mitigation system",
+         "Improves responsiveness of commands",
          "Bug fixes"
       ]
    },
