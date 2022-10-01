@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html id="base" lang="en" class="">
+<html id="base" lang="en" class="lightmode">
    <script rel="preload" src="/Resources/JS/themeEngine.js"></script>
    <head>
+      <meta charset="utf-8">
       <title>Projects</title>
       <link rel="shortcut icon" href="/Resources/Pictures/favicon.ico">
-      <meta charset="utf-8">
       <meta name="theme-color" content="#212529"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="The official website of acegoal07">
@@ -26,22 +26,22 @@
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="float-end">
-                  <a id="themeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-lg-none d-md-none bi"></a>
+                  <a id="themeSwitch" onclick="toggleTheme()" aria-label="theme switcher" role="button" class="nav-link d-lg-none d-md-none bi"></a>
                </div>
                <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav me-auto mb-2 mb-md-0">
                      <li class="nav-item">
-                        <a class="nav-link" href="/">Homepage</a>
+                        <a class="nav-link" href="/" aria-label="homepage" role="button">Homepage</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link active back-to-top-2" role="button">Projects</a>
+                        <a class="nav-link active back-to-top-2" role="button" aria-label="projects page">Projects</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="/donate">Donate</a>
+                        <a class="nav-link" href="/donate" role="button" aria-label="donate page">Donate</a>
                      </li>
                   </ul>
                </div>
-               <a id="colThemeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-none d-lg-block d-md-block bi"></a>
+               <a id="colThemeSwitch" onclick="toggleTheme()" role="button" class="nav-link d-none d-lg-block d-md-block bi" aria-label="theme switcher"></a>
             </div>
          </nav>
       </header>

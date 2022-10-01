@@ -4,19 +4,15 @@
 if (localStorage.getItem("setTheme") === null) {
    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       localStorage.setItem("setTheme", "dark");
-      document.getElementById('base').classList.add("darkmode");
+      document.getElementById('base').classList.replace("lightmode", "darkmode");
    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
          localStorage.setItem("setTheme", "light");
-         document.getElementById('base').classList.add("lightmode");
    } else {
          localStorage.setItem("setTheme", "light");
-         document.getElementById('base').classList.add("lightmode");
    }
 } else if (localStorage.getItem("setTheme") === 'dark') {
-   document.getElementById('base').classList.add("darkmode");
-} else {
-   document.getElementById('base').classList.add("lightmode");
-}
+   document.getElementById('base').classList.replace("lightmode","darkmode");
+} else {}
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () => {
    if (document.readyState === 'interactive') {
