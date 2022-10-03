@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.5.3
+Current Bot Version: V2.5.4
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -126,19 +126,19 @@ setuserupdatelog|Used to setup user update logging
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-Sierra@2.5.3
+Sierra@2.5.4
 ├── @acegoal07/discordjs-pagination@1.3.9
-├── @acegoal07/json-editor@1.1.0
+├── @acegoal07/json-editor@1.1.2
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.8.0
-├── @discordjs/rest@1.1.0
+├── @discordjs/rest@1.2.0
 ├── @discordjs/voice@0.11.0
 ├── @sapphire/snowflake@3.2.2
 ├── @supercharge/collections@4.3.0
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.37.10
-├── discord.js@14.4.0
-├── enmap@5.9.1
+├── discord-api-types@0.37.11
+├── discord.js@14.5.0
+├── enmap@5.9.2
 ├── ffmpeg-static@5.1.0
 ├── ffmpeg@0.0.4
 ├── fluent-ffmpeg@2.1.2
@@ -155,7 +155,7 @@ Sierra@2.5.3
 ├── scdl-core@1.1.0
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
-├── spotify-url-info@3.1.8
+├── spotify-url-info@3.1.9
 ├── systeminformation@5.12.6
 ├── ytdl-core@4.11.2
 ├── ytpl@2.3.0

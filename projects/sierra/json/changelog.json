@@ -2,6 +2,16 @@
    {
       "version": "2.5.3",
       "changes": [
+         "Adds support for new jsonEditor version",
+         "Adds mass improvements to all commands and events",
+         "Improves performance of sierra",
+         "Fixes issue with slash commands not working",
+         "Bug fixes"
+      ]
+   },
+   {
+      "version": "2.5.3",
+      "changes": [
          "Overhauls configFiler to introduce more accurate methods of create, deleting and checking for files",
          "Moves config file layout out configFiler",
          "Removes all deprecated code for pagination embeds",
