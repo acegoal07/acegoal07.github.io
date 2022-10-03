@@ -41,8 +41,7 @@ button:focus {outline:0;}
 .snowflake {position: fixed; background-color: rgb(118, 198, 224); user-select: none; -webkit-user-select: none; z-index: 1000; pointer-events: none; border-radius: 50%; width: 10px; height: 10px;}
 
 /* 404 page */
-html.error-body body html {width: 100%};
-.error-body-width {width: 18rem;};
+html.error-page, html.error-page body {width: 100%; height: 100%;};
 
 /* Lightmode */
 /* Body */
