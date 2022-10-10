@@ -1,6 +1,6 @@
 [
    {
-      "version": "2.5.3",
+      "version": "2.5.4",
       "changes": [
          "Adds support for new jsonEditor version",
          "Adds mass improvements to all commands and events",
