@@ -1,5 +1,6 @@
 /* Body */
 hr {height: 0px !important; border-top: 2px solid !important;}
+body {padding-top: 3.5rem !important;}
 
 /* Hover dropdown menu and animation */
 @media all and (min-width: 992px) {.navbar .nav-item .dropdown-menu{display: block; opacity: 0;  visibility: hidden; transition: .3s; margin-top: 0;} .navbar .nav-item:hover .nav-link{color: #fff !important;} .navbar .dropdown-menu.fade-down{top: 80%; transform: rotateX(-75deg); transform-origin: 0% 0%;} .navbar .dropdown-menu.fade-up{top: 180%;} .navbar .nav-item:hover .dropdown-menu{transition: .3s; opacity: 1; visibility: visible; top: 100%; transform: rotateX(0deg);}}
@@ -45,7 +46,7 @@ html.error-page, html.error-page body {width: 100%; height: 100%;};
 
 /* Lightmode */
 /* Body */
-html.lightmode body {padding-top: 3.5rem; background-color: white;}
+html.lightmode body {background-color: white;}
 html.lightmode .banner {background-color: #e9ecef !important;}
 html.lightmode hr {color: #2f2f2f !important; background-color: #2f2f2f !important;}
 /* Alert */
@@ -96,7 +97,7 @@ html.lightmode .search>.search-input {background-color: #e9ecef !important; colo
 
 /* Darkmode */
 /* Body */
-html.darkmode body {padding-top: 3.5rem; background-color: black; color: white;}
+html.darkmode body {background-color: black; color: white;}
 html.darkmode .banner {background-color: #1f1f1f !important;}
 html.darkmode hr {color: #c2c5c7 !important; background-color: #c2c5c7 !important;}
 html.darkmode .list-group-item {background-color: #1f1f1f; border-color:  #2f2f2f;}
