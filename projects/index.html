@@ -73,7 +73,7 @@
                            </div>
                         </div>
                         <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="sierra-version">
+                           <small class="text-muted" id="sierra-version">Unavailable
                               <script>
                                  $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/json/changelog.json", function (data) {document.getElementById('sierra-version').innerHTML = `Latest version: ${data[0].version}`})
                               </script>
@@ -97,7 +97,7 @@
                            </div>
                         </div>
                         <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="discordjs-pagination-version">
+                           <small class="text-muted" id="discordjs-pagination-version">Unavailable
                               <script>
                                  $.getJSON("https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json", function (data) {document.getElementById('discordjs-pagination-version').innerHTML = `Latest version: ${data.version}`})
                               </script>
@@ -121,7 +121,7 @@
                            </div>
                         </div>
                         <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="progressbar-builder-version">
+                           <small class="text-muted" id="progressbar-builder-version">Unavailable
                               <script>
                                  $.getJSON("https://raw.githubusercontent.com/acegoal07/progressbar-builder/main/package.json", function (data) {document.getElementById('progressbar-builder-version').innerHTML = `Latest version: ${data.version}`})
                               </script>
@@ -146,9 +146,35 @@
                            </div>
                         </div>
                         <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="json-editor-version">
+                           <small class="text-muted" id="json-editor-version"> Unavailable
                               <script>
                                  $.getJSON("https://raw.githubusercontent.com/acegoal07/json-editor/main/package.json", function (data) {document.getElementById('json-editor-version').innerHTML = `Latest version: ${data.version}`})
+                              </script>
+                           </small>
+                        </div>   
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="card mb-4 shadow-sm">
+                        <picture class="rounded-top border-top border-left border-right">
+                           <img src="/Resources/Pictures/npmBanner.webp" alt="npm banner" onerror="this.onerror=null;this.src='/Resources/Pictures/MissingBanner.webp';">
+                        </picture>
+                        <div class="card-body border-left border-right">
+                           <p class="card-title fw-bold">file-tools</p>
+                           <p class="card-text">A package of easy to use tools for interacting with files using javascript</p>
+                           <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                 <a href="https://www.npmjs.com/package/@acegoal07/file-tools" rel="noopener" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">View NPM</a>
+                                 <a href="https://github.com/acegoal07/file-tools" rel="noopener" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">View GitHub</a>
+                                 <a href="https://github.com/acegoal07/file-tools/wiki" rel="noopener" role="button" class="btn btn-sm btn-outline-secondary" target="_blank">View Wiki</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
+                           <small class="text-muted" id="file-tools-version">Unavailable
+                              <script>
+                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/file-tools/main/package.json", function (data) {document.getElementById('file-tools-version').innerHTML = `Latest version: ${data.version}`})
                               </script>
                            </small>
                         </div>   
