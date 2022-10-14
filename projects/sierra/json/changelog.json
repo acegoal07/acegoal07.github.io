@@ -1,5 +1,17 @@
 [
    {
+      "version": "2.5.5",
+      "changes": [
+         "Converts over to new file tool package called @acegoal07/file-tools",
+         "Updates all events and commands to use new file check",
+         "Changes all events and commands to use new file tools instead of @acegoal07/json-editor who's tools have been deprecated",
+         "Updates all dependencies to latest version",
+         "Fixes an issue with createInteraction event picking up pagination button inputs",
+         "Updates userinfo command to support new discord.js version where activity types were updated", 
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.4",
       "changes": [
          "Adds support for new jsonEditor version",
