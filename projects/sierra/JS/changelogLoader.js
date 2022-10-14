@@ -1,3 +1,8 @@
+document.onreadystatechange = () => {
+   document.getElementById('changelog-info').classList.remove("d-none");
+   document.getElementById('error').classList.add("d-none");
+}
+
 var count = 0;
 var pastVersionChangeLog = [];
 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/json/changelog.json",
