@@ -72,10 +72,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="sierra-version">Unavailable
+                        <div  id="sierra-version-display" class="card-footer card-footer-color border-left border-right border-bottom border-top d-none">
+                           <small class="text-muted" id="sierra-version">
                               <script>
-                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/json/changelog.json", function (data) {document.getElementById('sierra-version').innerHTML = `Latest version: ${data[0].version}`})
+                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/json/changelog.json", function (data) {document.getElementById('sierra-version').innerHTML = `Latest version: ${data[0].version}`});
+                                 document.getElementById("sierra-version-display").classList.remove("d-none");
                               </script>
                            </small>
                         </div> 
@@ -96,10 +97,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="discordjs-pagination-version">Unavailable
+                        <div id="discordjs-pagination-version-display" class="card-footer card-footer-color border-left border-right border-bottom border-top d-none">
+                           <small class="text-muted" id="discordjs-pagination-version">
                               <script>
-                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json", function (data) {document.getElementById('discordjs-pagination-version').innerHTML = `Latest version: ${data.version}`})
+                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json", function (data) {document.getElementById('discordjs-pagination-version').innerHTML = `Latest version: ${data.version}`});
+                                 document.getElementById("discordjs-pagination-version-display").classList.remove("d-none");
                               </script>
                            </small>
                         </div>   
@@ -120,10 +122,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="progressbar-builder-version">Unavailable
+                        <div id="progressbar-builder-version-display" class="card-footer card-footer-color border-left border-right border-bottom border-top d-none">
+                           <small class="text-muted" id="progressbar-builder-version">
                               <script>
-                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/progressbar-builder/main/package.json", function (data) {document.getElementById('progressbar-builder-version').innerHTML = `Latest version: ${data.version}`})
+                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/progressbar-builder/main/package.json", function (data) {document.getElementById('progressbar-builder-version').innerHTML = `Latest version: ${data.version}`});
+                                 document.getElementById("progressbar-builder-version-display").classList.remove("d-none");
                               </script>
                            </small>
                         </div>   
@@ -145,10 +148,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="json-editor-version"> Unavailable
+                        <div id="json-editor-version-display" class="card-footer card-footer-color border-left border-right border-bottom border-top d-none">
+                           <small class="text-muted" id="json-editor-version">
                               <script>
-                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/json-editor/main/package.json", function (data) {document.getElementById('json-editor-version').innerHTML = `Latest version: ${data.version}`})
+                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/json-editor/main/package.json", function (data) {document.getElementById('json-editor-version').innerHTML = `Latest version: ${data.version}`});
+                                 document.getElementById("json-editor-version-display").classList.remove("d-none");
                               </script>
                            </small>
                         </div>   
@@ -171,10 +175,11 @@
                               </div>
                            </div>
                         </div>
-                        <div class="card-footer card-footer-color border-left border-right border-bottom border-top">
-                           <small class="text-muted" id="file-tools-version">Unavailable
+                        <div id="file-tools-version-display" class="card-footer card-footer-color border-left border-right border-bottom border-top d-none">
+                           <small class="text-muted" id="file-tools-version">
                               <script>
-                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/file-tools/main/package.json", function (data) {document.getElementById('file-tools-version').innerHTML = `Latest version: ${data.version}`})
+                                 $.getJSON("https://raw.githubusercontent.com/acegoal07/file-tools/main/package.json", function (data) {document.getElementById('file-tools-version').innerHTML = `Latest version: ${data.version}`});
+                                 document.getElementById("file-tools-version-display").classList.remove("d-none");
                               </script>
                            </small>
                         </div>   
