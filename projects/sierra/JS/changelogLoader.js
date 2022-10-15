@@ -1,6 +1,13 @@
 document.onreadystatechange = () => {
    document.getElementById('changelog-info').classList.remove("d-none");
    document.getElementById('error').classList.add("d-none");
+   if (localStorage.getItem("setTheme") === "dark") {
+      document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
+      document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
+   } else {
+      document.getElementById('themeSwitch').classList.add("bi-moon-fill");
+      document.getElementById('colThemeSwitch').classList.add("bi-moon-fill");
+   }
 }
 
 var count = 0;
