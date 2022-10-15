@@ -18,8 +18,7 @@ document.onreadystatechange = () => {
    // If not 404 page set buttons
    if (!document.getElementById("base").classList.contains("error-page")) {
       if (document.readyState === 'interactive') {
-         const currentTheme = localStorage.getItem("setTheme");
-         if (currentTheme === "dark") {
+         if (localStorage.getItem("setTheme") === "dark") {
             document.getElementById('themeSwitch').classList.add("bi-brightness-high-fill");
             document.getElementById('colThemeSwitch').classList.add("bi-brightness-high-fill");
          } else {
@@ -51,8 +50,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', the
 });
 // Button function to change theme
 function toggleTheme() {
-   const currentTheme = localStorage.getItem("setTheme");
-   if (currentTheme === "light") {
+   if (localStorage.getItem("setTheme") === "light") {
       document.getElementById('base').classList.replace("lightmode", "darkmode");
       localStorage.setItem("setTheme", "dark");
       // If not 404 page set buttons
