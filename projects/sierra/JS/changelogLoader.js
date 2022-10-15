@@ -10,19 +10,19 @@ document.onreadystatechange = () => {
    }
 }
 
-var count = 0;
-var pastVersionChangeLog = [];
+let count = 0;
+const pastVersionChangeLog = [];
 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/json/changelog.json",
    function (data) {
-      for (info of data) {
+      for (const info of data) {
          count += 1;
          // Changes
          let changesArray = [];
-         for (changes of info.changes) {
+         for (const changes of info.changes) {
             changesArray.push(`<li><p>${changes}</p></li>`);
          }
          // Card
-         var card = 
+         const card = 
             `<div class="card">
                <div class="card-header rounded-top border-top border-left border-right">
                   Version ${info.version}
