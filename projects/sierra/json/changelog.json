@@ -1,5 +1,16 @@
 [
    {
+      "version": "2.5.6",
+      "changes": [
+         "Fixes some issues with playlist commands not functioning properly",
+         "Enables playlist commands to be used within private messages with the bot",
+         "Fixes issues with bot crashing when using playlist commands in private messages due to limitations",
+         "Updates all dependencies to latest version",
+         "Fixes playlist delete command which was delete all playlists when used",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.5",
       "changes": [
          "Converts over to new file tool package called @acegoal07/file-tools",
