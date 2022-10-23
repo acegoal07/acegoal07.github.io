@@ -7,6 +7,8 @@
          "Fixes issues with bot crashing when using playlist commands in private messages due to limitations",
          "Updates all dependencies to latest version",
          "Fixes playlist delete command which was delete all playlists when used",
+         "Adds new private message help response showing available commands",
+         "Adds default settings for embed color and prefix into the bot config making it accessible by commands",
          "Bug fixes"
       ]
    },
