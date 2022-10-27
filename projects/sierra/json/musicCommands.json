@@ -104,6 +104,10 @@
       "description": "Deletes a users playlist"
    },
    {
+      "command": "renameplaylist (playlist name) (new name)",
+      "description": "Renames a playlist to the new specified name"
+   },
+   {
       "command": "playlists",
       "description": "Allows you to view your playlists"
    },

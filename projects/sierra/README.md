@@ -86,6 +86,7 @@ restartsong|Goes to the beginning of the song that's currently playing
 previous|Allows you to go back to songs that you have already played
 createplaylist ```(playlist name)```|Creates a user specific playlist
 deleteplaylist ```(playlist name)```|Deletes a users playlist
+renameplaylist ```(playlist name)``` ```(new name)```|Renames a playlist to the new specified name
 playlists|Allows you to view your playlists
 loadplaylist ```(playlist name)```|Adds the songs from a users playlist to the server queue
 playlistaddcurrent ```(playlist name)```|Adds the current song your listening to, to the playlist specified
