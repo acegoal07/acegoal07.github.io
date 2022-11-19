@@ -1,5 +1,16 @@
 [
    {
+      "version": "2.5.8",
+      "changes": [
+         "Fixes a bug with messageBulkDelete event which was causing crashes randomly",
+         "Combines all extra utility files into one file",
+         "Adds new error log system",
+         "Improves error catching",
+         "Switches to using beta version of @acegoal07/discordjs-pagination",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.7",
       "changes": [
          "Fixes some crashes in within playlists command being caused by the playlist being called having no songs in it",
