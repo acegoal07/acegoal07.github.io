@@ -7,6 +7,9 @@
          "Adds new error log system",
          "Improves error catching",
          "Switches to using beta version of @acegoal07/discordjs-pagination",
+         "Removes auto delete of error messages in channels",
+         "Adds new system to check whether a color is supported",
+         "Fixes setWelcome and setBye color options to set correct color format",
          "Bug fixes"
       ]
    },
