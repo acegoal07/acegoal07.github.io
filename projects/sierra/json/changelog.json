@@ -1,7 +1,6 @@
 [
    {
       "version": "2.5.8",
-      "release_date": "19/11/2022",
       "changes": [
          "Fixes a bug with messageBulkDelete event which was causing crashes randomly",
          "Combines all extra utility files into one file",
@@ -18,7 +17,6 @@
    },
    {
       "version": "2.5.7",
-      "release_date": "",
       "changes": [
          "Fixes some crashes in within playlists command being caused by the playlist being called having no songs in it",
          "Adds renameplaylist command",
@@ -31,7 +29,6 @@
    },
    {
       "version": "2.5.6",
-      "release_date": "",
       "changes": [
          "Fixes some issues with playlist commands not functioning properly",
          "Enables playlist commands to be used within private messages with the bot",
@@ -45,7 +42,6 @@
    },
    {
       "version": "2.5.5",
-      "release_date": "",
       "changes": [
          "Converts over to new file tool package called @acegoal07/file-tools",
          "Updates all events and commands to use new file check",
@@ -58,7 +54,6 @@
    },
    {
       "version": "2.5.4",
-      "release_date": "",
       "changes": [
          "Adds support for new jsonEditor version",
          "Adds mass improvements to all commands and events",
@@ -69,7 +64,6 @@
    },
    {
       "version": "2.5.3",
-      "release_date": "",
       "changes": [
          "Overhauls configFiler to introduce more accurate methods of create, deleting and checking for files",
          "Moves config file layout out configFiler",
@@ -82,7 +76,6 @@
    },
    {
       "version": "2.5.2",
-      "release_date": "",
       "changes": [
          "Updates handlers to make sure they have completely loaded everything before bot is loaded",
          "Adds beta MessageCreate to test new code",
@@ -100,7 +93,6 @@
    },
    {
       "version": "2.5.1",
-      "release_date": "",
       "changes": [
          "Updates sierra to discord.js version 14.0.3",
          "Changes how music system works to allow for the addition of custom user playlists",
@@ -116,7 +108,6 @@
    },
    {
       "version": "2.5.0",
-      "release_date": "",
       "changes": [
          "Changes the server config system to a custom editor",
          "Upgrades spotify music system to latest version using experimental features",
@@ -131,7 +122,6 @@
    },
    {
       "version": "2.4.9",
-      "release_date": "",
       "changes": [
          "Makes it so voiceLogging can now pick up on if the user was removed or moved from the voice channel by a different user",
          "Makes it so bulkDelete can now detect who bulk deleted items",
@@ -155,7 +145,6 @@
    },
    {
       "version": "2.4.8",
-      "release_date": "",
       "changes": [
          "Makes it so byeMessage event now picks up on different reasons for a user leaving the server such as being banned",
          "Adds userUpdate logging to the bot",
@@ -171,7 +160,6 @@
    },
    {
       "version": "2.4.7",
-      "release_date": "",
       "changes": [
          "Adds new system to deleted message logger that now picks up when messages are bulk deleted",
          "Made it so the clear command detects whether a message is older than 2 weeks and if its able to delete it",
@@ -190,7 +178,6 @@
    },
    {
       "version": "2.4.6",
-      "release_date": "",
       "changes": [
          "Adds new boot log system",
          "Fixes command specific channel for interactions",
@@ -205,7 +192,6 @@
    },
    {
       "version": "2.4.5",
-      "release_date": "",
       "changes": [
          "Adds restart song command",
          "Updates dependencies",
@@ -224,7 +210,6 @@
    },
    {
       "version": "2.4.4",
-      "release_date": "",
       "changes": [
          "Changes commands so they load config files before running commands",
          "Fixes a message embed not being sent in channelInfo command",
@@ -236,7 +221,6 @@
    },
    {
       "version": "2.4.3",
-      "release_date": "",
       "changes": [
          "Cleans up some of the code to stream line some of the commands",
          "Improves internet loss recovery",
@@ -248,7 +232,6 @@
    },
    {
       "version": "2.4.2",
-      "release_date": "",
       "changes": [
          "Adds a lyric command to get the lyrics for the song currently playing",
          "Updates help command",
@@ -265,7 +248,6 @@
    },
    {
       "version": "2.4.1",
-      "release_date": "",
       "changes": [
          "Adds Search commands for spotify including tracks and playlists",
          "Added new commands to help command",
@@ -282,7 +264,6 @@
    },
    {
       "version": "2.4.0",
-      "release_date": "",
       "changes": [
          "Adds missing settings to settings command",
          "Adds new config system",
@@ -296,7 +277,6 @@
    },
    {
       "version": "2.3.9",
-      "release_date": "",
       "changes": [
          "Switches to the wrapper for @acegoal07/discordjs-pagination",
          "Makes it so the error handler automatically get the name of the command or event",
@@ -308,7 +288,6 @@
    },
    {
       "version": "2.3.8",
-      "release_date": "",
       "changes": [
          "Adjusted configFiler",
          "Updated all dependencies",
@@ -323,7 +302,6 @@
    },
    {
       "version": "2.3.7",
-      "release_date": "",
       "changes": [
          "Updates queue command to have pages so you can see the whole queue",
          "Adds poll and imdb commands",
@@ -335,7 +313,6 @@
    },
    {
       "version": "2.3.6",
-      "release_date": "",
       "changes": [
          "Tweaks channelinfo command",
          "Adds tempban and clear channel command",
@@ -355,7 +332,6 @@
    },
    {
       "version": "2.3.5",
-      "release_date": "",
       "changes": [
          "Adds more error handling in case of missing config files",
          "Makes it so it checks for missing config files on boot",
@@ -370,7 +346,6 @@
    },
    {
       "version": "2.3.4",
-      "release_date": "",
       "changes": [
          "Makes it so if you use the timeout command on a user that's already timeout gives you the option to replace their current timeout",
          "Adds new stoptimeout command",
@@ -384,7 +359,6 @@
    },
    {
       "version": "2.3.3",
-      "release_date": "",
       "changes": [
          "Adds new timeout command and slash command",
          "Adds reason to ban slash command",
@@ -400,7 +374,6 @@
    },
    {
       "version": "2.3.2",
-      "release_date": "",
       "changes": [
          "Complete redesign of command and event handlers improving loading speed",
          "combined slashCommandHandler and commandHandler to improve loading speed",
@@ -411,7 +384,6 @@
    },
    {
       "version": "2.3.1",
-      "release_date": "",
       "changes": [
          "Adds volume command",
          "Adds setdjrole command",
@@ -433,7 +405,6 @@
    },
    {
       "version": "2.3.0",
-      "release_date": "",
       "changes": [
          "Adds shuffle command",
          "Fixes issue where the queue wouldn't clear if the bot was disconnected from the voice channel by a user",
@@ -445,7 +416,6 @@
    },
    {
       "version": "2.2.9",
-      "release_date": "",
       "changes": [
          "Adds setupnext command allowing changes to the up next music notification",
          "Adds styles to the up next notification",
@@ -457,7 +427,6 @@
    },
    {
       "version": "2.2.8",
-      "release_date": "",
       "changes": [
          "Added new config file design",
          "Updated all old configs to the new design",
@@ -468,7 +437,6 @@
    },
    {
       "version": "2.2.7",
-      "release_date": "",
       "changes": [
          "Adds a search command for YouTube songs",
          "Adds a now playing command",
@@ -485,7 +453,6 @@
    },
    {
       "version": "2.2.6",
-      "release_date": "",
       "changes": [
          "Adds support for SoundCloud playlists",
          "Adds command to search for YouTube playlists",
@@ -499,7 +466,6 @@
    },
    {
       "version": "2.2.5",
-      "release_date": "",
       "changes": [
          "Adds support for SoundCloud and YouTube playlists",
          "Stops the queue from showing more than 20 items to stop crashes",
@@ -510,7 +476,6 @@
    },
    {
       "version": "2.2.4",
-      "release_date": "",
       "changes": [
          "Adds a new debug command",
          "Adds new looping command for your music",
@@ -522,7 +487,6 @@
    },
    {
       "version": "2.2.3",
-      "release_date": "",
       "changes": [
          "Adds a new way to handle missing message error across all commands",
          "Changed the way the music queue is received by the music commands",
@@ -545,7 +509,6 @@
    },
    {
       "version": "2.2.2",
-      "release_date": "",
       "changes": [
          "Re-added music commands that support Discord.js V13",
          "Fixed an issues that affected all commands deleting messages",
@@ -555,7 +518,6 @@
    },
    {
       "version": "2.2.1",
-      "release_date": "",
       "changes": [
          "Added my own dependence for embed pages called @acegoal07/discordjs-pagination",
          "Re-enabled paged embeds across all commands slash and command based",
@@ -566,7 +528,6 @@
    },
    {
       "version": "2.2.0",
-      "release_date": "",
       "changes": [
          "Started adding Slash commands for public use more have be added just disabled due to them not being finished",
          "Finished updating all commands and events to the new layout",
@@ -579,7 +540,6 @@
    },
    {
       "version": "2.1.6",
-      "release_date": "",
       "changes": [
          "Added slashCommandHandler",
          "Added new layouts for commands which include the information needed for slashCommandHandler to run",
@@ -589,7 +549,6 @@
    },
    {
       "version": "2.1.5",
-      "release_date": "",
       "changes": [
          "Added more customization to welcome and leave messages",
          "Fixed welcome and leave messages",
@@ -604,7 +563,6 @@
    },
    {
       "version": "2.1.4",
-      "release_date": "",
       "changes": [
          "Added new debug command to help with development",
          "Improved some commands to make sure people know how to use them and that they make sense",
@@ -615,7 +573,6 @@
    },
    {
       "version": "2.1.3",
-      "release_date": "",
       "changes": [
          "Added new look to settings and help command",
          "Improved ban, unban and kick command",
@@ -633,7 +590,6 @@
    },
    {
       "version": "2.1.2",
-      "release_date": "",
       "changes": [
          "Changes help command into sections so not all commands are displayed at once",
          "Added commands to change leaving and welcome messages",
@@ -654,7 +610,6 @@
    },
    {
       "version": "2.1.1",
-      "release_date": "",
       "changes": [
          "Started adding multi server support",
          "Added enable and disable commands for welcome and leave messages",
@@ -670,7 +625,6 @@
    },
    {
       "version": "2.1.0",
-      "release_date": "",
       "changes": [
          "Fixes issue causing activity to disappear after a period of time",
          "Adds command and event enabler and disabler",
@@ -681,7 +635,6 @@
    },
    {
       "version": "2.0.9",
-      "release_date": "",
       "changes": [
          "Added new error handling to commands",
          "Made certain commands and events inaccessible to the public",
@@ -692,7 +645,6 @@
    },
    {
       "version": "2.0.8",
-      "release_date": "",
       "changes": [
          "Fixed issue causing crashes at boot",
          "Updated links",
@@ -702,7 +654,6 @@
    },
    {
       "version": "2.0.7",
-      "release_date": "",
       "changes": [
          "Adds a report command which is used to report errors and issues with the bot",
          "Updated help command",
@@ -712,7 +663,6 @@
    },
    {
       "version": "2.0.6",
-      "release_date": "",
       "changes": [
          "Fixed clear command giving errors",
          "Changed from checking for roles to checking for permissions",
@@ -725,7 +675,6 @@
    },
    {
       "version": "2.0.5",
-      "release_date": "",
       "changes": [
          "Finished adding Role delete, member update and role update date events",
          "Added layout examples for commands and events",
@@ -735,7 +684,6 @@
    },
    {
       "version": "2.0.4",
-      "release_date": "",
       "changes": [
          "Finished adding role added, role removed role",
          "Fixed events not sending logs to the right channel",
@@ -745,7 +693,6 @@
    },
    {
       "version": "2.0.3",
-      "release_date": "",
       "changes": [
          "Added Utils and Configs folders",
          "Added new emoji, updated emoji and deleted emoji events",
@@ -756,7 +703,6 @@
    },
    {
       "version": "2.0.2",
-      "release_date": "",
       "changes": [
          "Removed ban command due to issues",
          "Added ban, unban and channel delete events",
@@ -768,7 +714,6 @@
    },
    {
       "version": "2.0.1",
-      "release_date": "",
       "changes": [
          "Moved bot sign in token to a secret file",
          "Finished adding log system for bans and kicks through the bot",
@@ -779,7 +724,6 @@
    },
    {
       "version": "2.0.0",
-      "release_date": "",
       "changes": [
          "Added new permission system to commands",
          "Updated discord.js to V12",
@@ -796,7 +740,6 @@
    },
    {
       "version": "1.0.5",
-      "release_date": "",
       "changes": [
          "Fixes issues where prefix is not shown",
          "Bug fixes"
@@ -804,7 +747,6 @@
    },
    {
       "version": "1.0.4",
-      "release_date": "",
       "changes": [
          "Removed ban and kick commands due to issues",
          "Bug fixes"
@@ -812,7 +754,6 @@
    },
    {
       "version": "1.0.3",
-      "release_date": "",
       "changes": [
          "Added new embed colouring system",
          "Added admin commands to help command",
@@ -824,7 +765,6 @@
    },
    {
       "version": "1.0.2",
-      "release_date": "",
       "changes": [
          "Added database connection",
          "Started on transition to database",
@@ -833,7 +773,6 @@
    },
    {
       "version": "1.0.1",
-      "release_date": "",
       "changes": [
          "Added deleted message log",
          "Added the ability to change welcome and bye messages",
@@ -842,7 +781,6 @@
    },
    {
       "version": "1.0.0",
-      "release_date": "",
       "changes": [
          "Initial release"
       ]
