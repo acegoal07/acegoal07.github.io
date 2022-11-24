@@ -12,6 +12,7 @@
          "Fixes setWelcome and setBye color options to set correct color format",
          "Fixes configFiler creating unreadable config files",
          "Makes it so events are fully covered by error error catchers",
+         "Updates all dependencies to latest version",
          "Bug fixes"
       ]
    },
