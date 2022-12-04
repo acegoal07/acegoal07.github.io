@@ -128,14 +128,14 @@ setuserupdatelog|Used to setup user update logging
 
 ```cmd
 Sierra@2.5.8
-├── @acegoal07/discordjs-pagination@1.4.4
+├── @acegoal07/discordjs-pagination@1.4.7
 ├── @acegoal07/file-tools@1.0.2
 ├── @acegoal07/json-editor@1.1.6
 ├── @acegoal07/progressbar-builder@1.0.2
 ├── @discordjs/opus@0.8.0
 ├── @discordjs/rest@1.4.0
 ├── @discordjs/voice@0.14.0
-├── @sapphire/snowflake@3.2.2
+├── @sapphire/snowflake@3.3.0
 ├── @supercharge/collections@5.0.1
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.37.20
@@ -158,7 +158,7 @@ Sierra@2.5.8
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@3.1.9
-├── systeminformation@5.16.0
+├── systeminformation@5.16.1
 ├── ytdl-core@4.11.2
 ├── ytpl@2.3.0
 └── ytsr@3.8.0
