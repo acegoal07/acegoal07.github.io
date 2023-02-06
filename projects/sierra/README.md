@@ -128,24 +128,24 @@ setuserupdatelog|Used to setup user update logging
 
 ```cmd
 Sierra@2.5.8
-├── @acegoal07/discordjs-pagination@1.4.7
-├── @acegoal07/file-tools@1.0.2
-├── @acegoal07/json-editor@1.1.6
-├── @acegoal07/progressbar-builder@1.0.2
+├── @acegoal07/discordjs-pagination@1.5.0
+├── @acegoal07/file-tools@1.0.6
+├── @acegoal07/json-editor@1.1.9
+├── @acegoal07/progressbar-builder@1.0.5
 ├── @discordjs/opus@0.8.0
-├── @discordjs/rest@1.4.0
+├── @discordjs/rest@1.5.0
 ├── @discordjs/voice@0.14.0
-├── @sapphire/snowflake@3.3.0
+├── @sapphire/snowflake@3.4.0
 ├── @supercharge/collections@5.0.1
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.37.20
+├── discord-api-types@0.37.31
 ├── discord.js@14.7.1
-├── enmap@5.9.2
+├── enmap@5.9.5
 ├── ffmpeg-static@5.1.0
 ├── ffmpeg@0.0.4
 ├── fluent-ffmpeg@2.1.2
 ├── fs@0.0.1-security
-├── genius-lyrics@4.4.0
+├── genius-lyrics@4.4.2
 ├── imdb-api@4.4.1
 ├── isomorphic-unfetch@3.1.0
 ├── libsodium-wrappers@0.7.10
@@ -157,8 +157,8 @@ Sierra@2.5.8
 ├── scdl-core@1.1.0
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
-├── spotify-url-info@3.1.9
-├── systeminformation@5.16.1
+├── spotify-url-info@3.2.3
+├── systeminformation@5.17.8
 ├── ytdl-core@4.11.2
 ├── ytpl@2.3.0
 └── ytsr@3.8.0
