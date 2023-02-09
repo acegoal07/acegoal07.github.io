@@ -1,5 +1,16 @@
 [
    {
+      "version": "2.5.9",
+      "changes": [
+         "Performs some updates to code to add support for new dependency versions",
+         "Adds command simonsays",
+         "Reworks help command to add more  automation to creating of messages",
+         "Adds a some more debugging tools",
+         "switches to new version of some dependencies to take advantage of new features",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.8",
       "changes": [
          "Fixes a bug with messageBulkDelete event which was causing crashes randomly",
