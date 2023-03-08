@@ -36,7 +36,7 @@
       "description": "Shows donation options available to support Sierra"
    },
    {
-      "command": "simonSays (text)",
+      "command": "simonsays (text)",
       "description": "Sends back the message you specify"
    }
 ]
