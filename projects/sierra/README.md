@@ -21,8 +21,6 @@ Ideas for what i should add to Sierra would be much appreciated because i want t
 <br><br>
 You can find the Discord.js documentation <a href="https://discord.js.org/#/docs/main/stable/general/welcome">here</a> which has details on how to use Discord.js to create your own bot, you can also find Discord.js guide here which shows in more depth how to work with Discord.js <a href="https://discordjs.guide/#before-you-begin">here</a>.
 <br><br>
-If you forget your custom server prefix use the built in command $prefix$ to have the bot tell you what the prefix is for your server
-<br><br>
 I have used the Sierra project as a way to learn a lot about JavaScript and with this project i have released multiple dependencies which were built specifically for Sierra
 <br><br>
 
@@ -128,19 +126,19 @@ setuserupdatelog|Used to setup user update logging
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-Sierra@2.5.9
+Sierra@3.0.0
 ├── @acegoal07/discordjs-pagination@1.5.0
 ├── @acegoal07/file-tools@1.0.6
 ├── @acegoal07/json-editor@1.1.9
 ├── @acegoal07/progressbar-builder@1.0.5
-├── @discordjs/opus@0.9.0
-├── @discordjs/rest@1.5.0
+├── @discordjs/opus@0.8.0
+├── @discordjs/rest@1.6.0
 ├── @discordjs/voice@0.14.0
 ├── @sapphire/snowflake@3.4.0
 ├── @supercharge/collections@5.0.1
 ├── cpu-stat@2.0.1
 ├── discord-api-types@0.37.35
-├── discord.js@14.7.1
+├── discord.js@14.8.0
 ├── enmap@5.9.5
 ├── ffmpeg-static@5.1.0
 ├── ffmpeg@0.0.4
