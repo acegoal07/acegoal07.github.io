@@ -1,5 +1,17 @@
 [
    {
+      "version": "3.0.0",
+      "changes": [
+         "Updates all of Sierra's dependecies",
+         "Switches to a new command layout thats easier to work with",
+         "Swicthes from a json based config system to a database based config system",
+         "Performance improvments",
+         "Removal of useless code",
+         "Updates outdated code",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "2.5.9",
       "changes": [
          "Performs some updates to code to add support for new dependency versions",

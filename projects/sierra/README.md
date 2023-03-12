@@ -27,7 +27,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V2.5.8
+Current Bot Version: V3.0.0
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -43,6 +43,7 @@ userinfo or userinfo ```(mention)```|Will display all needed information about a
 addsierra|This command sends you the link required to invite Sierra to your own server
 channelinfo|Shows the user info about the channel they are using
 donate|Shows donation options available to support Sierra
+simonsays ```(message)```|Sends back the message you specify
 <h3>Admin:</h3>
 
 |Command|Description|
@@ -127,38 +128,39 @@ setuserupdatelog|Used to setup user update logging
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-Sierra@2.5.8
+Sierra@2.5.9
 ├── @acegoal07/discordjs-pagination@1.5.0
 ├── @acegoal07/file-tools@1.0.6
 ├── @acegoal07/json-editor@1.1.9
 ├── @acegoal07/progressbar-builder@1.0.5
-├── @discordjs/opus@0.8.0
+├── @discordjs/opus@0.9.0
 ├── @discordjs/rest@1.5.0
 ├── @discordjs/voice@0.14.0
 ├── @sapphire/snowflake@3.4.0
 ├── @supercharge/collections@5.0.1
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.37.31
+├── discord-api-types@0.37.35
 ├── discord.js@14.7.1
 ├── enmap@5.9.5
 ├── ffmpeg-static@5.1.0
 ├── ffmpeg@0.0.4
 ├── fluent-ffmpeg@2.1.2
 ├── fs@0.0.1-security
-├── genius-lyrics@4.4.2
+├── genius-lyrics@4.4.3
 ├── imdb-api@4.4.1
-├── isomorphic-unfetch@3.1.0
-├── libsodium-wrappers@0.7.10
+├── isomorphic-unfetch@4.0.2
+├── libsodium-wrappers@0.7.11
+├── mariadb@3.1.0
 ├── moment-duration-format@2.3.2
 ├── moment@2.29.4
 ├── opusscript@0.0.8
-├── prism-media@1.3.4
+├── prism-media@1.3.5
 ├── public-ip@6.0.1
 ├── scdl-core@1.1.0
 ├── soundcloud-downloader@1.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@3.2.3
-├── systeminformation@5.17.8
+├── systeminformation@5.17.12
 ├── ytdl-core@4.11.2
 ├── ytpl@2.3.0
 └── ytsr@3.8.0
