@@ -19,7 +19,7 @@ button:focus {outline:0;}
 /* Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
 /* Firefox */
-@-moz-document url-prefix() {* {transition: 1.5s ease;}}
+@-moz-document url-prefix() {* {transition: background-color 1.5s ease;}}
 /* Safari */
 @media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}}
 
@@ -43,7 +43,7 @@ button:focus {outline:0;}
 .snowflake {position: fixed; background-color: rgb(118, 198, 224); -webkit-user-select: none; user-select: none; z-index: 1000; pointer-events: none; border-radius: 50%; width: 10px; height: 10px;}
 
 /* 404 page */
-html.error-page, html.error-page body {width: 100%; height: 100%;};
+html.error-page, html.error-page body {width: 100%; height: 100%;}
 
 /* Lightmode */
 /* Body */
