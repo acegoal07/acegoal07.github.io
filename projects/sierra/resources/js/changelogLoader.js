@@ -12,10 +12,10 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
          // Card
          const change = 
             `<div class="card secondary-color">
-               <div class="card-header rounded-top border-top border-left border-right">
+               <div class="card-header rounded-top third-color">
                   Version ${info.version}
                </div>
-               <div class="card-body rounded-bottom border-bottom border-left border-right">
+               <div class="card-body rounded-bottom">
                   <h5 class="card-title">Changes</h5>
                   <p class="card-text">
                      <ul>
