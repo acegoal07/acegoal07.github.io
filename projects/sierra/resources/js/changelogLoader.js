@@ -38,8 +38,8 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
 )
 
 function ShowMoreInfo() {
-   var button = document.getElementById("ShowMoreBtn");
-   var list = document.getElementById("ShowMoreList");
+   let button = document.querySelector("#ShowMoreBtn");
+   let list = document.querySelector("#ShowMoreList");
    if (button.classList.contains("show")) {
       list.classList.remove('d-none');
       button.classList.remove('show');
