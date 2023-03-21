@@ -45,7 +45,7 @@ html.lightmode .text-muted-color {color: var(--light-muted-color);}
 /* Breaker */
 html.lightmode hr {color: var(--light-muted-color);}
 /* Tab menu */
-html.lightmode .nav-pane.active {border-color: #e9ecef !important; background-color: #e9ecef !important; color: #000 !important; border-bottom: transparent; transition: 1.5s ease;};
+html.lightmode .nav-pane.active {border-color: #e9ecef !important; background-color: #e9ecef !important; color: #000 !important; border-bottom: transparent; transition: 1.5s ease;}
 html.lightmode .nav-tabs {border-color: #e9ecef !important;}
 html.lightmode .nav-pane.nav-link:hover {color: #000; background-color: #e9ecef;}
 html.lightmode .nav-pane.nav-link {transition: 1.5s ease;}
@@ -80,7 +80,7 @@ html.darkmode p.text-muted-color {color: var(--dark-muted-color);}
 /* Breaker */
 html.darkmode hr {color: var(--dark-muted-color);}
 /* Tab menu */
-html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: #1f1f1f; color: #fff !important; border-bottom-color: transparent !important; border-bottom: transparent !important; transition: 1.5s ease;}
+html.darkmode .nav-pane.active{border-color: #2f2f2f !important; background-color: #1f1f1f; color: #fff !important; border-bottom: transparent !important; transition: 1.5s ease;}
 html.darkmode .nav-tabs {border-color: #2f2f2f !important;}
 html.darkmode .nav-pane.nav-link:hover {color: #fff; background-color: #1f1f1f;}
 html.darkmode .nav-pane:hover {border-color: #2f2f2f !important; background-color: #1f1f1f ;}

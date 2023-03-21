@@ -1,4 +1,4 @@
-// Load
+// Changelog Loader ////// Version: 1.0 ////// By acegoal07 (can be found on twitter) /////////////////////////////////////
 let count = 0;
 const pastVersionChangeLog = [];
 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/resources/json/changelog.json",
@@ -6,12 +6,12 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
       for (const info of data) {
          count += 1;
          // Changes
-         let changesArray = [];
+         let infoArray = [];
          for (const changes of info.changes) {
             changesArray.push(`<li><p>${changes}</p></li>`);
          }
          // Card
-         const change = 
+         const change =
             `<div class="card secondary-color">
                <div class="card-header rounded-top third-color">
                   Version ${info.version}
@@ -20,7 +20,7 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
                   <h5 class="card-title">Changes</h5>
                   <p class="card-text">
                      <ul>
-                        ${changesArray.join('')}
+                        ${infoArray.join('')}
                      </ul>
                   </p>
                </div>
@@ -37,9 +37,10 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
       pastSet.innerHTML = pastVersionChangeLog.join('');
    }
 )
+// ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Show more button
-function ShowMoreInfo() {
-   let list = document.querySelector("#ShowMoreList");
+function ShowMore() {
+   let list = document.querySelector("#moreList");
    if (list.classList.contains("d-none")) {
       list.classList.remove('d-none');
       button.innerHTML = "Hide Versions";
