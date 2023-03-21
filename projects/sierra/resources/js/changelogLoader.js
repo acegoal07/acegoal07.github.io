@@ -42,9 +42,9 @@ function ShowMore() {
    let list = document.querySelector("#moreList");
    if (list.classList.contains("d-none")) {
       list.classList.remove('d-none');
-      button.innerHTML = "Hide Versions";
+      document.querySelector("#moreListButton").innerHTML = "Hide Versions";
    } else {
       list.classList.add('d-none');
-      button.innerHTML = "Show Versions";
+      document.querySelector("#moreListButton").innerHTML = "Show Versions";
    }
 }
