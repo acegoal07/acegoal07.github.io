@@ -133,11 +133,11 @@ Sierra@3.0.0
 ├── @acegoal07/progressbar-builder@1.0.5
 ├── @discordjs/opus@0.8.0
 ├── @discordjs/rest@1.6.0
-├── @discordjs/voice@0.14.0
+├── @discordjs/voice@0.15.0
 ├── @sapphire/snowflake@3.4.0
 ├── @supercharge/collections@5.0.1
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.37.35
+├── discord-api-types@0.37.36
 ├── discord.js@14.8.0
 ├── enmap@5.9.5
 ├── ffmpeg-static@5.1.0
@@ -148,7 +148,7 @@ Sierra@3.0.0
 ├── imdb-api@4.4.1
 ├── isomorphic-unfetch@4.0.2
 ├── libsodium-wrappers@0.7.11
-├── mariadb@3.1.0
+├── mariadb@3.1.1
 ├── moment-duration-format@2.3.2
 ├── moment@2.29.4
 ├── opusscript@0.0.8
