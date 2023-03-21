@@ -1,3 +1,4 @@
+// Load
 let count = 0;
 const pastVersionChangeLog = [];
 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/resources/json/changelog.json",
@@ -36,19 +37,14 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
       pastSet.innerHTML = pastVersionChangeLog.join('');
    }
 )
-
+// Show more button
 function ShowMoreInfo() {
-   let button = document.querySelector("#ShowMoreBtn");
    let list = document.querySelector("#ShowMoreList");
-   if (button.classList.contains("show")) {
+   if (list.classList.contains("d-none")) {
       list.classList.remove('d-none');
-      button.classList.remove('show');
-      button.classList.add('hide');
       button.innerHTML = "Hide Versions";
    } else {
       list.classList.add('d-none');
-      button.classList.remove('hide');
-      button.classList.add('show');
       button.innerHTML = "Show Versions";
    }
 }
