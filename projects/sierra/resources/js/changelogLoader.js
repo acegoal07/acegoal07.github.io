@@ -33,8 +33,7 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
          else {pastVersionChangeLog.push(change)}
       }
       // Set old
-      const pastSet = document.getElementById('pastVersion');
-      pastSet.innerHTML = pastVersionChangeLog.join('');
+      document.getElementById('pastVersion').innerHTML = pastVersionChangeLog.join('');
    }
 )
 // ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
