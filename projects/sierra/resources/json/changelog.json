@@ -2,12 +2,14 @@
    {
       "version": "3.0.0",
       "changes": [
-         "Updates all of Sierra's dependecies",
-         "Switches to a new command layout thats easier to work with",
-         "Swicthes from a json based config system to a database based config system",
-         "Performance improvments",
+         "Updates all of Sierra's dependencies",
+         "Switches to a new command layout that's easier to work with",
+         "Switches from a json based config system to a database based config system",
+         "Performance improvements",
          "Removal of useless code",
          "Updates outdated code",
+         "Fixed music player bug where it would stop playing after a period of time",
+         "Fixed restartsong command causing the bot to leave the voice channel instead of restarting the song",
          "Bug fixes"
       ]
    },
