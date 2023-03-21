@@ -8,7 +8,7 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
          // Changes
          let infoArray = [];
          for (const changes of info.changes) {
-            changesArray.push(`<li><p>${changes}</p></li>`);
+            infoArray.push(`<li><p>${changes}</p></li>`);
          }
          // Card
          const change =
