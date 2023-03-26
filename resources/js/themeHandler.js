@@ -13,7 +13,7 @@ if (localStorage.getItem("setTheme") === null) {
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () => {
    // If not 404 page set buttons
-   if (document.readyState === "loading" && !document.querySelector("html").classList.contains("error-page")) {
+   if (document.readyState === "complete" && !document.querySelector("html").classList.contains("error-page")) {
       if (localStorage.getItem("setTheme") === "dark") {
          document.querySelectorAll(".themeButton").forEach(button => {
             button.classList.add("bi-brightness-high-fill");
