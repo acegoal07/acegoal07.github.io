@@ -1,8 +1,7 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
 const html = document.querySelector("html");
-const themeStorage = localStorage.getItem("setTheme");
-if (themeStorage === null) {
+if (localStorage.getItem("setTheme") === null) {
    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       html.classList.replace("lightmode", "darkmode");
       localStorage.setItem("setTheme", "dark");
@@ -10,7 +9,7 @@ if (themeStorage === null) {
       localStorage.setItem("setTheme", "light");
    }
 } else {
-   if (themeStorage === 'dark') {
+   if (localStorage.getItem("setTheme") === 'dark') {
       html.classList.replace("lightmode","darkmode");
    } else {void(0);}  
 }
@@ -18,7 +17,7 @@ if (themeStorage === null) {
 document.onreadystatechange = () =>  {
    // If not 404 page set buttons
    if (document.readyState === "interactive" && !html.classList.contains("error-page")) {
-      if (themeStorage === "dark") {
+      if (localStorage.getItem("setTheme") === "dark") {
          document.querySelectorAll(".themeButton").forEach(button => {
             button.classList.add("bi-brightness-high-fill");
          });
@@ -49,7 +48,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', the
 });
 // Button function to change theme
 function themeButtonFunction() {
-   if (themeStorage === "light") {
+   if (localStorage.getItem("setTheme") === "light") {
       html.classList.replace("lightmode", "darkmode");
       localStorage.setItem("setTheme", "dark");
       // If not 404 page set buttons
