@@ -1,9 +1,7 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
-
 const html = document.querySelector("html");
 const themeStorage = localStorage.getItem("setTheme");
-
 if (themeStorage === null) {
    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       localStorage.setItem("setTheme", "dark");
@@ -11,10 +9,11 @@ if (themeStorage === null) {
    } else {
       localStorage.setItem("setTheme", "light");
    }
-} else if (themeStorage === 'dark') {
-   html.classList.replace("lightmode","darkmode");
-} else {void(0);}
-
+} else {
+   if (themeStorage === 'dark') {
+      html.classList.replace("lightmode","darkmode");
+   } else {void(0);}  
+}
 console.log(html);
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () =>  {
