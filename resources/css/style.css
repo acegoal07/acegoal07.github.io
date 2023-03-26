@@ -13,7 +13,7 @@
 }
 
 /* Transition */
-.transition {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}
+/* .transition {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;} */
 /* Chrome */
 /* @media screen and (-webkit-min-device-pixel-ratio: 0) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}} */
 /* Firefox */

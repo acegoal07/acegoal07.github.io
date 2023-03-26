@@ -10,6 +10,8 @@ if (localStorage.getItem("setTheme") === null) {
 } else if (localStorage.getItem("setTheme") === 'dark') {
    document.querySelector("html").classList.replace("lightmode","darkmode");
 } else {void(0);}
+
+console.log(document.querySelector("html"));
 // Wait for page to finish loading to set buttons
 document.onloadstart = () => {
    if (localStorage.getItem("setTheme") === "dark") {
