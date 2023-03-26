@@ -23,7 +23,7 @@ document.onreadystatechange = () => {
             button.classList.add("bi-moon-fill");
          });
       }
-      document.querySelectorAll("html").classList.add("transition");
+      document.querySelector("html").classList.add("transition");
    }
 }
 // Watch out for system default changes and adjust to it
