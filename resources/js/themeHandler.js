@@ -14,7 +14,6 @@ if (themeStorage === null) {
       html.classList.replace("lightmode","darkmode");
    } else {void(0);}  
 }
-console.log(html);
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () =>  {
    // If not 404 page set buttons
