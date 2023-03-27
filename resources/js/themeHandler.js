@@ -19,7 +19,8 @@ const html = document.querySelector("html");
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () =>  {
 
-   if (document.readyState === "complete") {
+   if (document.readyState === "loading") {
+      console.log("hello")
       if (localStorage.getItem("setTheme") === null) {
          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             html.classList.replace("lightmode", "darkmode");
