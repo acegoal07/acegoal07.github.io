@@ -23,9 +23,6 @@
 /* Safari */
 /* @media not all and (min-resolution: 0.001dpcm) {* {transition: background-color 1.5s ease 0s, color 0.2s ease 0s;}} */
 
-/* Body changes */
-div#body {border-radius: 1px;}
-
 /* 404 page */
 html.error-page, html.error-page body {width: 100%; height: 100%;}
 
@@ -38,7 +35,7 @@ hr {border-top: 2px solid !important; color: var(--muted-color);}
 
 /* Lightmode specific color changes */
 /* Body */
-body {background-color: var(--bg-color); color: #000;}
+body {background-color: var(--bg-color); color: #000; border-radius: 1px;}
 /* Secondary colors */
 div.secondary-color {background-color: var(--sec-color); border-color: var(--muted-color); color: #000;}
 /* Third colors */
