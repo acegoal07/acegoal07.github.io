@@ -3,19 +3,21 @@
 const html = document.querySelector("html");
 
 document.addEventListener("DOMContentLoaded", function(event) {
-   if (localStorage.getItem("setTheme") === null) {
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-         html.classList.replace("lightmode", "darkmode");
-         localStorage.setItem("setTheme", "dark");
-      } else {
-         localStorage.setItem("setTheme", "light");
-      }
-   } else {
-      if (localStorage.getItem("setTheme") === 'dark') {
-         html.classList.replace("lightmode","darkmode");
-      } else {void(0);}  
-   }   
+   document.documentElement.setAttribute("data-theme", "dark");
 });
+
+// if (localStorage.getItem("setTheme") === null) {
+//    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//       html.classList.replace("lightmode", "darkmode");
+//       localStorage.setItem("setTheme", "dark");
+//    } else {
+//       localStorage.setItem("setTheme", "light");
+//    }
+// } else {
+//    if (localStorage.getItem("setTheme") === 'dark') {
+//       html.classList.replace("lightmode","darkmode");
+//    } else {void(0);}
+// }
 
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () =>  {
