@@ -50,8 +50,8 @@ div.third-color {background-color: var(--third-color) !important; border-color: 
 .nav-pane.nav-link:hover {color: var(--text-color); background-color: var(--sec-color);}
 .nav-pane.nav-link {transition: 1.5s ease;}
 /* Table */
-thead {background-color: var(--muted-color); color: var(--text-color);}
-tbody {background-color: var(--sec-color); color: var(--text-color);}
+thead {background-color: var(--muted-color) !important; color: var(--text-color) !important;}
+tbody {background-color: var(--sec-color) !important; color: var(--text-color) !important;}
 .table-text {color: var(--text-color) !important;}
 .table-hover>tbody>tr:hover {background-color: var(--muted-color) !important; color: var(--text-color) !important;}
 .table.table-bordered {border-color: var(--text-color) !important;}
