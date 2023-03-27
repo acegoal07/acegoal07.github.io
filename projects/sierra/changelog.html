@@ -2,6 +2,21 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8">
+      <!-- Prevents a flash bang when page refreshes -->
+      <script>
+         if (localStorage.getItem("setTheme") === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+               document.documentElement.setAttribute("data-theme", "dark");
+               localStorage.setItem("setTheme", "dark");
+            } else {
+               localStorage.setItem("setTheme", "light");
+            }
+         } else {
+            if (localStorage.getItem("setTheme") === 'dark') {
+               document.documentElement.setAttribute("data-theme", "dark");
+            } else {void(0);}
+         }
+      </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Sierra Changelog</title>
       <link rel="shortcut icon" href="/resources/images/favicon.ico">

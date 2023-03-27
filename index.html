@@ -2,6 +2,7 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8">
+      <!-- Prevents a flash bang when page refreshes -->
       <script>
          if (localStorage.getItem("setTheme") === null) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
