@@ -2,20 +2,18 @@
 // On page load check for settings and system default
 const html = document.querySelector("html");
 
-$("html").attr("data-theme","dark")
-
-// if (localStorage.getItem("setTheme") === null) {
-//    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//       document.documentElement.setAttribute("data-theme", "dark");
-//       localStorage.setItem("setTheme", "dark");
-//    } else {
-//       localStorage.setItem("setTheme", "light");
-//    }
-// } else {
-//    if (localStorage.getItem("setTheme") === 'dark') {
-//       document.documentElement.setAttribute("data-theme", "dark");
-//    } else {void(0);}
-// }
+if (localStorage.getItem("setTheme") === null) {
+   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("setTheme", "dark");
+   } else {
+      localStorage.setItem("setTheme", "light");
+   }
+} else {
+   if (localStorage.getItem("setTheme") === 'dark') {
+      document.documentElement.setAttribute("data-theme", "dark");
+   } else {void(0);}
+}
 
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () =>  {
