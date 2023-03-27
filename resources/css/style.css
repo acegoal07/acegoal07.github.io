@@ -45,7 +45,7 @@ div.third-color {background-color: var(--third-color) !important; border-color: 
 /* Footer */
 .text-muted-color {color: var(--muted-color);}
 /* Tab menu */
-.nav-pane.active {border-color: #e9ecef !important; background-color: var(--sec-color) !important; color: var(--text-color) !important; border-bottom: transparent; transition: 1.5s ease;}
+.nav-pane.active {border-color: #e9ecef !important; background-color: var(--sec-color) !important; color: var(--text-color) !important; border: none; transition: 1.5s ease;}
 .nav-tabs {border-color: var(--sec-color) !important;}
 .nav-pane.nav-link:hover {color: var(--text-color); background-color: var(--sec-color);}
 .nav-pane.nav-link {transition: 1.5s ease;}
