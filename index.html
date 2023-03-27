@@ -3,17 +3,17 @@
    <head>
       <meta charset="UTF-8">
       <!-- Prevents a flash bang when page refreshes -->
-      <script>
+      <script async>
          if (localStorage.getItem("setTheme") === null) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-               document.documentElement.setAttribute("data-theme", "dark");
-               localStorage.setItem("setTheme", "dark");
+               await document.documentElement.setAttribute("data-theme", "dark");
+               await localStorage.setItem("setTheme", "dark");
             } else {
-               localStorage.setItem("setTheme", "light");
+               await localStorage.setItem("setTheme", "light");
             }
          } else {
             if (localStorage.getItem("setTheme") === 'dark') {
-               document.documentElement.setAttribute("data-theme", "dark");
+               await document.documentElement.setAttribute("data-theme", "dark");
             } else {void(0);}
          }
       </script>
