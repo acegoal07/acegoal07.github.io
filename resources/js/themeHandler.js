@@ -1,5 +1,7 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
+const html = document.querySelector("html");
+
 if (localStorage.getItem("setTheme") === null) {
    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.setAttribute("data-theme", "dark");
