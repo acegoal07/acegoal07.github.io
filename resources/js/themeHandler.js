@@ -1,22 +1,6 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
 const html = document.querySelector("html");
-
-document.onloadstart = () => {
-   if (localStorage.getItem("setTheme") === null) {
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-         html.classList.replace("lightmode", "darkmode");
-         localStorage.setItem("setTheme", "dark");
-      } else {
-         localStorage.setItem("setTheme", "light");
-      }
-   } else {
-      if (localStorage.getItem("setTheme") === 'dark') {
-         html.classList.replace("lightmode","darkmode");
-      } else {void(0);}  
-   }
-}
-
 // if (localStorage.getItem("setTheme") === null) {
 //    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 //       html.classList.replace("lightmode", "darkmode");
@@ -31,7 +15,21 @@ document.onloadstart = () => {
 // }
 
 // Wait for page to finish loading to set buttons
-document.onreadystatechange = () =>  {
+document.onreadystatechange = () => {
+   if (document.readyState === "loading") {
+      if (localStorage.getItem("setTheme") === null) {
+         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            html.classList.replace("lightmode", "darkmode");
+            localStorage.setItem("setTheme", "dark");
+         } else {
+            localStorage.setItem("setTheme", "light");
+         }
+      } else {
+         if (localStorage.getItem("setTheme") === 'dark') {
+            html.classList.replace("lightmode","darkmode");
+         } else {void(0);}  
+      }
+   }
    // If not 404 page set buttons
    if (document.readyState === "interactive" && !html.classList.contains("error-page")) {
       if (localStorage.getItem("setTheme") === "dark") {
