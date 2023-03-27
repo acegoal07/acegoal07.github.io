@@ -5,7 +5,7 @@ const html = document.querySelector("html");
 document.onload = () => {
    if (localStorage.getItem("setTheme") === null) {
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-         html.classList.replace("lightmode", "darkmode");
+         html.setAttribute("class", "darkmode");
          localStorage.setItem("setTheme", "dark");
       } else {
          localStorage.setItem("setTheme", "light");
