@@ -1,21 +1,17 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
-const html = document.querySelector("html");
-
-document.documentElement.setAttribute("data-theme", "dark");
-
-// if (localStorage.getItem("setTheme") === null) {
-//    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//       html.classList.replace("lightmode", "darkmode");
-//       localStorage.setItem("setTheme", "dark");
-//    } else {
-//       localStorage.setItem("setTheme", "light");
-//    }
-// } else {
-//    if (localStorage.getItem("setTheme") === 'dark') {
-//       html.classList.replace("lightmode","darkmode");
-//    } else {void(0);}
-// }
+if (localStorage.getItem("setTheme") === null) {
+   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("setTheme", "dark");
+   } else {
+      localStorage.setItem("setTheme", "light");
+   }
+} else {
+   if (localStorage.getItem("setTheme") === 'dark') {
+      document.documentElement.setAttribute("data-theme", "dark");
+   } else {void(0);}
+}
 
 // Wait for page to finish loading to set buttons
 document.onreadystatechange = () =>  {
@@ -35,14 +31,14 @@ document.onreadystatechange = () =>  {
 // Watch out for system default changes and adjust to it
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', theme => {
    if (theme.matches) {
-      html.classList.replace("darkmode", "lightmode");
+      document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("setTheme", "dark");
       // If not 404 page set buttons
       if (!html.classList.contains("error-page")) document.querySelectorAll(".themeButton").forEach(button => {
          button.classList.replace("bi-moon-fill", "bi-brightness-high-fill");
       });
    } else {
-      html.classList.replace("lightmode", "darkmode");
+      document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("setTheme", "light");
       // If not 404 page set buttons
       if (!html.classList.contains("error-page")) document.querySelectorAll(".themeButton").forEach(button => {
@@ -53,14 +49,14 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', the
 // Button function to change theme
 function themeButtonFunction() {
    if (localStorage.getItem("setTheme") === "light") {
-      html.classList.replace("lightmode", "darkmode");
+      document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("setTheme", "dark");
       // If not 404 page set buttons
       if (!html.classList.contains("error-page")) document.querySelectorAll(".themeButton").forEach(button => {
          button.classList.replace("bi-moon-fill", "bi-brightness-high-fill");
       });
    } else {
-      html.classList.replace("darkmode", "lightmode");
+      document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("setTheme", "light");
       // If not 404 page set buttons
       if (!html.classList.contains("error-page")) document.querySelectorAll(".themeButton").forEach(button => {
