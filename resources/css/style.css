@@ -35,7 +35,7 @@ hr {border-top: 2px solid !important; color: var(--muted-color);}
 
 /* Lightmode specific color changes */
 /* Body */
-body {background-color: var(--bg-color); color: #000; border-radius: 1px;}
+body {background-color: var(--bg-color) !important; color: #000; border-radius: 1px;}
 /* Secondary colors */
 div.secondary-color {background-color: var(--sec-color); border-color: var(--muted-color); color: #000;}
 /* Third colors */
