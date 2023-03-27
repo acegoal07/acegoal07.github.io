@@ -3,19 +3,21 @@
    <head>
       <meta charset="UTF-8">
       <!-- Prevents a flash bang when page refreshes -->
-      <script async>
-         if (localStorage.getItem("setTheme") === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-               await document.documentElement.setAttribute("data-theme", "dark");
-               await localStorage.setItem("setTheme", "dark");
+      <script>
+         document.addEventListener("DOMContentLoaded", () => {
+            if (localStorage.getItem("setTheme") === null) {
+               if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  document.documentElement.setAttribute("data-theme", "dark");
+                  localStorage.setItem("setTheme", "dark");
+               } else {
+                  localStorage.setItem("setTheme", "light");
+               }
             } else {
-               await localStorage.setItem("setTheme", "light");
+               if (localStorage.getItem("setTheme") === 'dark') {
+                  document.documentElement.setAttribute("data-theme", "dark");
+               } else {void(0);}
             }
-         } else {
-            if (localStorage.getItem("setTheme") === 'dark') {
-               await document.documentElement.setAttribute("data-theme", "dark");
-            } else {void(0);}
-         }
+         })
       </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Homepage</title>
