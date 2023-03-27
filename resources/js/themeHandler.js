@@ -2,9 +2,7 @@
 // On page load check for settings and system default
 const html = document.querySelector("html");
 
-document.addEventListener("DOMContentLoaded", function(event) {
-   document.documentElement.setAttribute("data-theme", "dark");
-});
+document.documentElement.setAttribute("data-theme", "dark");
 
 // if (localStorage.getItem("setTheme") === null) {
 //    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
