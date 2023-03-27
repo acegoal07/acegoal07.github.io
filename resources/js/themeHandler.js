@@ -1,21 +1,8 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
 const html = document.querySelector("html");
-// if (localStorage.getItem("setTheme") === null) {
-//    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//       document.documentElement.setAttribute("data-theme", "dark");
-//       localStorage.setItem("setTheme", "dark");
-//    } else {
-//       localStorage.setItem("setTheme", "light");
-//    }
-// } else {
-//    if (localStorage.getItem("setTheme") === 'dark') {
-//       document.documentElement.setAttribute("data-theme", "dark");
-//    } else {void(0);}
-// }
-
 // Wait for page to finish loading to set buttons
-document.onreadystatechange = () =>  {
+document.addEventListener("DOMContentLoaded", () => {
    // If not 404 page set buttons
    if (document.readyState === "interactive" && !html.classList.contains("error-page")) {
       if (localStorage.getItem("setTheme") === "dark") {
@@ -28,7 +15,7 @@ document.onreadystatechange = () =>  {
          });
       }
    }
-}
+})
 // Watch out for system default changes and adjust to it
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', theme => {
    if (theme.matches) {
