@@ -2,7 +2,7 @@
 // On page load check for settings and system default
 const html = document.querySelector("html");
 
-document.onloadstart = () => {
+document.onload = () => {
    if (localStorage.getItem("setTheme") === null) {
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
          document.documentElement.setAttribute("data-theme", "dark");
