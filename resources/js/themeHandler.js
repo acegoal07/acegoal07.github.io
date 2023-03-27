@@ -1,6 +1,22 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
 const html = document.querySelector("html");
+
+document.onload = () => {
+   if (localStorage.getItem("setTheme") === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+         html.classList.replace("lightmode", "darkmode");
+         localStorage.setItem("setTheme", "dark");
+      } else {
+         localStorage.setItem("setTheme", "light");
+      }
+   } else {
+      if (localStorage.getItem("setTheme") === 'dark') {
+         html.classList.replace("lightmode","darkmode");
+      } else {void(0);}  
+   }
+}
+
 // if (localStorage.getItem("setTheme") === null) {
 //    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 //       html.classList.replace("lightmode", "darkmode");
@@ -15,21 +31,7 @@ const html = document.querySelector("html");
 // }
 
 // Wait for page to finish loading to set buttons
-document.onreadystatechange = () => {
-   if (document.readyState === "loading") {
-      if (localStorage.getItem("setTheme") === null) {
-         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            html.classList.replace("lightmode", "darkmode");
-            localStorage.setItem("setTheme", "dark");
-         } else {
-            localStorage.setItem("setTheme", "light");
-         }
-      } else {
-         if (localStorage.getItem("setTheme") === 'dark') {
-            html.classList.replace("lightmode","darkmode");
-         } else {void(0);}  
-      }
-   }
+document.onreadystatechange = () =>  {
    // If not 404 page set buttons
    if (document.readyState === "interactive" && !html.classList.contains("error-page")) {
       if (localStorage.getItem("setTheme") === "dark") {
