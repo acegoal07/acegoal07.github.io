@@ -45,25 +45,25 @@ div.third-color {background-color: var(--third-color) !important; border-color: 
 /* Footer */
 .text-muted-color {color: var(--muted-color);}
 /* Tab menu */
-.nav-pane.active {border-color: #e9ecef !important; background-color: #e9ecef !important; color: var(--text-color) !important; border-bottom: transparent; transition: 1.5s ease;}
-.nav-tabs {border-color: #e9ecef !important;}
-.nav-pane.nav-link:hover {color: var(--text-color); background-color: #e9ecef;}
+.nav-pane.active {border-color: #e9ecef !important; background-color: var(--sec-color) !important; color: var(--text-color) !important; border-bottom: transparent; transition: 1.5s ease;}
+.nav-tabs {border-color: var(--sec-color) !important;}
+.nav-pane.nav-link:hover {color: var(--text-color); background-color: var(--sec-color);}
 .nav-pane.nav-link {transition: 1.5s ease;}
 /* Table */
-thead {background-color: #c2c5c7; color: var(--text-color);}
-tbody {background-color: #e9ecef; color: var(--text-color);}
+thead {background-color: var(--muted-color); color: var(--text-color);}
+tbody {background-color: var(--sec-color); color: var(--text-color);}
 .table-text {color: var(--text-color) !important;}
-.table-hover>tbody>tr:hover {background-color: #c2c5c7 !important; color: var(--text-color) !important;}
+.table-hover>tbody>tr:hover {background-color: var(--muted-color) !important; color: var(--text-color) !important;}
 .table.table-bordered {border-color: var(--text-color) !important;}
 /* Pagination */
-.pagination>.page-item>.page-link {background-color: #e9ecef !important; border-color: transparent !important; color: var(--text-color); transition: 1.5s ease;}
-.pagination>.page-item.active>.page-link {background-color: #c2c5c7 !important;}
+.pagination>.page-item>.page-link {background-color: var(--sec-color) !important; border-color: transparent !important; color: var(--text-color); transition: 1.5s ease;}
+.pagination>.page-item.active>.page-link {background-color: var(--muted-color) !important;}
 .pagination>.page-item.active {border: none !important;}
 .pagination>.page-item>.page-link:focus {-webkit-box-shadow: none !important; box-shadow: none !important;}
-.pagination>.page-item>.page-link:hover {-webkit-box-shadow: #c2c5c7 !important; box-shadow: #c2c5c7 !important;}
-.pagination-detail>.page-list>.dropup>.dropdown-toggle {background-color: #e9ecef !important; box-shadow: none !important; color: var(--text-color); border: none !important; transition: 1.5s ease;}
-.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item.active {background-color: #c2c5c7 !important; color: var(--text-color);}
-.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: #c2c5c7; color: var(--text-color);}
-.pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: #e9ecef !important; color: var(--text-color); border: none;}
-.search>.search-input {background-color: #e9ecef !important; color: var(--text-color); border: none !important; transition: 1.5s ease;}
-.search>.search-input::placeholder {color: #e9ecef; color: var(--text-color); transition: 1.5s ease;}
+.pagination>.page-item>.page-link:hover {-webkit-box-shadow: var(--muted-color) !important; box-shadow: var(--muted-color) !important;}
+.pagination-detail>.page-list>.dropup>.dropdown-toggle {background-color: var(--sec-color) !important; box-shadow: none !important; color: var(--text-color); border: none !important; transition: 1.5s ease;}
+.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item.active {background-color: var(--muted-color) !important; color: var(--text-color);}
+.pagination-detail>.page-list>.dropup>.dropdown-menu.show>.dropdown-item:hover {background-color: var(--muted-color); color: var(--text-color);}
+.pagination-detail>.page-list>.dropup>.dropdown-menu {background-color: var(--sec-color) !important; color: var(--text-color); border: none;}
+.search>.search-input {background-color: var(--sec-color) !important; color: var(--text-color); border: none !important; transition: 1.5s ease;}
+.search>.search-input::placeholder {color: var(--sec-color); color: var(--text-color); transition: 1.5s ease;}
