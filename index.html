@@ -5,7 +5,7 @@
       <!-- Prevents a flash bang when page refreshes -->
       <script>
          const theme = localStorage.getItem('theme') || 'light';
-         document.documentElement.setAttribute(theme);
+         document.documentElement.setAttribute("data-theme", theme);
       </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Homepage</title>
