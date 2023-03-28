@@ -1,16 +1,6 @@
 // ThemeEngine ////// Version: 5.0 ////// By acegoal07 (can be found on twitter) //////////////////////////////////////////
 // On page load check for settings and system default
 const html = document.querySelector("html");
-
-document.onload = () => {
-   int();
-}
-
-function int() {
-   document.documentElement.setAttribute("data-theme", localStorage.getItem('theme') || 'light');
-}
-
-
 // Wait for page to finish loading to set buttons
 document.addEventListener("DOMContentLoaded", () => {
    // If not 404 page set buttons
@@ -61,9 +51,4 @@ function themeButtonFunction() {
          button.classList.replace("bi-brightness-high-fill", "bi-moon-fill");
       });
    }
-}
-
-// Store cookie
-function themeCookie() {
-   document.cookie = localStorage.getItem("theme");
 }
