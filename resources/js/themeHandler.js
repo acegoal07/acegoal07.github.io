@@ -2,7 +2,7 @@
 // On page load check for settings and system default
 const html = document.querySelector("html");
 
-document.onload() = () => {
+document.onload = () => {
    int();
 }
 
