@@ -7,9 +7,9 @@
          document.querySelector("html").classList.add(localStorage.getItem('theme') || 'lightmode');
          if (!localStorage.getItem("theme")) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-               localStorage.setItem("setTheme", "darkmode");
+               localStorage.setItem("theme", "darkmode");
             } else {
-               localStorage.setItem("setTheme", "lightmode");
+               localStorage.setItem("theme", "lightmode");
             }
          }
       </script>
