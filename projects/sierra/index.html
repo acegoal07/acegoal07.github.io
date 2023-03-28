@@ -4,7 +4,14 @@
       <meta charset="UTF-8">
       <!-- Prevents a flash bang when page refreshes -->
       <script>
-         document.documentElement.setAttribute("data-theme", localStorage.getItem('theme') || 'light');
+         document.querySelector("html").classList.add(localStorage.getItem('theme') || 'lightmode');
+         if (!localStorage.getItem("theme")) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+               localStorage.setItem("setTheme", "darkmode");
+            } else {
+               localStorage.setItem("setTheme", "lightmode");
+            }
+         }
       </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Sierra</title>
