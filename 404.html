@@ -2,38 +2,22 @@
 <html lang="en" class="error-page">
    <head>
       <meta charset="UTF-8">
-      <!-- Prevents a flash bang when page refreshes -->
-      <script>
-         document.querySelector("html").classList.add(localStorage.getItem('theme') || 'lightmode');
-         if (!localStorage.getItem("theme")) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-               localStorage.setItem("theme", "darkmode");
-            } else {
-               localStorage.setItem("theme", "lightmode");
-            }
-         }
-      </script>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>ERROR 404</title>
-      <link rel="shortcut icon" href="/resources/images/favicon.ico">
-      <meta name="description" content="The official website of acegoal07">
-      <meta name="author" content="acegoal07">
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="/resources/css/style.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-		<!-- JS -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      <!-- JS -->
+      <script src="resources/js/themehandler.js"></script>
    </head>
    <body>
-      <script rel="preload" type="text/javascript" src="/resources/js/themeHandler.js"></script>
       <main class="d-flex justify-content-center align-items-center h-100">
-         <div class="card text-center secondary-color" width="200px">
+         <div class="card text-center bg-body-secondary" width="200px">
             <div class="card-body rounded border">
                <p class="card-title"><i class="bi bi-x-circle text-danger"></i> ERROR 404 <i class="bi bi-x-circle text-danger"></i></p>
                <p class="card-text">The page you are looking for does not exist</p>
-               <a class="btn btn-primary btn-md card-link" href="/">Go to homepage</a>
+               <a class="btn btn-primary btn-md" href="/">Go to homepage</a>
                <a href="https://github.com/acegoal07/acegoal07.github.io/issues/new?template=web_issue_report.md" rel="noopener" target="_blank" class="btn btn-primary btn-md card-link">Report error</a>
             </div>
          </div>
