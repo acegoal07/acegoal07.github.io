@@ -37,7 +37,6 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
    }
 )
 // ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Show more button
 function ShowMore() {
    let list = document.querySelector("#moreList");
    if (list.classList.contains("d-none")) {
