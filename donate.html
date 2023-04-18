@@ -88,78 +88,71 @@
             </div>
          </div>
          <!-- Body Content -->
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-md-8">
-                  <p>This page provides options to donate to support my projects this is completely optional and is not required to use any of my projects</p>
+         <div class="row justify-content-center">
+            <div class="col-md-8">
+               <p>This page provides options to donate to support my projects this is completely optional and is not required to use any of my projects</p>
+            </div>
+         </div>
+         <!-- Button list -->
+         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane active" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table" type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="bitcoin-tab" data-bs-toggle="tab" data-bs-target="#bitcoin-table" type="button" role="tab" aria-controls="bitcoin-tab" aria-selected="false">Bitcoin</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="ethereum-tab" data-bs-toggle="tab" data-bs-target="#ethereum-table" type="button" role="tab" aria-controls="ethereum-tab" aria-selected="false">Ethereum</button>
+            </li>
+         </ul>
+         <!-- Paypal -->
+         <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="paypal-table" role="tabpanel" aria-labelledby="paypal-tab">
+               <h3 class="text-center pt-4">Paypal</h3>
+               <p class="text-center">This donation option uses Paypal.me</p>
+               <picture>
+                  <img src="/resources/images/PayPalQR.webP" class="img-fluid mx-auto d-block" alt="PAYPALQR" width="200" height="200">
+               </picture>
+               <div class="container text-center pt-3">
+                  <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB" role="button">Donate</a>
                </div>
             </div>
-            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-               <li class="nav-item" role="presentation">
-                  <button class="nav-link nav-pane active" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table" type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
-               </li>
-               <li class="nav-item" role="presentation">
-                  <button class="nav-link nav-pane" id="bitcoin-tab" data-bs-toggle="tab" data-bs-target="#bitcoin-table" type="button" role="tab" aria-controls="bitcoin-tab" aria-selected="false">Bitcoin</button>
-               </li>
-               <li class="nav-item" role="presentation">
-                  <button class="nav-link nav-pane" id="ethereum-tab" data-bs-toggle="tab" data-bs-target="#ethereum-table" type="button" role="tab" aria-controls="ethereum-tab" aria-selected="false">Ethereum</button>
-               </li>
-            </ul>
-            <br>
-            <div class="tab-content" id="myTabContent">
-               <div class="tab-pane fade show active" id="paypal-table" role="tabpanel" aria-labelledby="paypal-tab">
-                  <h3 class="text-center">Paypal</h3>
-                  <p class="text-center">This donation option uses Paypal.me</p>
-                  <picture>
-                     <img src="/resources/images/PayPalQR.webP" class="img-fluid mb-2 mx-auto d-block" alt="PAYPALQR" width="200" height="200">
-                  </picture>
-                  <br>
-                  <div class="container text-center">
-                     <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB" role="button">Donate</a>
-                  </div>
-                  <br>
-               </div>
-               <div class="tab-pane fade" id="bitcoin-table" role="tabpanel" aria-labelledby="bitcoin-tab">
-                  <h3 class="text-center">Bitcoin</h3>
-                  <p class="text-center">This donation option accepts donations in bitcoin</p>
-                  <picture>
-                     <img src="/resources/images/BitcoinQR.webP" class="img-fluid mb-2 mx-auto d-block" alt="BTCQR" width="200" height="200">
-                  </picture>
-                  <br>
-                  <div class="d-flex justify-content-center">
-                     <div class="card text-center w-auto bg-body-secondary">
-                        <div class="card-body rounded border">
-                           <p class="card-text">36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP</p>
-                        </div>
+            <!-- Bitcoin -->
+            <div class="tab-pane fade" id="bitcoin-table" role="tabpanel" aria-labelledby="bitcoin-tab">
+               <h3 class="text-center pt-4">Bitcoin</h3>
+               <p class="text-center">This donation option accepts donations in bitcoin</p>
+               <picture>
+                  <img src="/resources/images/BitcoinQR.webP" class="img-fluid mx-auto d-block" alt="BTCQR" width="200" height="200">
+               </picture>
+               <div class="d-flex justify-content-center pt-3">
+                  <div class="card text-center w-auto bg-body-secondary">
+                     <div class="card-body rounded border">
+                        <p class="card-text">36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP</p>
                      </div>
                   </div>
-                  <br>
-                  <script>function copyBTCAddress() { navigator.clipboard.writeText("36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP");}</script>
-                  <div class="container text-center">
-                     <a class="btn btn-primary" role="button" onclick="copyBTCAddress()">Copy Address</a>
-                  </div>
-                  <br>
                </div>
-               <div class="tab-pane fade" id="ethereum-table" role="tabpanel" aria-labelledby="ethereum-tab">
-                  <h3 class="text-center">Ethereum</h3>
-                  <p class="text-center">This donation option accepts donations in ethereum on the ethereum network</p>
-                  <picture>
-                     <img src="/resources/images/EthereumQR.webP" class="img-fluid mb-2 mx-auto d-block" alt="ETHQR" width="200" height="200">
-                  </picture>
-                  <br>
-                  <div class="d-flex justify-content-center">
-                     <div class="card text-center w-auto bg-body-secondary">
-                        <div class="card-body rounded border">
-                           <p class="card-text">0x14afc5D4098554f51fD1218885b9520FA45507c8</p>
-                        </div>
+               <script>function copyBTCAddress() {navigator.clipboard.writeText("36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP");}</script>
+               <div class="container text-center pt-3">
+                  <a class="btn btn-primary" role="button" onclick="copyBTCAddress()">Copy Address</a>
+               </div>
+            </div>
+            <!-- Ethereum -->
+            <div class="tab-pane fade" id="ethereum-table" role="tabpanel" aria-labelledby="ethereum-tab">
+               <h3 class="text-center pt-4">Ethereum</h3>
+               <p class="text-center">This donation option accepts donations in ethereum on the ethereum network</p>
+               <picture>
+                  <img src="/resources/images/EthereumQR.webP" class="img-fluid mx-auto d-block" alt="ETHQR" width="200" height="200">
+               </picture>
+               <div class="d-flex justify-content-center pt-3">
+                  <div class="card text-center w-auto bg-body-secondary">
+                     <div class="card-body rounded border">
+                        <p class="card-text">0x14afc5D4098554f51fD1218885b9520FA45507c8</p>
                      </div>
                   </div>
-                  <br>
-                  <script>function copyETHAddress() {navigator.clipboard.writeText("0x14afc5D4098554f51fD1218885b9520FA45507c8");}</script>
-                  <div class="container text-center">
-                     <a class="btn btn-primary" role="button" onclick="copyETHAddress()">Copy Address</a>
-                  </div>
-                  <br>
+               </div>
+               <script>function copyETHAddress() {navigator.clipboard.writeText("0x14afc5D4098554f51fD1218885b9520FA45507c8");}</script>
+               <div class="container text-center pt-3">
+                  <a class="btn btn-primary" role="button" onclick="copyETHAddress()">Copy Address</a>
                </div>
             </div>
          </div>
