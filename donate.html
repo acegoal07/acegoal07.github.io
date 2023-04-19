@@ -8,9 +8,9 @@
       <meta name="description" content="The official website of acegoal07">
       <meta name="author" content="acegoal07">
       <!-- CSS -->
-      <link rel="stylesheet" href="/resources/css/style.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="/resources/css/style.css">
       <!-- JS -->
       <script src="/resources/js/themehandler.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -92,9 +92,20 @@
             <div class="col-md-8">
                <p>This page provides options to donate to support my projects this is completely optional and is not required to use any of my projects</p>
             </div>
+            <div class="d-flex justify-content-center">
+               <div class="card text-center w-auto bg-body-secondary">
+                  <div class="card-body rounded border">
+                     <h2 class="card-title card-title-size">Where do donations go?</h2>
+                     <p class="card-text">
+                        The money donated will go towards funding the hosting of this website and any other hosting costs caused by the
+                        hosting of software, the money will also go towards helping with testing and development of new software.
+                     </p>
+                  </div>
+               </div>
+            </div>
          </div>
          <!-- Button list -->
-         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+         <ul class="nav nav-tabs justify-content-center pt-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                <button class="nav-link nav-pane active" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table" type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
             </li>
@@ -111,7 +122,7 @@
                <h3 class="text-center pt-4">Paypal</h3>
                <p class="text-center">This donation option uses Paypal.me</p>
                <picture>
-                  <img src="/resources/images/PayPalQR.webP" class="img-fluid mx-auto d-block" alt="PAYPALQR" width="200" height="200">
+                  <img src="/resources/images/PayPalQR.webp" class="img-fluid mx-auto d-block" alt="PAYPALQR" width="200" height="200">
                </picture>
                <div class="container text-center pt-3">
                   <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB" role="button">Donate</a>
@@ -122,7 +133,7 @@
                <h3 class="text-center pt-4">Bitcoin</h3>
                <p class="text-center">This donation option accepts donations in bitcoin</p>
                <picture>
-                  <img src="/resources/images/BitcoinQR.webP" class="img-fluid mx-auto d-block" alt="BTCQR" width="200" height="200">
+                  <img src="/resources/images/BitcoinQR.webp" class="img-fluid mx-auto d-block" alt="BTCQR" width="200" height="200">
                </picture>
                <div class="d-flex justify-content-center pt-3">
                   <div class="card text-center w-auto bg-body-secondary">
@@ -141,7 +152,7 @@
                <h3 class="text-center pt-4">Ethereum</h3>
                <p class="text-center">This donation option accepts donations in ethereum on the ethereum network</p>
                <picture>
-                  <img src="/resources/images/EthereumQR.webP" class="img-fluid mx-auto d-block" alt="ETHQR" width="200" height="200">
+                  <img src="/resources/images/EthereumQR.webp" class="img-fluid mx-auto d-block" alt="ETHQR" width="200" height="200">
                </picture>
                <div class="d-flex justify-content-center pt-3">
                   <div class="card text-center w-auto bg-body-secondary">
@@ -157,8 +168,8 @@
             </div>
          </div>
          <!-- Footer -->
-         <footer class="container pt-2">
-            <hr>
+         <hr>
+         <footer>
             <a class="float-end" role="button" href="#">Back to Top</a>
             <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
          </footer>
