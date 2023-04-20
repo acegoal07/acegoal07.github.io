@@ -1,5 +1,5 @@
 <div align="center"> 
-    <img src='/Resources/Pictures/Sierrapfp.webP' alt="acegoal07" width=200px height=200px/>
+    <img src='/Resources/Pictures/Sierrapfp.webp' alt="acegoal07" width=200px height=200px/>
 </div>
 <h3 align="center">Sierra project</h3>
 <p align="center">
@@ -25,7 +25,7 @@ I have used the Sierra project as a way to learn a lot about JavaScript and with
 <br><br>
 
 ```md
-Current Bot Version: V3.0.0
+Current Bot Version: V3.0.1
 ```
 <h1 id="commands">Commands</h1>
 <h3>General:</h3>
@@ -126,19 +126,19 @@ setuserupdatelog|Used to setup user update logging
 <h1 id="dependencies">Dependencies</h1>
 
 ```cmd
-Sierra@3.0.0
+Sierra@3.0.1
 ├── @acegoal07/discordjs-pagination@1.5.0
-├── @acegoal07/file-tools@1.0.6
+├── @acegoal07/file-tools@1.0.7
 ├── @acegoal07/json-editor@1.1.9
 ├── @acegoal07/progressbar-builder@1.0.5
 ├── @discordjs/opus@0.8.0
-├── @discordjs/rest@1.6.0
+├── @discordjs/rest@1.7.0
 ├── @discordjs/voice@0.15.0
-├── @sapphire/snowflake@3.4.0
+├── @sapphire/snowflake@3.4.2
 ├── @supercharge/collections@5.0.1
 ├── cpu-stat@2.0.1
-├── discord-api-types@0.37.36
-├── discord.js@14.8.0
+├── discord-api-types@0.37.39
+├── discord.js@14.9.0
 ├── enmap@5.9.5
 ├── ffmpeg-static@5.1.0
 ├── ffmpeg@0.0.4
@@ -159,7 +159,7 @@ Sierra@3.0.0
 ├── spotify-info.js@1.0.4
 ├── spotify-url-info@3.2.3
 ├── systeminformation@5.17.12
-├── ytdl-core@4.11.2
+├── ytdl-core@4.11.4
 ├── ytpl@2.3.0
-└── ytsr@3.8.0
+└── ytsr@3.8.2
 ```

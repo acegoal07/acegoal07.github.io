@@ -1,5 +1,14 @@
 [
    {
+      "version": "3.0.1",
+      "changes": [
+         "Fix's Spotify search commands",
+         "Cleans up some commands",
+         "fixes issue where queue is not cleared when bot is disconnected from the voice channel by a user",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.0",
       "changes": [
          "Updates all of Sierra's dependencies",
