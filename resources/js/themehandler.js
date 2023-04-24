@@ -53,10 +53,10 @@
       document.querySelectorAll('[data-bs-theme-value]')
          .forEach(toggle => {
             toggle.addEventListener('click', () => {
-            const theme = toggle.getAttribute('data-bs-theme-value')
-            setCookie("theme", theme)
-            setTheme(theme)
-            showActiveTheme(theme, true)
+               const theme = toggle.getAttribute('data-bs-theme-value')
+               setCookie("theme", theme)
+               setTheme(theme)
+               showActiveTheme(theme, true)
             })
          })
    })

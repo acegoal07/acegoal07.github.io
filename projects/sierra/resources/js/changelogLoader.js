@@ -1,4 +1,4 @@
-// Changelog Loader ////// Version: 1.0 ////// By acegoal07 (can be found on twitter) /////////////////////////////////////
+// Changelog Loader ////// Version: 2.0 ////// By acegoal07 (can be found on twitter) /////////////////////////////////////
 let count = 0;
 const pastVersionChangeLog = [];
 $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/resources/json/changelog.json",
@@ -26,24 +26,25 @@ $.getJSON("https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/maste
                </div>
             </div><br>`
          // Set current
-         if (count == 1) {document.getElementById('currentVersion').innerHTML= change;}
+         if (count == 1) {document.getElementById('currentVersion').insertAdjacentHTML("afterbegin", change)}
          // Set previous
-         else if (count == 2) {document.getElementById('previousVersion').innerHTML = change;}
+         else if (count == 2) {document.getElementById('previousVersion').insertAdjacentHTML("afterbegin", change)}
          // Create all old
          else {pastVersionChangeLog.push(change)}
       }
       // Set old
-      document.getElementById('pastVersion').innerHTML = pastVersionChangeLog.join('');
+      document.getElementById('pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
    }
 )
 // ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
 function ShowMore() {
    let list = document.querySelector("#moreList");
-   if (list.classList.contains("d-none")) {
-      list.classList.remove('d-none');
-      document.querySelector("#moreListButton").innerHTML = "Hide Versions";
+   let button = document.querySelector("#moreListButton");
+   if (list.classList.toggle("d-none")) {
+      button.textContent = "Show More";
+      button.classList.add("mb-2")
    } else {
-      list.classList.add('d-none');
-      document.querySelector("#moreListButton").innerHTML = "Show Versions";
+      button.textContent = "Show Less";
+      button.classList.remove("mb-2");
    }
 }
