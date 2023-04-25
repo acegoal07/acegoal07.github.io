@@ -30,10 +30,10 @@ window.addEventListener("load", () => {
             if (count == 1) {document.getElementById('currentVersion').insertAdjacentHTML("afterbegin", change)}
             // Set previous
             else if (count == 2) {document.getElementById('previousVersion').insertAdjacentHTML("afterbegin", change)}
-            // Create all old
+            // Create array list of older versions
             else {pastVersionChangeLog.push(change)}
          }
-         // Set old
+         // Set old versions
          document.getElementById('pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
       }
    )
