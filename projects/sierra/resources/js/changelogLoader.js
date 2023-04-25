@@ -2,8 +2,7 @@
 window.addEventListener("load", () => {
    let count = 0;
    const pastVersionChangeLog = [];
-   const url = document.querySelector("#changelog-info").getAttribute("href");
-   $.getJSON(url,
+   $.getJSON(document.querySelector("#changelog-info").getAttribute("href"),
       function (data) {
          for (const info of data) {
             count += 1;
