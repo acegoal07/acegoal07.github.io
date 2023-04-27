@@ -1,5 +1,5 @@
 <div align="center"> 
-    <img src='/Resources/Pictures/Sierrapfp.webp' alt="acegoal07" width=200px height=200px/>
+    <img src='/resources/images/Sierrapfp.webp' alt="sierra" width=200px height=200px/>
 </div>
 <h3 align="center">Sierra project</h3>
 <p align="center">
