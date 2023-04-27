@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
                         </ul>
                      </p>
                   </div>
-               </div><br>`
+               </div><br>`;
             // Set current
             if (count == 1) {document.getElementById('currentVersion').insertAdjacentHTML("afterbegin", change)}
             // Set previous
@@ -43,10 +43,10 @@ window.addEventListener("load", () => {
       let button = document.querySelector("#moreListButton");
       if (list.classList.toggle("d-none")) {
          button.textContent = "Show More";
-         button.classList.add("mb-2")
+         button.classList.add("mb-2");
       } else {
          button.textContent = "Show Less";
          button.classList.remove("mb-2");
-      }      
+      }
    })
 })
