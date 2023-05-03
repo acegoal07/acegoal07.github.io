@@ -5,6 +5,7 @@
          "Fix's Spotify search commands",
          "Cleans up some commands",
          "fixes issue where queue is not cleared when bot is disconnected from the voice channel by a user",
+         "Starts work on user playlists V2 which improves the performance and storage of users playlists, this also switches it to using the new database system",
          "Bug fixes"
       ]
    },
