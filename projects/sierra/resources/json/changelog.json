@@ -1,5 +1,15 @@
 [
    {
+      "version": "3.0.2",
+      "changes": [
+         "Fixes a couple bugs within some commands",
+         "Switches over to the new user playlist system",
+         "Updates all dependencies to latest version",
+         "Fixes delete playlist command not working in direct messages",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.1",
       "changes": [
          "Fix's Spotify search commands",
