@@ -70,12 +70,14 @@
    // no theme preference is not stored
    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
       if (storedTheme !== 'light' || storedTheme !== 'dark') {
-         setTheme(getPreferredTheme());
+         setTheme(getSystemPreferred());
+      } else {
+         void(0);
       }
    })
    // Add listeners to theme buttons
    document.addEventListener('DOMContentLoaded', () => {
-      showActiveTheme(getPreferredTheme());
+      showActiveTheme(!storedTheme ? "auto" : getPreferredTheme());
       document.querySelectorAll('[data-bs-theme-value]')
          .forEach(toggle => {
             toggle.addEventListener('click', () => {
