@@ -1,5 +1,21 @@
 [
    {
+      "version": "3.0.3",
+      "changes": [
+         "Overhauls older commands to improve performance",
+         "Improves checks in older and new commands to improve performance",
+         "Reformats code of all commands to make them the same",
+         "Fixes issues with error handling of missing messages",
+         "Improves variable names in commands",
+         "Tidies up code in older commands",
+         "Fixes issues with older commands caused by database update",
+         "Updates database functions",
+         "Updates how server configs work",
+         "Fixes issue where some commands error catchers were not reporting an errors",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.2",
       "changes": [
          "Fixes a couple bugs within some commands",
