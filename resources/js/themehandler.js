@@ -98,10 +98,10 @@
  * @param {"Strict" | "Lax" | "None"} SameSite The type of SameSite to use
  */
 function setCookie(name, value, SameSite = "Strict") {
-   let date = new Date();
+   const date = new Date();
    date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
-   const expires = "expires=" + date.toString();
-   document.cookie = name + "=" + (value || "")  +";" + expires+ "; SameSite="+ SameSite +"; path=/";
+   const expires = `expires=${date.toString()}`;
+   document.cookie = `${name  }=${  value || ""  };${  expires }; SameSite=${ SameSite }; path=/`;
 }
 /**
  * getCookie
@@ -110,8 +110,8 @@ function setCookie(name, value, SameSite = "Strict") {
  * @returns {any} The value of the cookie
  */
 function getCookie(name) {
-   let nameEQ = name + "=";
-   let documentCookies = document.cookie.split(';');
+   const nameEQ = name + "=";
+   const documentCookies = document.cookie.split(';');
    for(const element of documentCookies) {
       let cookie = element;
       while (cookie.charAt(0)==' ') cookie = cookie.substring(1,cookie.length);
