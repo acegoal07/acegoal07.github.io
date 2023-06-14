@@ -47,9 +47,10 @@
       const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
       const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href');
       // Sets all buttons back to unselected to make sure only the one pressed is active
-      document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      document.querySelector("nav").querySelectorAll('[data-bs-theme-value]').forEach(element => {
          element.classList.remove('active');
          element.setAttribute('aria-pressed', 'false');
+         console.log(element.querySelector(".theme-tick"));
          if (!element.querySelector(".theme-tick").classList.contains("d-none")) {
             element.querySelector(".theme-tick").classList.add("d-none");
          }
