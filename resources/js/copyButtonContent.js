@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
          button.textContent = "Copied content";
          setTimeout(() => {
             button.textContent = originalText;
-         }, 5000)
+         }, 5000);
       });
    });
 });
