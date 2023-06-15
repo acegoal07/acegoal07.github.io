@@ -2,12 +2,18 @@
 window.addEventListener("load", () => {
    this.document.querySelectorAll("a.copy-data-button").forEach(button => {
       button.addEventListener("click", function() {
-         navigator.clipboard.writeText(button.getAttribute("copy-data"));
          const originalText = button.textContent;
-         button.textContent = "Copied content";
-         setTimeout(() => {
-            button.textContent = originalText;
-         }, 5000);
+         navigator.clipboard.writeText(button.getAttribute("copy-data")).then(() => {
+            button.textContent = "Copied content";
+            setTimeout(() => {
+               button.textContent = originalText;
+            }, 5000);
+         }, () => {
+            button.textContent = "Failed to copy";
+            setTimeout(() => {
+               button.textContent = originalText;
+            }, 5000);
+         });
       });
    });
 });
