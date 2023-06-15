@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
          for (const info of data) {
             count += 1;
             // Changes
-            let infoArray = [];
+            const infoArray = [];
             for (const changes of info.changes) {
                infoArray.push(`<li><p>${changes}</p></li>`);
             }
@@ -39,8 +39,8 @@ window.addEventListener("load", () => {
    )
 // ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
    document.querySelector("#moreListButton").addEventListener("click", () => {
-      let list = document.querySelector("#moreList");
-      let button = document.querySelector("#moreListButton");
+      const list = document.querySelector("#moreList");
+      const button = document.querySelector("#moreListButton");
       if (list.classList.toggle("d-none")) {
          button.textContent = "Show More";
          button.classList.add("mb-2");

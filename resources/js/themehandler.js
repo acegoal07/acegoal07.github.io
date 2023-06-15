@@ -1,5 +1,35 @@
 // Theme Handler /////// By acegoal07 ////////////////////////////////////////////////////////////
 (() => {
+   // Cookie Tools //////////////////////////////////////////////////////////////////////////////////
+   /**
+    * setCookie
+    * Stores a cookie with the name and value that's provided
+    * @param {String} name The name of the cookie
+    * @param {any} value The value of the cookie
+    * @param {"Strict" | "Lax" | "None"} SameSite The type of SameSite to use
+    */
+   const setCookie = function(name, value, SameSite = "Strict") {
+      const date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      const expires = `expires=${date.toString()}`;
+      document.cookie = `${name  }=${  value || ""  };${  expires }; SameSite=${ SameSite }; path=/`;
+   }
+   /**
+    * getCookie
+    * Get's the value of the cookie with the provided name
+    * @param {String} name The name of the cookie
+    * @returns {any} The value of the cookie
+    */
+   const getCookie = function(name) {
+      const nameEQ = name + "=";
+      const documentCookies = document.cookie.split(';');
+      for(const element of documentCookies) {
+         let cookie = element;
+         while (cookie.startsWith(' ')) {cookie = cookie.substring(1,cookie.length);}
+         if (cookie.startsWith(nameEQ)) {return cookie.substring(nameEQ.length,cookie.length);}
+      }
+      return null;
+   }
    /**
     * Gets the theme preference stored in the cookies
     */
@@ -107,33 +137,3 @@
          })
    })
 })()
-// Cookie Tools //////////////////////////////////////////////////////////////////////////////////
-/**
- * setCookie
- * Stores a cookie with the name and value that's provided
- * @param {String} name The name of the cookie
- * @param {any} value The value of the cookie
- * @param {"Strict" | "Lax" | "None"} SameSite The type of SameSite to use
- */
-function setCookie(name, value, SameSite = "Strict") {
-   const date = new Date();
-   date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
-   const expires = `expires=${date.toString()}`;
-   document.cookie = `${name  }=${  value || ""  };${  expires }; SameSite=${ SameSite }; path=/`;
-}
-/**
- * getCookie
- * Get's the value of the cookie with the provided name
- * @param {String} name The name of the cookie
- * @returns {any} The value of the cookie
- */
-function getCookie(name) {
-   const nameEQ = name + "=";
-   const documentCookies = document.cookie.split(';');
-   for(const element of documentCookies) {
-      let cookie = element;
-      while (cookie.charAt(0)==' ') cookie = cookie.substring(1,cookie.length);
-      if (cookie.indexOf(nameEQ) == 0) return cookie.substring(nameEQ.length,cookie.length);
-   }
-   return null;
-}
