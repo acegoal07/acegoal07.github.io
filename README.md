@@ -1,7 +1,7 @@
 <div align="center"> 
     <img src='/resources/pictures/acegoal07.webp' alt="acegoal07" width=200px height=200px/>
 </div>
-<h3 align="center">acegoal07.dev</h3>
+<h1 align="center">acegoal07.dev</h1>
 <div align="center">
     <img alt="Repository size" src="https://img.shields.io/github/repo-size/acegoal07/acegoal07.github.io">
     <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/acegoal07/acegoal07.github.io">
