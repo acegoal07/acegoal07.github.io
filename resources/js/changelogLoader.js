@@ -1,4 +1,4 @@
-// Changelog Loader ////// Version: 2.0 ////// By acegoal07 (can be found on twitter) /////////////////////////////////////
+// Changelog Loader /////// By acegoal07 /////////////////////////////////////////////////////////
 window.addEventListener("load", () => {
    let count = 0;
    const pastVersionChangeLog = [];
@@ -27,16 +27,16 @@ window.addEventListener("load", () => {
                   </div>
                </div><br>`;
             // Set current
-            if (count == 1) {document.getElementById('currentVersion').insertAdjacentHTML("afterbegin", change)}
+            if (count == 1) {document.getElementById('currentVersion').insertAdjacentHTML("afterbegin", change);}
             // Set previous
-            else if (count == 2) {document.getElementById('previousVersion').insertAdjacentHTML("afterbegin", change)}
+            else if (count == 2) {document.getElementById('previousVersion').insertAdjacentHTML("afterbegin", change);}
             // Create array list of older versions
-            else {pastVersionChangeLog.push(change)}
+            else {pastVersionChangeLog.push(change);}
          }
          // Set old versions
          document.getElementById('pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
       }
-   )
+   );
 // ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
    document.querySelector("#moreListButton").addEventListener("click", () => {
       const list = document.querySelector("#moreList");
@@ -48,5 +48,5 @@ window.addEventListener("load", () => {
          button.textContent = "Show Less";
          button.classList.remove("mb-2");
       }
-   })
-})
+   });
+});

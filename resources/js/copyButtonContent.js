@@ -1,4 +1,4 @@
-// CopyButtonContent ////// Version: 1.0 ////// By acegoal07 (can be found on twitter) /////////////////////////////////////
+// Copy button content /////// By acegoal07 //////////////////////////////////////////////////////
 window.addEventListener("load", () => {
    this.document.querySelectorAll("a.copy-data-button").forEach(button => {
       button.addEventListener("click", function() {

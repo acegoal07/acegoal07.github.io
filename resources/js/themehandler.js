@@ -1,6 +1,5 @@
 // Theme Handler /////// By acegoal07 ////////////////////////////////////////////////////////////
 (() => {
-   // Cookie Tools //////////////////////////////////////////////////////////////////////////////////
    /**
     * setCookie
     * Stores a cookie with the name and value that's provided
@@ -101,7 +100,7 @@
          if (!element.querySelector(".theme-tick").classList.contains("d-none")) {
             element.querySelector(".theme-tick").classList.add("d-none");
          }
-      })
+      });
       // Sets the button pressed as active and adjust svg used
       btnToActive.classList.add('active');
       btnToActive.setAttribute('aria-pressed', 'true');
@@ -122,18 +121,17 @@
       } else {
          void(0);
       }
-   })
+   });
    // Add listeners to theme buttons
    document.addEventListener('DOMContentLoaded', () => {
       showActiveTheme(!storedTheme ? "auto" : getPreferredTheme());
-      document.querySelectorAll('[data-bs-theme-value]')
-         .forEach(toggle => {
-            toggle.addEventListener('click', () => {
-               const theme = toggle.getAttribute('data-bs-theme-value');
-               setCookie("theme", theme);
-               setTheme(theme);
-               showActiveTheme(theme, true);
-            })
-         })
-   })
-})()
+      document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+         toggle.addEventListener('click', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setCookie("theme", theme);
+            setTheme(theme);
+            showActiveTheme(theme, true);
+         });
+      });
+   });
+})();
