@@ -12,6 +12,7 @@
          "Updates database functions",
          "Updates how server configs work",
          "Fixes issue where some commands error catchers were not reporting an errors",
+         "Tweaks some code to remove the use of discriminators due to the changes to discord affecting how usernames are formed",
          "Bug fixes"
       ]
    },
