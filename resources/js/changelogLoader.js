@@ -2,7 +2,7 @@
 window.addEventListener("load", () => {
    let count = 0;
    const pastVersionChangeLog = [];
-   $.getJSON(document.querySelector("#changelog-info").getAttribute("href"),
+   $.getJSON(document.querySelector("#changelog-info").getAttribute("changelog-url"),
       function (data) {
          for (const info of data) {
             count += 1;
@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
          document.getElementById('pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
       }
    );
-// ShowMore button ////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ShowMore button ///////////////////////////////////////////////////////////////////////////////
    document.querySelector("#moreListButton").addEventListener("click", () => {
       const list = document.querySelector("#moreList");
       const button = document.querySelector("#moreListButton");
