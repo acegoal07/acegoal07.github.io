@@ -12,10 +12,6 @@
       "description": "Searches imdb for the show or film and retires Information about it"
    },
    {
-      "command": "poll (question)",
-      "description": "Creates a poll in the channel and collects the votes and after a certain amount of time displays the results"
-   },
-   {
       "command": "ping",
       "description": "Used to see the latency for sierra and the ping for the Discord API"
    },

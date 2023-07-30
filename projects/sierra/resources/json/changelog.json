@@ -1,5 +1,20 @@
 [
    {
+      "version": "3.0.4",
+      "changes": [
+         "Moves database tools from util file to it's own file",
+         "Revamps database tools to improve performance and accessibility",
+         "Removes poll command",
+         "Updates help command",
+         "Starts work on adding a user xp system",
+         "Improves some checks within commands to improve performance",
+         "Adds base systems for the user xp",
+         "Replaces spotify-info.js with spotify-info as it fixes some issues and adds new features",
+         "Fixes music player with searcher not working due to package problems",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.3",
       "changes": [
          "Overhauls older commands to improve performance",
