@@ -5,8 +5,8 @@ window.addEventListener("load", () => {
    $.getJSON(document.querySelector("#changelog-info").getAttribute("changelog-url"),
       function (data) {
          for (const info of data) {
-            count += 1;
             // Changes
+            count += 1;
             const infoArray = [];
             for (const changes of info.changes) {
                infoArray.push(`<li><p>${changes}</p></li>`);
@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
                      Version ${info.version}
                   </div>
                   <div class="card-body rounded-bottom">
-                     <h5 class="card-title">Changes:</h5>
+                     <h5 class="card-title fw-bold">Changes:</h5>
                      <p class="card-text">
                         <ul>
                            ${infoArray.join('')}
@@ -39,9 +39,8 @@ window.addEventListener("load", () => {
    );
 // ShowMore button ///////////////////////////////////////////////////////////////////////////////
    document.querySelector("#moreListButton").addEventListener("click", () => {
-      const list = document.querySelector("#moreList");
       const button = document.querySelector("#moreListButton");
-      if (list.classList.toggle("d-none")) {
+      if (document.querySelector("#moreList").classList.toggle("d-none")) {
          button.textContent = "Show More";
          button.classList.add("mb-2");
       } else {
