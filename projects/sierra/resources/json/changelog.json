@@ -11,6 +11,7 @@
          "Adds base systems for the user xp",
          "Replaces spotify-info.js with spotify-info as it fixes some issues and adds new features",
          "Fixes music player with searcher not working due to package problems",
+         "Fixed a small issue with ban log event causing it to be unable to run",
          "Bug fixes"
       ]
    },
