@@ -10,8 +10,7 @@
    const setCookie = function(name, value, SameSite = "Strict") {
       const date = new Date();
       date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
-      const expires = `expires=${date.toString()}`;
-      document.cookie = `${name  }=${  value || ""  };${  expires }; SameSite=${ SameSite }; path=/`;
+      document.cookie = `${name  }=${  value || ""  }; expires=${date.toString()}; SameSite=${ SameSite }; path=/`;
    }
    /**
     * getCookie
@@ -21,9 +20,7 @@
     */
    const getCookie = function(name) {
       const nameEQ = name + "=";
-      const documentCookies = document.cookie.split(';');
-      for(const element of documentCookies) {
-         let cookie = element;
+      for(const cookie of document.cookie.split(';')) {
          while (cookie.startsWith(' ')) {cookie = cookie.substring(1,cookie.length);}
          if (cookie.startsWith(nameEQ)) {return cookie.substring(nameEQ.length,cookie.length);}
       }
@@ -90,9 +87,7 @@
       );
       // Get all sections of the buttons ready and stored for use in adjusting on button press
       const themeSwitcherText = document.querySelector('#bd-theme-text');
-      const activeThemeIcon = document.querySelector('.theme-icon-active use');
       const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
-      const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href');
       // Sets all buttons back to unselected to make sure only the one pressed is active
       document.querySelector("nav").querySelectorAll('[data-bs-theme-value]').forEach(element => {
          element.classList.remove('active');
@@ -104,9 +99,8 @@
       // Sets the button pressed as active and adjust svg used
       btnToActive.classList.add('active');
       btnToActive.setAttribute('aria-pressed', 'true');
-      activeThemeIcon.setAttribute('href', svgOfActiveBtn);
-      const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
-      themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
+      document.querySelector('.theme-icon-active use').setAttribute('href', btnToActive.querySelector('svg use').getAttribute('href'));
+      themeSwitcher.setAttribute('aria-label', `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`);
       document.querySelector(`[data-bs-theme-value="${theme}"] .theme-tick`).classList.remove("d-none");
       // If focus true sets button as focused
       if (focus) {

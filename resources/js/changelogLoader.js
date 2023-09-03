@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
                      Version ${info.version}
                   </div>
                   <div class="card-body rounded-bottom">
-                     <h5 class="card-title">Changes</h5>
+                     <h5 class="card-title">Changes:</h5>
                      <p class="card-text">
                         <ul>
                            ${infoArray.join('')}
@@ -27,14 +27,14 @@ window.addEventListener("load", () => {
                   </div>
                </div><br>`;
             // Set current
-            if (count == 1) {document.getElementById('currentVersion').insertAdjacentHTML("afterbegin", change);}
+            if (count == 1) {document.querySelector('#currentVersion').insertAdjacentHTML("afterbegin", change);}
             // Set previous
-            else if (count == 2) {document.getElementById('previousVersion').insertAdjacentHTML("afterbegin", change);}
+            else if (count == 2) {document.querySelector('#previousVersion').insertAdjacentHTML("afterbegin", change);}
             // Create array list of older versions
             else {pastVersionChangeLog.push(change);}
          }
          // Set old versions
-         document.getElementById('pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
+         document.querySelector('#pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
       }
    );
 // ShowMore button ///////////////////////////////////////////////////////////////////////////////
