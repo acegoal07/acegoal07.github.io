@@ -56,7 +56,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      ISSUE_WEBHOOK_URL: ${{ secrets.ISSUE_WEBHOOK_URL }}
+      ISSUE_WEBHOOK_URL: ${{ secrets.API_KEY }}
     runs-on: ubuntu-latest
     needs: build
     steps:
