@@ -1,4 +1,4 @@
-window.addEventListener("load", (process) => {
+window.addEventListener("load", () => {
    const date = new Date();
    const fileData = [
       `Date: ${date.toLocaleDateString("en-UK")}\n`,
