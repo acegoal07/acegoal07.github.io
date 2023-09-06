@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
    formData.append("file", new File(fileData, `Issue-${date.toLocaleString("en-uk")}.txt`, {type: "text/plain"}));
    formData.append("content", "New issue reported");
    const xml = new XMLHttpRequest();
-   xml.open("POST", process.env.WEBHOOK_URL);
+   xml.open("POST", import.meta.env.WEBHOOK_URL);
    xml.send(formData);
 }); 
 
