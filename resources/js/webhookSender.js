@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-   document.querySelector("#test").addEventListener("click", () => {
+   this.document.querySelectorAll("#test").forEach(button => {
       const date = new Date();
       const fileData = [
          `Date: ${date.toLocaleDateString("en-UK")}\n`,
@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
       formData.append("file", new File(fileData, `Issue-${date.toLocaleString("en-uk")}.txt`, {type: "text/plain"}));
       formData.append("content", "New issue reported");
       const xml = new XMLHttpRequest();
-      xml.open("POST", `${import.meta.env.ISSUE_WEBHOOK_URL}`);
+      xml.open("POST", `${process.env.ISSUE_WEBHOOK_URL}`);
       xml.send(formData);
    });
 }); 
