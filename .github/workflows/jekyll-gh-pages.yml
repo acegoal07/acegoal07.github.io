@@ -20,7 +20,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+env:
+  ISSUE_WEBOOK_URL: ${{ secrets.ISSUE_WEBHOOK_URL }}
 jobs:
   # Build job
   build:
@@ -42,8 +43,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    env:
-      ISSUE_WEBOOK_URL: ${{ secrets.ISSUE_WEBHOOK_URL }}
+
     runs-on: ubuntu-latest
     needs: build
     steps:
