@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
    document.querySelector("#test").addEventListener("click", () => {
       const date = new Date();
       const fileData = [
