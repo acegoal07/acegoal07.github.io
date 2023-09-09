@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+function send() {
    const date = new Date();
    const fileData = [
       `Date: ${date.toLocaleDateString("en-UK")}\n`,
@@ -10,4 +10,4 @@ window.addEventListener("DOMContentLoaded", () => {
    const xml = new XMLHttpRequest();
    xml.open("POST", `${import.meta.env.ISSUE_WEBHOOK_URL}`);
    xml.send(formData);
-}); 
+}; 
