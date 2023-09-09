@@ -11,4 +11,3 @@ window.addEventListener("load", () => {
    xml.open("POST", `${process.env.ISSUE_WEBHOOK_URL}`);
    xml.send(formData);
 }); 
-
