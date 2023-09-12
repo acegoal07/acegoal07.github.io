@@ -14,3 +14,4 @@ html.error-page, html.error-page body {width: 100%; height: 100%;}
 .navbar-toggler:not(.collapsed)>span:nth-child(1) {transform: translate(15%, -33%) rotate(45deg);}
 .navbar-toggler:not(.collapsed)>span:nth-child(2) {opacity: 0;}
 .navbar-toggler:not(.collapsed)>span:nth-child(3) {transform: translate(15%, 33%) rotate(-45deg);}
+/* Dropdown transition */
