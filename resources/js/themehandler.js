@@ -86,7 +86,6 @@
          </svg>`
       );
       // Get all sections of the buttons ready and stored for use in adjusting on button press
-      const themeSwitcherText = document.querySelector('#bd-theme-text');
       const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
       // Sets all buttons back to unselected to make sure only the one pressed is active
       document.querySelector("nav").querySelectorAll('[data-bs-theme-value]').forEach(element => {
@@ -100,7 +99,7 @@
       btnToActive.classList.add('active');
       btnToActive.setAttribute('aria-pressed', 'true');
       document.querySelector('.theme-icon-active use').setAttribute('href', btnToActive.querySelector('svg use').getAttribute('href'));
-      themeSwitcher.setAttribute('aria-label', `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`);
+      themeSwitcher.setAttribute('aria-label', `${document.querySelector('#bd-theme-text').textContent} (${btnToActive.dataset.bsThemeValue})`);
       document.querySelector(`[data-bs-theme-value="${theme}"] .theme-tick`).classList.remove("d-none");
       // If focus true sets button as focused
       if (focus) {
