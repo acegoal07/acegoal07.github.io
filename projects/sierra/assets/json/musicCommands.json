@@ -1,7 +1,8 @@
 [
    {
-      "command": "play (name or URL)",
-      "description": "Plays the song you specified either with a link or the name of the song"
+      "command": "play",
+      "description": "Plays the song you specified either with a link or the name of the song",
+      "usage": ["name or url"]
    },
    {
       "command": "disconnect",
@@ -12,8 +13,9 @@
       "description": "Skips to the next song in the server song queue"
    },
    {
-      "command": "skipto (queue position)",
-      "description": "Skips you to the specified position in the queue"
+      "command": "skipto",
+      "description": "Skips you to the specified position in the queue",
+      "usage": ["queue position"]
    },
    {
       "command": "queue",
@@ -28,8 +30,9 @@
       "description": "Unpauses the current song playing in the voice channel"
    },
    {
-      "command": "remove (queue position)",
-      "description": "Removes the song which is in the specified queue position"
+      "command": "remove",
+      "description": "Removes the song which is in the specified queue position",
+      "usage": ["queue position"]
    },
    {
       "command": "nowplaying",
@@ -44,28 +47,34 @@
       "description": "Loops the server queue"
    },
    {
-      "command": "searchyt (name)",
-      "description": "Searches YouTube for a track with the corresponding name"
+      "command": "searchyt",
+      "description": "Searches YouTube for a track with the corresponding name",
+      "usage": ["name"]
    },
    {
-      "command": "searchytpl (name)",
-      "description": "Searches YouTube for a playlist with the corresponding name"
+      "command": "searchytpl",
+      "description": "Searches YouTube for a playlist with the corresponding name",
+      "usage": ["name"]
    },
    {
-      "command": "searchsc (name)",
-      "description": "Searches SoundCloud for a track with the corresponding name"
+      "command": "searchsc",
+      "description": "Searches SoundCloud for a track with the corresponding name",
+      "usage": ["name"]
    },
    {
-      "command": "searchscpl (name)",
-      "description": "Searches SoundCloud for a playlist with the corresponding name"
+      "command": "searchscpl",
+      "description": "Searches SoundCloud for a playlist with the corresponding name",
+      "usage": ["name"]
    },
    {
-      "command": "searchsp (name)",
-      "description": "Searches Spotify for a track with the corresponding name"
+      "command": "searchsp",
+      "description": "Searches Spotify for a track with the corresponding name",
+      "usage": ["name"]
    },
    {
-      "command": "searchsppl (name)",
-      "description": "Searches Spotify for a playlist with the corresponding name"
+      "command": "searchsppl",
+      "description": "Searches Spotify for a playlist with the corresponding name",
+      "usage": ["name"]
    },
    {
       "command": "shuffle",
@@ -76,8 +85,9 @@
       "description": "Clears the queue of all songs"
    },
    {
-      "command": "volume (1-100)",
-      "description": "Allows you to adjust the volume of the music"
+      "command": "volume",
+      "description": "Allows you to adjust the volume of the music",
+      "usage": ["1 - 100"]
    },
    {
       "command": "wheretolisten",
@@ -96,31 +106,37 @@
       "description": "Allows you to go back to songs that you have already played"
    },
    {
-      "command": "createplaylist (playlist name)",
-      "description": "Creates a user specific playlist"
+      "command": "createplaylist",
+      "description": "Creates a user specific playlist",
+      "usage": ["playlist name"]
    },
    {
-      "command": "deleteplaylist (playlist name)",
-      "description": "Deletes a users playlist"
+      "command": "deleteplaylist",
+      "description": "Deletes a users playlist",
+      "usage": ["playlist name"]
    },
    {
-      "command": "renameplaylist (playlist name) (new name)",
-      "description": "Renames a playlist to the new specified name"
+      "command": "renameplaylist",
+      "description": "Renames a playlist to the new specified name",
+      "usage": ["playlist name", "new name"]
    },
    {
       "command": "playlists",
       "description": "Allows you to view your playlists"
    },
    {
-      "command": "loadplaylist (playlist name)",
-      "description": "Adds the songs from a users playlist to the server queue"
+      "command": "loadplaylist",
+      "description": "Adds the songs from a users playlist to the server queue",
+      "usage": ["playlist name"]
    },
    {
-      "command": "playlistaddcurrent (playlist name)",
-      "description": "Adds the current song your listening to, to the playlist specified"
+      "command": "playlistaddcurrent",
+      "description": "Adds the current song your listening to, to the playlist specified",
+      "usage": ["playlist name"]
    },
    {
-      "command": "playlistremove (playlist position)",
-      "description": "Removes the song from the specified position"
+      "command": "playlistremove",
+      "description": "Removes the song from the specified position",
+      "usage": ["playlist song position"]
    }
 ]

@@ -1,7 +1,8 @@
 [
    {
       "command": "help",
-      "description": "This command will display all of the commands the bot has corresponding to the section you choose"
+      "description": "This command will display all of the commands the bot has corresponding to the section you choose",
+      "usage": ["optional section"]
    },
    {
       "command": "serverinfo",
@@ -20,8 +21,9 @@
       "description": "This command will display all roles on the server and which ones you have"
    },
    {
-      "command": "userinfo or userinfo (mention)",
-      "description": "Will display all needed information about a user"
+      "command": "userinfo",
+      "description": "Will display all needed information about a user",
+      "usage": ["optional mention"]
    },
    {
       "command": "addsierra",
@@ -33,10 +35,11 @@
    },
    {
       "command": "donate",
-      "description": "Shows donation options available to support Sierra"
+      "description": "Shows donation options available to support the development of Sierra"
    },
    {
-      "command": "simonsays (text)",
-      "description": "Sends back the message you specify"
+      "command": "simonsays",
+      "description": "Sends back the message you specify",
+      "usage": ["text"]
    }
 ]

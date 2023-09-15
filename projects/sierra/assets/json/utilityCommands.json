@@ -4,12 +4,14 @@
       "description": "When used will switch the current channel between an NSFW channel and a normal channel"
    },
    {
-      "command": "rename (name)",
-      "description": "This command changes the nickname of Sierra in your server"
+      "command": "rename",
+      "description": "This command changes the nickname of Sierra in your server",
+      "usage": ["name"]
    },
    {
-      "command": "imdb (name of show or film)",
-      "description": "Searches imdb for the show or film and retires Information about it"
+      "command": "imdb",
+      "description": "Searches imdb for the show or film and retires Information about it",
+      "usage": ["name of film or show"]
    },
    {
       "command": "ping",

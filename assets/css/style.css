@@ -14,3 +14,9 @@ html.error-page, html.error-page body {width: 100%; height: 100%;}
 .navbar-toggler:not(.collapsed)>span:nth-child(1) {transform: translate(15%, -33%) rotate(45deg);}
 .navbar-toggler:not(.collapsed)>span:nth-child(2) {opacity: 0;}
 .navbar-toggler:not(.collapsed)>span:nth-child(3) {transform: translate(15%, 33%) rotate(-45deg);}
+/* Drop down  */
+button .dropdown-arrow {border: solid ; border-width: 0 0.188rem 0.188rem 0; display: inline-block; padding: 0.188rem; margin-bottom: 0.313rem; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); transition: 0.15s ease-in-out;}
+button:not(.collapsed) .dropdown-arrow {-webkit-transform: rotate(45deg); transform: rotate(45deg);}
+/* Sizing */
+.w-a-25 {width: 25% !important;}
+@media (max-width: 768px) {.w-a-25 {width: 50% !important;}}

@@ -4,8 +4,9 @@
       "description": "Allows you to see all the settings for Sierra specific to your server"
    },
    {
-      "command": "setprefix (prefix)",
-      "description": "Allows you to set a custom prefix for Sierra"
+      "command": "setprefix",
+      "description": "Allows you to set a custom prefix for Sierra",
+      "usage": ["new prefix"]
    },
    {
       "command": "setcolor",
