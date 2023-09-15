@@ -9,11 +9,8 @@ window.addEventListener("load", () => {
             if ((!userInput || child.getAttribute("data-command-name").includes(userInput)) && child.classList.contains("d-none")) {
                child.classList.remove("d-none")
             }
-            else if (!child.getAttribute("data-command-name").includes(userInput) && !child.classList.contains("d-none")) {
+            if (!child.getAttribute("data-command-name").includes(userInput) && !child.classList.contains("d-none")) {
                child.classList.add("d-none");
-            }
-            else {
-               return;
             }
          }
       });
