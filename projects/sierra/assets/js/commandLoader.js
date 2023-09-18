@@ -28,11 +28,23 @@ window.addEventListener("load", () => {
                   <div class="card-body">
                      <div>
                         <button class="card-title btn border-0 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${prefixSection}${count}" aria-expanded="false" aria-controls="collapse${prefixSection}${count}">
-                           <h3 class="d-inline fw-bold"c><i class="dropdown-arrow"></i> ${command.command}</h3> ${command.usage ? `<p class="text-muted d-inline">${usageData.join(" ")}</p>` : ``}
+                           <h3 class="d-inline fw-bold"c><i class="dropdown-arrow"></i> ${command.command}</h3> ${command.slash ? `<i class="bi bi-slash-square text-muted"></i>` : ``} ${command.usage ? `<p class="text-muted d-inline">${usageData.join(" ")}</p>` : ``}
                         </button>
                      </div>
                      <div class="collapse" id="collapse${prefixSection}${count}">
+                        <hr>
+                        <h3 class="fw-bold">Description</h3>
                         ${command.description}
+                        ${command.usage ? `
+                           <hr>
+                           <h3 class="pt-2 fw-bold">Inputs</h3>
+                           ${usageData.join(" ")}
+                        ` : ``}
+                        ${command.slash ? `
+                           <hr>
+                           <h3 class="pt-2 fw-bold">Slash command info</h3>
+                           This command has a slash command alternative to the text based command so you are able to use /${command.command} instead
+                        ` : ``}
                      </div>
                   </div>
                </div>`

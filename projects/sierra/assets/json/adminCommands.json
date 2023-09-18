@@ -1,45 +1,54 @@
 [
    {
       "command": "announce",
+      "slash": false,
       "description": "This command takes the message and posts it in the announcement channel",
       "usage": ["message"]
    },
    {
       "command": "clear",
+      "slash": false,
       "description": "Deletes the amount of messages that is defined",
       "usage": ["1 - 100"]
    },
    {
       "command": "clearchannel",
+      "slash": false,
       "description": "Completely empties the current channel of all messages and items"
    },
    {
       "command": "kick",
+      "slash": true,
       "description": "Kick's the mentioned user from the server",
       "usage": ["mention"]
    },
    {
       "command": "ban",
+      "slash": true,
       "description": "Bans the mentioned user from the server",
       "usage": ["mention", "optional reason"]
    },
    {
       "command": "tempban",
+      "slash": true,
       "description": "Bans the specified user for a specified amount of days",
       "usage": ["mention", "1 - 7", "optional reason"]
    },
    {
       "command": "unban",
+      "slash": true,
       "description": "Unban's the specified user",
       "usage": ["user ID"]
    },
    {
       "command": "timeout",
+      "slash": true,
       "description": "Stops the user from talking in the server for a set period of time",
       "usage": ["mention", "minutes", "optional reason"]
    },
    {
       "command": "stoptimeout",
+      "slash": true,
       "description": "Removes the timeout from a user",
       "usage": ["mention"]
    }

@@ -1,79 +1,98 @@
 [
    {
-      "command": "settings",
+      "command": "settings", 
+      "slash": true,
       "description": "Allows you to see all the settings for Sierra specific to your server"
    },
    {
-      "command": "setprefix",
+      "command": "setprefix", 
+      "slash": false,
       "description": "Allows you to set a custom prefix for Sierra",
       "usage": ["new prefix"]
    },
    {
-      "command": "setcolor",
+      "command": "setcolor", 
+      "slash": true,
       "description": "Changes the color of Sierra's embed messages in your server"
    },
    {
-      "command": "setwelcome",
+      "command": "setwelcome", 
+      "slash": false,
       "description": "Used to setup welcome message for your server"
    },
    {
-      "command": "setbye",
+      "command": "setbye", 
+      "slash": false,
       "description": "Command is used to setup and use leaving messages on your server"
    },
    {
-      "command": "setdeletelog",
+      "command": "setdeletelog", 
+      "slash": false,
       "description": "Used to setup deleted message logging in your server"
    },
    {
-      "command": "setbanlog",
+      "command": "setbanlog", 
+      "slash": false,
       "description": "Used to setup ban logging for your server"
    },
    {
-      "command": "setannounce",
+      "command": "setannounce", 
+      "slash": false,
       "description": "Used to setup the announcement command in your server"
    },
    {
-      "command": "setclear",
+      "command": "setclear", 
+      "slash": false,
       "description": "Used to setup the clear command for your server"
    },
    {
-      "command": "setadmintools",
+      "command": "setadmintools", 
+      "slash": false,
       "description": "Used to enable kick, ban and unban commands in the server"
    },
    {
-      "command": "setautorole",
+      "command": "setautorole", 
+      "slash": false,
       "description": "Used to setup autorole for your server"
    },
    {
-      "command": "setmusicstyle",
+      "command": "setmusicstyle", 
+      "slash": false,
       "description": "Used to edit settings for the music commands"
    },
    {
-      "command": "setdjrole",
+      "command": "setdjrole", 
+      "slash": false,
       "description": "Used to set a role that is required to use the music commands"
    },
    {
-      "command": "setadminrole",
+      "command": "setadminrole", 
+      "slash": false,
       "description": "Used to set a role that is required to use the admin commands"
    },
    {
-      "command": "setcommandchannel",
+      "command": "setcommandchannel", 
+      "slash": false,
       "description": "Used to setup a command channel"
    },
    {
-      "command": "setvoicelog",
+      "command": "setvoicelog", 
+      "slash": false,
       "description": "Used to setup voice channel activity logging"
    },
    {
-      "command": "setchannellog",
+      "command": "setchannellog", 
+      "slash": false,
       "description": "Used to setup channel changes logging"
    },
    {
-      "command": "setuserupdatelog",
+      "command": "setuserupdatelog", 
+      "slash": false,
       "description": "Used to setup user update logging"
    },
    {
-      "command": "seteventlog",
+      "command": "seteventlog", 
+      "slash": false,
       "description": "Used to setup user scheduled event logging"
    }
 ]

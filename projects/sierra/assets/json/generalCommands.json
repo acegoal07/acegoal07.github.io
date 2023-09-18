@@ -1,44 +1,54 @@
 [
    {
       "command": "help",
+      "slash": true,
       "description": "This command will display all of the commands the bot has corresponding to the section you choose",
       "usage": ["optional section"]
    },
    {
       "command": "serverinfo",
+      "slash": false,
       "description": "This server will show all the info about the server you will need to know"
    },
    {
       "command": "serverinvite",
+      "slash": false,
       "description": "This command will send an invite to the current text channel which can be shared outside of the server"
    },
    {
       "command": "botinfo",
+      "slash": false,
       "description": "This command will show you all the info you will need to know about Sierra"
    },
    {
       "command": "roles",
+      "slash": false,
       "description": "This command will display all roles on the server and which ones you have"
    },
    {
       "command": "userinfo",
+      "slash": false,
       "description": "Will display all needed information about a user",
       "usage": ["optional mention"]
    },
    {
       "command": "addsierra",
+      "slash": false,
       "description": "This command sends you the link required to invite Sierra to your own server"
    },
    {
       "command": "channelinfo",
+      "slash": false,
       "description": "Shows the user info about the channel they are using"
    },
    {
       "command": "donate",
+      "slash": true,
       "description": "Shows donation options available to support the development of Sierra"
    },
    {
       "command": "simonsays",
+      "slash": true,
       "description": "Sends back the message you specify",
       "usage": ["text"]
    }
