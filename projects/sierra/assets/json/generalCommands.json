@@ -7,7 +7,7 @@
    },
    {
       "command": "serverinfo",
-      "slash": false,
+      "slash": true,
       "description": "This server will show all the info about the server you will need to know"
    },
    {
@@ -27,7 +27,7 @@
    },
    {
       "command": "userinfo",
-      "slash": false,
+      "slash": true,
       "description": "Will display all needed information about a user",
       "usage": ["optional mention"]
    },
@@ -38,7 +38,7 @@
    },
    {
       "command": "channelinfo",
-      "slash": false,
+      "slash": true,
       "description": "Shows the user info about the channel they are using"
    },
    {

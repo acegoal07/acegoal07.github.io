@@ -1,5 +1,18 @@
 [
    {
+      "version": "3.0.5",
+      "changes": [
+         "Fixes issues with music player",
+         "Adds serverinfo slash command",
+         "Adds userinfo slash command",
+         "Adds channelinfo slash command",
+         "Makes it so certain slash commands can't be ran in DM's",
+         "Scraps plans for XP system",
+         "Removes some uncompleted commands",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.4",
       "changes": [
          "Moves database tools from util file to it's own file",
