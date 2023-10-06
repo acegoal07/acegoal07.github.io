@@ -9,6 +9,7 @@
          "Makes it so certain slash commands can't be ran in DM's",
          "Scraps plans for XP system",
          "Removes some uncompleted commands",
+         "Includes improvements to database toolkit improving performance",
          "Bug fixes"
       ]
    },
