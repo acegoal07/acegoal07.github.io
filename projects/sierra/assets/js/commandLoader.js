@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
                         ${command.slash ? `
                            <hr>
                            <h3 class="pt-2 fw-bold">Slash command info</h3>
-                           This command has a slash command alternative to the text based command so you are able to use /${command.command} instead
+                           This command has a slash command alternative to the text based command so you are able to use <strong>/${command.command}</strong> instead
                         ` : ``}
                      </div>
                   </div>
