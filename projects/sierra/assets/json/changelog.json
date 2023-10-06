@@ -12,6 +12,9 @@
          "Includes improvements to database toolkit improving performance",
          "Adds new system for handling slash commands in DM's to allow for more slash commands in the future",
          "Adds clear slash command",
+         "Adds IMDB slash command",
+         "Improves util file",
+         "Improves eventHandler and commandHandler",
          "Bug fixes"
       ]
    },

@@ -12,7 +12,7 @@
    },
    {
       "command": "imdb", 
-      "slash": false,
+      "slash": true,
       "description": "Searches imdb for the show or film and retires Information about it",
       "usage": ["name of film or show"]
    },

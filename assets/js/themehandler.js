@@ -20,7 +20,7 @@
     */
    const getCookie = function(name) {
       const nameEQ = name + "=";
-      for(const cookie of document.cookie.split(';')) {
+      for(let cookie of document.cookie.split(';')) {
          while (cookie.startsWith(' ')) {cookie = cookie.substring(1,cookie.length);}
          if (cookie.startsWith(nameEQ)) {return cookie.substring(nameEQ.length,cookie.length);}
       }
