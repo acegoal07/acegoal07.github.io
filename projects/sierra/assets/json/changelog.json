@@ -10,6 +10,8 @@
          "Scraps plans for XP system",
          "Removes some uncompleted commands",
          "Includes improvements to database toolkit improving performance",
+         "Adds new system for handling slash commands in DM's to allow for more slash commands in the future",
+         "Adds clear slash command",
          "Bug fixes"
       ]
    },

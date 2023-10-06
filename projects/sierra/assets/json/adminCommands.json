@@ -7,7 +7,7 @@
    },
    {
       "command": "clear",
-      "slash": false,
+      "slash": true,
       "description": "Deletes the amount of messages that is defined",
       "usage": ["1 - 100"]
    },
