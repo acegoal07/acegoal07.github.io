@@ -1,7 +1,7 @@
 [
    {
       "command": "announce",
-      "slash": false,
+      "slash": true,
       "description": "This command takes the message and posts it in the announcement channel",
       "usage": ["message"]
    },
@@ -13,7 +13,7 @@
    },
    {
       "command": "clearchannel",
-      "slash": false,
+      "slash": true,
       "description": "Completely empties the current channel of all messages and items"
    },
    {
