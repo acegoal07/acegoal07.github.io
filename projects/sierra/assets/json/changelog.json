@@ -17,6 +17,8 @@
          "Improves eventHandler and commandHandler",
          "Adds announce slash command",
          "Adds clearchannel slash command",
+         "Adds roles slash command",
+         "Makes it so that unrecognised URL's passed into the play command will return an error to the user as an unrecognised url",
          "Bug fixes"
       ]
    },

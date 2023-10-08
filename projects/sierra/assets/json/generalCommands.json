@@ -22,7 +22,7 @@
    },
    {
       "command": "roles",
-      "slash": false,
+      "slash": true,
       "description": "This command will display all roles on the server and which ones you have"
    },
    {
