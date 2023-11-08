@@ -1,6 +1,6 @@
 // Command Loader /////// By acegoal07 /////////////////////////////////////////////////////////
 window.addEventListener("load", () => {
-// Search bar
+   // Search bar
    document.querySelectorAll(".command-search-bar").forEach(searchBar => {
       searchBar.value = "";
       searchBar.addEventListener("input", function() {
@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
          }
       });
    });
-// Information
+   // Information
    for (const section of document.querySelectorAll(".command-section")) {
       $.getJSON(section.getAttribute("command-info-url"), function(data) {
          let count = 0;

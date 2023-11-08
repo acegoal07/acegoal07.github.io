@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
       function (data) {
          for (const info of data) {
             // Changes
-            count += 1;
+            count++;
             const infoArray = [];
             for (const changes of info.changes) {
                infoArray.push(`<li><p>${changes}</p></li>`);

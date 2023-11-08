@@ -1,5 +1,16 @@
 [
    {
+      "version": "3.0.6",
+      "changes": [
+         "Adds new way to determine if a command can run in DM's or not",
+         "Adds new way to determine if a command can ignore the command specific channel setting",
+         "Adds new commandBuilder to util file",
+         "Update's all commands to use new commandBuilder this improves performance and allows for more features to be added in the future",
+         "Cleans up code",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.5",
       "changes": [
          "Fixes issues with music player",
