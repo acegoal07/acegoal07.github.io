@@ -1,5 +1,5 @@
 <div align="center"> 
-    <img src='/assests/images/acegoal07.webp' alt="acegoal07" width=200px height=200px/>
+    <img src='/assets/images/acegoal07.webp' alt="acegoal07" width=200px height=200px/>
 </div>
 <h1 align="center">acegoal07.dev</h1>
 <div align="center">
