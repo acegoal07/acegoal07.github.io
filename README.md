@@ -11,6 +11,6 @@
 ---
 
 # Resources used
+- BootStrap - https://getbootstrap.com<br>
 - BootStrap Icons - https://icons.getbootstrap.com<br>
-- BootStrap Tables - https://bootstrap-table.com<br>
 - jquery - https://developers.google.com/speed/libraries
