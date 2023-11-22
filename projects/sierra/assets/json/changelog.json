@@ -6,6 +6,7 @@
          "Adds new way to determine if a command can ignore the command specific channel setting",
          "Adds new commandBuilder to util file",
          "Update's all commands to use new commandBuilder this improves performance and allows for more features to be added in the future",
+         "Updates clearChannel command to support community channels which also fixes the crashing when used on community channels",
          "Cleans up code",
          "Bug fixes"
       ]
