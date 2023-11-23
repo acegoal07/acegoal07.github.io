@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
          `Date: ${date.toLocaleDateString("en-UK")}\n`,
          `Time: ${date.toLocaleTimeString("en-UK")}\n`
       ];
-      let formData = new FormData();
+      const formData = new FormData();
       formData.append("file", new File(fileData, `Issue-${date.toLocaleString("en-uk")}.txt`, {type: "text/plain"}));
       formData.append("content", "New issue reported");
       const xml = new XMLHttpRequest();
