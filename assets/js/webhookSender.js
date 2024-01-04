@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-   this.document.querySelectorAll("#test").forEach(button => {
+   this.document.querySelectorAll("#test").forEach(() => {
       const date = new Date();
       const fileData = [
          `Date: ${date.toLocaleDateString("en-UK")}\n`,
@@ -12,4 +12,4 @@ window.addEventListener("load", () => {
       xml.open("POST", `${process.env.ISSUE_WEBHOOK_URL}`);
       xml.send(formData);
    });
-}); 
+});

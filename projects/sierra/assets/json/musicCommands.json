@@ -1,171 +1,171 @@
 [
    {
-      "command": "play", 
+      "command": "play",
       "slash": false,
       "description": "Plays the song you specified either with a link or the name of the song",
       "usage": ["name or url"]
    },
    {
-      "command": "disconnect", 
+      "command": "disconnect",
       "slash": false,
       "description": "Clears the server queue and disconnects the bot from the voice channel"
    },
    {
-      "command": "skip", 
+      "command": "skip",
       "slash": false,
       "description": "Skips to the next song in the server song queue"
    },
    {
-      "command": "skipto", 
+      "command": "skipto",
       "slash": false,
       "description": "Skips you to the specified position in the queue",
       "usage": ["queue position"]
    },
    {
-      "command": "queue", 
+      "command": "queue",
       "slash": false,
       "description": "Displays the server song queue"
    },
    {
-      "command": "pause", 
+      "command": "pause",
       "slash": false,
       "description": "Pauses the current song playing in the voice channel"
    },
    {
-      "command": "unpause", 
+      "command": "unpause",
       "slash": false,
       "description": "Unpauses the current song playing in the voice channel"
    },
    {
-      "command": "remove", 
+      "command": "remove",
       "slash": false,
       "description": "Removes the song which is in the specified queue position",
       "usage": ["queue position"]
    },
    {
-      "command": "nowplaying", 
+      "command": "nowplaying",
       "slash": false,
       "description": "Displays information about the song that is currently playing"
    },
    {
-      "command": "loop", 
+      "command": "loop",
       "slash": false,
       "description": "Loops the current song playing until Sierra is disconnected or the loop is disabled"
    },
    {
-      "command": "loopqueue", 
+      "command": "loopqueue",
       "slash": false,
       "description": "Loops the server queue"
    },
    {
-      "command": "searchyt", 
+      "command": "searchyt",
       "slash": false,
       "description": "Searches YouTube for a track with the corresponding name",
       "usage": ["name"]
    },
    {
-      "command": "searchytpl", 
+      "command": "searchytpl",
       "slash": false,
       "description": "Searches YouTube for a playlist with the corresponding name",
       "usage": ["name"]
    },
    {
-      "command": "searchsc", 
+      "command": "searchsc",
       "slash": false,
       "description": "Searches SoundCloud for a track with the corresponding name",
       "usage": ["name"]
    },
    {
-      "command": "searchscpl", 
+      "command": "searchscpl",
       "slash": false,
       "description": "Searches SoundCloud for a playlist with the corresponding name",
       "usage": ["name"]
    },
    {
-      "command": "searchsp", 
+      "command": "searchsp",
       "slash": false,
       "description": "Searches Spotify for a track with the corresponding name",
       "usage": ["name"]
    },
    {
-      "command": "searchsppl", 
+      "command": "searchsppl",
       "slash": false,
       "description": "Searches Spotify for a playlist with the corresponding name",
       "usage": ["name"]
    },
    {
-      "command": "shuffle", 
+      "command": "shuffle",
       "slash": false,
       "description": "Shuffles the music queue randomizing what song comes up next"
    },
    {
-      "command": "clearqueue", 
+      "command": "clearqueue",
       "slash": false,
       "description": "Clears the queue of all songs"
    },
    {
-      "command": "volume", 
+      "command": "volume",
       "slash": false,
       "description": "Allows you to adjust the volume of the music",
       "usage": ["1 - 100"]
    },
    {
-      "command": "wheretolisten", 
+      "command": "wheretolisten",
       "slash": false,
       "description": "Searches Spotify, SoundCloud and YouTube and provides you with links"
    },
    {
-      "command": "lyrics", 
+      "command": "lyrics",
       "slash": false,
       "description": "Gets the lyrics to the song that's currently playing"
    },
    {
-      "command": "restartsong", 
+      "command": "restartsong",
       "slash": false,
       "description": "Goes to the beginning of the song that's currently playing"
    },
    {
-      "command": "previous", 
+      "command": "previous",
       "slash": false,
       "description": "Allows you to go back to songs that you have already played"
    },
    {
-      "command": "createplaylist", 
+      "command": "createplaylist",
       "slash": false,
       "description": "Creates a user specific playlist",
       "usage": ["playlist name"]
    },
    {
-      "command": "deleteplaylist", 
+      "command": "deleteplaylist",
       "slash": false,
       "description": "Deletes a users playlist",
       "usage": ["playlist name"]
    },
    {
-      "command": "renameplaylist", 
+      "command": "renameplaylist",
       "slash": false,
       "description": "Renames a playlist to the new specified name",
       "usage": ["playlist name", "new name"]
    },
    {
-      "command": "playlists", 
+      "command": "playlists",
       "slash": false,
       "description": "Allows you to view your playlists"
    },
    {
-      "command": "loadplaylist", 
+      "command": "loadplaylist",
       "slash": false,
       "description": "Adds the songs from a users playlist to the server queue",
       "usage": ["playlist name"]
    },
    {
-      "command": "playlistaddcurrent", 
+      "command": "playlistaddcurrent",
       "slash": false,
       "description": "Adds the current song your listening to, to the playlist specified",
       "usage": ["playlist name"]
    },
    {
-      "command": "playlistremove", 
+      "command": "playlistremove",
       "slash": false,
       "description": "Removes the song from the specified position",
       "usage": ["playlist song position"]

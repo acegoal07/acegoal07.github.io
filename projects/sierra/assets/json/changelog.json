@@ -162,7 +162,7 @@
          "Changes all events and commands to use new file tools instead of @acegoal07/json-editor who's tools have been deprecated",
          "Updates all dependencies to latest version",
          "Fixes an issue with createInteraction event picking up pagination button inputs",
-         "Updates userinfo command to support new discord.js version where activity types were updated", 
+         "Updates userinfo command to support new discord.js version where activity types were updated",
          "Bug fixes"
       ]
    },

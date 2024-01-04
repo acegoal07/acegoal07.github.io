@@ -1,33 +1,33 @@
 [
    {
-      "command": "nsfw", 
+      "command": "nsfw",
       "slash": false,
       "description": "When used will switch the current channel between an NSFW channel and a normal channel"
    },
    {
-      "command": "rename", 
+      "command": "rename",
       "slash": false,
       "description": "This command changes the nickname of Sierra in your server",
       "usage": ["name"]
    },
    {
-      "command": "imdb", 
+      "command": "imdb",
       "slash": true,
       "description": "Searches imdb for the show or film and retires Information about it",
       "usage": ["name of film or show"]
    },
    {
-      "command": "ping", 
+      "command": "ping",
       "slash": true,
       "description": "Used to see the latency for sierra and the ping for the Discord API"
    },
    {
-      "command": "lock", 
+      "command": "lock",
       "slash": true,
       "description": "Locks a channel stopping messages from being sent"
    },
    {
-      "command": "unlock", 
+      "command": "unlock",
       "slash": true,
       "description": "Unlocks a channel allowing for messaged to be sent"
    }
