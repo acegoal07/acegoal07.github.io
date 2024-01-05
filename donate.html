@@ -95,7 +95,10 @@
          <!-- Button list -->
          <ul class="nav nav-tabs justify-content-center pt-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-               <button class="nav-link nav-pane active" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table" type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
+               <button class="nav-link nav-pane active" id="github-tab" data-bs-toggle="tab" data-bs-target="#github-table" type="button" role="tab" aria-controls="github-tab" aria-selected="true">GitHub</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link nav-pane" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table" type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
             </li>
             <li class="nav-item" role="presentation">
                <button class="nav-link nav-pane" id="bitcoin-tab" data-bs-toggle="tab" data-bs-target="#bitcoin-table" type="button" role="tab" aria-controls="bitcoin-tab" aria-selected="false">Bitcoin</button>
@@ -104,16 +107,25 @@
                <button class="nav-link nav-pane" id="ethereum-tab" data-bs-toggle="tab" data-bs-target="#ethereum-table" type="button" role="tab" aria-controls="ethereum-tab" aria-selected="false">Ethereum</button>
             </li>
          </ul>
-         <!-- Paypal -->
+         <!-- Tabs -->
          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="paypal-table" role="tabpanel" aria-labelledby="paypal-tab">
+            <!-- GitHub -->
+            <div class="tab-pane fade show active" id="github-table" role="tabpanel" aria-labelledby="github-tab">
+               <h3 class="text-center pt-4">GitHub</h3>
+               <p class="text-center">This donation option uses GitHub sponsors this allows for monthly payments or one off payments</p>
+               <div class="container text-center pt-3">
+                  <a class="page-item btn btn-primary" href="https://github.com/sponsors/acegoal07" target="_blank" role="button" rel="noopener">Donate</a>
+               </div>
+            </div>
+            <!-- Paypal -->
+            <div class="tab-pane fade" id="paypal-table" role="tabpanel" aria-labelledby="paypal-tab">
                <h3 class="text-center pt-4">Paypal</h3>
                <p class="text-center">This donation option uses Paypal.me</p>
                <picture>
                   <img src="/assets/images/PayPalQR.webp" class="img-fluid mx-auto d-block" alt="PAYPALQR" width="200" height="200">
                </picture>
                <div class="container text-center pt-3">
-                  <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB" role="button">Donate</a>
+                  <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB" target="_blank" role="button" rel="noopener">Donate</a>
                </div>
             </div>
             <!-- Bitcoin -->
