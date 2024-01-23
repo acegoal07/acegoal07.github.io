@@ -6,7 +6,7 @@
    },
    {
       "command": "setprefix",
-      "slash": false,
+      "slash": true,
       "description": "Allows you to set a custom prefix for Sierra",
       "usage": ["new prefix"]
    },

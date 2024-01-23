@@ -1,5 +1,14 @@
 [
    {
+      "version": "3.0.7",
+      "changes": [
+         "Adds slash alternative for NSFW command",
+         "Adds slash alternative for rename command",
+         "Adds slash alternative for setprefix command",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.6",
       "changes": [
          "Adds new way to determine if a command can run in DM's or not",

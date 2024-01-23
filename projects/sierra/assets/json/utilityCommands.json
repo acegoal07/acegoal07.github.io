@@ -1,12 +1,12 @@
 [
    {
       "command": "nsfw",
-      "slash": false,
+      "slash": true,
       "description": "When used will switch the current channel between an NSFW channel and a normal channel"
    },
    {
       "command": "rename",
-      "slash": false,
+      "slash": true,
       "description": "This command changes the nickname of Sierra in your server",
       "usage": ["name"]
    },
