@@ -51,5 +51,10 @@
       "slash": true,
       "description": "Sends back the message you specify",
       "usage": ["text"]
+   },
+   {
+      "command": "policy",
+      "slash": true,
+      "description": "Shows the user the privacy policy's for Sierra"
    }
 ]
