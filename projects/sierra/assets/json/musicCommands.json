@@ -12,12 +12,12 @@
    },
    {
       "command": "skip",
-      "slash": false,
+      "slash": true,
       "description": "Skips to the next song in the server song queue"
    },
    {
       "command": "skipto",
-      "slash": false,
+      "slash": true,
       "description": "Skips you to the specified position in the queue",
       "usage": ["queue position"]
    },
@@ -28,12 +28,12 @@
    },
    {
       "command": "pause",
-      "slash": false,
+      "slash": true,
       "description": "Pauses the current song playing in the voice channel"
    },
    {
       "command": "unpause",
-      "slash": false,
+      "slash": true,
       "description": "Unpauses the current song playing in the voice channel"
    },
    {
@@ -111,7 +111,7 @@
    },
    {
       "command": "wheretolisten",
-      "slash": false,
+      "slash": true,
       "description": "Searches Spotify, SoundCloud and YouTube and provides you with links"
    },
    {

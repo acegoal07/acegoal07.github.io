@@ -12,7 +12,7 @@
    },
    {
       "command": "serverinvite",
-      "slash": false,
+      "slash": true,
       "description": "This command will send an invite to the current text channel which can be shared outside of the server"
    },
    {
@@ -33,7 +33,7 @@
    },
    {
       "command": "addsierra",
-      "slash": false,
+      "slash": true,
       "description": "This command sends you the link required to invite Sierra to your own server"
    },
    {

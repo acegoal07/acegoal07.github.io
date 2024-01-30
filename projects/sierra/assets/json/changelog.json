@@ -1,5 +1,22 @@
 [
    {
+      "version": "3.0.8",
+      "changes": [
+         "Adds slash alternative for pause command",
+         "Adds slash alternative for unpause command",
+         "Adds slash alternative for skip command",
+         "Adds slash alternative for skipto command",
+         "Adds slash alternative for policy command and also adds ability to use it in DM's",
+         "Adds DM command for donate command",
+         "Adds DM command for addsierra command",
+         "Adds DM command for serverinvite command",
+         "Adds new function to command builder",
+         "Improves performance of the debug command and removes old functions from it",
+         "Improves boot performance making the bot reboot quicker after a crash, error or restart",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.7",
       "changes": [
          "Adds slash alternative for NSFW command",
