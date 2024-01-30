@@ -13,6 +13,7 @@
          "Adds new function to command builder",
          "Improves performance of the debug command and removes old functions from it",
          "Improves boot performance making the bot reboot quicker after a crash, error or restart",
+         "Improves the performance of some commands that have multiple options",
          "Bug fixes"
       ]
    },
