@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
             for (const changes of info.changes) {
                infoArray.push(`<li><p>${changes}</p></li>`);
             }
-            // Card
+            // Create change log
             const change =
                `<div class="card bg-body-secondary">
                   <div class="card-header rounded-top bg-body-tertiary">
