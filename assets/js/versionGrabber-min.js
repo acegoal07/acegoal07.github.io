@@ -1,0 +1,1 @@
+window.addEventListener("load",(()=>{this.document.querySelectorAll(".project-version-grabber").forEach((e=>{fetch(e.getAttribute("version-location")).then((e=>e.json())).then((t=>e.innerHTML=`Latest version: ${t.version?t.version:t[0].version}`)).catch((e=>{}))}))}));
