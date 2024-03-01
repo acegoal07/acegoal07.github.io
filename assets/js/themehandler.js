@@ -109,8 +109,8 @@
    // Watches system preferences to detect a change in preference and change set theme if
    // no theme preference is not stored
    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-      if (storedTheme !== 'light' || storedTheme !== 'dark') {
-         setTheme(getSystemPreferred());
+      if (storedTheme === 'auto' || !storedTheme) {
+         setTheme(getPreferredTheme());
       } else {
          void(0);
       }

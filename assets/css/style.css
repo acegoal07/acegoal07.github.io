@@ -3,19 +3,19 @@ svg.bi {width: 1em; height: 1em; vertical-align: -0.125em; fill: currentcolor;}
 /* 404 page */
 html.error-page, html.error-page body {width: 100%; height: 100%;}
 /* Nav burger icon */
-.navbar-toggler>span {display: block; background-color: #4f4f4f; height: 0.188em; width: 1.563em; margin-top: 0.313em; margin-bottom: 0.313em; position: relative; left: 0; opacity: 1; transition: all 0.35s ease-out; transform-origin: center left;}
+.navbar-toggler>span {display: block; background-color: #4f4f4f; height: 0.188em; width: 1.563em; margin-top: 0.313em; margin-bottom: 0.313em; position: relative; left: 0; opacity: 1; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; -o-transition: all 0.35s ease-out; transition: all 0.35s ease-out; -webkit-transform-origin: center left; -moz-transform-origin: center left; -ms-transform-origin: center left; -o-transform-origin: center left; transform-origin: center left;}
 [data-bs-theme=dark] .navbar-toggler>span.icon-bar {background-color: #a3a6a9;}
 [data-bs-theme=light] .navbar-toggler>span.icon-bar {background-color: #54575b;}
 .navbar-toggler:not(.collapsed)>span.icon-bar {background-color: rgb(173, 0, 0);}
-.navbar-toggler>span:nth-child(1) {transform: translate(0%, 0%) rotate(0deg); margin-top: 0.3em;}
+.navbar-toggler>span:nth-child(1) {-webkit-transform: translate(0%, 0%) rotate(0deg); -moz-transform: translate(0%, 0%) rotate(0deg); -ms-transform: translate(0%, 0%) rotate(0deg); -o-transform: translate(0%, 0%) rotate(0deg); transform: translate(0%, 0%) rotate(0deg); margin-top: 0.3em;}
 .navbar-toggler>span:nth-child(2) {opacity: 1;}
-.navbar-toggler>span:nth-child(3) {transform: translate(0%, 0%) rotate(0deg);}
-.navbar-toggler:not(.collapsed)>span:nth-child(1) {transform: translate(15%, -33%) rotate(45deg);}
+.navbar-toggler>span:nth-child(3) {-webkit-transform: translate(0%, 0%) rotate(0deg); -moz-transform: translate(0%, 0%) rotate(0deg); -ms-transform: translate(0%, 0%) rotate(0deg); -o-transform: translate(0%, 0%) rotate(0deg); transform: translate(0%, 0%) rotate(0deg);}
+.navbar-toggler:not(.collapsed)>span:nth-child(1) {-webkit-transform: translate(15%, -33%) rotate(45deg); -moz-transform: translate(15%, -33%) rotate(45deg); -o-transform: translate(15%, -33%) rotate(45deg); -ms-transform: translate(15%, -33%) rotate(45deg); transform: translate(15%, -33%) rotate(45deg);}
 .navbar-toggler:not(.collapsed)>span:nth-child(2) {opacity: 0;}
-.navbar-toggler:not(.collapsed)>span:nth-child(3) {transform: translate(15%, 33%) rotate(-45deg);}
+.navbar-toggler:not(.collapsed)>span:nth-child(3) {-webkit-transform: translate(15%, 33%) rotate(-45deg); -moz-transform: translate(15%, 33%) rotate(-45deg); -o-transform: translate(15%, 33%) rotate(-45deg); -ms-transform: translate(15%, 33%) rotate(-45deg); transform: translate(15%, 33%) rotate(-45deg);}
 /* Drop down icon */
-button .dropdown-arrow {border: solid; border-color: #a3a6a9; border-width: 0 0.188rem 0.188rem 0; display: inline-block; padding: 0.188rem; margin-bottom: 0.25rem; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); transition: 0.35s ease-in-out;}
-button:not(.collapsed) .dropdown-arrow {-webkit-transform: rotate(45deg); transform: rotate(45deg);}
+button .dropdown-arrow {border: solid; border-color: #a3a6a9; border-width: 0 0.188rem 0.188rem 0; display: inline-block; padding: 0.188rem; margin-bottom: 0.25rem; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transition: 0.35s ease-in-out; -moz-transition: 0.35s ease-in-out; -o-transition: 0.35s ease-in-out; transition: 0.35s ease-in-out;}
+button:not(.collapsed) .dropdown-arrow {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
 /* Auto sizing */
 .w-a-25 {width: 25% !important;}
 @media (max-width: 768px) {.w-a-25 {width: 50% !important;}}
