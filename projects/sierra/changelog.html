@@ -1,106 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Changelog</title>
-      <link rel="shortcut icon" href="/assets/images/favicon.ico">
-      <meta name="description" content="Sierra's changelog">
-      <meta name="author" content="acegoal07">
-      <!-- JS -->
-      <script src="/assets/js/themehandler-min.js" defer></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-      <!-- CSS -->
-      <link rel="stylesheet" href="/assets/css/style-min.css">
-      <!-- Bootstrap -->
-      <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-      <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   </head>
-   <body>
-      <script src="/assets/js/changelogLoader.js"></script>
-      <!-- Navbar -->
-      <nav class="navbar sticky-top navbar-expand-md bg-body-secondary pb-3" aria-label="Sierra changelog navbar">
-         <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="icon-bar top-bar"></span>
-               <span class="icon-bar middle-bar"></span>
-               <span class="icon-bar bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-               <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                  <li class="nav-item"><a class="nav-link" href="/index.html">Homepage</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/projects/index.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/donate.html">Donate</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Changelog</a></li>
-               </ul>
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item dropdown">
-                     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
-                        <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
-                        <span class="d-md-none d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                     </button>
-                     <ul class="dropdown-menu dropdown-menu-end shadow">
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                              Light
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                              Dark
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                              Auto
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Changelog</title>
+   <link rel="shortcut icon" href="/assets/images/favicon.ico">
+   <meta name="description" content="Sierra's changelog">
+   <meta name="author" content="acegoal07">
+   <!-- JS -->
+   <script src="/assets/js/themehandler-min.js" defer></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+   <!-- CSS -->
+   <link rel="stylesheet" href="/assets/css/style-min.css">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+   <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+   <script src="/assets/js/changelogLoader.js"></script>
+   <!-- Navbar -->
+   <nav class="navbar sticky-top navbar-expand-md bg-body-secondary pb-3" aria-label="Sierra changelog navbar">
+      <div class="container-fluid">
+         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+               <li class="nav-item"><a class="nav-link" href="/index.html">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link" href="/projects/index.html">Projects</a></li>
+               <li class="nav-item"><a class="nav-link" href="/donate.html">Donate</a></li>
+               <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Changelog</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item dropdown">
+                  <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                     id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                     data-bs-display="static" aria-label="Toggle theme (light)">
+                     <svg class="bi my-1 theme-icon-active">
+                        <use href="#sun-fill"></use>
+                     </svg>
+                     <span class="d-md-none d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end shadow">
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                           data-bs-theme-value="light" aria-pressed="true">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Light
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                           aria-pressed="false">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#moon-stars-fill"></use>
+                           </svg>
+                           Dark
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                           aria-pressed="false">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#circle-half"></use>
+                           </svg>
+                           Auto
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- Main -->
+   <main class="container">
+      <!-- Jumbotron -->
+      <div class="p-5 mt-4 mb-4 bg-body-secondary rounded-3">
+         <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Changelog</h1>
+            <p class="col-md-8 fs-6">Sierra's changelog</p>
+         </div>
+      </div>
+      <!-- Body Content -->
+      <a class="btn btn-primary" href="index.html" role="button">Go to info</a>
+      <div id="changelog-info"
+         changelog-url="https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/assets/json/changelog.json">
+         <hr>
+         <h2 class="pb-2">Current version</h2>
+         <div id="currentVersion">
+         </div>
+         <hr>
+         <h2 class="pb-2">Previous version</h2>
+         <div id="previousVersion">
+         </div>
+         <hr>
+         <h2 class="pb-2">Older versions</h2>
+         <a id="moreListButton" class="btn btn-primary mb-2" role="button">Show More</a>
+         <div id="moreList" class="d-none"><br>
+            <div id="pastVersion">
             </div>
          </div>
-      </nav>
-      <!-- Main -->
-      <main class="container">
-			<!-- Jumbotron -->
-         <div class="p-5 mt-4 mb-4 bg-body-secondary rounded-3">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Changelog</h1>
-              <p class="col-md-8 fs-6">Sierra's changelog</p>
-            </div>
-         </div>
-         <!-- Body Content -->
-         <a class="btn btn-primary" href="index.html" role="button">Go to info</a>
-         <div id="changelog-info" changelog-url="https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/assets/json/changelog.json">
-            <hr><h2 class="pb-2">Current version</h2>
-            <div id="currentVersion">
-            </div>
-            <hr><h2 class="pb-2">Previous version</h2>
-            <div id="previousVersion">
-            </div>
-            <hr><h2 class="pb-2">Older versions</h2>
-            <div class="justify-content-center">
-               <a id="moreListButton" class="btn btn-primary mb-2" role="button">Show More</a>
-            </div>
-            <div id="moreList" class="d-none"><br>
-               <div id="pastVersion">
-               </div>
-            </div>
-         </div>
-         <!-- Footer -->
-         <footer class="mt-4">
-            <hr>
-            <a class="float-end" role="button" href="#">Back to Top</a>
-            <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
-         </footer>
-      </main>
-   </body>
+      </div>
+      <!-- Footer -->
+      <footer class="mt-4">
+         <hr>
+         <a class="float-end" role="button" href="#">Back to Top</a>
+         <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
+      </footer>
+   </main>
+</body>
+
 </html>

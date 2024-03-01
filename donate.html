@@ -1,176 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Donate</title>
-      <link rel="shortcut icon" href="/assets/images/favicon.ico">
-      <meta name="description" content="Ways to donate to acegoal07">
-      <meta name="author" content="acegoal07">
-      <!-- JS -->
-      <script src="/assets/js/themehandler-min.js" defer></script>
-      <script src="/assets/js/copyButtonContent-min.js" defer></script>
-      <!-- CSS -->
-      <link rel="stylesheet" href="/assets/css/style-min.css">
-      <!-- Bootstrap -->
-      <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-      <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   </head>
-   <body>
-      <!-- Navbar -->
-      <nav class="navbar sticky-top navbar-expand-md bg-body-secondary pb-3" aria-label="Donate navbar">
-         <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="icon-bar top-bar"></span>
-               <span class="icon-bar middle-bar"></span>
-               <span class="icon-bar bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-               <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                  <li class="nav-item"><a class="nav-link" href="/index.html">Homepage</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/projects/index.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Donate</a></li>
-               </ul>
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item dropdown">
-                     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
-                        <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
-                        <span class="d-md-none d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                     </button>
-                     <ul class="dropdown-menu dropdown-menu-end shadow">
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                              Light
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                              Dark
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                              Auto
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Donate</title>
+   <link rel="shortcut icon" href="/assets/images/favicon.ico">
+   <meta name="description" content="Ways to donate to acegoal07">
+   <meta name="author" content="acegoal07">
+   <!-- JS -->
+   <script src="/assets/js/themehandler-min.js" defer></script>
+   <script src="/assets/js/copyButtonContent-min.js" defer></script>
+   <!-- CSS -->
+   <link rel="stylesheet" href="/assets/css/style-min.css">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+   <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar sticky-top navbar-expand-md bg-body-secondary pb-3" aria-label="Donate navbar">
+      <div class="container-fluid">
+         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+               <li class="nav-item"><a class="nav-link" href="/index.html">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link" href="/projects/index.html">Projects</a></li>
+               <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Donate</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item dropdown">
+                  <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                     id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                     data-bs-display="static" aria-label="Toggle theme (light)">
+                     <svg class="bi my-1 theme-icon-active">
+                        <use href="#sun-fill"></use>
+                     </svg>
+                     <span class="d-md-none d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end shadow">
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                           data-bs-theme-value="light" aria-pressed="true">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Light
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                           aria-pressed="false">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#moon-stars-fill"></use>
+                           </svg>
+                           Dark
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                           aria-pressed="false">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#circle-half"></use>
+                           </svg>
+                           Auto
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- Main -->
+   <main class="container">
+      <!-- Jumbotron -->
+      <div class="p-5 mt-4 mb-4 bg-body-secondary rounded-3">
+         <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Donate</h1>
+            <p class="col-md-8 fs-6">The optional donation page</p>
+         </div>
+      </div>
+      <!-- Body Content -->
+      <div class="row justify-content-center">
+         <div class="col-md-8">
+            <p>This page provides options to donate to support my projects this is completely optional and is not
+               required to use any of my projects</p>
+         </div>
+         <div class="d-flex justify-content-center">
+            <div class="card text-center w-auto bg-body-secondary">
+               <div class="card-body rounded border">
+                  <h2 class="card-title card-title-size">Where do donations go?</h2>
+                  <p class="card-text">
+                     The money donated will go towards funding the hosting of this website and any other hosting costs
+                     caused by the
+                     hosting of software, the money will also go towards helping with testing and development of new
+                     software.
+                  </p>
+               </div>
             </div>
          </div>
-      </nav>
-      <!-- Main -->
-      <main class="container">
-			<!-- Jumbotron -->
-         <div class="p-5 mt-4 mb-4 bg-body-secondary rounded-3">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Donate</h1>
-              <p class="col-md-8 fs-6">The optional donation page</p>
+      </div>
+      <!-- Button list -->
+      <ul class="nav nav-tabs justify-content-center pt-4" id="myTab" role="tablist">
+         <li class="nav-item" role="presentation">
+            <button class="nav-link nav-pane active" id="github-tab" data-bs-toggle="tab" data-bs-target="#github-table"
+               type="button" role="tab" aria-controls="github-tab" aria-selected="true">GitHub</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link nav-pane" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table"
+               type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link nav-pane" id="bitcoin-tab" data-bs-toggle="tab" data-bs-target="#bitcoin-table"
+               type="button" role="tab" aria-controls="bitcoin-tab" aria-selected="false">Bitcoin</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link nav-pane" id="ethereum-tab" data-bs-toggle="tab" data-bs-target="#ethereum-table"
+               type="button" role="tab" aria-controls="ethereum-tab" aria-selected="false">Ethereum</button>
+         </li>
+      </ul>
+      <!-- Tabs -->
+      <div class="tab-content" id="myTabContent">
+         <!-- GitHub -->
+         <div class="tab-pane fade show active" id="github-table" role="tabpanel" aria-labelledby="github-tab">
+            <h3 class="text-center pt-4">GitHub</h3>
+            <p class="text-center">This donation option uses GitHub sponsors this allows for monthly payments or one off
+               payments</p>
+            <div class="container text-center pt-3">
+               <a class="page-item btn btn-primary" href="https://github.com/sponsors/acegoal07" target="_blank"
+                  role="button" rel="noopener">Donate</a>
             </div>
          </div>
-         <!-- Body Content -->
-         <div class="row justify-content-center">
-            <div class="col-md-8">
-               <p>This page provides options to donate to support my projects this is completely optional and is not required to use any of my projects</p>
+         <!-- Paypal -->
+         <div class="tab-pane fade" id="paypal-table" role="tabpanel" aria-labelledby="paypal-tab">
+            <h3 class="text-center pt-4">Paypal</h3>
+            <p class="text-center">This donation option uses Paypal.me</p>
+            <picture>
+               <img src="/assets/images/PayPalQR.webp" class="img-fluid mx-auto d-block" alt="PAYPALQR" width="200"
+                  height="200">
+            </picture>
+            <div class="container text-center pt-3">
+               <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB"
+                  target="_blank" role="button" rel="noopener">Donate</a>
             </div>
-            <div class="d-flex justify-content-center">
+         </div>
+         <!-- Bitcoin -->
+         <div class="tab-pane fade" id="bitcoin-table" role="tabpanel" aria-labelledby="bitcoin-tab">
+            <h3 class="text-center pt-4">Bitcoin</h3>
+            <p class="text-center">This donation option accepts donations in bitcoin</p>
+            <picture>
+               <img src="/assets/images/BitcoinQR.webp" class="img-fluid mx-auto d-block" alt="BTCQR" width="200"
+                  height="200">
+            </picture>
+            <div class="d-flex justify-content-center pt-3">
                <div class="card text-center w-auto bg-body-secondary">
                   <div class="card-body rounded border">
-                     <h2 class="card-title card-title-size">Where do donations go?</h2>
-                     <p class="card-text">
-                        The money donated will go towards funding the hosting of this website and any other hosting costs caused by the
-                        hosting of software, the money will also go towards helping with testing and development of new software.
-                     </p>
+                     <p class="card-text">36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP</p>
                   </div>
                </div>
+            </div>
+            <div class="container text-center pt-3">
+               <a class="btn btn-primary copy-data-button" role="button"
+                  copy-data="36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP">Copy Address</a>
             </div>
          </div>
-         <!-- Button list -->
-         <ul class="nav nav-tabs justify-content-center pt-4" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-               <button class="nav-link nav-pane active" id="github-tab" data-bs-toggle="tab" data-bs-target="#github-table" type="button" role="tab" aria-controls="github-tab" aria-selected="true">GitHub</button>
-            </li>
-            <li class="nav-item" role="presentation">
-               <button class="nav-link nav-pane" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-table" type="button" role="tab" aria-controls="paypal-tab" aria-selected="true">Paypal</button>
-            </li>
-            <li class="nav-item" role="presentation">
-               <button class="nav-link nav-pane" id="bitcoin-tab" data-bs-toggle="tab" data-bs-target="#bitcoin-table" type="button" role="tab" aria-controls="bitcoin-tab" aria-selected="false">Bitcoin</button>
-            </li>
-            <li class="nav-item" role="presentation">
-               <button class="nav-link nav-pane" id="ethereum-tab" data-bs-toggle="tab" data-bs-target="#ethereum-table" type="button" role="tab" aria-controls="ethereum-tab" aria-selected="false">Ethereum</button>
-            </li>
-         </ul>
-         <!-- Tabs -->
-         <div class="tab-content" id="myTabContent">
-            <!-- GitHub -->
-            <div class="tab-pane fade show active" id="github-table" role="tabpanel" aria-labelledby="github-tab">
-               <h3 class="text-center pt-4">GitHub</h3>
-               <p class="text-center">This donation option uses GitHub sponsors this allows for monthly payments or one off payments</p>
-               <div class="container text-center pt-3">
-                  <a class="page-item btn btn-primary" href="https://github.com/sponsors/acegoal07" target="_blank" role="button" rel="noopener">Donate</a>
-               </div>
-            </div>
-            <!-- Paypal -->
-            <div class="tab-pane fade" id="paypal-table" role="tabpanel" aria-labelledby="paypal-tab">
-               <h3 class="text-center pt-4">Paypal</h3>
-               <p class="text-center">This donation option uses Paypal.me</p>
-               <picture>
-                  <img src="/assets/images/PayPalQR.webp" class="img-fluid mx-auto d-block" alt="PAYPALQR" width="200" height="200">
-               </picture>
-               <div class="container text-center pt-3">
-                  <a class="page-item btn btn-primary" href="https://www.paypal.com/paypalme/acegoal07?locale.x=en_GB" target="_blank" role="button" rel="noopener">Donate</a>
-               </div>
-            </div>
-            <!-- Bitcoin -->
-            <div class="tab-pane fade" id="bitcoin-table" role="tabpanel" aria-labelledby="bitcoin-tab">
-               <h3 class="text-center pt-4">Bitcoin</h3>
-               <p class="text-center">This donation option accepts donations in bitcoin</p>
-               <picture>
-                  <img src="/assets/images/BitcoinQR.webp" class="img-fluid mx-auto d-block" alt="BTCQR" width="200" height="200">
-               </picture>
-               <div class="d-flex justify-content-center pt-3">
-                  <div class="card text-center w-auto bg-body-secondary">
-                     <div class="card-body rounded border">
-                        <p class="card-text">36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP</p>
-                     </div>
+         <!-- Ethereum -->
+         <div class="tab-pane fade" id="ethereum-table" role="tabpanel" aria-labelledby="ethereum-tab">
+            <h3 class="text-center pt-4">Ethereum</h3>
+            <p class="text-center">This donation option accepts donations in ethereum on the ethereum network</p>
+            <picture>
+               <img src="/assets/images/EthereumQR.webp" class="img-fluid mx-auto d-block" alt="ETHQR" width="200"
+                  height="200">
+            </picture>
+            <div class="d-flex justify-content-center pt-3">
+               <div class="card text-center w-auto bg-body-secondary">
+                  <div class="card-body rounded border">
+                     <p class="card-text">0x14afc5D4098554f51fD1218885b9520FA45507c8</p>
                   </div>
                </div>
-               <div class="container text-center pt-3">
-                  <a class="btn btn-primary copy-data-button" role="button" copy-data="36p7eUYdjXM2nAXPiviLjGf2TQJJsSuTWP">Copy Address</a>
-               </div>
             </div>
-            <!-- Ethereum -->
-            <div class="tab-pane fade" id="ethereum-table" role="tabpanel" aria-labelledby="ethereum-tab">
-               <h3 class="text-center pt-4">Ethereum</h3>
-               <p class="text-center">This donation option accepts donations in ethereum on the ethereum network</p>
-               <picture>
-                  <img src="/assets/images/EthereumQR.webp" class="img-fluid mx-auto d-block" alt="ETHQR" width="200" height="200">
-               </picture>
-               <div class="d-flex justify-content-center pt-3">
-                  <div class="card text-center w-auto bg-body-secondary">
-                     <div class="card-body rounded border">
-                        <p class="card-text">0x14afc5D4098554f51fD1218885b9520FA45507c8</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="container text-center pt-3">
-                  <a class="btn btn-primary copy-data-button" role="button" copy-data="0x14afc5D4098554f51fD1218885b9520FA45507c8">Copy Address</a>
-               </div>
+            <div class="container text-center pt-3">
+               <a class="btn btn-primary copy-data-button" role="button"
+                  copy-data="0x14afc5D4098554f51fD1218885b9520FA45507c8">Copy Address</a>
             </div>
          </div>
-         <!-- Footer -->
-         <footer class="mt-4">
-            <hr>
-            <a class="float-end" role="button" href="#">Back to Top</a>
-            <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
-         </footer>
-      </main>
-   </body>
+      </div>
+      <!-- Footer -->
+      <footer class="mt-4">
+         <hr>
+         <a class="float-end" role="button" href="#">Back to Top</a>
+         <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
+      </footer>
+   </main>
+</body>
+
 </html>

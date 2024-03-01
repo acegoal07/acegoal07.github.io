@@ -1,211 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Projects</title>
-      <link rel="shortcut icon" href="/assets/images/favicon.ico">
-      <meta name="description" content="All of acegoal07's projects in one place">
-      <meta name="author" content="acegoal07">
-      <!-- JS -->
-      <script src="/assets/js/themehandler-min.js" defer></script>
-      <script src="/assets/js/versionGrabber-min.js" defer></script>
-      <!-- CSS -->
-      <link rel="stylesheet" href="/assets/css/style-min.css">
-      <!-- Bootstrap -->
-      <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-      <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   </head>
-   <body>
-      <!-- Navbar -->
-      <nav class="navbar sticky-top navbar-expand-md bg-body-secondary pb-3" aria-label="Projects navbar">
-         <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="icon-bar top-bar"></span>
-               <span class="icon-bar middle-bar"></span>
-               <span class="icon-bar bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-               <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                  <li class="nav-item"><a class="nav-link" href="/index.html">Homepage</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/donate.html">Donate</a></li>
-               </ul>
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item dropdown">
-                     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
-                        <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
-                        <span class="d-md-none d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                     </button>
-                     <ul class="dropdown-menu dropdown-menu-end shadow">
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                              Light
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                              Dark
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                        <li>
-                           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                              <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                              Auto
-                              <svg class="bi ms-auto d-none theme-tick"><use href="#check2"></use></svg>
-                           </button>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Projects</title>
+   <link rel="shortcut icon" href="/assets/images/favicon.ico">
+   <meta name="description" content="All of acegoal07's projects in one place">
+   <meta name="author" content="acegoal07">
+   <!-- JS -->
+   <script src="/assets/js/themehandler-min.js" defer></script>
+   <script src="/assets/js/versionGrabber-min.js" defer></script>
+   <!-- CSS -->
+   <link rel="stylesheet" href="/assets/css/style-min.css">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+   <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar sticky-top navbar-expand-md bg-body-secondary pb-3" aria-label="Projects navbar">
+      <div class="container-fluid">
+         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+               <li class="nav-item"><a class="nav-link" href="/index.html">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Projects</a></li>
+               <li class="nav-item"><a class="nav-link" href="/donate.html">Donate</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item dropdown">
+                  <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                     id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                     data-bs-display="static" aria-label="Toggle theme (light)">
+                     <svg class="bi my-1 theme-icon-active">
+                        <use href="#sun-fill"></use>
+                     </svg>
+                     <span class="d-md-none d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end shadow">
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                           data-bs-theme-value="light" aria-pressed="true">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Light
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                           aria-pressed="false">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#moon-stars-fill"></use>
+                           </svg>
+                           Dark
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                           aria-pressed="false">
+                           <svg class="bi me-2 opacity-50 theme-icon">
+                              <use href="#circle-half"></use>
+                           </svg>
+                           Auto
+                           <svg class="bi ms-auto d-none theme-tick">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- Main -->
+   <main class="container">
+      <!-- Jumbotron -->
+      <div class="p-5 mt-4 mb-4 bg-body-secondary rounded-3">
+         <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Projects</h1>
+            <p class="col-md-8 fs-6">All of my projects in one place</p>
+         </div>
+      </div>
+      <div class="d-flex justify-content-center pb-4">
+         <div class="card text-center w-auto bg-body-secondary">
+            <div class="card-body rounded border">
+               <h2 class="card-title card-title-size">GitHub</h2>
+               <p class="card-text">This page shows all the large projects i work on and maintain but on my GitHub
+                  account you can find more repositories of smaller projects</p>
+               <a href="https://github.com/acegoal07?tab=repositories" title="Github account" class="btn btn-primary"
+                  target="_blank" rel="noopener">Go to GitHub</a>
             </div>
          </div>
-      </nav>
-      <!-- Main -->
-      <main class="container">
-			<!-- Jumbotron -->
-         <div class="p-5 mt-4 mb-4 bg-body-secondary rounded-3">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Projects</h1>
-              <p class="col-md-8 fs-6">All of my projects in one place</p>
-            </div>
-         </div>
-         <div class="d-flex justify-content-center pb-4">
-            <div class="card text-center w-auto bg-body-secondary">
-               <div class="card-body rounded border">
-                  <h2 class="card-title card-title-size">GitHub</h2>
-                  <p class="card-text">This page shows all the large projects i work on and maintain but on my GitHub account you can find more repositories of smaller projects</p>
-                  <a href="https://github.com/acegoal07?tab=repositories" title="Github account" class="btn btn-primary" target="_blank" rel="noopener">Go to GitHub</a>
-               </div>
-            </div>
-         </div>
-         <!-- Body Content -->
-         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center pb-2">
-            <div class="col">
-               <div class="card bg-body-secondary shadow h-100">
-                  <img class="card-img-top" src="/assets/images/Sierrabanner.webp" alt="Sierra banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">Sierra</h2>
-                     <p class="card-text">A multi purpose discord bot</p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="sierra/index.html" class="btn btn-sm btn-primary">More Info</a>
-                        <a type="button" href="sierra/changelog.html" class="btn btn-sm btn-primary">Changelog</a>
-                        <a type="button" href="https://github.com/acegoal07/acegoal07.github.io/issues/new?assignees=&labels=&projects=&template=Sierra_issue_report.md" rel="noopener" target="_blank" class="btn btn-sm btn-primary">Issue</a>
-                     </div>
-                  </div>
-                  <div class="card-footer bg-body-tertiary">
-                     <small class="text-muted project-version-grabber" version-location="https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/assets/json/changelog.json" id="sierra-version">Unavailable</small>
+      </div>
+      <!-- Body Content -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center pb-2">
+         <div class="col">
+            <div class="card bg-body-secondary shadow h-100">
+               <img class="card-img-top" src="/assets/images/Sierrabanner.webp" alt="Sierra banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">Sierra</h2>
+                  <p class="card-text">A multi purpose discord bot</p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="sierra/index.html" class="btn btn-sm btn-primary">More Info</a>
+                     <a type="button" href="sierra/changelog.html" class="btn btn-sm btn-primary">Changelog</a>
+                     <a type="button"
+                        href="https://github.com/acegoal07/acegoal07.github.io/issues/new?assignees=&labels=&projects=&template=Sierra_issue_report.md"
+                        rel="noopener" target="_blank" class="btn btn-sm btn-primary">Issue</a>
                   </div>
                </div>
-            </div>
-            <div class="col">
-               <div class="card bg-body-secondary shadow h-100">
-                  <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">discordjs-pagination</h2>
-                     <p class="card-text">A simple pagination for Discord.js</p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination" rel="noopener" target="_blank" class="btn btn-sm btn-primary">NPM</a>
-                        <a type="button" href="https://github.com/acegoal07/discordjs-pagination" rel="noopener" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
-                        <a type="button" href="https://github.com/acegoal07/discordjs-pagination/wiki" rel="noopener" target="_blank" class="btn btn-sm btn-primary">Wiki</a>
-                        <a type="button" href="https://github.com/acegoal07/discordjs-pagination/issues/new/choose" rel="noopener" target="_blank"  class="btn btn-sm btn-primary">Issue</a>
-                     </div>
-                  </div>
-                  <div class="card-footer bg-body-tertiary">
-                     <small class="text-muted project-version-grabber" version-location="https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json" id="discordjs-pagination-version">Unavailable</small>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card bg-body-secondary shadow h-100">
-                  <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">progressbar-builder</h2>
-                     <p class="card-text">A simple string progress bar builder</p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="https://www.npmjs.com/package/@acegoal07/progressbar-builder" rel="noopener" target="_blank" class="btn btn-sm btn-primary">NPM</a>
-                        <a type="button" href="https://github.com/acegoal07/progressbar-builder" rel="noopener" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
-                        <a type="button" href="https://github.com/acegoal07/progressbar-builder/issues/new" rel="noopener" target="_blank"  class="btn btn-sm btn-primary">Issue</a>
-                     </div>
-                  </div>
-                  <div class="card-footer bg-body-tertiary">
-                     <small class="text-muted project-version-grabber" version-location="https://raw.githubusercontent.com/acegoal07/progressbar-builder/main/package.json" id="progressbar-builder-version">Unavailable</small>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card bg-body-secondary shadow h-100">
-                  <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">json-editor</h2>
-                     <p class="card-text">A simple json file editor</p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="https://www.npmjs.com/package/@acegoal07/json-editor" rel="noopener" target="_blank" class="btn btn-sm btn-primary">NPM</a>
-                        <a type="button" href="https://github.com/acegoal07/json-editor" rel="noopener" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
-                        <a type="button" href="https://github.com/acegoal07/json-editor/wiki" rel="noopener" target="_blank" class="btn btn-sm btn-primary">Wiki</a>
-                        <a type="button" href="https://github.com/acegoal07/json-editor/issues/new" rel="noopener" target="_blank"  class="btn btn-sm btn-primary">Issue</a>
-                     </div>
-                  </div>
-                  <div class="card-footer bg-body-tertiary">
-                     <small class="text-muted project-version-grabber" version-location="https://raw.githubusercontent.com/acegoal07/json-editor/main/package.json" id="json-editor-version">Unavailable</small>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card bg-body-secondary shadow h-100">
-                  <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">file-tools</h2>
-                     <p class="card-text">Simple file tools for JS</p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="https://www.npmjs.com/package/@acegoal07/file-tools" rel="noopener" target="_blank" class="btn btn-sm btn-primary">NPM</a>
-                        <a type="button" href="https://github.com/acegoal07/file-tools" rel="noopener" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
-                        <a type="button" href="https://github.com/acegoal07/file-tools/wiki" rel="noopener" target="_blank" class="btn btn-sm btn-primary">Wiki</a>
-                        <a type="button" href="https://github.com/acegoal07/file-tools/issues/new" rel="noopener" target="_blank"  class="btn btn-sm btn-primary">Issue</a>
-                     </div>
-                  </div>
-                  <div class="card-footer bg-body-tertiary">
-                     <small class="text-muted project-version-grabber" version-location="https://raw.githubusercontent.com/acegoal07/file-tools/main/package.json" id="file-tools-version">Unavailable</small>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card bg-body-secondary shadow">
-                  <img class="card-img-top" src="/assets/images/JavaBanner.webp" alt="npm banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">RecipeBook</h2>
-                     <p class="card-text">A simple Android app to store your recipes</p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="https://github.com/acegoal07/RecipeBook" rel="noopener" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card bg-body-secondary shadow">
-                  <img class="card-img-top" src="/assets/images/CBanner.webp" alt="npm banner">
-                  <div class="card-body">
-                     <h2 class="card-title fs-4">FlipperZero_NFC_Playlist</h2>
-                     <p class="card-text">A mass NFC card tester </p>
-                     <div class="btn-group gap-1">
-                        <a type="button" href="https://github.com/acegoal07/FlipperZero_NFC_Playlist" rel="noopener" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
-                        <a type="button" href="https://github.com/acegoal07/FlipperZero_NFC_Playlist/issues/new/choose" rel="noopener" target="_blank" class="btn btn-sm btn-primary">Issue</a>
-                     </div>
-                  </div>
+               <div class="card-footer bg-body-tertiary">
+                  <small class="text-muted project-version-grabber"
+                     version-location="https://raw.githubusercontent.com/acegoal07/acegoal07.github.io/master/projects/sierra/assets/json/changelog.json"
+                     id="sierra-version">Unavailable</small>
                </div>
             </div>
          </div>
-         <!-- Footer -->
-         <footer class="mt-4">
-            <hr>
-            <a class="float-end" role="button" href="#">Back to Top</a>
-            <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
-         </footer>
-      </main>
-   </body>
+         <div class="col">
+            <div class="card bg-body-secondary shadow h-100">
+               <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">discordjs-pagination</h2>
+                  <p class="card-text">A simple pagination for Discord.js</p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="https://www.npmjs.com/package/@acegoal07/discordjs-pagination"
+                        rel="noopener" target="_blank" class="btn btn-sm btn-primary">NPM</a>
+                     <a type="button" href="https://github.com/acegoal07/discordjs-pagination" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">GitHub</a>
+                     <a type="button" href="https://github.com/acegoal07/discordjs-pagination/wiki" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">Wiki</a>
+                     <a type="button" href="https://github.com/acegoal07/discordjs-pagination/issues/new/choose"
+                        rel="noopener" target="_blank" class="btn btn-sm btn-primary">Issue</a>
+                  </div>
+               </div>
+               <div class="card-footer bg-body-tertiary">
+                  <small class="text-muted project-version-grabber"
+                     version-location="https://raw.githubusercontent.com/acegoal07/discordjs-pagination/main/package.json"
+                     id="discordjs-pagination-version">Unavailable</small>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card bg-body-secondary shadow h-100">
+               <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">progressbar-builder</h2>
+                  <p class="card-text">A simple string progress bar builder</p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="https://www.npmjs.com/package/@acegoal07/progressbar-builder" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">NPM</a>
+                     <a type="button" href="https://github.com/acegoal07/progressbar-builder" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">GitHub</a>
+                     <a type="button" href="https://github.com/acegoal07/progressbar-builder/issues/new" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">Issue</a>
+                  </div>
+               </div>
+               <div class="card-footer bg-body-tertiary">
+                  <small class="text-muted project-version-grabber"
+                     version-location="https://raw.githubusercontent.com/acegoal07/progressbar-builder/main/package.json"
+                     id="progressbar-builder-version">Unavailable</small>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card bg-body-secondary shadow h-100">
+               <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">json-editor</h2>
+                  <p class="card-text">A simple json file editor</p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="https://www.npmjs.com/package/@acegoal07/json-editor" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">NPM</a>
+                     <a type="button" href="https://github.com/acegoal07/json-editor" rel="noopener" target="_blank"
+                        class="btn btn-sm btn-primary">GitHub</a>
+                     <a type="button" href="https://github.com/acegoal07/json-editor/wiki" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">Wiki</a>
+                     <a type="button" href="https://github.com/acegoal07/json-editor/issues/new" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">Issue</a>
+                  </div>
+               </div>
+               <div class="card-footer bg-body-tertiary">
+                  <small class="text-muted project-version-grabber"
+                     version-location="https://raw.githubusercontent.com/acegoal07/json-editor/main/package.json"
+                     id="json-editor-version">Unavailable</small>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card bg-body-secondary shadow h-100">
+               <img class="card-img-top" src="/assets/images/NpmBanner.webp" alt="npm banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">file-tools</h2>
+                  <p class="card-text">Simple file tools for JS</p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="https://www.npmjs.com/package/@acegoal07/file-tools" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">NPM</a>
+                     <a type="button" href="https://github.com/acegoal07/file-tools" rel="noopener" target="_blank"
+                        class="btn btn-sm btn-primary">GitHub</a>
+                     <a type="button" href="https://github.com/acegoal07/file-tools/wiki" rel="noopener" target="_blank"
+                        class="btn btn-sm btn-primary">Wiki</a>
+                     <a type="button" href="https://github.com/acegoal07/file-tools/issues/new" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">Issue</a>
+                  </div>
+               </div>
+               <div class="card-footer bg-body-tertiary">
+                  <small class="text-muted project-version-grabber"
+                     version-location="https://raw.githubusercontent.com/acegoal07/file-tools/main/package.json"
+                     id="file-tools-version">Unavailable</small>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card bg-body-secondary shadow">
+               <img class="card-img-top" src="/assets/images/JavaBanner.webp" alt="npm banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">RecipeBook</h2>
+                  <p class="card-text">A simple Android app to store your recipes</p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="https://github.com/acegoal07/RecipeBook" rel="noopener" target="_blank"
+                        class="btn btn-sm btn-primary">GitHub</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card bg-body-secondary shadow">
+               <img class="card-img-top" src="/assets/images/CBanner.webp" alt="npm banner">
+               <div class="card-body">
+                  <h2 class="card-title fs-4">FlipperZero_NFC_Playlist</h2>
+                  <p class="card-text">A mass NFC card tester </p>
+                  <div class="btn-group gap-1">
+                     <a type="button" href="https://github.com/acegoal07/FlipperZero_NFC_Playlist" rel="noopener"
+                        target="_blank" class="btn btn-sm btn-primary">GitHub</a>
+                     <a type="button" href="https://github.com/acegoal07/FlipperZero_NFC_Playlist/issues/new/choose"
+                        rel="noopener" target="_blank" class="btn btn-sm btn-primary">Issue</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="mt-4">
+         <hr>
+         <a class="float-end" role="button" href="#">Back to Top</a>
+         <p class="text-muted">Designed by acegoal07 with Bootstrap</p>
+      </footer>
+   </main>
+</body>
+
 </html>
