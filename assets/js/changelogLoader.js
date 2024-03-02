@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
             let bodyDiv = document.createElement('div');
             bodyDiv.classList.add('card-body', 'rounded-bottom');
             // Title
-            let title = document.createElement('h5');
+            let title = document.createElement('h3');
             title.classList.add('card-title', 'fw-bold');
             title.textContent = 'Changes:';
             // Append title to body
