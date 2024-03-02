@@ -7,37 +7,60 @@ window.addEventListener("load", () => {
          for (const info of data) {
             // Changes
             count++;
-            const infoArray = [];
+            // Create card
+            let cardDiv = document.createElement('div');
+            cardDiv.classList.add('card', 'bg-body-secondary');
+            // Header
+            let headerDiv = document.createElement('div');
+            headerDiv.classList.add('card-header', 'rounded-top', 'bg-body-tertiary');
+            headerDiv.textContent = `Version ${info.version}`;
+            // Append header to card
+            cardDiv.appendChild(headerDiv);
+            // Body
+            let bodyDiv = document.createElement('div');
+            bodyDiv.classList.add('card-body', 'rounded-bottom');
+            // Title
+            let title = document.createElement('h5');
+            title.classList.add('card-title', 'fw-bold');
+            title.textContent = 'Changes:';
+            // Append title to body
+            bodyDiv.appendChild(title);
+            // Text
+            let text = document.createElement('p');
+            text.classList.add('card-text');
+            // List
+            let ul = document.createElement('ul');
             for (const changes of info.changes) {
-               infoArray.push(`<li><p>${changes}</p></li>`);
+               let li = document.createElement('li');
+               let p = document.createElement('p');
+               p.textContent = changes;
+               li.appendChild(p);
+               ul.appendChild(li);
             }
-            // Create change log
-            const change =
-               `<div class="card bg-body-secondary">
-                  <div class="card-header rounded-top bg-body-tertiary">
-                     Version ${info.version}
-                  </div>
-                  <div class="card-body rounded-bottom">
-                     <h5 class="card-title fw-bold">Changes:</h5>
-                     <p class="card-text">
-                        <ul>
-                           ${infoArray.join('')}
-                        </ul>
-                     </p>
-                  </div>
-               </div><br>`;
-            // Set current
-            if (count == 1) {document.querySelector('#currentVersion').insertAdjacentHTML("afterbegin", change);}
-            // Set previous
-            else if (count == 2) {document.querySelector('#previousVersion').insertAdjacentHTML("afterbegin", change);}
-            // Create array list of older versions
-            else {pastVersionChangeLog.push(change);}
+            // Append list to text
+            text.appendChild(ul);
+            // Append text to body
+            bodyDiv.appendChild(text);
+            // Append body to card
+            cardDiv.appendChild(bodyDiv);
+
+            // Set current version change log
+            if (count == 1) {
+               document.querySelector('#currentVersion').appendChild(cardDiv);
+            }
+            // Set previous version change log
+            else if (count == 2) {
+               document.querySelector('#previousVersion').appendChild(cardDiv);
+            }
+            // Set past version change log
+            else {
+               cardDiv.classList.add("mb-3")
+               document.querySelector('#pastVersion').appendChild(cardDiv);
+            }
          }
-         // Set old versions
-         document.querySelector('#pastVersion').insertAdjacentHTML("afterbegin", pastVersionChangeLog.join(''));
       }
    );
-// ShowMore button ///////////////////////////////////////////////////////////////////////////////
+   // ShowMore button ///////////////////////////////////////////////////////////////////////////////
    document.querySelector("#moreListButton").addEventListener("click", () => {
       const button = document.querySelector("#moreListButton");
       if (document.querySelector("#moreList").classList.toggle("d-none")) {

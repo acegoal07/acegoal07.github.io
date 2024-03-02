@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
       fetch(location.getAttribute("version-location")).then(res =>
          res.json()
       ).then((data) =>
-         location.innerHTML = `Latest version: ${data.version ? data.version : data[0].version}`
+         location.textContent = `Latest version: ${data.version ? data.version : data[0].version}`
       ).catch(err => console.error(err));
    });
 });
