@@ -7,10 +7,10 @@
     * @param {any} value The value of the cookie
     * @param {"Strict" | "Lax" | "None"} SameSite The type of SameSite to use
     */
-   const setCookie = function(name, value, SameSite = "Strict") {
+   const setCookie = function (name, value, SameSite = "Strict") {
       const date = new Date();
       date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
-      document.cookie = `${name  }=${  value || ""  }; expires=${date.toString()}; SameSite=${ SameSite }; path=/`;
+      document.cookie = `${name}=${value || ""}; expires=${date.toString()}; SameSite=${SameSite}; path=/`;
    }
    /**
     * getCookie
@@ -18,11 +18,11 @@
     * @param {String} name The name of the cookie
     * @returns {any} The value of the cookie
     */
-   const getCookie = function(name) {
+   const getCookie = function (name) {
       const nameEQ = name + "=";
-      for(let cookie of document.cookie.split(';')) {
-         while (cookie.startsWith(' ')) {cookie = cookie.substring(1,cookie.length);}
-         if (cookie.startsWith(nameEQ)) {return cookie.substring(nameEQ.length,cookie.length);}
+      for (let cookie of document.cookie.split(';')) {
+         while (cookie.startsWith(' ')) { cookie = cookie.substring(1, cookie.length); }
+         if (cookie.startsWith(nameEQ)) { return cookie.substring(nameEQ.length, cookie.length); }
       }
       return null;
    }
@@ -64,7 +64,7 @@
       const themeSwitcher = document.querySelector('#bd-theme');
       // Checks whether theme buttons are present
       if (!themeSwitcher) {
-         return void(0);
+         return void (0);
       }
       // Adds SVGs to the page if buttons are present
       document.querySelector("nav").insertAdjacentHTML(
@@ -112,7 +112,7 @@
       if (storedTheme === 'auto' || !storedTheme) {
          setTheme(getPreferredTheme());
       } else {
-         void(0);
+         void (0);
       }
    });
    // Add listeners to theme buttons

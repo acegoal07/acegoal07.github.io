@@ -1,38 +1,37 @@
 // Changelog Loader /////// By acegoal07 /////////////////////////////////////////////////////////
 window.addEventListener("load", () => {
    let count = 0;
-   const pastVersionChangeLog = [];
    $.getJSON(document.querySelector("#changelog-info").getAttribute("changelog-url"),
       function (data) {
          for (const info of data) {
             // Changes
             count++;
             // Create card
-            let cardDiv = document.createElement('div');
+            const cardDiv = document.createElement('div');
             cardDiv.classList.add('card', 'bg-body-secondary');
             // Header
-            let headerDiv = document.createElement('div');
+            const headerDiv = document.createElement('div');
             headerDiv.classList.add('card-header', 'rounded-top', 'bg-body-tertiary');
             headerDiv.textContent = `Version ${info.version}`;
             // Append header to card
             cardDiv.appendChild(headerDiv);
             // Body
-            let bodyDiv = document.createElement('div');
+            const bodyDiv = document.createElement('div');
             bodyDiv.classList.add('card-body', 'rounded-bottom');
             // Title
-            let title = document.createElement('h3');
+            const title = document.createElement('h3');
             title.classList.add('card-title', 'fw-bold');
             title.textContent = 'Changes:';
             // Append title to body
             bodyDiv.appendChild(title);
             // Text
-            let text = document.createElement('p');
+            const text = document.createElement('p');
             text.classList.add('card-text');
             // List
-            let ul = document.createElement('ul');
+            const ul = document.createElement('ul');
             for (const changes of info.changes) {
-               let li = document.createElement('li');
-               let p = document.createElement('p');
+               const li = document.createElement('li');
+               const p = document.createElement('p');
                p.textContent = changes;
                li.appendChild(p);
                ul.appendChild(li);

@@ -1,5 +1,15 @@
 [
    {
+      "version": "3.0.9",
+      "changes": [
+         "Adds a new function to the toolkit of sierra to make it accessible to all commands and events",
+         "Fixes setup slash settings not displaying the correct information",
+         "Reformats Sierra's code to make it easier to read and understand",
+         "Improves chunker in sierras toolkit to make it more reliable",
+         "Bug fixes"
+      ]
+   },
+   {
       "version": "3.0.8",
       "changes": [
          "Adds slash alternative for pause command",

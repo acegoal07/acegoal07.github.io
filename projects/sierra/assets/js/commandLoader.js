@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
    // Search bar
    document.querySelectorAll(".command-search-bar").forEach(searchBar => {
       searchBar.value = "";
-      searchBar.addEventListener("input", function() {
+      searchBar.addEventListener("input", function () {
          const userInput = searchBar.value.toLowerCase();
          for (const child of document.querySelector(`div[command-section=${searchBar.getAttribute("command-section")}]`).children) {
             if ((!userInput || child.getAttribute("data-command-name").includes(userInput)) && child.classList.contains("d-none")) {
@@ -17,12 +17,12 @@ window.addEventListener("load", () => {
    });
    // Information
    for (const section of document.querySelectorAll(".command-section")) {
-      $.getJSON(section.getAttribute("command-info-url"), function(data) {
+      $.getJSON(section.getAttribute("command-info-url"), function (data) {
          let count = 0;
          const prefixSection = section.getAttribute("command-section");
          for (const command of data) {
             const usageData = [];
-            if (command.usage) {command.usage.forEach(usage => {usageData.push(`[${usage}]`)})}
+            if (command.usage) { command.usage.forEach(usage => { usageData.push(`[${usage}]`) }) }
             section.insertAdjacentHTML("beforeend",
                `<div class="card bg-body-secondary mt-2" data-command-name="${command.command}">
                   <div class="card-body">
